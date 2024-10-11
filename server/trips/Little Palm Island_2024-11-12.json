@@ -1,0 +1,402 @@
+{
+  "tripName": "Little Palm Island",
+  "startDate": "2024-11-12",
+  "trip": [
+    {
+      "wakeUpTime": "18:00",
+      "lodging": {
+        "name": "Hampton Inn & Suites LAX El Segundo, North Pacific Coast Highway, El Segundo, CA, USA",
+        "address": "888 N Pacific Coast Hwy, El Segundo, CA 90245, USA",
+        "phone": "(310) 322-2900"
+      },
+      "activities": [
+        {
+          "name": "Driver to Pickup Riley",
+          "length": "90",
+          "location": "Sunset Village UCLA",
+          "company": "Ali Joon",
+          "notes": ""
+        },
+        {
+          "name": "Drive to Hinoki & the Bird",
+          "length": "15",
+          "location": "10 W Century Dr, Los Angeles, CA 90067",
+          "company": "",
+          "notes": "change planes"
+        },
+        {
+          "name": "Dinner with Riley",
+          "length": "90",
+          "location": "Address: 10 W Century Dr, Los Angeles, CA 90067",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Hampton Inn LAX",
+          "length": "20",
+          "location": "888 N Pacific Coast Hwy, El Segundo, CA 90245, USA",
+          "company": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "04:00",
+      "lodging": {
+        "name": "Little Palm Island Resort & Spa, Overseas Highway, Little Torch Key, FL, USA",
+        "address": "28500 Overseas Hwy, Little Torch Key, FL 33042, USA",
+        "phone": "(305) 684-8341"
+      },
+      "activities": [
+        {
+          "name": "Shower and Pack",
+          "length": "30",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to LAX",
+          "length": "15",
+          "location": "LAX - American Airlines",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight and Grab Breakfast",
+          "length": "80",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Fly to Key West",
+          "length": "630",
+          "location": "",
+          "company": "",
+          "notes": "American Airlines DHXAZM LAX AA 315 - MIA 2:01 PM\nMIA 3:35 PM AA 3888 - EYW 4:35 PM\n"
+        },
+        {
+          "name": "Driver to Little Palm",
+          "length": "35",
+          "location": "Key West Airport, South Roosevelt Boulevard, Key West, FL, USA",
+          "company": "",
+          "notes": "Driver will meet you at baggage claim"
+        },
+        {
+          "name": "Check In to Hotel",
+          "length": "20",
+          "location": "Little Palm Island Resort & Spa, Overseas Highway, Little Torch Key, FL, USA",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Relax",
+          "length": "60",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Hotel",
+          "length": "90",
+          "location": "",
+          "company": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "10:00",
+      "lodging": {
+        "name": "Little Palm Island Resort & Spa, Overseas Highway, Little Torch Key, FL, USA",
+        "address": "28500 Overseas Hwy, Little Torch Key, FL 33042, USA",
+        "phone": "(305) 684-8341"
+      },
+      "activities": [
+        {
+          "name": "Room Service Breakfast",
+          "length": "40",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Kayak Through the Mangroves and Feed Doritos to the Manatee",
+          "length": "80",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Luncheon on the island",
+          "length": "40",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Read Book and Relax by the Pool",
+          "length": "140",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Amy 80-minute Biologique Reserche Experience Facial",
+          "length": "80",
+          "location": "Spa",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Outdoor Shower and Relax",
+          "length": "40",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Sunset Cocktails",
+          "length": "60",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Private Dinner on the Beach",
+          "length": "120",
+          "location": "",
+          "company": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Little Palm Island Resort & Spa, Overseas Highway, Little Torch Key, FL, USA",
+        "address": "28500 Overseas Hwy, Little Torch Key, FL 33042, USA",
+        "phone": "(305) 684-8341"
+      },
+      "activities": [
+        {
+          "name": "Breakfast and Boat to the Shore",
+          "length": "120",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Driver to Key West",
+          "length": "35",
+          "location": "Key West, FL, USA",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Tour Hemingway's House",
+          "length": "60",
+          "location": "Ernest Hemingway House, Whitehead Street, Key West, FL, USA",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch and Shopping ",
+          "length": "90",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Airport",
+          "length": "15",
+          "location": "Key West Airport, South Roosevelt Boulevard, Key West, FL, USA",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "40",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Seaplane to Dry Tortugas",
+          "length": "30",
+          "location": "",
+          "company": "Key West Seaplane Adventures, South Roosevelt Boulevard, Key West, FL, USA,  (305) 293-9300",
+          "notes": ""
+        },
+        {
+          "name": "Explore Fort Jefferson and Dry Tortugas",
+          "length": "180",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Fly Back to Key West",
+          "length": "30",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to dinner",
+          "length": "15",
+          "location": "Cafe Marquesa, Fleming Street, Key West, FL, USA",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Cafe Marquesa",
+          "length": "90",
+          "location": "Cafe Marquesa, Fleming Street, Key West, FL, USA",
+          "company": "",
+          "notes": "Our reservation is at 7 PM. We can grab a cocktail before."
+        },
+        {
+          "name": "Party in Key West",
+          "length": "90",
+          "location": "Sloppy Joe's Bar, Duval Street, Key West, FL, USA",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Driver to Hotel",
+          "length": "35",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Boat to Hotel",
+          "length": "20",
+          "location": "",
+          "company": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Little Palm Island Resort & Spa, Overseas Highway, Little Torch Key, FL, USA",
+        "address": "28500 Overseas Hwy, Little Torch Key, FL 33042, USA",
+        "phone": "(305) 684-8341"
+      },
+      "activities": [
+        {
+          "name": "Room Service",
+          "length": "40",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Kayak",
+          "length": "140",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch at Hotel",
+          "length": "40",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Relax",
+          "length": "140",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Massage at Hotel Spa",
+          "length": "80",
+          "location": "",
+          "company": "",
+          "notes": "Amy 80-minute Rose Quartz Stone Massage, Chet 50-minute Noble Massage"
+        },
+        {
+          "name": "Relax",
+          "length": "160",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Hotel",
+          "length": "90",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Unnamed Activity",
+          "length": "",
+          "location": "",
+          "company": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Home",
+        "address": "611 Carnation Ave, Corona Del Mar, CA 92625, USA",
+        "phone": ""
+      },
+      "activities": [
+        {
+          "name": "Pack and Breakfast",
+          "length": "100",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Boat to Shore",
+          "length": "20",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Driver to Key West Airport",
+          "length": "35",
+          "location": "Key West Airport, South Roosevelt Boulevard, Key West, FL, USA",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Check in to Flight",
+          "length": "140",
+          "location": "",
+          "company": "",
+          "notes": ""
+        },
+        {
+          "name": "Flight to LAX",
+          "length": "388",
+          "location": "",
+          "company": "",
+          "notes": "AA 1816 EYW - CLT 3:14 PM\nAA 1576 CLT - LAX 7:23 PM"
+        },
+        {
+          "name": "Driver Home",
+          "length": "",
+          "location": "",
+          "company": "",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

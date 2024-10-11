@@ -1,0 +1,338 @@
+{
+  "tripName": "NOLA",
+  "startDate": "2025-02-19",
+  "trip": [
+    {
+      "wakeUpTime": "07:00",
+      "lodging": {
+        "name": "Maison Métier - The Unbound Collection by Hyatt",
+        "address": "546 Carondelet St, New Orleans, LA 70130, USA",
+        "phone": "(504) 814-7720"
+      },
+      "activities": [
+        {
+          "name": "Breakfast and Order Uber",
+          "length": "45",
+          "location": "611 Carnation Avenue, Corona Del Mar, CA, USA",
+          "notes": "Bring semi formal attire and cash."
+        },
+        {
+          "name": "Uber to Airport",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "124",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "AA 2466, SNA -> PHX -> MSY",
+          "length": "431",
+          "location": "",
+          "notes": "We have a 57 minute layover in Phoenix.\nSeat: 10D, 10E, 10F, 11D, 11E\nSeat:\t11D, 11E, 11F, 12D, 12E"
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "45",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Hotel Get Ready for Dinner",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Dinner",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Vyoone's",
+          "length": "60",
+          "location": "",
+          "notes": "We have a 7:15 reservation. Vyoone Segue Lewis is a classical clarinetist, a pediatric geneticist, and a real estate developer with French and Afro-Creole roots — so why wouldn’t she run a French restaurant in a historic Warehouse District building? Expect an impeccable French onion soup, duck à l’orange, and other Gallic classics that are well-loved."
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "04:45",
+      "lodging": {
+        "name": "Maison Métier - The Unbound Collection by Hyatt",
+        "address": "546 Carondelet St, New Orleans, LA 70130, USA",
+        "phone": "(504) 814-7720"
+      },
+      "activities": [
+        {
+          "name": "Riley Wake Up and Order Uber",
+          "length": "15",
+          "location": "",
+          "notes": "You are flying Delta Airlines."
+        },
+        {
+          "name": "Uber to LAX",
+          "length": "30",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "90",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "DELTA 1112, LAX -> MSY",
+          "length": "105",
+          "location": "",
+          "notes": "Seat 16C"
+        },
+        {
+          "name": "Breakfast TBD",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to WWII Museum",
+          "length": "15",
+          "location": "945 Magazine Street, New Orleans, LA 70130, USA",
+          "notes": ""
+        },
+        {
+          "name": "Private 2 Hour Tour of Museum",
+          "length": "120",
+          "location": "",
+          "notes": "The tour is wheelchair accessible. They have for free on first come basis. Confirmation #: 20250103-9597332. Should receive a QR code."
+        },
+        {
+          "name": "Uber from Museum to Hotel",
+          "length": "0",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Chet Ubers to Pick Up Po Boys",
+          "length": "32",
+          "location": "5240 Annunciation St, New Orleans, LA 70115, USA",
+          "notes": "DOMILISE PO-BOYS & BAR"
+        },
+        {
+          "name": "Riley Lands at MSY Uber to Hotel",
+          "length": "28",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Meet Riley at Hotel and Eat Lunch",
+          "length": "60",
+          "location": "",
+          "notes": "Chet will Uber back with Lunch"
+        },
+        {
+          "name": "Driving Tour of the Garden District TBD",
+          "length": "90",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Relax",
+          "length": "135",
+          "location": "",
+          "notes": "We will need semi-formal attire for dinner."
+        },
+        {
+          "name": "St Charles Street Car to Dinner",
+          "length": "30",
+          "location": "",
+          "notes": "Get off at Washington St. Cars come every 12 min"
+        },
+        {
+          "name": "Dinner at Commanders Palace",
+          "length": "90",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "St Charles Street Car to Hotel",
+          "length": "30",
+          "location": "",
+          "notes": "Get off at Lafayette Square."
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Maison Métier - The Unbound Collection by Hyatt",
+        "address": "546 Carondelet St, New Orleans, LA 70130, USA",
+        "phone": "(504) 814-7720"
+      },
+      "activities": [
+        {
+          "name": "Breakfast TBD",
+          "length": "90",
+          "location": "",
+          "notes": "Eat big breakfast as we will have no food on the airboat."
+        },
+        {
+          "name": "Walk to Airboat Pick Up",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Airboat Swamp Tour",
+          "length": "225",
+          "location": "",
+          "notes": "Ticket: EWNV3QXW Airboat Adventures, 504 689 2005\nProduct Name: New Orleans Premium Small Airboat With Transportation. Tickets: 6\n"
+        },
+        {
+          "name": "Walk to Hotel",
+          "length": "",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Relax",
+          "length": "270",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner Chet, Amy, Oliver and Riley at Emeral's",
+          "length": "90",
+          "location": "",
+          "notes": "Kids will get room service."
+        },
+        {
+          "name": "Cocktails on Bourbon Street",
+          "length": "90",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Maison Métier - The Unbound Collection by Hyatt",
+        "address": "546 Carondelet St, New Orleans, LA 70130, USA",
+        "phone": "(504) 814-7720"
+      },
+      "activities": [
+        {
+          "name": "Uber to Cafe du Monde",
+          "length": "20",
+          "location": "800 Decatur St, New Orleans, LA 70116, USA",
+          "notes": "Classic breakfast joint known for their beignets."
+        },
+        {
+          "name": "Breakfast",
+          "length": "40",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Meet Guide for Walking Tour of the French Quarter",
+          "length": "195",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch at Antoine's",
+          "length": "60",
+          "location": "713 Saint Louis Street, New Orleans, LA 70130, USA",
+          "notes": "Reservation on Open Table Confirmation #: 2110156068"
+        },
+        {
+          "name": "Walk to Preservation Hall",
+          "length": "10",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Show at Preservation Hall TBD",
+          "length": "90",
+          "location": "726 St Peter, New Orleans, LA, USA",
+          "notes": ""
+        },
+        {
+          "name": "Shop for Voodoo in the French Quarter",
+          "length": "185",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Brennan's",
+          "length": "90",
+          "location": "417 Royal Street, New Orleans, LA, USA",
+          "notes": "Open Table reservation Confirmation #: 2110314672"
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "07:30",
+      "lodging": {
+        "name": "Home",
+        "address": "611 Carnation Ave",
+        "phone": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast, Call Uber",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Airport",
+          "length": "30",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to flight",
+          "length": "130",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "AA 4936, MSY -> AA 2659 DFW -> SNA",
+          "length": "289",
+          "location": "",
+          "notes": "We have a 1 hour and 34 minute layover in Dallas.\nSeat: 4C, 6A, 6B, 6C, 6D and Seat: 8A, 8B, 9A, 9B, 9C"
+        },
+        {
+          "name": "",
+          "length": "",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "tripName": "European Getaway 2025",
+  "startDate": "2025-06-14",
+  "trip": [
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "The Westin Grand Frankfurt",
+        "city": "Frankfurt, Germany",
+        "rooms": [
+          {
+            "room_name": "Presidential Suite",
+            "size": "147 sqm / 1582 sqft",
+            "price_per_night": {
+              "local": "€1299",
+              "usd": "$1351"
+            },
+            "total_price": {
+              "local": "€2598",
+              "usd": "$2702"
+            },
+            "occupancy": 5
+          }
+        ]
+      }
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "The Westin Grand Frankfurt",
+        "city": "Frankfurt, Germany",
+        "rooms": [
+          {
+            "room_name": "Presidential Suite",
+            "size": "147 sqm / 1582 sqft",
+            "price_per_night": {
+              "local": "€1299",
+              "usd": "$1351"
+            },
+            "total_price": {
+              "local": "€2598",
+              "usd": "$2702"
+            },
+            "occupancy": 5
+          }
+        ]
+      }
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Cour De Alpes",
+        "city": "Zermatt, Switzerland",
+        "rooms": [
+          {
+            "room_name": "Sky Apartment",
+            "size": "140 sqm / 1507 sqft",
+            "price_per_night": {
+              "local": "CHF 900",
+              "usd": "$1008"
+            },
+            "total_price": {
+              "local": "CHF 1800",
+              "usd": "$2016"
+            },
+            "occupancy": 5
+          },
+          {
+            "room_name": "Suite",
+            "size": "60 sqm / 646 sqft",
+            "price_per_night": {
+              "local": "CHF 350",
+              "usd": "$392"
+            },
+            "total_price": {
+              "local": "CHF 700",
+              "usd": "$784"
+            },
+            "occupancy": 2
+          },
+          {
+            "room_name": "Double Room",
+            "size": "21 sqm / 226 sqft",
+            "price_per_night": {
+              "local": "CHF 250",
+              "usd": "$280"
+            },
+            "total_price": {
+              "local": "CHF 500",
+              "usd": "$560"
+            },
+            "occupancy": 2
+          }
+        ]
+      }
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Cour De Alpes",
+        "city": "Zermatt, Switzerland",
+        "rooms": [
+          {
+            "room_name": "Sky Apartment",
+            "size": "140 sqm / 1507 sqft",
+            "price_per_night": {
+              "local": "CHF 900",
+              "usd": "$1008"
+            },
+            "total_price": {
+              "local": "CHF 1800",
+              "usd": "$2016"
+            },
+            "occupancy": 5
+          },
+          {
+            "room_name": "Suite",
+            "size": "60 sqm / 646 sqft",
+            "price_per_night": {
+              "local": "CHF 350",
+              "usd": "$392"
+            },
+            "total_price": {
+              "local": "CHF 700",
+              "usd": "$784"
+            },
+            "occupancy": 2
+          },
+          {
+            "room_name": "Double Room",
+            "size": "21 sqm / 226 sqft",
+            "price_per_night": {
+              "local": "CHF 250",
+              "usd": "$280"
+            },
+            "total_price": {
+              "local": "CHF 500",
+              "usd": "$560"
+            },
+            "occupancy": 2
+          }
+        ]
+      }
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Il Sereno Lake Como",
+        "city": "Lake Como, Italy",
+        "rooms": [
+          {
+            "room_name": "Family Grand Suite Lago",
+            "size": "120 sqm / 1292 sqft",
+            "price_per_night": {
+              "local": "€7100",
+              "usd": "$7384"
+            },
+            "total_price": {
+              "local": "€21,300",
+              "usd": "$22,152"
+            },
+            "occupancy": 4
+          },
+          {
+            "room_name": "Family Corner Suite",
+            "size": "143 sqm / 1539 sqft",
+            "price_per_night": {
+              "local": "€8000",
+              "usd": "$8320"
+            },
+            "total_price": {
+              "local": "€24,000",
+              "usd": "$24,960"
+            },
+            "occupancy": 4
+          }
+        ]
+      }
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Rosewood Vienna",
+        "city": "Vienna, Austria",
+        "rooms": [
+          {
+            "room_name": "Royal Treichl House",
+            "size": "Unknown",
+            "price_per_night": {
+              "local": "€8446",
+              "usd": "$8783"
+            },
+            "total_price": {
+              "local": "€16,892",
+              "usd": "$17,566"
+            },
+            "occupancy": 5
+          },
+          {
+            "room_name": "Hofburg Suite",
+            "size": "Unknown",
+            "price_per_night": {
+              "local": "€1082",
+              "usd": "$1125"
+            },
+            "total_price": {
+              "local": "€2164",
+              "usd": "$2250"
+            },
+            "occupancy": 2
+          }
+        ]
+      }
+    }
+  ]
+}
