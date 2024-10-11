@@ -1,0 +1,43 @@
+{
+  "tripName": "Fowering of the Vines",
+  "startDate": "2025-04-24",
+  "trip": [
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "funky town",
+        "address": "asdf",
+        "phone": "asdf"
+      },
+      "activities": [
+        {
+          "name": "adsf",
+          "length": "020",
+          "location": "asdf",
+          "notes": "asdf",
+          "": "bla bla"
+        },
+        {
+          "name": "Foo",
+          "length": 0,
+          "location": "",
+          "notes": ""
+        }
+      ],
+      "location": "foo",
+      "length": "02",
+      "name": "a"
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "hgihgiuyg",
+      "lodging": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
+    }
+  ]
+}}

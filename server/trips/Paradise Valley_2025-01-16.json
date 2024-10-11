@@ -1,0 +1,196 @@
+{
+  "tripName": "Paradise Valley",
+  "startDate": "2025-01-16",
+  "trip": [
+    {
+      "wakeUpTime": "11:35",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522"
+      },
+      "activities": [
+        {
+          "name": "Uber to SNA",
+          "length": "15",
+          "location": "19301 Campus Drive, Santa Ana, CA 92707",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "JSX Flight SNA -> SCF",
+          "length": "130",
+          "location": "",
+          "notes": "Seats 6A, 6C"
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "30",
+          "location": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Hotel",
+          "length": "10",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Relax",
+          "length": "240",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Elements",
+          "length": "90",
+          "location": "Our Hotel",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522"
+      },
+      "activities": [
+        {
+          "name": "Stuff",
+          "length": "180",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch at TBT",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Stuff",
+          "length": "285",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Shinbay",
+          "length": "90",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522"
+      },
+      "activities": [
+        {
+          "name": "Breakfast and Relax",
+          "length": "170",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Massage Amy & Sarah",
+          "length": "100",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "",
+          "length": "",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "TBD",
+          "length": "300",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Dinner",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Cafe Monarch",
+          "length": "90",
+          "location": "218 E Portland St b, Phoenix, AZ 85004, USA",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522"
+      },
+      "activities": [
+        {
+          "name": "Room Service",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Pack and Order Uber",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Airport",
+          "length": "30",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "25",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "JSX Flight SCF -> SNA",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber Home",
+          "length": "",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

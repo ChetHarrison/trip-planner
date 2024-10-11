@@ -1,0 +1,71 @@
+{
+  "tripName": "yo",
+  "startDate": "0022-01-01",
+  "trip": [
+    {
+      "wakeUpTime": "09:00",
+      "location": "mi casa",
+      "lodging": {
+        "name": "Ville d' Este",
+        "address": "Lake Como",
+        "phone": "23432",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "1-2",
+          "length": "45",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "1-1",
+          "length": "30",
+          "location": "sf",
+          "notes": "foo notes"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "",
+      "lodging": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "2-2",
+          "length": "6",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "2-1",
+          "length": "4",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "2-3",
+          "length": "01",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "",
+      "lodging": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
+    }
+  ]
+}

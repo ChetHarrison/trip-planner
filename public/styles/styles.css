@@ -1,0 +1,222 @@
+/* Global Styles */
+body {
+    font-family: serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+    padding-left: 5px; /* Alignment improvement */
+}
+
+/* Form Controls */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #999;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 20px; /* Consistent padding for cards */
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px; /* Consistent header padding */
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.card-body {
+    padding: 20px; /* Consistent body padding */
+}
+
+/* Print Styles */
+@media print {
+    /* Hide form fields */
+    input, textarea, select {
+        display: none;
+    }
+
+    input::after,
+    textarea::after,
+    select::after {
+        content: attr(data-value);
+        display: block;
+        font-size: 1rem;
+        color: black;
+    }
+
+    /* Set proper margins */
+    body {
+        margin: 1in !important;
+        padding: 0;
+        background: white;
+        overflow: visible;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+        box-sizing: border-box;
+        page-break-inside: avoid; /* Prevent content from splitting */
+    }
+
+    /* Activity Formatting */
+    .activity {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .activity-time, .activity-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        display: inline;
+    }
+
+    .activity-details {
+        display: block;
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    /* Ensure each day starts on a new page */
+    .day-card {
+        page-break-before: always;
+    }
+
+    /* Hide Buttons */
+    button,
+    .btn-add-activity,
+    .btn-delete-activity,
+    .btn-add-day,
+    .btn-delete-day,
+    .btn-publish-trip {
+        display: none !important;
+    }
+}
+
+/* Default styles for editing mode (keeps cards) */
+@media screen {
+    .edit-mode {
+        display: block !important;
+    }
+
+    .print-only {
+        display: none !important;
+    }
+}
+
+@media print {
+    /* Remove cards completely in print mode */
+    .card, .day-card, .activity {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    /* Ensure full-page width with 1-inch margins */
+    .day-entry, .activity-entry {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    /* Hide input fields but show values */
+    input, textarea, select {
+        display: none !important;
+    }
+
+    /* Show only values in print mode */
+    .print-only {
+        display: block !important;
+        font-size: 1rem !important;
+        color: black !important;
+    }
+
+    /* Hide labels and duplicate field values */
+    label, .edit-mode {
+        display: none !important;
+    }
+
+    /* Ensure days and activities start on a new page */
+    .day-entry {
+        page-break-before: always !important;
+    }
+}
