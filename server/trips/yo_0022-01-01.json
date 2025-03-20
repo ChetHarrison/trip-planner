@@ -13,16 +13,16 @@
       },
       "activities": [
         {
-          "name": "1-2",
-          "length": "45",
-          "location": "",
-          "notes": ""
-        },
-        {
           "name": "1-1",
           "length": "30",
           "location": "sf",
           "notes": "foo notes"
+        },
+        {
+          "name": "1-2",
+          "length": "45",
+          "location": "",
+          "notes": ""
         }
       ]
     },
