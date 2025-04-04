@@ -81,6 +81,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         tripData.startDate = tripStartDateInput.value;
         await saveTripData(tripData);
+
+        // 🔥 Force re-render to reflect new dates
+        renderTrip(tripData);
     });
 
     // ✅ Load Google Maps API dynamically from backend configuration

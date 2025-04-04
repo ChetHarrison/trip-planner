@@ -1,9 +1,9 @@
 {
   "tripName": "yo",
-  "startDate": "0022-01-01",
+  "startDate": "2026-03-04",
   "trip": [
     {
-      "wakeUpTime": "09:00",
+      "wakeUpTime": "10:00",
       "location": "mi casa",
       "lodging": {
         "name": "Ville d' Este",
@@ -13,14 +13,32 @@
       },
       "activities": [
         {
-          "name": "1-1",
+          "name": "Im day one",
           "length": "30",
           "location": "sf",
           "notes": "foo notes"
         },
         {
-          "name": "1-2",
+          "name": "Im day two from day one",
           "length": "45",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Im day one",
+          "length": "30",
+          "location": "sf",
+          "notes": "foo notes"
+        },
+        {
+          "name": "Im day one",
+          "length": "30",
+          "location": "sf",
+          "notes": "foo notes"
+        },
+        {
+          "name": "2-3",
+          "length": 30,
           "location": "",
           "notes": ""
         }
@@ -37,20 +55,26 @@
       },
       "activities": [
         {
-          "name": "2-2",
-          "length": "6",
+          "name": "2-1",
+          "length": 4,
           "location": "",
           "notes": ""
         },
         {
-          "name": "2-1",
-          "length": "4",
+          "name": "new name",
+          "length": "3",
+          "location": "sf",
+          "notes": "foo notes"
+        },
+        {
+          "name": "2-2",
+          "length": 60,
           "location": "",
           "notes": ""
         },
         {
           "name": "2-3",
-          "length": "01",
+          "length": "30",
           "location": "",
           "notes": ""
         }

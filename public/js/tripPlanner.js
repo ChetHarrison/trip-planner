@@ -1,29 +1,11 @@
-// ✅ Formats a date to "Wednesday, January 1st, 2020"
-function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toLocaleDateString("en-US", {
-        weekday: "long",
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-    });
-}
-
-// ✅ Calculates a day's date based on the trip start date
-function calculateDayDate(startDate, dayIndex) {
-    let date = new Date(startDate);
-    date.setDate(date.getDate() + dayIndex);
-    return date;
-}
-
-// ✅ Computes activity start time based on previous durations
 function calculateActivityTime(day, activityIndex) {
     const startTime = new Date();
     const [hours, minutes] = day.wakeUpTime.split(":").map(Number);
-    startTime.setHours(hours, minutes);
+    startTime.setHours(hours, minutes, 0, 0); // Ensure seconds & ms are 0
 
     for (let i = 0; i < activityIndex; i++) {
-        startTime.setMinutes(startTime.getMinutes() + (day.activities[i].length || 0));
+        let duration = parseInt(day.activities[i].length, 10) || 0; // Convert to number safely
+        startTime.setMinutes(startTime.getMinutes() + duration);
     }
 
     return startTime.toLocaleTimeString("en-US", {
@@ -45,11 +27,26 @@ export function initDragAndDrop(tripData) {
         const oldDayIndex = parseInt(source.closest(".day-entry").getAttribute("data-day-index"));
         const newDayIndex = parseInt(target.closest(".day-entry").getAttribute("data-day-index"));
 
-        // ✅ Convert NodeList to array to get correct order
+        // ✅ Get the activity index from the old day
+        const draggedActivityIndex = parseInt(el.getAttribute("data-activity-index"));
+
+        // ✅ Ensure the index is valid before proceeding
+        if (isNaN(draggedActivityIndex) || !tripData.trip[oldDayIndex] || !tripData.trip[newDayIndex]) {
+            console.error("Invalid activity index or day index");
+            return;
+        }
+
+        // ✅ Extract the correct activity object from the old day
+        const draggedActivity = tripData.trip[oldDayIndex].activities.splice(draggedActivityIndex, 1)[0];
+
+        // ✅ Find new position in the new day
         const newOrder = [...target.children].map(el => parseInt(el.getAttribute("data-activity-index")));
 
-        // ✅ Reorder JSON activities to match the DOM order
-        tripData.trip[newDayIndex].activities = newOrder.map(i => tripData.trip[newDayIndex].activities[i]);
+        // ✅ Ensure we don't lose the dragged activity by inserting it at the correct position
+        const siblingIndex = sibling ? parseInt(sibling.getAttribute("data-activity-index")) : tripData.trip[newDayIndex].activities.length;
+
+        // ✅ Insert the dragged activity into the correct position in the new day's list
+        tripData.trip[newDayIndex].activities.splice(siblingIndex, 0, draggedActivity);
 
         // ✅ Fix: Save JSON first before rendering
         updateActivityIndices(tripData);
@@ -161,7 +158,6 @@ export async function createNewTrip() {
     const startDate = document.getElementById("trip-start-date").value;
 
     if (!tripName || !startDate) {
-        alert("Please enter a trip name and start date.");
         return;
     }
 
@@ -260,7 +256,7 @@ export function renderTrip(tripData) {
 
         return `
         <div class="day-entry card mb-3 p-3" data-day-index="${dayIndex}">
-            <h3>${formatDate(calculateDayDate(tripData.startDate, dayIndex))}</h3>
+            <h3>${moment(tripData.startDate, "YYYY-MM-DD").add(dayIndex, "days").format("dddd, MMMM Do")}</h3>
 
             <button class="btn btn-danger delete-day-button" data-day-index="${dayIndex}">Delete Day</button>
 
