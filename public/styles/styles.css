@@ -220,3 +220,83 @@ select:focus {
         page-break-before: always !important;
     }
 }
+
+@media print {
+  /* ─── Remove all card styling for clean print ─── */
+  .card, .day-card, .activity {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* ─── Full width layout with page margin ─── */
+  .day-entry, .activity-entry {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  body {
+    margin: 1in;
+    font-family: "Helvetica", "Arial", sans-serif;
+  }
+
+  /* ─── Hide form inputs & labels ─── */
+  input, textarea, select {
+    display: none !important;
+  }
+
+  label, .edit-mode,
+  .form-label, .form-control,
+  .btn, .add-activity-button,
+  .delete-day-button, .delete-activity-button {
+    display: none !important;
+  }
+
+  /* ─── Show only values via print-only elements ─── */
+  .print-only {
+    display: block !important;
+    font-size: 1rem !important;
+    color: black !important;
+  }
+
+  /* ─── Format summary block content ─── */
+  .day-print-block p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+  }
+
+  /* ─── Format activity list ─── */
+  .activity-print-block {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .activity-print-block ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .activity-print-block li {
+    margin: 0.25rem 0;
+  }
+
+  /* ─── Headings and layout ─── */
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  /* ─── Ensure each day starts on a new printed page ─── */
+  .day-entry {
+    page-break-before: always !important;
+  }
+
+  .activity h4 {
+    display: none !important;
+  }
+}
