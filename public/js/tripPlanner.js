@@ -247,184 +247,155 @@ function addMinutes(time, minutes) {
 }
 
 export function renderTrip(tripData) {
-    if (!tripData) return;
+  if (!tripData) return;
 
-    const daysContainer = document.getElementById("days-container");
+  const daysContainer = document.getElementById("days-container");
 
-    daysContainer.innerHTML = tripData.trip.map((day, dayIndex) => {
-        let activityStartTime = day.wakeUpTime || "08:00";
+  daysContainer.innerHTML = tripData.trip.map((day, dayIndex) => {
+    const displayDate = moment(tripData.startDate, "YYYY-MM-DD").add(dayIndex, "days").format("dddd, MMMM Do YYYY");
 
-        return `
-        <div class="day-entry card mb-3 p-3" data-day-index="${dayIndex}">
-            <h3>${moment(tripData.startDate, "YYYY-MM-DD").add(dayIndex, "days").format("dddd, MMMM Do")}</h3>
+    return `
+      <div class="day-wrapper" data-day-index="${dayIndex}">
 
-            <input type="time" class="form-control wake-up-time" value="${day.wakeUpTime || '08:00'}"
-                   data-field="wakeUpTime" data-day-index="${dayIndex}" data-value="${day.wakeUpTime || '08:00'}">
+        <!-- 👁️ On-Screen Editable UI -->
+        <div class="day-entry card mb-3 p-3 no-print" data-day-index="${dayIndex}">
+          <h3>${displayDate}</h3>
 
-            <input type="text" class="form-control" value="${day.location || ''}"
-                   data-field="location" data-day-index="${dayIndex}" data-value="${day.location || ''}">
+          <input type="time" class="form-control wake-up-time" value="${day.wakeUpTime || '08:00'}"
+                 data-field="wakeUpTime" data-day-index="${dayIndex}" data-value="${day.wakeUpTime || '08:00'}">
 
-            <input type="text" class="form-control" value="${day.lodging?.name || ''}"
-                   data-field="lodging.name" data-day-index="${dayIndex}" data-value="${day.lodging?.name || ''}">
+          <input type="text" class="form-control" value="${day.location || ''}"
+                 data-field="location" data-day-index="${dayIndex}" data-value="${day.location || ''}">
 
-            <input type="text" class="form-control" value="${day.lodging?.address || ''}"
-                   data-field="lodging.address" data-day-index="${dayIndex}" data-value="${day.lodging?.address || ''}">
+          <input type="text" class="form-control" value="${day.lodging?.name || ''}"
+                 data-field="lodging.name" data-day-index="${dayIndex}" data-value="${day.lodging?.name || ''}">
 
-            <input type="text" class="form-control" value="${day.lodging?.phone || ''}"
-                   data-field="lodging.phone" data-day-index="${dayIndex}" data-value="${day.lodging?.phone || ''}">
+          <input type="text" class="form-control" value="${day.lodging?.address || ''}"
+                 data-field="lodging.address" data-day-index="${dayIndex}" data-value="${day.lodging?.address || ''}">
 
-            <input type="text" class="form-control" value="${day.lodging?.roomType || ''}"
-                   data-field="lodging.roomType" data-day-index="${dayIndex}" data-value="${day.lodging?.roomType || ''}">
+          <input type="text" class="form-control" value="${day.lodging?.phone || ''}"
+                 data-field="lodging.phone" data-day-index="${dayIndex}" data-value="${day.lodging?.phone || ''}">
 
-            <!-- 🖨️ Print-Only Summary Block -->
-            <div class="print-only day-print-block mt-3">
-                <p><strong>Location:</strong> ${day.location || ''}</p>
-                <p><strong>Lodging:</strong> ${day.lodging?.name || ''}</p>
-                <p><strong>Address:</strong> ${day.lodging?.address || ''}</p>
-                <p><strong>Phone:</strong> ${day.lodging?.phone || ''}</p>
-            </div>
+          <input type="text" class="form-control" value="${day.lodging?.roomType || ''}"
+                 data-field="lodging.roomType" data-day-index="${dayIndex}" data-value="${day.lodging?.roomType || ''}">
 
-            <div id="activity-list-${dayIndex}" class="activity-list" data-day-index="${dayIndex}">
-                ${day.activities.map((activity, activityIndex) => {
-                    let time = calculateActivityTime(day, activityIndex);
+          <div id="activity-list-${dayIndex}" class="activity-list" data-day-index="${dayIndex}">
+            ${day.activities.map((activity, activityIndex) => {
+              const time = calculateActivityTime(day, activityIndex);
+              return `
+                <div class="activity p-2 border mb-2 draggable"
+                     data-day-index="${dayIndex}" data-activity-index="${activityIndex}">
+                  <h4>${time} ${activity.name || ''}</h4>
 
-                    return `
-                    <div class="activity p-2 border mb-2 draggable"
-                         data-day-index="${dayIndex}" data-activity-index="${activityIndex}">
-                        <h4>${time} ${activity.name || ''}</h4>
+                  <input type="text" class="form-control" value="${activity.name || ''}"
+                         data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="name"
+                         data-value="${activity.name || ''}">
 
-                        <input type="text" class="form-control" value="${activity.name || ''}"
-                               data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="name"
-                               data-value="${activity.name || ''}">
+                  <input type="number" class="form-control activity-length" value="${activity.length || 0}"
+                         data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="length"
+                         data-value="${activity.length || 0}">
 
-                        <input type="number" class="form-control activity-length" value="${activity.length || 0}"
-                               data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="length"
-                               data-value="${activity.length || 0}">
+                  <input type="text" class="form-control" value="${activity.location || ''}"
+                         data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="location"
+                         data-value="${activity.location || ''}">
 
-                        <input type="text" class="form-control" value="${activity.location || ''}"
-                               data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="location"
-                               data-value="${activity.location || ''}">
+                  <textarea class="form-control"
+                            data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="notes"
+                            data-value="${activity.notes || ''}">${activity.notes || ''}</textarea>
 
-                        <textarea class="form-control"
-                                  data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="notes"
-                                  data-value="${activity.notes || ''}">${activity.notes || ''}</textarea>
+                  <button class="btn btn-danger delete-activity-button"
+                          data-day-index="${dayIndex}" data-activity-index="${activityIndex}">
+                    Delete Activity
+                  </button>
+                </div>`;
+            }).join('')}
+          </div>
 
-                        <button class="btn btn-danger delete-activity-button"
-                                data-day-index="${dayIndex}" data-activity-index="${activityIndex}">
-                            Delete Activity
-                        </button>
-                    </div>`;
-                }).join('')}
-            </div>
+          <button class="btn btn-primary mt-3 add-activity-button" data-day-index="${dayIndex}">Add Activity</button>
+          <button class="btn btn-danger delete-day-button" data-day-index="${dayIndex}">Delete Day</button>
+        </div>
 
-            <!-- 🖨️ Print-Only Activity Summary -->
-            <div class="print-only activity-print-block mt-2">
-                <strong>Activities:</strong>
-                <ul>
-                    ${day.activities.map((activity, i) => {
-                        const time = calculateActivityTime(day, i);
-                        return `<li>${time} ${activity.name || ''}</li>`;
-                    }).join('')}
-                </ul>
-            </div>
+        <!-- 🖨️ Hawaii-Style Print-Only Layout -->
+        <div class="day-entry print-only">
+          ${dayIndex === 0 ? `<div class="trip-header">${tripData.tripName || "Trip"}</div>` : ''}
+          <div class="date-line">${displayDate}</div>
+          <h1 class="location">${day.location || ''}</h1>
 
-            <button class="btn btn-primary mt-3 add-activity-button" data-day-index="${dayIndex}">Add Activity</button>
-            <button class="btn btn-danger delete-day-button" data-day-index="${dayIndex}">Delete Day</button>
-        </div>`;
-    }).join('');
+          <div class="hotel-details">
+            ${day.lodging?.name || ''}<br>
+            ${day.lodging?.address || ''}<br>
+            ${day.lodging?.phone || ''}
+          </div>
 
-    initDragAndDrop(tripData);
+          <hr class="separator">
 
-    // 🔁 Update on input/blur
-    document.querySelectorAll("input[data-day-index], textarea[data-day-index]").forEach(el => {
-        el.addEventListener("blur", async e => {
-            const i = parseInt(el.dataset.dayIndex);
-            const j = el.dataset.activityIndex;
-            const field = el.dataset.field;
-            const value = el.value;
+          <div class="activities">
+            ${day.activities.map((activity, i) => {
+              const time = calculateActivityTime(day, i);
+              return `
+                <div class="activity-block">
+                  <h1 class="activity-title">${time} ${activity.name || ''}</h1>
+                  <p class="activity-notes">${activity.notes || ''}</p>
+                </div>`;
+            }).join('')}
+          </div>
+        </div>
+      </div>`;
+  }).join('');
 
-            if (j !== undefined && j !== null) {
-                await updateActivityField(tripData, i, parseInt(j), field, value);
-            } else {
-                await updateDayField(tripData, i, field, value);
-            }
-        });
+  initDragAndDrop(tripData);
 
-        el.addEventListener("input", e => {
-            e.target.setAttribute("data-value", e.target.value);
-        });
+  // Event handlers preserved
+  document.querySelectorAll("input[data-day-index], textarea[data-day-index]").forEach(el => {
+    el.addEventListener("blur", async e => {
+      const i = parseInt(el.dataset.dayIndex);
+      const j = el.dataset.activityIndex;
+      const field = el.dataset.field;
+      const value = el.value;
+
+      if (j !== undefined && j !== null) {
+        await updateActivityField(tripData, i, parseInt(j), field, value);
+      } else {
+        await updateDayField(tripData, i, field, value);
+      }
     });
 
-    document.querySelectorAll(".wake-up-time").forEach(input => {
-        input.addEventListener("input", async e => {
-            const i = parseInt(e.target.dataset.dayIndex);
-            const value = e.target.value;
-            await updateDayField(tripData, i, "wakeUpTime", value);
-            renderTrip(tripData);
-        });
+    el.addEventListener("input", e => {
+      e.target.setAttribute("data-value", e.target.value);
     });
+  });
 
-    document.querySelectorAll(".activity-length").forEach(input => {
-        input.addEventListener("input", async e => {
-            const i = parseInt(e.target.dataset.dayIndex);
-            const j = parseInt(e.target.dataset.activityIndex);
-            const value = parseInt(e.target.value) || 0;
-            await updateActivityField(tripData, i, j, "length", value);
-            renderTrip(tripData);
-        });
+  document.querySelectorAll(".wake-up-time").forEach(input => {
+    input.addEventListener("input", async e => {
+      const i = parseInt(e.target.dataset.dayIndex);
+      const value = e.target.value;
+      await updateDayField(tripData, i, "wakeUpTime", value);
+      renderTrip(tripData);
     });
+  });
 
-    document.querySelectorAll(".delete-day-button").forEach(btn =>
-        btn.addEventListener("click", async e => {
-            const i = parseInt(e.target.dataset.dayIndex);
-            await handleDeleteDay(tripData, i);
-        })
-    );
-
-    document.querySelectorAll(".delete-activity-button").forEach(btn =>
-        btn.addEventListener("click", async e => {
-            const i = parseInt(e.target.dataset.dayIndex);
-            const j = parseInt(e.target.dataset.activityIndex);
-            await handleDeleteActivity(tripData, i, j);
-        })
-    );
-}
-
-function attachEventListeners(tripData) {
-    document.querySelectorAll(".add-activity-button").forEach(button => {
-        button.addEventListener("click", async (e) => {
-            const dayIndex = parseInt(e.target.getAttribute("data-day-index"));
-            await handleAddActivity(tripData, dayIndex);
-        });
+  document.querySelectorAll(".activity-length").forEach(input => {
+    input.addEventListener("input", async e => {
+      const i = parseInt(e.target.dataset.dayIndex);
+      const j = parseInt(e.target.dataset.activityIndex);
+      const value = parseInt(e.target.value) || 0;
+      await updateActivityField(tripData, i, j, "length", value);
+      renderTrip(tripData);
     });
+  });
 
-    document.querySelectorAll(".delete-day-button").forEach(button => {
-        button.addEventListener("click", async (e) => {
-            const dayIndex = parseInt(e.target.getAttribute("data-day-index"));
-            await handleDeleteDay(tripData, dayIndex);
-        });
-    });
+  document.querySelectorAll(".delete-day-button").forEach(btn =>
+    btn.addEventListener("click", async e => {
+      const i = parseInt(e.target.dataset.dayIndex);
+      await handleDeleteDay(tripData, i);
+    })
+  );
 
-    document.querySelectorAll(".delete-activity-button").forEach(button => {
-        button.addEventListener("click", async (e) => {
-            const dayIndex = parseInt(e.target.getAttribute("data-day-index"));
-            const activityIndex = parseInt(e.target.getAttribute("data-activity-index"));
-            await handleDeleteActivity(tripData, dayIndex, activityIndex);
-        });
-    });
-
-    document.querySelectorAll("input[data-day-index], textarea[data-day-index]").forEach(input => {
-        input.addEventListener("blur", async (e) => {
-            const dayIndex = parseInt(e.target.getAttribute("data-day-index"));
-            const activityIndex = e.target.getAttribute("data-activity-index");
-            const field = e.target.getAttribute("data-field");
-            const value = e.target.value;
-
-            if (activityIndex !== null && activityIndex !== undefined) {
-                await updateActivityField(tripData, dayIndex, parseInt(activityIndex), field, value);
-            } else {
-                await updateDayField(tripData, dayIndex, field, value);
-            }
-        });
-    });
+  document.querySelectorAll(".delete-activity-button").forEach(btn =>
+    btn.addEventListener("click", async e => {
+      const i = parseInt(e.target.dataset.dayIndex);
+      const j = parseInt(e.target.dataset.activityIndex);
+      await handleDeleteActivity(tripData, i, j);
+    })
+  );
 }

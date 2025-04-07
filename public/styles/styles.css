@@ -94,82 +94,6 @@ select:focus {
     padding: 20px; /* Consistent body padding */
 }
 
-/* Print Styles */
-@media print {
-    /* Hide form fields */
-    input, textarea, select {
-        display: none;
-    }
-
-    input::after,
-    textarea::after,
-    select::after {
-        content: attr(data-value);
-        display: block;
-        font-size: 1rem;
-        color: black;
-    }
-
-    /* Set proper margins */
-    body {
-        margin: 1in !important;
-        padding: 0;
-        background: white;
-        overflow: visible;
-    }
-
-    .container {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        box-sizing: border-box;
-        background-color: white;
-    }
-
-    .card {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        border-radius: 0;
-        box-sizing: border-box;
-        page-break-inside: avoid; /* Prevent content from splitting */
-    }
-
-    /* Activity Formatting */
-    .activity {
-        display: block;
-        font-size: 1rem;
-        margin-bottom: 12px;
-    }
-
-    .activity-time, .activity-title {
-        font-weight: bold;
-        font-size: 1.2rem;
-        display: inline;
-    }
-
-    .activity-details {
-        display: block;
-        font-size: 1rem;
-        margin-left: 20px;
-    }
-
-    /* Ensure each day starts on a new page */
-    .day-card {
-        page-break-before: always;
-    }
-
-    /* Hide Buttons */
-    button,
-    .btn-add-activity,
-    .btn-delete-activity,
-    .btn-add-day,
-    .btn-delete-day,
-    .btn-publish-trip {
-        display: none !important;
-    }
-}
-
 /* Default styles for editing mode (keeps cards) */
 @media screen {
     .edit-mode {
@@ -182,121 +106,90 @@ select:focus {
 }
 
 @media print {
-    /* Remove cards completely in print mode */
-    .card, .day-card, .activity {
-        background: none !important;
-        border: none !important;
-        box-shadow: none !important;
-        padding: 0 !important;
-    }
-
-    /* Ensure full-page width with 1-inch margins */
-    .day-entry, .activity-entry {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        padding: 0 !important;
-    }
-
-    /* Hide input fields but show values */
-    input, textarea, select {
-        display: none !important;
-    }
-
-    /* Show only values in print mode */
-    .print-only {
-        display: block !important;
-        font-size: 1rem !important;
-        color: black !important;
-    }
-
-    /* Hide labels and duplicate field values */
-    label, .edit-mode {
-        display: none !important;
-    }
-
-    /* Ensure days and activities start on a new page */
-    .day-entry {
-        page-break-before: always !important;
-    }
-}
-
-@media print {
-  /* ─── Remove all card styling for clean print ─── */
-  .card, .day-card, .activity {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-
-  /* ─── Full width layout with page margin ─── */
-  .day-entry, .activity-entry {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-  }
-
   body {
-    margin: 1in;
-    font-family: "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    color: black;
+    background: white;
   }
 
-  /* ─── Hide form inputs & labels ─── */
-  input, textarea, select {
+  /* Hide interactive UI */
+  .no-print,
+  .no-print * {
     display: none !important;
   }
 
-  label, .edit-mode,
-  .form-label, .form-control,
-  .btn, .add-activity-button,
-  .delete-day-button, .delete-activity-button {
-    display: none !important;
-  }
-
-  /* ─── Show only values via print-only elements ─── */
+  /* Force visible */
   .print-only {
     display: block !important;
-    font-size: 1rem !important;
-    color: black !important;
   }
 
-  /* ─── Format summary block content ─── */
-  .day-print-block p {
-    margin: 0.25rem 0;
-    font-size: 1rem;
+  /* Remove all Bootstrap/card styling */
+  .card, .border, .p-2, .mb-2, .mb-3, .p-3 {
+    all: unset !important;
   }
 
-  /* ─── Format activity list ─── */
-  .activity-print-block {
-    margin-top: 1rem;
-    font-size: 1rem;
+  /* Each printable day */
+  .day-entry.print-only {
+    page-break-before: always;
+    margin: 10pt;
+    padding: 10pt;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 6pt;
   }
 
-  .activity-print-block ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  .day-entry.print-only:first-of-type {
+    page-break-before: auto;
   }
 
-  .activity-print-block li {
-    margin: 0.25rem 0;
-  }
-
-  /* ─── Headings and layout ─── */
-  h3 {
-    font-size: 1.5rem;
+  .trip-header {
+    font-size: 20pt;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10pt;
+    text-align: left;
   }
 
-  /* ─── Ensure each day starts on a new printed page ─── */
-  .day-entry {
-    page-break-before: always !important;
+  .date-line,
+  .activity-title,
+  .location {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0 0 4pt 0;
+    text-align: left;
   }
 
-  .activity h4 {
-    display: none !important;
+  .hotel-details,
+  .activity-notes  {
+    font-size: 10pt;
+    margin: 0 0 8pt 0;
+    text-align: left;
+  }
+
+  .separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 8pt 0;
+  }
+
+  .activity-block {
+    margin-bottom: 8pt;
+    text-align: left;
+  }
+
+  /* Remove page break between first title and first day */
+  .day-wrapper:first-of-type .day-entry.print-only {
+    page-break-before: auto;
+  }
+
+  /* Ensure no outer container wraps all print days in a card */
+  #days-container {
+    all: unset;
+  }
+
+  /* Remove any default borders around trip container */
+  #days-container > .card {
+    all: unset;
   }
 }
