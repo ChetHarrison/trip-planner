@@ -13,22 +13,22 @@
       },
       "activities": [
         {
+          "name": "Im day one",
+          "length": "30",
+          "location": "sf",
+          "notes": "foo notes"
+        },
+        {
+          "name": "Im day one",
+          "length": "30",
+          "location": "sf",
+          "notes": "foo notes"
+        },
+        {
           "name": "Im day two from day one",
           "length": "45",
           "location": "",
           "notes": ""
-        },
-        {
-          "name": "Im day one",
-          "length": "30",
-          "location": "sf",
-          "notes": "foo notes"
-        },
-        {
-          "name": "Im day one",
-          "length": "30",
-          "location": "sf",
-          "notes": "foo notes"
         },
         {
           "name": "Im day one",
@@ -56,7 +56,7 @@
       "activities": [
         {
           "name": "2-1",
-          "length": 4,
+          "length": "5",
           "location": "",
           "notes": ""
         },
