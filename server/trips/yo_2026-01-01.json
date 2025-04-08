@@ -31,16 +31,22 @@
           "notes": "foo notes"
         },
         {
-          "name": "Im day one",
-          "length": "30",
-          "location": "sf",
-          "notes": "foo notes"
-        },
-        {
           "name": "2-3",
           "length": 30,
           "location": "",
           "notes": ""
+        },
+        {
+          "name": "2-1",
+          "length": "5",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Im day one",
+          "length": "30",
+          "location": "sf",
+          "notes": "foo notes"
         }
       ]
     },
@@ -54,12 +60,6 @@
         "roomType": ""
       },
       "activities": [
-        {
-          "name": "2-1",
-          "length": "5",
-          "location": "",
-          "notes": ""
-        },
         {
           "name": "new name",
           "length": "3",
