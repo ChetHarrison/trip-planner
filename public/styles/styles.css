@@ -1,195 +1,120 @@
-/* Global Styles */
+/* === Screen styles === */
 body {
     font-family: serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
+    background: #f5f5f5;
 }
 
-/* Container */
-.container {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+input, select, textarea {
+    max-width: 100%;
 }
 
-/* Headings */
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-    font-weight: bold;
-    margin: 1rem 0;
-}
-
-h5 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-/* Labels */
 label {
-    font-size: 1rem;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 0.5rem;
-    padding-left: 5px; /* Alignment improvement */
-}
-
-/* Form Controls */
-input[type="text"],
-input[type="date"],
-input[type="time"],
-textarea,
-select {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-input::placeholder {
-    font-style: italic;
-    color: #999;
-}
-
-textarea {
-    resize: none;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-/* Cards */
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    padding: 20px; /* Consistent padding for cards */
-}
-
-.card-header {
-    background-color: #f8f9fa;
-    font-size: 1.2rem;
     font-weight: bold;
-    padding: 15px; /* Consistent header padding */
-    border-bottom: 1px solid #ddd;
-    text-align: left;
+    margin-bottom: 0.25rem;
 }
 
-.card-body {
-    padding: 20px; /* Consistent body padding */
+.day-entry .form-control {
+    margin-bottom: 8px;
 }
 
-/* Default styles for editing mode (keeps cards) */
-@media screen {
-    .edit-mode {
-        display: block !important;
-    }
+.activity .form-control {
+    font-size: 0.9rem;
+}
 
-    .print-only {
-        display: none !important;
-    }
+textarea.form-control {
+    min-height: 50px;
+}
+
+.activity {
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.activity h4 {
+    margin-bottom: 0.5rem;
+}
+
+.print-only {
+    display: none !important;
+}
+
+.print-container {
+    display: block;
 }
 
 @media print {
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Georgia", serif;
-    color: black;
-    background: white;
-  }
+    body {
+        font-family: serif !important;
+        background: white !important;
+        margin: 0;
+    }
 
-  /* Hide interactive UI */
-  .no-print,
-  .no-print * {
-    display: none !important;
-  }
+    .no-print {
+        display: none !important;
+    }
 
-  /* Force visible */
-  .print-only {
-    display: block !important;
-  }
+    .print-only {
+        display: block !important;
+        width: 100%;
+    }
 
-  /* Remove all Bootstrap/card styling */
-  .card, .border, .p-2, .mb-2, .mb-3, .p-3 {
-    all: unset !important;
-  }
+    .print-only.day-wrapper {
+        page-break-before: always;
+        break-before: page;
+    }
 
-  /* Each printable day */
-  .day-entry.print-only {
-    page-break-before: always;
-    margin: 10pt;
-    padding: 10pt;
-    background: white;
-    border: 1px solid lightgray;
-    border-radius: 6pt;
-  }
+    .print-only.day-wrapper:first-of-type {
+        page-break-before: auto;
+    }
 
-  .day-entry.print-only:first-of-type {
-    page-break-before: auto;
-  }
+    .day-entry.print-only {
+        break-before: page;
+        /* Fallbacks for older browsers */
+        page-break-before: always;
+        display: block;
+        margin: 10pt;
+        padding: 10pt;
+        border: 1px solid #ccc;
+        border-radius: 10pt;
+        background: #fff;
+        width: calc(100% - 20pt);
+    }
 
-  .trip-header {
-    font-size: 20pt;
-    font-weight: bold;
-    margin-bottom: 10pt;
-    text-align: left;
-  }
+    .day-entry.print-only:first-of-type {
+        page-break-before: auto;
+    }
 
-  .date-line,
-  .activity-title,
-  .location {
-    font-size: 16pt;
-    font-weight: bold;
-    margin: 0 0 4pt 0;
-    text-align: left;
-  }
+    .trip-header {
+        font-size: 24pt;
+        font-weight: bold;
+        margin-bottom: 10pt;
+    }
 
-  .hotel-details,
-  .activity-notes  {
-    font-size: 10pt;
-    margin: 0 0 8pt 0;
-    text-align: left;
-  }
+    .date-line {
+        font-size: 12pt;
+        font-weight: bold;
+        margin-top: 5pt;
+    }
 
-  .separator {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 8pt 0;
-  }
+    .location {
+        font-size: 16pt;
+        font-weight: bold;
+        margin: 6pt 0;
+    }
 
-  .activity-block {
-    margin-bottom: 8pt;
-    text-align: left;
-  }
+    .hotel-details,
+    .activity-notes {
+        font-size: 10pt;
+        margin-bottom: 4pt;
+    }
 
-  /* Remove page break between first title and first day */
-  .day-wrapper:first-of-type .day-entry.print-only {
-    page-break-before: auto;
-  }
+    .activity-block {
+        margin-top: 8pt;
+    }
 
-  /* Ensure no outer container wraps all print days in a card */
-  #days-container {
-    all: unset;
-  }
-
-  /* Remove any default borders around trip container */
-  #days-container > .card {
-    all: unset;
-  }
+    .activity-title {
+        font-weight: bold;
+        font-size: 12pt;
+        margin-bottom: 3pt;
+    }
 }
