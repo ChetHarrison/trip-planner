@@ -1,0 +1,294 @@
+{
+  "tripName": "Flowering of the Vines",
+  "startDate": "2025-04-24",
+  "trip": [
+    {
+      "wakeUpTime": "13:30",
+      "location": "Napa Valley",
+      "lodging": {
+        "name": "Meadowood",
+        "address": "900 Meadowood Lane, St. Helena, CA, 94574",
+        "phone": "(707) 531-4788",
+        "roomType": "Treeline Suite RMED11E819"
+      },
+      "activities": [
+        {
+          "name": "Uber to Airport",
+          "length": "20",
+          "location": "611 Carnation Ave to John Wayne Airport (SNA)",
+          "notes": "Private Uber transfer to the airport"
+        },
+        {
+          "name": "Check In to Flight",
+          "length": 15,
+          "location": "19301 Campus Dr, Santa Ana, CA",
+          "notes": "JSX Terminal check-in with 20-min buffer"
+        },
+        {
+          "name": "Flight to Concord (JSX XE 143)",
+          "length": 115,
+          "location": "SNA to CCR",
+          "notes": "Departs 2:05 PM, Arrives 3:40 PM"
+        },
+        {
+          "name": "Transfer to Promontory",
+          "length": "75",
+          "location": "181 John Glenn Dr, Concord to Promontory, Oakville",
+          "notes": "Napa Valley Tours and Transportation\nDriver: Baltzzar\nPhone: 707-999-1087"
+        },
+        {
+          "name": "Promontory Springtime Gathering",
+          "length": 120,
+          "location": "1601 Oakville Grade Road, Oakville, CA",
+          "notes": "4:00 PM Reservation for the Springtime Wine Event at Promontory, a winery known for profound site-expressive Cabernet Sauvignon and dramatic hillside views."
+        },
+        {
+          "name": "Drive to Meadowood",
+          "length": 20,
+          "location": "Promontory to Meadowood Napa Valley",
+          "notes": "Private car return to hotel"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "location": "Meadowood Napa Valley",
+      "lodging": {
+        "name": "Meadowood Napa Valley",
+        "address": "900 Meadowood Ln, St. Helena, CA 94574",
+        "phone": "(707) 531-4788",
+        "roomType": "Treeline Suite"
+      },
+      "activities": [
+        {
+          "name": "Room Service Breakfast",
+          "length": "75",
+          "location": "Hotel",
+          "notes": "Leisurely breakfast in suite"
+        },
+        {
+          "name": "Transfer",
+          "length": "15",
+          "location": "Meadowood to Momento Mori",
+          "notes": "Private car service"
+        },
+        {
+          "name": "Tasting at Momento Mori",
+          "length": "105",
+          "location": "Momento Mori Winery, Napa",
+          "notes": "Private seated tasting at Momento Mori, a small production winery focusing on expressive Napa Valley wines made with minimal intervention."
+        },
+        {
+          "name": "Transfer",
+          "length": "15",
+          "location": "Momento Mori to Cook St Helena",
+          "notes": "Quick transfer to lunch"
+        },
+        {
+          "name": "Lunch Cooks St Helena",
+          "length": "60",
+          "location": "1310 Railroad Ave, St Helena, CA 94574",
+          "notes": "Casual lunch at Cook, a neighborhood Italian bistro in downtown St. Helena known for fresh handmade pasta and local ingredients."
+        },
+        {
+          "name": "Transfer",
+          "length": "15",
+          "location": "Cook St Helena to Meadowood",
+          "notes": "Return to hotel for rest"
+        },
+        {
+          "name": "Napa Nap Time",
+          "length": "75",
+          "location": "Hotel",
+          "notes": "Afternoon break"
+        },
+        {
+          "name": "Get Ready for Dinner",
+          "length": "90",
+          "location": "Hotel",
+          "notes": "Call cart to take us down"
+        },
+        {
+          "name": "Flowering of the Vines: Floral Wines Class",
+          "length": 90,
+          "location": "The Napa Valley Reserve",
+          "notes": "4:30 PM Class led by Kelli White and Josh Kelly"
+        },
+        {
+          "name": "Flowering of the Vines: Dinner",
+          "length": 120,
+          "location": "The Napa Valley Reserve",
+          "notes": "6:00 PM Reception, 7:00 PM Dinner With Greg and Sara Bernaz"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "06:00",
+      "location": "Napa Valley",
+      "lodging": {
+        "name": "Meadowood",
+        "address": "900 Meadowood Ln, St. Helena, CA 94574",
+        "phone": "(707) 531-4788",
+        "roomType": "Treeline Suite"
+      },
+      "activities": [
+        {
+          "name": "Wake up",
+          "length": "30",
+          "location": "Hotel",
+          "notes": "Early start to the day"
+        },
+        {
+          "name": "Transfer",
+          "length": "30",
+          "location": "Meadowood to Mascot Vineyard",
+          "notes": "Private transfer for early morning experience"
+        },
+        {
+          "name": "Mascot Dawn Patrol",
+          "length": "120",
+          "location": "Mascot Vineyard, Napa",
+          "notes": "Vineyard tour and sunrise session at Mascot, showcasing young vine wines from Harlan, Bond, and Promontory heritage."
+        },
+        {
+          "name": "Transfer",
+          "length": "30",
+          "location": "Mascot to Meadowood",
+          "notes": "Return for rest"
+        },
+        {
+          "name": "Napa Nap",
+          "length": "135",
+          "location": "Hotel",
+          "notes": "Morning downtime"
+        },
+        {
+          "name": "House Car to Lunch",
+          "length": "15",
+          "location": "St Helena",
+          "notes": "Short ride downtown"
+        },
+        {
+          "name": "Lunch at Giugni's",
+          "length": "60",
+          "location": "1227 Main St, St Helena, CA 94574",
+          "notes": "Classic St. Helena deli known for overstuffed sandwiches and a relaxed vibe."
+        },
+        {
+          "name": "Transfer",
+          "length": "30",
+          "location": "Giugni's to Continuum",
+          "notes": "Scenic ride up the hill"
+        },
+        {
+          "name": "Tasting at Continuum",
+          "length": "60",
+          "location": "Continuum Estate, Pritchard Hill, Napa",
+          "notes": "Estate tasting with panoramic views at the Mondavi family's Pritchard Hill legacy winery."
+        },
+        {
+          "name": "Transfer",
+          "length": "30",
+          "location": "Continuum to Meadowood",
+          "notes": "Return for rest before evening"
+        },
+        {
+          "name": "Napa Nap",
+          "length": "130",
+          "location": "Hotel",
+          "notes": "Afternoon nap"
+        },
+        {
+          "name": "Dress for Dinner",
+          "length": "60",
+          "location": "Hotel",
+          "notes": "Get ready and prep for the evening"
+        },
+        {
+          "name": "Car Service to BOND",
+          "length": 20,
+          "location": "Meadowood to BOND Winery",
+          "notes": "Evening event transport"
+        },
+        {
+          "name": "BOND Bike to Care Benefit",
+          "length": 240,
+          "location": "BOND Winery",
+          "notes": "6:30 PM Champagne Reception, Dinner to follow at BOND, a Grand Cru-inspired Napa winery focused on single-vineyard Cabernet Sauvignon."
+        },
+        {
+          "name": "Car Service to Meadowood",
+          "length": 20,
+          "location": "BOND Winery to Meadowood",
+          "notes": "Return to hotel after dinner"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:30",
+      "location": "Corona del Mar",
+      "lodging": {
+        "name": "Home",
+        "address": "611 Carnations Ave",
+        "phone": "",
+        "roomType": "Sexy bed"
+      },
+      "activities": [
+        {
+          "name": "Breakfast and Pack",
+          "length": "75",
+          "location": "Home",
+          "notes": "Pack and prep for travel"
+        },
+        {
+          "name": "Drive to ZD",
+          "length": "15",
+          "location": "Corona del Mar to ZD Wines",
+          "notes": "Morning travel to Napa"
+        },
+        {
+          "name": "ZD Wines Vineyard View Tasting",
+          "length": "90",
+          "location": "8383 Silverado Trail, Napa, CA",
+          "notes": "11:00 AM Tasting at ZD Wines, a certified organic estate with a focus on Pinot Noir and Chardonnay with spectacular vineyard views."
+        },
+        {
+          "name": "Drive to Lunch",
+          "length": "30",
+          "location": "ZD to Downtown Napa",
+          "notes": "Midday drive"
+        },
+        {
+          "name": "Lunch at Ang\u00e8le",
+          "length": "90",
+          "location": "540 Main St, Napa, CA",
+          "notes": "1:00 PM Reservation at Ang\u00e8le, a French country bistro overlooking the river, offering elevated Napa Valley cuisine."
+        },
+        {
+          "name": "Drive to JSX Concord Terminal",
+          "length": "75",
+          "location": "Napa to 181 John Glenn Dr, Concord",
+          "notes": "Add 20-minute buffer for traffic"
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "20",
+          "location": "JSX Terminal, Concord",
+          "notes": "Prepare for JSX XE 144"
+        },
+        {
+          "name": "Flight to SNA (JSX XE 144)",
+          "length": "101",
+          "location": "CCR to SNA",
+          "notes": "Departs 4:05 PM, Arrives 5:25 PM"
+        },
+        {
+          "name": "Drive home",
+          "length": "13",
+          "location": "19301 Campus Dr, Santa Ana to 611 Carnation, Corona del Mar",
+          "notes": "Final drive of the trip"
+        }
+      ]
+    }
+  ]
+}

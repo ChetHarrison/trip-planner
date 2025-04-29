@@ -1,0 +1,150 @@
+{
+  "tripName": "Erika Schulte’s Quinceanera - Napa in June",
+  "startDate": "2025-06-26",
+  "trip": [
+    {
+      "wakeUpTime": "08:00",
+      "location": "Corona del Mar",
+      "lodging": {
+        "name": "Home",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Flight to Concord (JSX SNA → CCR)",
+          "length": 95,
+          "location": "JSX Terminal SNA",
+          "notes": "Departs 2:05 PM, Arrives 3:40 PM"
+        },
+        {
+          "name": "Car service to Meadowood",
+          "length": 80,
+          "location": "Concord to Meadowood",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Auro (Four Seasons)",
+          "length": 120,
+          "location": "Calistoga, CA",
+          "notes": "6:30 PM Reservation"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Meadowood Napa Valley",
+      "lodging": {
+        "name": "Meadowood Napa Valley",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Blending Session at The Napa Valley Reserve",
+          "length": 90,
+          "location": "TNVR",
+          "notes": "10:00 AM"
+        },
+        {
+          "name": "Lunch at Gott’s Roadside",
+          "length": 60,
+          "location": "St. Helena",
+          "notes": "11:45 AM"
+        },
+        {
+          "name": "Diamond Creek Tasting (Ladies)",
+          "length": 90,
+          "location": "Diamond Creek",
+          "notes": "2:00 PM"
+        },
+        {
+          "name": "Dinner at TNVR - 'Casual Friday'",
+          "length": 120,
+          "location": "TNVR",
+          "notes": "6:00 PM"
+        },
+        {
+          "name": "Drinks at Charter Oak",
+          "length": 90,
+          "location": "St. Helena",
+          "notes": "8:15 PM"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Meadowood Napa Valley",
+      "lodging": {
+        "name": "Meadowood Napa Valley",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Tasting at Harlan Estate",
+          "length": 120,
+          "location": "Oakville, CA",
+          "notes": "10:00 AM"
+        },
+        {
+          "name": "Lunch at Oakville Grocery",
+          "length": 60,
+          "location": "Oakville, CA",
+          "notes": "12:00 PM"
+        },
+        {
+          "name": "Tasting at Promontory",
+          "length": 90,
+          "location": "Oakville, CA",
+          "notes": "2:00 PM"
+        },
+        {
+          "name": "Bocce, Champagne and Mez Plates",
+          "length": 60,
+          "location": "TNVR",
+          "notes": "6:00 PM"
+        },
+        {
+          "name": "Birthday Dinner at TNVR with Chef Monson",
+          "length": 120,
+          "location": "TNVR",
+          "notes": "7:00 PM"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "07:30",
+      "location": "Meadowood Napa Valley",
+      "lodging": {
+        "name": "Meadowood Napa Valley",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Pickup Breakfast at Bouchon Bakery",
+          "length": 20,
+          "location": "Yountville, CA",
+          "notes": "8:20 AM"
+        },
+        {
+          "name": "Drive to JSX Concord Terminal",
+          "length": 70,
+          "location": "Meadowood to CCR",
+          "notes": "Departs hotel around 8:40 AM"
+        },
+        {
+          "name": "Flight to SNA (JSX CCR → SNA)",
+          "length": 85,
+          "location": "JSX Terminal CCR",
+          "notes": "Departs 10:15 AM"
+        }
+      ]
+    }
+  ]
+}
