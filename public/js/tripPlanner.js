@@ -265,7 +265,8 @@ export function renderTrip(tripData) {
                 <div class="hotel-details">
                     ${day.lodging?.name || ""}<br>
                     ${day.lodging?.address || ""}<br>
-                    ${day.lodging?.phone || ""}
+                    ${day.lodging?.phone ? `Phone: ${day.lodging.phone}<br>` : ""}
+                    ${day.lodging?.roomType ? `Room: ${day.lodging.roomType}` : ""}
                 </div>
                 <hr class="separator">
                 <div class="activities">
@@ -274,8 +275,10 @@ export function renderTrip(tripData) {
                         return `
                             <div class="activity-block">
                                 <h1 class="activity-title">${time} ${activity.name || ""}</h1>
-                                <p class="activity-notes">${activity.notes || ""}</p>
-                            </div>`;
+                                ${activity.location ? `<p class="activity-location">📍 ${activity.location}</p>` : ""}
+                                ${activity.notes ? `<p class="activity-notes"><strong>Notes:</strong> ${activity.notes}</p>` : ""}
+                            </div>
+                        `;
                     }).join("")}
                 </div>
             </div>

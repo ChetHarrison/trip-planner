@@ -1,216 +1,258 @@
 {
-  "tripName": "European Getaway 2025",
-  "startDate": "2025-06-14",
+  "tripName": "Zermatt to Berlin Summer Trip",
+  "startDate": "2025-07-26",
   "trip": [
     {
       "wakeUpTime": "08:00",
+      "location": "Zurich",
       "lodging": {
-        "name": "The Westin Grand Frankfurt",
-        "city": "Frankfurt, Germany",
-        "rooms": [
-          {
-            "room_name": "Presidential Suite",
-            "size": "147 sqm / 1582 sqft",
-            "price_per_night": {
-              "local": "€1299",
-              "usd": "$1351"
-            },
-            "total_price": {
-              "local": "€2598",
-              "usd": "$2702"
-            },
-            "occupancy": 5
-          }
-        ]
-      }
+        "name": "Storchen Zurich",
+        "address": "Weinplatz 2, 8001 Zurich, Switzerland",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Check-in at Storchen Zurich",
+          "length": 30,
+          "location": "Zurich",
+          "notes": "Check-in at 3:00 PM"
+        }
+      ]
     },
     {
       "wakeUpTime": "08:00",
+      "location": "Zermatt",
       "lodging": {
-        "name": "The Westin Grand Frankfurt",
-        "city": "Frankfurt, Germany",
-        "rooms": [
-          {
-            "room_name": "Presidential Suite",
-            "size": "147 sqm / 1582 sqft",
-            "price_per_night": {
-              "local": "€1299",
-              "usd": "$1351"
-            },
-            "total_price": {
-              "local": "€2598",
-              "usd": "$2702"
-            },
-            "occupancy": 5
-          }
-        ]
-      }
+        "name": "Mont Cervin Palace",
+        "address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Travel from Zurich to Zermatt",
+          "length": 240,
+          "location": "Zermatt",
+          "notes": "Assumed travel by train"
+        },
+        {
+          "name": "Check-in at Mont Cervin Palace",
+          "length": 30,
+          "location": "Zermatt",
+          "notes": "Check-in at 3:00 PM"
+        }
+      ]
     },
     {
       "wakeUpTime": "08:00",
+      "location": "Zermatt",
       "lodging": {
-        "name": "Cour De Alpes",
-        "city": "Zermatt, Switzerland",
-        "rooms": [
-          {
-            "room_name": "Sky Apartment",
-            "size": "140 sqm / 1507 sqft",
-            "price_per_night": {
-              "local": "CHF 900",
-              "usd": "$1008"
-            },
-            "total_price": {
-              "local": "CHF 1800",
-              "usd": "$2016"
-            },
-            "occupancy": 5
-          },
-          {
-            "room_name": "Suite",
-            "size": "60 sqm / 646 sqft",
-            "price_per_night": {
-              "local": "CHF 350",
-              "usd": "$392"
-            },
-            "total_price": {
-              "local": "CHF 700",
-              "usd": "$784"
-            },
-            "occupancy": 2
-          },
-          {
-            "room_name": "Double Room",
-            "size": "21 sqm / 226 sqft",
-            "price_per_night": {
-              "local": "CHF 250",
-              "usd": "$280"
-            },
-            "total_price": {
-              "local": "CHF 500",
-              "usd": "$560"
-            },
-            "occupancy": 2
-          }
-        ]
-      }
+        "name": "Mont Cervin Palace",
+        "address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
     },
     {
       "wakeUpTime": "08:00",
+      "location": "Lake Como",
       "lodging": {
-        "name": "Cour De Alpes",
-        "city": "Zermatt, Switzerland",
-        "rooms": [
-          {
-            "room_name": "Sky Apartment",
-            "size": "140 sqm / 1507 sqft",
-            "price_per_night": {
-              "local": "CHF 900",
-              "usd": "$1008"
-            },
-            "total_price": {
-              "local": "CHF 1800",
-              "usd": "$2016"
-            },
-            "occupancy": 5
-          },
-          {
-            "room_name": "Suite",
-            "size": "60 sqm / 646 sqft",
-            "price_per_night": {
-              "local": "CHF 350",
-              "usd": "$392"
-            },
-            "total_price": {
-              "local": "CHF 700",
-              "usd": "$784"
-            },
-            "occupancy": 2
-          },
-          {
-            "room_name": "Double Room",
-            "size": "21 sqm / 226 sqft",
-            "price_per_night": {
-              "local": "CHF 250",
-              "usd": "$280"
-            },
-            "total_price": {
-              "local": "CHF 500",
-              "usd": "$560"
-            },
-            "occupancy": 2
-          }
-        ]
-      }
+        "name": "Villa d'Este",
+        "address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Travel from Zermatt to Lake Como",
+          "length": 270,
+          "location": "Lake Como",
+          "notes": "Transfer by train or car"
+        },
+        {
+          "name": "Check-in at Villa d'Este",
+          "length": 30,
+          "location": "Lake Como",
+          "notes": "Check-in at 3:00 PM"
+        }
+      ]
     },
     {
       "wakeUpTime": "08:00",
+      "location": "Lake Como",
       "lodging": {
-        "name": "Il Sereno Lake Como",
-        "city": "Lake Como, Italy",
-        "rooms": [
-          {
-            "room_name": "Family Grand Suite Lago",
-            "size": "120 sqm / 1292 sqft",
-            "price_per_night": {
-              "local": "€7100",
-              "usd": "$7384"
-            },
-            "total_price": {
-              "local": "€21,300",
-              "usd": "$22,152"
-            },
-            "occupancy": 4
-          },
-          {
-            "room_name": "Family Corner Suite",
-            "size": "143 sqm / 1539 sqft",
-            "price_per_night": {
-              "local": "€8000",
-              "usd": "$8320"
-            },
-            "total_price": {
-              "local": "€24,000",
-              "usd": "$24,960"
-            },
-            "occupancy": 4
-          }
-        ]
-      }
+        "name": "Villa d'Este",
+        "address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
     },
     {
       "wakeUpTime": "08:00",
+      "location": "Lake Como",
+      "lodging": {
+        "name": "Villa d'Este",
+        "address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Flight to Vienna (OS 0510)",
+          "length": 85,
+          "location": "MXP to VIE",
+          "notes": "Departs 2:45 PM, Arrives 4:10 PM"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Vienna",
       "lodging": {
         "name": "Rosewood Vienna",
-        "city": "Vienna, Austria",
-        "rooms": [
-          {
-            "room_name": "Royal Treichl House",
-            "size": "Unknown",
-            "price_per_night": {
-              "local": "€8446",
-              "usd": "$8783"
-            },
-            "total_price": {
-              "local": "€16,892",
-              "usd": "$17,566"
-            },
-            "occupancy": 5
-          },
-          {
-            "room_name": "Hofburg Suite",
-            "size": "Unknown",
-            "price_per_night": {
-              "local": "€1082",
-              "usd": "$1125"
-            },
-            "total_price": {
-              "local": "€2164",
-              "usd": "$2250"
-            },
-            "occupancy": 2
-          }
-        ]
-      }
+        "address": "Petersplatz, 1010 Vienna, Austria",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Check-in at Rosewood Vienna",
+          "length": 30,
+          "location": "Vienna",
+          "notes": "Check-in at 3:00 PM"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Vienna",
+      "lodging": {
+        "name": "Rosewood Vienna",
+        "address": "Petersplatz, 1010 Vienna, Austria",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Vienna",
+      "lodging": {
+        "name": "Rosewood Vienna",
+        "address": "Petersplatz, 1010 Vienna, Austria",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Salzburg",
+      "lodging": {
+        "name": "Hotel Goldener Hirsch",
+        "address": "Getreidegasse 37, Salzburg, Austria",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Travel from Vienna to Salzburg",
+          "length": 150,
+          "location": "Salzburg",
+          "notes": "By train or car"
+        },
+        {
+          "name": "Check-in at Hotel Goldener Hirsch",
+          "length": 30,
+          "location": "Salzburg",
+          "notes": "Check-in at 3:00 PM"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Salzburg",
+      "lodging": {
+        "name": "Hotel Goldener Hirsch",
+        "address": "Getreidegasse 37, Salzburg, Austria",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Flight to Berlin (EW 4342)",
+          "length": 65,
+          "location": "SZG to BER",
+          "notes": "Departs 3:25 PM, Arrives 4:30 PM"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Berlin",
+      "lodging": {
+        "name": "Hotel de Rome",
+        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Check-in at Hotel de Rome",
+          "length": 30,
+          "location": "Berlin",
+          "notes": "Check-in at 3:00 PM"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Berlin",
+      "lodging": {
+        "name": "Hotel de Rome",
+        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Berlin",
+      "lodging": {
+        "name": "Hotel de Rome",
+        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": []
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Berlin",
+      "lodging": {
+        "name": "Hotel de Rome",
+        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Flight to London (BA 0987)",
+          "length": 65,
+          "location": "BER to LHR",
+          "notes": "Departs 11:20 AM, Arrives 12:25 PM"
+        },
+        {
+          "name": "Flight to LAX (BA 0269)",
+          "length": 675,
+          "location": "LHR to LAX",
+          "notes": "Departs 2:20 PM, Arrives 5:35 PM"
+        }
+      ]
     }
   ]
 }
