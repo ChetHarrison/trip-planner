@@ -3,6 +3,7 @@ import {
     handleTripSelection,
     handleAddDay,
     handleAddActivity,
+    hydrateClassicAutocompleteInputs,
     renderTrip,
     fetchTripData,
     saveTripData,
@@ -22,12 +23,41 @@ document.addEventListener("DOMContentLoaded", async () => {
     const tripNameInput = document.getElementById("trip-name");
     const tripStartDateInput = document.getElementById("trip-start-date");
 
-    // ✅ Enable/Disable Add Day button based on trip selection
     function updateAddDayButton(state) {
         addDayButton.disabled = !state;
     }
 
-    // ✅ Handle trip selection and pass trip data explicitly
+    let apiKey = "";
+
+    async function loadGoogleMapsAPI() {
+        try {
+            const response = await fetch('/config');
+            const config = await response.json();
+            apiKey = config.googleMapsApiKey;
+
+            if (!apiKey) {
+                console.error("Google Maps API Key is missing!");
+                return;
+            }
+
+            const script = document.createElement("script");
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+
+            script.onload = async () => {
+                console.log("✅ Google Maps API loaded");
+                setupAutocomplete();
+                hydrateClassicAutocompleteInputs();
+            };
+        } catch (error) {
+            console.error("Error loading Google Maps API:", error);
+        }
+    }
+
+    await loadGoogleMapsAPI();
+
     tripSelector.addEventListener("change", async (e) => {
         const selectedTrip = e.target.value;
 
@@ -36,7 +66,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             let tripData = await fetchTripData(selectedTrip);
 
-            // ✅ If no trip exists, create a new one and save it
             if (!tripData) {
                 tripData = {
                     tripName: `New Trip ${new Date().toISOString().split("T")[0]}`,
@@ -49,8 +78,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             tripNameInput.value = tripData.tripName;
             tripStartDateInput.value = tripData.startDate;
-            updateAddDayButton(true); // ✅ Enable Add Day button
-            renderTrip(tripData); // ✅ Pass trip data explicitly
+            updateAddDayButton(true);
+            renderTrip(tripData, apiKey);
+            hydrateClassicAutocompleteInputs();
         } else {
             newTripFields.classList.add("d-none");
             tripNameInput.value = "";
@@ -59,7 +89,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 
-    // ✅ Save modified trip name directly to JSON
     tripNameInput.addEventListener("input", async () => {
         const selectedTrip = tripSelector.value;
         if (!selectedTrip) return;
@@ -71,7 +100,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         await saveTripData(tripData);
     });
 
-    // ✅ Save modified start date directly to JSON
     tripStartDateInput.addEventListener("input", async () => {
         const selectedTrip = tripSelector.value;
         if (!selectedTrip) return;
@@ -81,40 +109,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         tripData.startDate = tripStartDateInput.value;
         await saveTripData(tripData);
-
-        // 🔥 Force re-render to reflect new dates
-        renderTrip(tripData);
+        renderTrip(tripData, apiKey);
+        hydrateClassicAutocompleteInputs();
     });
 
-    // ✅ Load Google Maps API dynamically from backend configuration
-    async function loadGoogleMapsAPI() {
-        try {
-            const response = await fetch('/config'); // Fetch API key securely
-            const config = await response.json();
-            const apiKey = config.googleMapsApiKey;
-
-            if (!apiKey) {
-                console.error("Google Maps API Key is missing!");
-                return;
-            }
-
-            const script = document.createElement("script");
-            script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&loading=async`;
-            script.async = true;
-            script.defer = true;
-            document.head.appendChild(script);
-
-            script.onload = () => {
-                console.log("Google Maps API loaded successfully.");
-            };
-        } catch (error) {
-            console.error("Error loading Google Maps API:", error);
-        }
-    }
-
-    await loadGoogleMapsAPI();
-
-    // ✅ Handle adding a new day (pass trip data explicitly)
     addDayButton.addEventListener("click", async () => {
         const selectedTrip = tripSelector.value;
         if (!selectedTrip) return;
@@ -124,4 +122,59 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         await handleAddDay(tripData);
     });
+
+    // Autocomplete listener for gmpx-place-autocomplete
+    function setupAutocomplete() {
+        // Activity location
+        document.querySelectorAll('gmpx-place-autocomplete[data-activity-index]').forEach(wrapper => {
+            wrapper.addEventListener('gmpx-placeautocomplete-placechange', (e) => {
+                const place = e.detail;
+                const input = wrapper.querySelector('input');
+                if (place?.name && input) {
+                    input.value = place.name;
+                    input.dispatchEvent(new Event('blur'));
+                }
+            });
+        });
+
+        // Day location
+        document.querySelectorAll('gmpx-place-autocomplete[data-field="location"]:not([data-activity-index])')
+            .forEach(wrapper => {
+                wrapper.addEventListener('gmpx-placeautocomplete-placechange', (e) => {
+                    const place = e.detail;
+                    const input = wrapper.querySelector('input');
+                    if (place?.formatted_address || place?.name) {
+                        input.value = place.formatted_address || place.name;
+                        input.dispatchEvent(new Event('blur'));
+                    }
+                });
+            });
+
+        // Hotel autocomplete
+        document.querySelectorAll('gmpx-place-autocomplete[data-field="lodging.name"]').forEach(wrapper => {
+            wrapper.addEventListener('gmpx-placeautocomplete-placechange', (e) => {
+                const place = e.detail;
+                const dayIndex = wrapper.dataset.dayIndex;
+                const input = wrapper.querySelector('input');
+
+                const addressInput = document.querySelector(`input[data-field="lodging.address"][data-day-index="${dayIndex}"]`);
+                const phoneInput = document.querySelector(`input[data-field="lodging.phone"][data-day-index="${dayIndex}"]`);
+
+                if (place?.name && input) {
+                    input.value = place.name;
+                    input.dispatchEvent(new Event('blur'));
+                }
+
+                if (place?.formatted_address && addressInput) {
+                    addressInput.value = place.formatted_address;
+                    addressInput.dispatchEvent(new Event('blur'));
+                }
+
+                if (place?.formatted_phone_number && phoneInput) {
+                    phoneInput.value = place.formatted_phone_number;
+                    phoneInput.dispatchEvent(new Event('blur'));
+                }
+            });
+        });
+    }
 });

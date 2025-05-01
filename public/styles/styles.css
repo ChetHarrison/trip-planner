@@ -129,3 +129,26 @@ textarea.form-control {
         margin-top: 2pt; /* slight bump if both are present */
     }
 }
+
+.day-info-section {
+  display: block;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.day-info-section h5 {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.day-info-section ul {
+  padding-left: 1.25rem;
+}
+
+.day-info-section li {
+  margin-bottom: 1rem;
+  list-style: disc;
+}
