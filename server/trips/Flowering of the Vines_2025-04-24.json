@@ -4,10 +4,10 @@
   "trip": [
     {
       "wakeUpTime": "13:30",
-      "location": "Napa Valley",
+      "location": "Napa, CA, USA",
       "lodging": {
-        "name": "Meadowood",
-        "address": "900 Meadowood Lane, St. Helena, CA, 94574",
+        "name": "Meadowood Napa Valley",
+        "address": "900 Meadowood Ln, St Helena, CA 94574, USA",
         "phone": "(707) 531-4788",
         "roomType": "Treeline Suite RMED11E819"
       },
@@ -20,8 +20,8 @@
         },
         {
           "name": "Check In to Flight",
-          "length": 15,
-          "location": "19301 Campus Dr, Santa Ana, CA",
+          "length": "16",
+          "location": "3000 Airway Ave",
           "notes": "JSX Terminal check-in with 20-min buffer"
         },
         {
@@ -38,21 +38,545 @@
         },
         {
           "name": "Promontory Springtime Gathering",
-          "length": 120,
-          "location": "1601 Oakville Grade Road, Oakville, CA",
+          "length": "120",
+          "location": "1601 Oakville Grade Rd, Oakville, CA 94562, USA",
           "notes": "4:00 PM Reservation for the Springtime Wine Event at Promontory, a winery known for profound site-expressive Cabernet Sauvignon and dramatic hillside views."
         },
         {
           "name": "Drive to Meadowood",
           "length": 20,
-          "location": "Promontory to Meadowood Napa Valley",
+          "location": "Meadowood",
           "notes": "Private car return to hotel"
         }
-      ]
+      ],
+      "suggestions": {
+        "restaurants": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "7377 St Helena Hwy, Napa, CA 94558, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.4157367,
+                "lng": -122.3856336
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.41722577989272,
+                  "lng": -122.3843666201073
+                },
+                "southwest": {
+                  "lat": 38.41452612010728,
+                  "lng": -122.3870662798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Brix",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 1836,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114415277760371366312\">levi mcchristian</a>"
+                ],
+                "photo_reference": "AeeoHcKbxtkJVTNb1PDpkWFBP7Tmp19LmkWX6J1vf0FuRMLo8PCDA5ZjR1Rd3KJLgzuXJsnu6wwEx1zPGmprXxA5wBHy0HMO6b2biUGZcednQYXD4VTC5CveCTXHRFehVui0YIdtcfHXw_t2PRm7fZH7G-JLw_VOd5EXXly1a_V-BaxnxK9cXy_QOLJNJzLkW8LJsfSIrZNVzwo-qQGYxHJuZciUKtUd7_TO_AlzhFW2yfjPTZSfMh04Sfw_CpHyW0v3mtRFh7OP_OQ29j6XwNVrXJV-h-N4qYDEEewun0sbpoLIpm5f5O1R6yVMFC5q2DqLz4vFfAj36M9njKXoFPu0G5FTKpyzOs_C12y7voPH66yQPQdjxnO4mOTDIFxQ1UupZZgooY6oafisCn0HREsi_R0nlstd2r72FD9A2anl29X9kwP0cz6g5xYJBNz48yaqvmj6F1ExkPVFsboDafZJ0Tt9johOaH8XDXkaRRfDQKGOWBRZE7kQtppXcunOOKP5aHTb9FPtWYvUMLFCda_jqIrRgdCVFhSQJyn7HNSF_I8ggbNj2oNN7Un1ED8C7v7SXBtrVRlG",
+                "width": 3264
+              }
+            ],
+            "place_id": "ChIJ3VVWDgpD6oAR-ExqkpTP9jg",
+            "plus_code": {
+              "compound_code": "CJ87+7P Napa, California",
+              "global_code": "84CVCJ87+7P"
+            },
+            "price_level": 3,
+            "rating": 4.4,
+            "reference": "ChIJ3VVWDgpD6oAR-ExqkpTP9jg",
+            "types": [
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1554
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1300 1st St Suite 272, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2988734,
+                "lng": -122.2883087
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.30019342989272,
+                  "lng": -122.2870381701073
+                },
+                "southwest": {
+                  "lat": 38.29749377010728,
+                  "lng": -122.2897378298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Kitchen Door Restaurant",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/112610219144424672528\">Clayton Light</a>"
+                ],
+                "photo_reference": "AeeoHcIHceHQxDr0dog1XbboKcVA6AYtOW1LVJ7HU3NOxtrgYEUIWfJR18nhnjBob41LSr52Q3-CpF6GERjsEL8EUtoL5G2FswAgs4uSuzAixY_w1F44_ikvbVpR0YW2Rb3vfKLTgsfR49bZCOJoZHJGVfUu7hb8HQsR2DD9g-haAZcNJxkErFl62p46RBweu-Uh9mR32PPv9oc7rVyz1qTuGc0_HYGmAIdlvOEDT14_a6UcEvAgMTjKGh5Nm6W4yWE1DbPxKPgUvIVPfPy0JhE-akMV1oiRJ0xRuztVoLOsCiymQqD3H7XVZ0kMZgVeO-BJYKopysDCiVJOSSvwgHVXCqG0xtxFi0jgOuMir1rfIEYcGKi_io02dhwIhlgoKLUjMS7qSo0gDIsp8EjrXcMXmJrN-1d8QDLDas-gdr-jmnAImLU3MNCBH_C5kzQFiYqRrIEe8fKRWRIGjxLZOaGjau7YFl2w0RUleGalmcaNmIJoykXoujQbdFZHHpc9Vk5xDMJLbrGReSOD86qPIPpf74vRzev6LZnPiTIoRaYSqPBWvbChtudEkOBpAY6LYpCEGdAnI6e9tAt4bg",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJLVT1LWQGhYARwBlqromeSwI",
+            "plus_code": {
+              "compound_code": "7PX6+GM Napa, California",
+              "global_code": "84CV7PX6+GM"
+            },
+            "price_level": 2,
+            "rating": 4.4,
+            "reference": "ChIJLVT1LWQGhYARwBlqromeSwI",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 477
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1400 2nd St, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2969298,
+                "lng": -122.2882868
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.29830962989272,
+                  "lng": -122.2868871201073
+                },
+                "southwest": {
+                  "lat": 38.29560997010727,
+                  "lng": -122.2895867798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Grace's Table",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 1200,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/108373885254121118170\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcKNcZsBijzKVbTxpqjfDawIDWJcjIPoPiQlJnUclLbrJPI2gY7KOJC20NH45ZD3uaj4G30Mcd3G_LiPNwNA06NvxlVUGDYeHdAgmdd-dN4moBqsOA7jAZPpnx1YqAVOvhbWlK6M_muOSFJkrqkK45-v76MjY_Q9fDAglWDddPHJcalhPM2wg0bdsnqdv044xl3q5ntQDiR-vndEaI2fBmkRqb8qu6R_sRmPJSCkec_bSZHxAwSUDSwZdgpiAgaOdVFB9T687CQ8IbORHEauvD-p0H6Hw3FZVggktu2VCjCEeif1L7Y",
+                "width": 1800
+              }
+            ],
+            "place_id": "ChIJI0HDVF0GhYAR_6AIv6NXTnM",
+            "plus_code": {
+              "compound_code": "7PW6+QM Napa, California",
+              "global_code": "84CV7PW6+QM"
+            },
+            "price_level": 2,
+            "rating": 4.4,
+            "reference": "ChIJI0HDVF0GhYAR_6AIv6NXTnM",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1468
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "4048 Sonoma Hwy, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2554496,
+                "lng": -122.332525
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.25677547989273,
+                  "lng": -122.3312094201073
+                },
+                "southwest": {
+                  "lat": 38.25407582010728,
+                  "lng": -122.3339090798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Boon Fly Café",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3277,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/107589546162544473256\">Boon Fly Cafe</a>"
+                ],
+                "photo_reference": "AeeoHcK9euXPhjzRmm_8KSqqHkaxtfAvxtEVdoYHJ2r-zCAwBWiFs4vgEpxEcfxoYRy2s8y7A7hMN1RlMYOBDt_ZWlmZT1iOGF7ceXndtqYWaCb0wEb2DM0_jwMDxwi_tR9u-WBbvfxudQ216bxjkTun2dGu93F6HkW3Uiu9ik6x7hNSPaPqC5k9lYROpE22jn71p2DGALdpQzcSQY292Zj5njKFqQuLRV5fc9N5omv8BUrNg-xziugnU4XlXvnfAE97pKknR4DVbSSIGL56VaVE6BTrVHTACrymXX6_3DQigkOnz4tWhzE",
+                "width": 4800
+              }
+            ],
+            "place_id": "ChIJ6_h3N-AHhYARGTkd2treGB0",
+            "plus_code": {
+              "compound_code": "7M48+5X Napa, California",
+              "global_code": "84CV7M48+5X"
+            },
+            "price_level": 2,
+            "rating": 4.6,
+            "reference": "ChIJ6_h3N-AHhYARGTkd2treGB0",
+            "types": [
+              "cafe",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1895
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "4110 Howard Ln, Napa, CA 94558, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.3446769,
+                "lng": -122.3264692
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.34590917989272,
+                  "lng": -122.3250438201073
+                },
+                "southwest": {
+                  "lat": 38.34320952010728,
+                  "lng": -122.3277434798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Bistro Don Giovanni",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/111516388624685124577\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcJAPtL0KsbKLDLH2C-TnIpX4e3wu5yCp-J4l_NyKAlf9SQG_ch1ia7aAvGipdFVcg0qeVfZgSWAJtbQygvwYuQ7JMYvYVol6hXPUmiMqb0uTUmjB7KEjsrf_ApnpyjsEhL3wD2eI7ocZeLo-zgjXrxzwM9OPn8eGS7rURR0QF135VXUp-bw1AI0S1KwJ9aDIKhM47SjZkG3NEPwzn2kiLFYzPSnsSZzJcY1zfoPhslf250ciX60Mj0Z9gPfsv0lhVKrvS9JbCyGe_RRtLTIn43d9L1CeoMenjcX_YdQYkMvWuq0BBhsroyRJqDNHPQxfxQoLxmRq4XhHQR9rdL17e932SIU2SMydTLm52rX45GPFpiFLz_YL-Feps4sKxZ-ItxxzOUZeZzORayq-e44P6VLUsFhGy5J8ceCIUIahm-KTgDhQdduIbJnjQOxT99F8f9Uj_82gcrrQ-veAJ-11wVDy7gP8zHjXYkxWILwc2VKgDPKJgLL_1-NIerJZwCq7owSqvDEBF7gfLXDDTWWI082HTW16f95WhxNikZuE9jZ8owXMjqUqlhzRRYmXhY8G6oDXFEa",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJk9oQNMQAhYARR5ZLukVPzS4",
+            "plus_code": {
+              "compound_code": "8MVF+VC Napa, California",
+              "global_code": "84CV8MVF+VC"
+            },
+            "price_level": 3,
+            "rating": 4.6,
+            "reference": "ChIJk9oQNMQAhYARR5ZLukVPzS4",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 2772
+          }
+        ],
+        "sights": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "Downtown Dock, 700 Main St, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2973991,
+                "lng": -122.2831219
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.29830522989272,
+                  "lng": -122.2818246201073
+                },
+                "southwest": {
+                  "lat": 38.29560557010728,
+                  "lng": -122.2845242798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Main Street Dock - Featuring Napa Valley Gondola, Kayak, & River Cruise",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 2359,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/102555547684178705383\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcJbfIU7I67N_stlWvYZUhABroka0ULyTz8QTUho-hzpPFc_zqWfw1vjt4Vvm1KK_gggF9IQEuFx5I7ORR5MD6EhziPsXRvmsUGBMfzcZEpGjg1fEL2UuS5uUnpJV5RYzIPkl8EChXEMiaVF9F3hqjrFi8PoCQ8_JRfobxbZ2COlVexmM5DMnTa5S3RdfnEDCV9bTCO8M7VadHZr7v-xdLkxiX0XacW3TxyS9sgD5e0JC8W6x91NWIvzbYYl-h9BBZl3Ec56OUrv3UJ5PueEr9p3hZcJNy9rwX5MtSAm5C25Rjv2NaA",
+                "width": 4192
+              }
+            ],
+            "place_id": "ChIJ4974TwMHhYARR5hSf7aAY0k",
+            "plus_code": {
+              "compound_code": "7PW8+XQ Napa, California",
+              "global_code": "84CV7PW8+XQ"
+            },
+            "rating": 4.7,
+            "reference": "ChIJ4974TwMHhYARR5hSf7aAY0k",
+            "types": [
+              "tourist_attraction",
+              "travel_agency",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 137
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "2201 Imola Ave, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2792897,
+                "lng": -122.2489646
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.28194115,
+                  "lng": -122.2470966
+                },
+                "southwest": {
+                  "lat": 38.27281855,
+                  "lng": -122.2541310000001
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "icon_background_color": "#4DB546",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+            "name": "Skyline Wilderness Park",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 1536,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/107061166225374119247\">Wez So_N_So</a>"
+                ],
+                "photo_reference": "AeeoHcL8BMjSJCyquk3hwFjvgnSoMStY8kfjDVBqq1nSr1PUGt9dFBETKbEL22yYeF-Bsxcx0dhLX5tq1kSLjIWUxuOH0V07-TBZdlNSUqrj89QZ7lfwF_yTTWiV_pQo-mq542luAl7w-Uuen4SQjSnvGWOwP3tgta54p4Olyky2pfzg4C5dmrn7vItSQzQLv1bWbXDNLKggOUm1kQ64v0s9t0DXTwf5eN31VR_Y2g-tHYtoeKmvabdV3oCxsaJOch0zzmInXkXs16yPsBGJfqr8osYimHwZTMOxvHA_dxSkE_usCrKT8fns9hY8bNZSc7Aobfj8Ko_Mz5eP-iTCaoyuCu4a5ZTunG7rNE4rnmAKZzuf3yGhRMX_-WynKO0djtvQZQ4AGRUTPwC07y9B6AIsVpS2EDoUnEb8nhXvdury5abzETEdzbF57ACIrtVX7UFm0J-jKZgYY80JEEu2k017PSd2FtDYc3wGFtvm1r73woOIe4KEazX-VCLfAv-oWXyfribCwEoHgP2XJY4Uq9R8hHChN2qwZwpt_0CxtF87gfD3kJiz3QbSU8ba9XTBGrHnQ0ePUQ",
+                "width": 2048
+              }
+            ],
+            "place_id": "ChIJw849FvgFhYARXV69K4VyD-s",
+            "plus_code": {
+              "compound_code": "7QH2+PC Napa, California",
+              "global_code": "84CV7QH2+PC"
+            },
+            "rating": 4.5,
+            "reference": "ChIJw849FvgFhYARXV69K4VyD-s",
+            "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1181
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "Soscol Ave, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2999815,
+                "lng": -122.2835907
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.30136992989272,
+                  "lng": -122.2821512701073
+                },
+                "southwest": {
+                  "lat": 38.29867027010728,
+                  "lng": -122.2848509298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "China Point Overlook",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3744,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/103183223173318508686\">Peter Reinold</a>"
+                ],
+                "photo_reference": "AeeoHcKuTVn-LcC_jG0BfxImnJxqPJwYUG2PwbawICwiUvmne9jYDFIVf81iv8lX-UJFVJ_0I1krrXeeHRUBPlaORWuJdPeIFnd7iuWXp5pIh1we3w7lLdyWFy5nqY7rdQsEwIAknYZNgJADG2Sy_RPDfCs3WUiTjiBpbODNMJProeUnSOA-TgLdx68KfnCnUwz2yCVSL1jWKCMyXjXT4avWKrQLIEgOtmdWVn2tQY6IN9rStp4OWeIq7CVJVAUTZJ3jC3O9XIh1bXTS1opClqvDqRiFqndSIUNdAcrqejbxUaWU5ySEzv6pNgweOujRIiNtWp9jeuxrhedkLoULqqURTNFPNqlGTChiTdpwHBd4pXZ1UD4pR4dSCkTWLJjG87Gx8T4eY9E2MRJcq02Svq36sSbYE5S5OTxLjxJhtEhxFpmY23RUb0nGf6O9JvEAxJZf7Z1CQCCGg6a62x937mgaDuEUXEolQpexmycNieFzAJf_Qg1xQeU_5GQ4gh3gnduX-sMN5QsrcHEPJyDNyR-NOCufDXVXyRWrrgUf4nmyfkAXK0HP8Ru2o43KkhnVVS6Z68OAVg",
+                "width": 5616
+              }
+            ],
+            "place_id": "ChIJm8OpaGYGhYARLJxlKkW6mBg",
+            "plus_code": {
+              "compound_code": "7PX8+XH Napa, California",
+              "global_code": "84CV7PX8+XH"
+            },
+            "rating": 4.3,
+            "reference": "ChIJm8OpaGYGhYARLJxlKkW6mBg",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 41
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "560 Jefferson St, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2936157,
+                "lng": -122.2929597
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.29502477989271,
+                  "lng": -122.2921595701073
+                },
+                "southwest": {
+                  "lat": 38.29232512010727,
+                  "lng": -122.2948592298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "icon_background_color": "#4DB546",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+            "name": "Fuller Park",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3120,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/116841267924664526277\">James Riordan</a>"
+                ],
+                "photo_reference": "AeeoHcJw0AQXAsFS7_3EAcd63rv_DvDO_Nbk01AgyIWvX87GmbgFCiTACw5AVDeFldaphMjgAb2cygN4WIgkO_Atz6_yySTFEULTCfHT4SEB8CGG1anWj6XzY3uaOOkQiQzeP-KfUQAIt2OMbAjdhnDYYPHIZhJbGZWd0XwMsrBLaBJcmEhtYJr9VAdGThzRQNaNV44II1OM0ofAXWzq6jtkNXrcAT0we-c9EAz4KwqgITV_rF1KlurAbq8sK54kSLKHKA-pAJY5FrfQ3lFTaYqMHcTXsZyaVDH6U9EXfcQUFCItdOPUsSjAuZEWEePkerjXLYqnrdGEQ0eScDCH8pd3BfrkN_mtBJCwzu6PnuHRWD4eV4ety-PRjR9_y30-S8WKEUb-vaIEwEfDwLHSVN-ae5M7Rv45o1qmthiKWaT9PyMYdpz7khKgQrx6Rs8k9NzWvopRu3OPoLeFMRxq2S4-rTKJ7c3HTM223XTlTGOhBKj651v5VahtzoM79Q9mcftGtyyNMVS6AyLM-s8ovRJQSbvYcHljCoKkwW-zyVPNaJofd6-6MfKQUWPU7WSfIffnHKk2SYT34GvoJQ",
+                "width": 4160
+              }
+            ],
+            "place_id": "ChIJifkwbkMGhYARUxBx_FNVNCM",
+            "plus_code": {
+              "compound_code": "7PV4+CR Napa, California",
+              "global_code": "84CV7PV4+CR"
+            },
+            "rating": 4.6,
+            "reference": "ChIJifkwbkMGhYARUxBx_FNVNCM",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 894
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "2295 Streblow Dr, Napa, CA 94558, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.26865069999999,
+                "lng": -122.2838197
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.27033117989272,
+                  "lng": -122.27943505
+                },
+                "southwest": {
+                  "lat": 38.26763152010728,
+                  "lng": -122.28528125
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "icon_background_color": "#4DB546",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+            "name": "Kennedy Park",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 2268,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/108632977297847382961\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcL1kDEee2Hl-qZxUcZV3kPrKeDtIFqOpZJfw99n50Suj6Xlu5z_Ew_SjB4zFVbhnBXPQj_4N75Rf8jVLy9tqJM4Pz5Pi7nrw5kJt0Vjsd0G8-10Gbt3VU5uRBPdL_yrGSqjUydPJGmiY6cUzFSFaOdOF0AYpGouFB-2WUyQCCJyptkJvyTun63tmmp0ODmU6OSd0_hIe3PvdHQ1cq2dm1HNS7eDvbzdBv37gK1z5iBvqhepEJrnBl5RpDLt_KYfeceiIYbEbXChLcNEQQQ5Wl5RO-WAGWCXqBlwddEzfVXBKjd3eDUu7Z7KgTqlZQOV8Z9WRt1Dc7MQV4w9qTJzQ5IrtJz2eJc8Mke7QrvBjCZj2EazWmoL8xepq0Ul-tFq4RXeSXxXcTqJKpmN8AIWsEGrVo_5hZNWpYpf2icCo_rmsFqWX6HIw_emYgOCR1YO4B1Gc1NjAR8A6APlugBQOtzgwfAlwvp2dFQ4lb97-hHZrtz6FUb_Jz09XZM-GCz88MF0uqbIqnethM50esMtEQZEsUJ476LdePpn0eS-R8ahTvAz7CTDejDJNcBKP0WJch34Eg",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJbTmkZK8IhYAR_UFbfxsu6Y4",
+            "plus_code": {
+              "compound_code": "7P98+FF Napa, California",
+              "global_code": "84CV7P98+FF"
+            },
+            "rating": 4.6,
+            "reference": "ChIJbTmkZK8IhYAR_UFbfxsu6Y4",
+            "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 865
+          }
+        ],
+        "history": "Napa County is a county north of San Pablo Bay located in the northern portion of the U.S. state of California. As of the 2020 United States census, the population was 138,019. The county seat is the City of Napa. Napa County was one of the original counties of California, created in 1850 at the time of statehood. Parts of the county's territory were given to Lake County in 1861."
+      }
     },
     {
       "wakeUpTime": "09:00",
-      "location": "Meadowood Napa Valley",
+      "location": "Rutherford, CA, USA",
       "lodging": {
         "name": "Meadowood Napa Valley",
         "address": "900 Meadowood Ln, St. Helena, CA 94574",
@@ -67,9 +591,9 @@
           "notes": "Leisurely breakfast in suite"
         },
         {
-          "name": "Transfer",
+          "name": "Transfer to Momento Mori",
           "length": "15",
-          "location": "Meadowood to Momento Mori",
+          "location": "Momento Mori",
           "notes": "Private car service"
         },
         {
@@ -120,11 +644,437 @@
           "location": "The Napa Valley Reserve",
           "notes": "6:00 PM Reception, 7:00 PM Dinner With Greg and Sara Bernaz"
         }
-      ]
+      ],
+      "suggestions": {
+        "restaurants": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1180 Rutherford Rd, Rutherford, CA 94573, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.4592603,
+                "lng": -122.4227438
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.46054787989272,
+                  "lng": -122.4213983201073
+                },
+                "southwest": {
+                  "lat": 38.45784822010728,
+                  "lng": -122.4240979798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Rutherford Grill",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3000,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/109276499641133826344\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcKjVP2ZyafZSKYRSKEZpzYU-DYB_N8b8mmZ4lhyWNesVFK0i06tG-UMjjkCDZtirWGO1BMg28fGi3Th5w9qbTa7sGtZ6ENB3vcmqFNbQ7Sy1-94TdV-Ebzy1W4oKcHItxGZr0K4LDUTTz2t7q8iYCDjDxikTw1laO0zHWDTK9rZwjItwau9cM5pW-qBhY49S-RN6e_36vjRLPeLfJoX-niINGC4QNxnbEEHi2D9uB1U5r1pxg6hdbIKFOQO2GsaaaMuUF1ajixfxTMqv5ib5lGtwqyNsBfp7EUN6Lk4PVgRTxKWSHMdrtnwVjgUkm9gcdgj2VnAHI-coIWN8pcKPsE0GOGVKw--G1hPPCYj6tBIIGen1IqYYRs5eXv0rXOEKv-zlimErmdlAbi_TUw6lWt_AmVEutP5yH4s7kTf1nLfLUttZR_-GzbRW9SIev_Sb2WPAfEkH-ZIBS8ldj28RbdxU0A_RqfxYOUw4f5JEuv1HH6Ny8iqR69P43kH4O8x1ot2axsCS7z-w30roQ8kXSeY_HuTZDqvNp4HzrsUv7M67JcaZSq6G-Sv3hvex-PYQrX42Zt7",
+                "width": 4000
+              }
+            ],
+            "place_id": "ChIJEc_Gt5hWhIARDUbuL88bX3Q",
+            "plus_code": {
+              "compound_code": "FH5G+PW Rutherford, California",
+              "global_code": "84CVFH5G+PW"
+            },
+            "price_level": 2,
+            "rating": 4.6,
+            "reference": "ChIJEc_Gt5hWhIARDUbuL88bX3Q",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 2988
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "738 Main St, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5010935,
+                "lng": -122.4630704
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50271237989272,
+                  "lng": -122.4618870201073
+                },
+                "southwest": {
+                  "lat": 38.50001272010728,
+                  "lng": -122.4645866798928
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Farmstead at Long Meadow Ranch",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3740,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114893202250361223498\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcLQFvxQVlxn8ouS0m6QWasnQyzcEsDN2ETLczbZzwcYJitF5JOm8hUw4Bty8xGSc3a-afZrVQjF3cwMZ6ul6EQGa01Oqb6NIN-QnXAyn3iekESZIoY25-ItkkT08Yr1oK1ow_ffwJYFQMB-FUchEe6ER5VXEfBUw9ZLGjkmYzrisT_54OKrwJwX5kPV07dh139keuev4Ustcv8q2ji79FEJKB1_qkugu4V8j6mU_VUFphrS0tLy-ILJviHsM1kOgwToHOARiiyN8Km1aeNJSDSJC2TnVSiNxpCQ0ah6CAerOQeNxUM",
+                "width": 5610
+              }
+            ],
+            "place_id": "ChIJk3v0NblQhIAR9fOQw3B9AwU",
+            "plus_code": {
+              "compound_code": "GG2P+CQ St Helena, California",
+              "global_code": "84CVGG2P+CQ"
+            },
+            "price_level": 3,
+            "rating": 4.6,
+            "reference": "ChIJk3v0NblQhIAR9fOQw3B9AwU",
+            "types": [
+              "cafe",
+              "meal_takeaway",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1585
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "7377 St Helena Hwy, Napa, CA 94558, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.4157367,
+                "lng": -122.3856336
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.41722577989272,
+                  "lng": -122.3843666201073
+                },
+                "southwest": {
+                  "lat": 38.41452612010728,
+                  "lng": -122.3870662798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Brix",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 1836,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114415277760371366312\">levi mcchristian</a>"
+                ],
+                "photo_reference": "AeeoHcJYv9F86BVSC1BP_BMHbjdB_39hM7ana830i2nWe-hD8y6dP-_mdE6kNFehmLCp_LKgUMHcgUlPHlBkZlHfuSgIPtMfr2XY7Xhjdd-eqqJArA1VXE7BUAOzKftxQRq2CCevzXMyYnM-vUJMvHHQOe649CGJTu0Ts6iedWaPQw0UOhhN4AR76mSI9te-AdC7iT-bY5D-nbobZJWKJu_KW-DybigII1jlSqOq44zIev-_C-hNIaKdgIWJDZod4TAXNiDo13getmlAFNGKIlkSniCEqtXMGGuK3X4oQESF_tR23in0w4ModB5rR7U2Y8EX17TNtvFArOVN3-BnDvdHMAqbSYyPtn7aMS8dqZ22MyAGtLqS1qa7WqeflpLV76HE51LK3a-dz72l-30KjP08HdvddKXJN8oqPTN0G0hpyCDUEnBBTNgxB4cU_eDCFg_kRvOcrQRujY7GBKgsgoT83x4wgby8M16EiE_npJo1fWIpjy0S-dvL3yn4v9J6G2OwFj-VMw9to4CpjdwTjkMVphR5G5p9Dfs0hXbZ27a-6zPmfQza-5h1uYSvxDugNM-rCYejcaNC",
+                "width": 3264
+              }
+            ],
+            "place_id": "ChIJ3VVWDgpD6oAR-ExqkpTP9jg",
+            "plus_code": {
+              "compound_code": "CJ87+7P Napa, California",
+              "global_code": "84CVCJ87+7P"
+            },
+            "price_level": 3,
+            "rating": 4.4,
+            "reference": "ChIJ3VVWDgpD6oAR-ExqkpTP9jg",
+            "types": [
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1554
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "587 St Helena Hwy, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.488889,
+                "lng": -122.4506605
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.49033212989271,
+                  "lng": -122.4492417201073
+                },
+                "southwest": {
+                  "lat": 38.48763247010727,
+                  "lng": -122.4519413798928
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "PRESS Restaurant",
+            "opening_hours": {
+              "open_now": false
+            },
+            "photos": [
+              {
+                "height": 9000,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/106661676860879997160\">Donald Herron</a>"
+                ],
+                "photo_reference": "AeeoHcJ_luZXKq2uFZSVlUoCbmMraWzZ6OY7pevK1PIJzRbEN3zXvl5mMxMfbF7Daej-LGylTidZd-0uai-EJFrq_Q-Tb8BG8W6cCMC55GAQpdaLOlRwO9pKoIzeMQgRF2E1r3_3SPEZUbOzsf1yVqCNO2qxpsqVS3arfT3-dcxTgf-BYATxGVlTjM7lYyJ6bCH_wRh4beQtRDej8rA-MGk8FWnGDaT7u_VJ3FbD9NMYxBeCG0gOYP_KlH2HKiBJYY4ue0asW2Pq5Q8E8lT0p_KZj9mzQmm_EGfVB3V4lA2JcM0qx3P0dAnwtEh0uAL2geBgmaxu0EXIxw3v5QQxU7COlWmZxs14cd9ulgbj6iz2qoSYcERDYbOlg0TkbIGIC0xvVusrE_o-qf74ml9gCaXSVr8didsPWW1rjqewoAyEOOuH16bJWcwoMJGUK1l8pMYLjW-DcKOwRaI5e54JBfiJqz0cKQkvMi5qDVq877XgiTaDVqCHBocZx1t_hs2_iYJi0rhtCrnY6Bl8oezVecrmxH5ZefC6uwDCzqoNypNpWhak8BX8LGzG0bmAVXpkxvcR9KNOZLeZ",
+                "width": 11820
+              }
+            ],
+            "place_id": "ChIJq4L3m9NQhIAR8MaZwYPwSjY",
+            "plus_code": {
+              "compound_code": "FGQX+HP St Helena, California",
+              "global_code": "84CVFGQX+HP"
+            },
+            "price_level": 4,
+            "rating": 4.4,
+            "reference": "ChIJq4L3m9NQhIAR8MaZwYPwSjY",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 825
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "7399 St Helena Hwy, Napa, CA 94558, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.4188873,
+                "lng": -122.3881797
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.42028292989272,
+                  "lng": -122.3867932701073
+                },
+                "southwest": {
+                  "lat": 38.41758327010728,
+                  "lng": -122.3894929298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Mustards Grill",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 850,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/104575844255658708954\">Mustards Grill</a>"
+                ],
+                "photo_reference": "AeeoHcJp3VqwDH7RoH3yfcC32PstyxNqr5J5PR_8SaSLvivLDCKiJjdbtVe-lsm-7gvpfdj_EhE8FYCvYMdl1YvPYreqw-kxII45nOstronP58767M1N97NwdnG6Wrt0xEecrZFXfvjdIhB-ICNxKvbCkhecZmFhha14i9tfzgkwQiCLnWQv_LtGCZr_BE0_rU0fVGMeXPb1n4rVv1N6AmSo2VqxW11Hmr2I-kXfhyyg8CSQAxqNF3WsVoJ9aD2ybWz0sooKV1MNK-y7fo3sHaETXvXv40UCKos-xpGkD47aa5GpS3eLIbs",
+                "width": 1275
+              }
+            ],
+            "place_id": "ChIJR1M8wQ9VhIARI-sL60200w8",
+            "plus_code": {
+              "compound_code": "CJ96+HP Napa, California",
+              "global_code": "84CVCJ96+HP"
+            },
+            "price_level": 3,
+            "rating": 4.7,
+            "reference": "ChIJR1M8wQ9VhIARI-sL60200w8",
+            "types": [
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 2373
+          }
+        ],
+        "sights": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1299 Tubbs Ln, Calistoga, CA 94515, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5962722,
+                "lng": -122.60235
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.59752972989273,
+                  "lng": -122.6010869701073
+                },
+                "southwest": {
+                  "lat": 38.59483007010728,
+                  "lng": -122.6037866298928
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Old Faithful Geyser of California",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114648982024135428675\">Freddy Gonzalez</a>"
+                ],
+                "photo_reference": "AeeoHcKgDqCh90S6w5j1GIsdYCC_aFUQ7H-EzYpf6pFppGhbWIBaA4G7CYRbRteo4zB8p1dlAAg5ZgHHK3Pm3F6FG1xUCsXMh7B8zulB7yFYfYczI8e2cMv_hoZTY7i7pbrUM1Wk-hjS_4xtmx-WFaKXfDH-Mb2B7TWHZTi9qfhV27CVTVzlKz9l0LmVvH0HRYAukuwfRLbHFN85oZ827agUL7JAcRx5YTIRKy5HnSZQyqhUl6-VFjY75PnELXaSPgWi30zfubuFICiTlZewmnCyokHsyrOul-5d3xvkqf70ylSsTJ6R7OM",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJ_ZHfF0ZChIARtuJF2m7U6DE",
+            "plus_code": {
+              "compound_code": "H9WX+G3 Calistoga, California",
+              "global_code": "84CVH9WX+G3"
+            },
+            "rating": 3.9,
+            "reference": "ChIJ_ZHfF0ZChIARtuJF2m7U6DE",
+            "types": [
+              "tourist_attraction",
+              "zoo",
+              "museum",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 2230
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "560 Jefferson St, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2936157,
+                "lng": -122.2929597
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.29502477989271,
+                  "lng": -122.2921595701073
+                },
+                "southwest": {
+                  "lat": 38.29232512010727,
+                  "lng": -122.2948592298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "icon_background_color": "#4DB546",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+            "name": "Fuller Park",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3120,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/116841267924664526277\">James Riordan</a>"
+                ],
+                "photo_reference": "AeeoHcJYUnVTDwT28a0dk-viZv8rrrMJqT7iL2hSBR03ilrhWJkvQxTnofi46CUt8OiM2Ix5ouW8dKfArRDL8Ed7_nauJefB5O96BSPJcW6cpY9Z07_o63N5wHsUdTM-iqiRBOZ2phpwXeTI5rhxuoRixGPFWyqfHRreYowo1DAT0SPnVttQix0vFOESfLMZPG7wr5Re3HrIifFUtn-pztEhTek8jJIJAKMb5M-I5TPBU0R8HP96vU7RCLagpgOllm0gw3ZSM6obL1zIbrPOm4f51e3DSyKXvdS7aRH_wjN8mzKW7m7ddAU",
+                "width": 4160
+              }
+            ],
+            "place_id": "ChIJifkwbkMGhYARUxBx_FNVNCM",
+            "plus_code": {
+              "compound_code": "7PV4+CR Napa, California",
+              "global_code": "84CV7PV4+CR"
+            },
+            "rating": 4.6,
+            "reference": "ChIJifkwbkMGhYARUxBx_FNVNCM",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 894
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1754 2nd St b1, Napa, CA 94559, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.2966349,
+                "lng": -122.2924853
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.29788017989272,
+                  "lng": -122.2911658701072
+                },
+                "southwest": {
+                  "lat": 38.29518052010728,
+                  "lng": -122.2938655298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Napa Valley Wine Trolley",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/113601290550508633476\">Cam V</a>"
+                ],
+                "photo_reference": "AeeoHcKIYMKsSo6u1Kq5araImS4qwp198hjez51jsbUN3vv3O4FKV7V34mU4aMpUdO2frNz7tCL4WQJ-gtDa_poO1ba_ZAEtJfjeEDVof-vnkL1KX7Z-h-gslExoVx7LxWTTTpzwDv7e8qPhzEnShjRDWettP6ytDFRLoO61RI8aOtYY_t_ONMJB0mIxXHmJPL_UUM5zXCtkl9TSP2GxYUhfna-n1QzCfRPXgJJ2S_RrvqeeBunrnqwiXxVyf2zfdzBwsPpbnp6SXUZbOntBMIZueLIhDz3gtSvkuBxCfREQN6qOuJOcHZ4",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJL4G3v1wGhYARb98DJGLqLC0",
+            "plus_code": {
+              "compound_code": "7PW5+M2 Napa, California",
+              "global_code": "84CV7PW5+M2"
+            },
+            "rating": 4.5,
+            "reference": "ChIJL4G3v1wGhYARb98DJGLqLC0",
+            "types": [
+              "tourist_attraction",
+              "travel_agency",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 226
+          }
+        ],
+        "history": "Rutherford is a census-designated place (CDP) in Napa County, California, United States. The population was 115 at the 2020 census."
+      }
     },
     {
       "wakeUpTime": "06:00",
-      "location": "Napa Valley",
+      "location": "St Helena, CA, USA",
       "lodging": {
         "name": "Meadowood",
         "address": "900 Meadowood Ln, St. Helena, CA 94574",
@@ -222,11 +1172,523 @@
           "location": "BOND Winery to Meadowood",
           "notes": "Return to hotel after dinner"
         }
-      ]
+      ],
+      "suggestions": {
+        "restaurants": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "738 Main St, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5010935,
+                "lng": -122.4630704
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50271237989272,
+                  "lng": -122.4618870201073
+                },
+                "southwest": {
+                  "lat": 38.50001272010728,
+                  "lng": -122.4645866798928
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Farmstead at Long Meadow Ranch",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3740,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114893202250361223498\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcLrjIuGMIJ426wWozqoYEArKzG0S3jy1rzcudtxylnt-uSYbS633Oz9jQsFWClPZf3GeObcI1hw4YPC27xY94_sGATG-mZ4L6ccrVFlbzIWY_S28JgtZ2PFvswnkSsVrcR9oqBR1N46--IbwCBAz61WlS86VQWwT_mbkpGOVgFPQx5STYZ42IrHRgMEnEhAAODj3bYtJkmKeTE5GuMPiOs7p1H3QEBxyQnlh18d7WPndupfT5W76xFU3qGmHMY0N3-hFjg5xjNBVKqTqoR1MfL38J_NCVT2C3X1VpfCk8aEHsR5lrc",
+                "width": 5610
+              }
+            ],
+            "place_id": "ChIJk3v0NblQhIAR9fOQw3B9AwU",
+            "plus_code": {
+              "compound_code": "GG2P+CQ St Helena, California",
+              "global_code": "84CVGG2P+CQ"
+            },
+            "price_level": 3,
+            "rating": 4.6,
+            "reference": "ChIJk3v0NblQhIAR9fOQw3B9AwU",
+            "types": [
+              "meal_takeaway",
+              "cafe",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1585
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "933 Main St #29, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5018989,
+                "lng": -122.4654977
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50325127989272,
+                  "lng": -122.4640353701073
+                },
+                "southwest": {
+                  "lat": 38.50055162010727,
+                  "lng": -122.4667350298928
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Gott's Roadside",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/113618295577741857237\">Ranveer Jayani</a>"
+                ],
+                "photo_reference": "AeeoHcK28lxoJMfavDzqqbiBeEBq-4U6YGIjYZZP69YpO4XG4ywVn5lSOOnsYqyQvfISHZMUGhk5zVBgvbHB_vEPeD2Azpuf_I7fo3LkSs5aiBjOOb4zUQNqkG3fSY0t0zpghhAx2vSUQlLS9ldOFvsTvqKMfmiC8ZqUOg3fbtKowcPAQKuirNMO681Rm5ZeSim3QqBlhy9L1Dt96TSDWsJz2G3LhygM8JK-CmJbqOhN-RN27eY4Bc1TgQBr3ov6XtqtjagZUQjcq3mLJ0o0hk-BTW79M9hU5PmkVjFS8sF5lRLbI6GP2Dr9hb8k920KDfyQTxigt6_3Znek75zbE2TEbdklVgk5WL_QGRxvQjiE8A8aDjULEmmBeWD0ABA1reAAIzcNra6J2C15EvPeXJCd-9satF6jKbMpWAnK0sfaZ_Mb3bRzYeBs6DnWFQXxyKFfkGjq9-FIHyi4X3AeCSXbgyXJntXdCsQ4najvj5_HoIzHaPLUBi2DcFB9j_IY0xLTid8HK-d3zgo8ahdQq-e48h-3_9IKbwVujwxHfVf0xYtWz6yKJpfcsehjiVJQ3OxZ3OzX1Gg9",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJd2A8lr5QhIARrdVmpZKvpPw",
+            "plus_code": {
+              "compound_code": "GG2M+QR St Helena, California",
+              "global_code": "84CVGG2M+QR"
+            },
+            "price_level": 2,
+            "rating": 4.6,
+            "reference": "ChIJd2A8lr5QhIARrdVmpZKvpPw",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 4957
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1327 Railroad Ave, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5050761,
+                "lng": -122.4688396
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50645697989273,
+                  "lng": -122.4675813201073
+                },
+                "southwest": {
+                  "lat": 38.50375732010728,
+                  "lng": -122.4702809798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Charlie's Napa Valley",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 2333,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/108615539415307165891\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcLmSdev84yW_gWrflUaPO46RKyJq7v9sr1pWLtVw1sYf2DbJ-3PLmIKRv1dQQUPIK7QtxmAWy5DCp10y_TNwyk_-_MORfH84zHWQ95pX5aW67bybqQqCxHp21WFcyRGx08IkOlMY65qRZVfGEGTPQbDtg-I_uKy_mv-n9ns2DaseW8YIbBQo7nyEDtJPaNOkeU8-ZQbe6QKlppiswRyuz4ucXKEHgMa_rN7wm9U-5SnRylrvzoDXOvKKpfSBwY3FbixFGmivM1GuVrlQ8PmLtUiPHO1XhyyFXuiQyLAJrqdMIpuFeY",
+                "width": 3500
+              }
+            ],
+            "place_id": "ChIJfxiYjWRRhIARhnSLokvsdzY",
+            "plus_code": {
+              "compound_code": "GG4J+2F St Helena, California",
+              "global_code": "84CVGG4J+2F"
+            },
+            "price_level": 3,
+            "rating": 4.5,
+            "reference": "ChIJfxiYjWRRhIARhnSLokvsdzY",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 117
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "7377 St Helena Hwy, Napa, CA 94558, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.4157367,
+                "lng": -122.3856336
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.41722577989272,
+                  "lng": -122.3843666201073
+                },
+                "southwest": {
+                  "lat": 38.41452612010728,
+                  "lng": -122.3870662798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Brix",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 1836,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114415277760371366312\">levi mcchristian</a>"
+                ],
+                "photo_reference": "AeeoHcLHWT2wxd7VcB2AwCAoMePTu-l6ykdaov4Tl0sWZkekngQD7UAJwzhWcCg0mFMwTNt82pd34KW9QrxUVuDvjMv2sBXdbQgnSlJkWGKVB42V5cg-uy1uTWV4Z9cBpo8Xv8XyEzZV2SemvwniqmrVm4LkFPHEWLanS8YQby1CPhkvDcUcC6ooRJbFYc8cYzGK2F2fpugh-jFLt8kKKda8wooRbv2zxKDkN3lXIAunAADEWEQSvbgIN9npVDTL4K0yQmUSRY_PJrKYjyVSMMz2OJ06LbIDgsJ_JU0cOnBnrWMNVCmvQc4fGmw43D57EblcA5VSW17-spCP_wfu18xHkRaxeGwB6hrSPWffyPoI9U5ESZI2rtaB-kKM41qulztdkiT9vNiTqaAtFUuxIkYGBFtUvXTZJcJUtjZlKazlfMSTzhliNEhtH9peaJ8L79c4WMJwgW-o94ABb1iqwbm_lyPeDxFxCQUZ0bhkUqmCXhzGjP9Rnwb3muDhV9i9Quulvz2EnXWMIUQmFQ0BBqq_3KQgvgigLx6dULML1ypx4aPG4oqHbI4pMgX2upD0d-Ft2dwhQBbY",
+                "width": 3264
+              }
+            ],
+            "place_id": "ChIJ3VVWDgpD6oAR-ExqkpTP9jg",
+            "plus_code": {
+              "compound_code": "CJ87+7P Napa, California",
+              "global_code": "84CVCJ87+7P"
+            },
+            "price_level": 3,
+            "rating": 4.4,
+            "reference": "ChIJ3VVWDgpD6oAR-ExqkpTP9jg",
+            "types": [
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1554
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1245 Spring St, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5031101,
+                "lng": -122.4683263
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50450592989272,
+                  "lng": -122.4671059201073
+                },
+                "southwest": {
+                  "lat": 38.50180627010728,
+                  "lng": -122.4698055798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Goose & Gander",
+            "opening_hours": {
+              "open_now": false
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/112131201143288694098\">francis alba</a>"
+                ],
+                "photo_reference": "AeeoHcIJ1MeQPCLarMq__cd7LL3SXjR_kRkv-Rwdba-izL3ObHTyDlEbPqOXdIrA4Gz1zZGvZebD5qkcHaycjHCB_UpudEzKwLoLhEbfJwj284XE0qM7plNIg4rnekax9m9mgDMXTihwTii95e1GZ2hhIa2uIIrqaL-bBWZ6vLkCA1pCU6SAhmpaT7oUAi-cGHQxHcrlYb3QH3LzWpzZ_Zf6RoA3ybRFlaL4upJ4h60yfgn-_Ny3133jod9f99LK89VK1Tn3bP37Yo2TC45Ds7g2ocKUUAyJjC0GQo0qLGiZkmXInsUtdZ1Ei8EKqNF2m_9rZc81y8zx2tzNkMwoUTNN3xibNWWm7962FhwdWoC4oF_oHYbjCWgb4-VHgEnuS7DW8rc6c_TI62LDr7XnS1p_0c-VaqN15L1jPLyDzPfEW9nykxMobVQFg9DAabmLz_tREIgDEJ-i6E8-BPGTNw-n9S7ylWMVRNmDuoL-LHNBS6ZZqfOCoLg9W3mne6ol0Lpy4q6AAmUGiO9tvwyecS2FUaB5IUr5UdsXaxImgNChgqeLoXxYRaiUGJzexGbJUsg2X0Em21RA",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJv7F-mb1QhIARoK_Yhmt9AmE",
+            "plus_code": {
+              "compound_code": "GG3J+6M St Helena, California",
+              "global_code": "84CVGG3J+6M"
+            },
+            "price_level": 3,
+            "rating": 4.6,
+            "reference": "ChIJv7F-mb1QhIARoK_Yhmt9AmE",
+            "types": [
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1232
+          }
+        ],
+        "sights": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1498 Main St, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.50596669999999,
+                "lng": -122.4711502
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50725797989272,
+                  "lng": -122.4698589201073
+                },
+                "southwest": {
+                  "lat": 38.50455832010728,
+                  "lng": -122.4725585798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "icon_background_color": "#4DB546",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+            "name": "Lyman Park",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 720,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/109483909479114903955\">Jake Hoover</a>"
+                ],
+                "photo_reference": "AeeoHcJ05VHL3Dn7XW8TG8J50BOw9eJP8EZKNPgLXVqpo7YFopZFrSF4Smv7CFubgJufWwXiVGbuA5oOzMsKCKT2GDZXofLV9du2NKdgn9tn1WrMgydiA3TpgKg1KLuiJF8ANdF6IEwuB4PrlSmdKHsYf3yeD8lPfFtuTQ7vD5lpUdM7xLmtr5ucVLZ57W673ytCZVYsFBun2qg455GaErQ1UOpVM2Gb2MB125y-gn7inCRRKUzG4xc708wLGAmZTgZ7vI-NOTwPQK93-BStEId7sijvKHCsE-mr8NYsXMtUc51LAjeavDA",
+                "width": 960
+              }
+            ],
+            "place_id": "ChIJKeFlOZhQhIARH9aWo6FwrbI",
+            "plus_code": {
+              "compound_code": "GG4H+9G St Helena, California",
+              "global_code": "84CVGG4H+9G"
+            },
+            "rating": 4.6,
+            "reference": "ChIJKeFlOZhQhIARH9aWo6FwrbI",
+            "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 97
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "125 Glass Mountain Ln, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5371185,
+                "lng": -122.4786676
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.53848527989272,
+                  "lng": -122.4773385701072
+                },
+                "southwest": {
+                  "lat": 38.53578562010728,
+                  "lng": -122.4800382298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Elmshaven",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 4032,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/108808555332896868398\">Summer Rose Weeks</a>"
+                ],
+                "photo_reference": "AeeoHcIZRb-9-x2mL_23bHxlYElLdqEfCDvQ0LA8Uo5-h-nAUZoloETjImU6KEJYGNJSvMg1blYZkzzDH4sZF4JtdPQG9yUrK---OSTQZQryfFhYG1XCVXXiix-ujQmBKFfV3w7S0WHEPC4p4JF4whmcDRYshLVxk0GTOs9RBvPYE2qHUQkAuNyfGHllizAHx_qhP5RSaLS9MeP6XxxRCGsY0hx_qm1BKp8e4o95kIgKZXPhy-kJU0270j609jFORoj5OX-nDU5vlw3armz57eCm1dMwPe4krtSyAmQbwjXVATuoB6V9pjE",
+                "width": 3024
+              }
+            ],
+            "place_id": "ChIJvXHI70RahIARl-Pg0tgYVwc",
+            "plus_code": {
+              "compound_code": "GGPC+RG St Helena, California",
+              "global_code": "84CVGGPC+RG"
+            },
+            "rating": 4.9,
+            "reference": "ChIJvXHI70RahIARl-Pg0tgYVwc",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 252
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1490 Library Ln, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5076744,
+                "lng": -122.4696974
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50891992989272,
+                  "lng": -122.4683471701073
+                },
+                "southwest": {
+                  "lat": 38.50622027010728,
+                  "lng": -122.4710468298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+            "name": "Robert Louis Stevenson Museum",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 1365,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/100383217011383182944\">Silverado Museum</a>"
+                ],
+                "photo_reference": "AeeoHcImdt8i0HtS8eOjeLWdICBhXIQOq_1RkifJ8P_MAmu35Q88Vx8hy401ve2GOAyjEyRGQw71MoKPCco1waITEu2l3f23UPR2wHK8FULcIiOdrJz397SUCWHs3R-AV4qpuFSBr8RxJy-CQyNA3Eo6rrO7FF_v9BCT0h5HtvNAfyvm2EI3dF3L9eT0lX-J9-wP16-k9OOKdvyH_v-IuQb8fcLosYS-uwUSEs0Gpq6avPyK_KDYmspkz1uQgtf4vFpXUeYvWOvrDb586yM0wMIjlgpCIqQ4Ku6VXCDMb9x7Ag7LnwIKYcw",
+                "width": 2048
+              }
+            ],
+            "place_id": "ChIJPfJnfJhQhIARpVksyqivews",
+            "plus_code": {
+              "compound_code": "GG5J+34 St Helena, California",
+              "global_code": "84CVGG5J+34"
+            },
+            "rating": 4.4,
+            "reference": "ChIJPfJnfJhQhIARpVksyqivews",
+            "types": [
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 26
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1255 Oak Ave, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.5030913,
+                "lng": -122.4699171
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.50447357989272,
+                  "lng": -122.4686193201073
+                },
+                "southwest": {
+                  "lat": 38.50177392010728,
+                  "lng": -122.4713189798928
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+            "name": "St Helena Historical Society",
+            "place_id": "ChIJ4fy6gJhQhIAR43CrUdm0c_M",
+            "plus_code": {
+              "compound_code": "GG3J+63 St Helena, California",
+              "global_code": "84CVGG3J+63"
+            },
+            "rating": 5,
+            "reference": "ChIJ4fy6gJhQhIAR43CrUdm0c_M",
+            "types": [
+              "museum",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "3369 St Helena Hwy, St Helena, CA 94574, United States",
+            "geometry": {
+              "location": {
+                "lat": 38.541081,
+                "lng": -122.5091845
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 38.54247562989273,
+                  "lng": -122.5075539701073
+                },
+                "southwest": {
+                  "lat": 38.53977597010729,
+                  "lng": -122.5102536298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "icon_background_color": "#4DB546",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+            "name": "Bale Grist Mill State Historic Park",
+            "opening_hours": {
+              "open_now": false
+            },
+            "photos": [
+              {
+                "height": 1362,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/100257638875518686391\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcLfQRcAh9PmvuRl8I3GNURYPZQ9trBxwC3Gfk62s7lcf3dw_7tegS4sbA4iNxpQZ5R77mTldOqMvP6AcDVdIQ5hMozdWbN5NNwL_r6046M8hIFpVw0wm8wXMChZyVMXqs2RPH-tQzMBgSrbaC4ZySG9XMg5nRmlGtaTEGsltYXTgsXUtyVk6Nuj4abx1u_CVmX1kVzNXoHJch9E4gE7HuOSNVQlA-84pJ7uD27VAJFAuOn21SKJck_dob0JFMJILfG8nxBRVCok9RMbNANxtRh3OCZmR-rBed6a0hMoGZ2kFozkItQ",
+                "width": 2048
+              }
+            ],
+            "place_id": "ChIJzWt2Cx5bhIAR6oc2AWV3QZo",
+            "plus_code": {
+              "compound_code": "GFRR+C8 St Helena, California",
+              "global_code": "84CVGFRR+C8"
+            },
+            "rating": 4.7,
+            "reference": "ChIJzWt2Cx5bhIAR6oc2AWV3QZo",
+            "types": [
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 163
+          }
+        ],
+        "history": "St. Helena is a city in Napa County, California, United States. Located in the North Bay region of the San Francisco Bay Area, the population was 5,438 at the 2020 census."
+      }
     },
     {
       "wakeUpTime": "09:30",
-      "location": "Corona del Mar",
+      "location": "Corona Del Mar, Newport Beach, CA, USA",
       "lodging": {
         "name": "Home",
         "address": "611 Carnations Ave",
@@ -259,10 +1721,10 @@
           "notes": "Midday drive"
         },
         {
-          "name": "Lunch at Ang\u00e8le",
+          "name": "Lunch at Angèle",
           "length": "90",
           "location": "540 Main St, Napa, CA",
-          "notes": "1:00 PM Reservation at Ang\u00e8le, a French country bistro overlooking the river, offering elevated Napa Valley cuisine."
+          "notes": "1:00 PM Reservation at Angèle, a French country bistro overlooking the river, offering elevated Napa Valley cuisine."
         },
         {
           "name": "Drive to JSX Concord Terminal",
@@ -285,10 +1747,535 @@
         {
           "name": "Drive home",
           "length": "13",
-          "location": "19301 Campus Dr, Santa Ana to 611 Carnation, Corona del Mar",
+          "location": "611 Carnation Ave, Corona Del Mar, CA 92625, USA",
           "notes": "Final drive of the trip"
         }
-      ]
+      ],
+      "suggestions": {
+        "restaurants": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "453 Newport Center Dr, Newport Beach, CA 92660, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.6148594,
+                "lng": -117.8730883
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.61608982989273,
+                  "lng": -117.8715699701073
+                },
+                "southwest": {
+                  "lat": 33.61339017010728,
+                  "lng": -117.8742696298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "JOEY Newport Beach",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3072,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/104196418963856624469\">Dawson Jung</a>"
+                ],
+                "photo_reference": "AeeoHcKwA8JHMw0hXXQQx63KtArN4pBzjQER3SkWaGj_1rQ94g9w7mGuFYanKWxC1poAsSZQNSUMRUbMtX2wgXnL57jxZDGQSU6XDAbj2nLyuFMmdMQnCoodH96iWXotP8mM5a9AwwRlcnXGrpCePILIPUA6LI1WvDFSJYPI_VLYz2Oxal8cFBOdpxNy8fQvk170-N9EWn-BtR7AZkG_30LMJTj3omnZycdp2OeO86QejALQ3I7y4EeEBe7KOmJQ3dFeVIxqWdWZZOJwvrtz5hVK6vr_eeS-ASHZfTTjIot1OTTSqPaxuZo",
+                "width": 4080
+              }
+            ],
+            "place_id": "ChIJD6_Ci0Hh3IAR4foJoTB2onI",
+            "plus_code": {
+              "compound_code": "J47G+WQ Newport Beach, California",
+              "global_code": "8554J47G+WQ"
+            },
+            "price_level": 3,
+            "rating": 4.9,
+            "reference": "ChIJD6_Ci0Hh3IAR4foJoTB2onI",
+            "types": [
+              "restaurant",
+              "bar",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 2733
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "2744 East Coast Hwy, Corona Del Mar, CA 92625, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.601568,
+                "lng": -117.8725844
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.60291742989272,
+                  "lng": -117.8713267201073
+                },
+                "southwest": {
+                  "lat": 33.60021777010727,
+                  "lng": -117.8740263798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Summer House",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 4032,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/105820701078494863170\">Jasmin Haugstuen P</a>"
+                ],
+                "photo_reference": "AeeoHcIz-mg-4DG5vHYDrdFsi7a-IRfEJ1e5maTP6VcsmlWkdg6idID8NghuV647LORlFskhGIrjZgFAD1i0s5MQNWmM4cmQsrPnSTegP6vd7TFAw3I19ncjSNxQN8p-vUkaFUaz_Wr3nZ4n5BWjHcxynKiu1iRMFeTLWgwQkir7aY15wTZO1wThd4JrOBGuQAByB4hZQdWqEgwE5ZZN3JdinPuynRN9zL8umsX8y_LQ2oHKAB_UUMFLLANWyfsrcNNA4sviIleySUkrtt55oOR_P04RsGv_wTveKuYia0LQ6ydqnmd0YL0",
+                "width": 3024
+              }
+            ],
+            "place_id": "ChIJ0wGzffTg3IAR8c-ARzFzj_o",
+            "plus_code": {
+              "compound_code": "J42G+JX Corona Del Mar, Newport Beach, CA",
+              "global_code": "8554J42G+JX"
+            },
+            "price_level": 2,
+            "rating": 4.5,
+            "reference": "ChIJ0wGzffTg3IAR8c-ARzFzj_o",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 462
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "15 Crystal Cove, Newport Coast, CA 92657, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.5742632,
+                "lng": -117.8403147
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.57562557989273,
+                  "lng": -117.8389857701073
+                },
+                "southwest": {
+                  "lat": 33.57292592010729,
+                  "lng": -117.8416854298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "The Beachcomber at Crystal Cove",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 500,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/102535553557910674131\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcLUj7AbRQr2ymTyftud8ZO_pVUHs8-4P9hKZdOkzGFSgUNqW26OxzI03amABeeNQiCTZr6Hid_UmPoWicoFUjANaje6OPle6FNB2ZJjMEgJMPNLLwyYPhxh6jtgtpSdCR1VPz2ohAxq531v4eXWp0j-1aPearwzXSNdj1E-upkqdQTk_8_Ct7ehNK_Kmkg96bntUZvClDLwz0QXtNZbDWaZNRzVFqxG3DAOF5hOKwAEvpQNL-u53ASWBUAAN2DMsDPBojZ894QbeVbSzFnzsK1YwLGqjcE65V9plNJYXDeLP2LcoV0",
+                "width": 1200
+              }
+            ],
+            "place_id": "ChIJD6gAHDfh3IARSo2AOvXcsUQ",
+            "plus_code": {
+              "compound_code": "H5F5+PV Newport Coast, Newport Beach, CA",
+              "global_code": "8554H5F5+PV"
+            },
+            "price_level": 2,
+            "rating": 4.6,
+            "reference": "ChIJD6gAHDfh3IARSo2AOvXcsUQ",
+            "types": [
+              "cafe",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 3573
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "7832 Pacific Coast Hwy, Newport Beach, CA 92657, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.5705634,
+                "lng": -117.8343125
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.57197907989271,
+                  "lng": -117.8328288201073
+                },
+                "southwest": {
+                  "lat": 33.56927942010727,
+                  "lng": -117.8355284798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Javier's Restaurant - Newport Beach",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/112533907650424625791\">Shannon Gray</a>"
+                ],
+                "photo_reference": "AeeoHcI6UIlVRkl3V7nBy2ypngUAPqlp1ILpQryw5BPxLj8cYCJKMaf7AecNU6BTYVBmVljkNzyA8M-miMqtndpehQ0lj80HMNvIs5LGjzuWFn2v5IMerxcDd-KdAgoRus-o4tE-5te1MKiLvqfL9im82NbFmtmoXZH88DuLxSyNbBfZLcCITuVo2O9pt5RbYcHcnGTeX3Z6ocIMhYhP61NVeG4X2P8M3wp242AX-JuxC93wEOhv56WLo-Qk3IUk5pFxnLF6DDeH9ClIX9WmUHZSbhfATMNLqjB-JXuaL0e_Uxcw_6qUaq4",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJdR92Xkrh3IARGodImqvGaZQ",
+            "plus_code": {
+              "compound_code": "H5C8+67 Newport Beach, California",
+              "global_code": "8554H5C8+67"
+            },
+            "price_level": 3,
+            "rating": 4.4,
+            "reference": "ChIJdR92Xkrh3IARGodImqvGaZQ",
+            "types": [
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 3763
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "1133 Newport Center Dr, Newport Beach, CA 92660, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.6154882,
+                "lng": -117.8772932
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.61686922989272,
+                  "lng": -117.8762209701073
+                },
+                "southwest": {
+                  "lat": 33.61416957010727,
+                  "lng": -117.8789206298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Great Maple",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 4032,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/101452183462909344464\">Jeni Jankowski</a>"
+                ],
+                "photo_reference": "AeeoHcKnIOICGs-sbqxnMAp8XueNWbTE6zjJvsp9k8HajcgpKZsOrUAiJ7UZcH-w5RDaF10IgCDH3KP8jMenIB8bD5QJQgEUnwjNstSmbiSqkWeycr7yiJGcrGjaob_WMTfzJMyA_9s7Eyj4fBsT2QSJKu2SxkHS3bLaPkGHkBZblzKZV1-hYH6LxUPip1VP6xCRVaLswQGVo0BRJOv44xtoL1a8eYitix3H541fcwVIqQk97gAo0LeqwXwRccE7_hlM0MrzuYl4pwFlC7bEDuXC3LpIdz0nEIeDmvOpHWmCDrhgpD33sa8",
+                "width": 3024
+              }
+            ],
+            "place_id": "ChIJnxeR-Yfg3IARNNovZKnu5xg",
+            "plus_code": {
+              "compound_code": "J48F+53 Newport Beach, California",
+              "global_code": "8554J48F+53"
+            },
+            "price_level": 2,
+            "rating": 4.3,
+            "reference": "ChIJnxeR-Yfg3IARNNovZKnu5xg",
+            "types": [
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 842
+          }
+        ],
+        "sights": [
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "3001 Ocean Blvd, Corona Del Mar, CA 92625, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.5923378,
+                "lng": -117.8715497
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.59373507989272,
+                  "lng": -117.8700739701073
+                },
+                "southwest": {
+                  "lat": 33.59103542010728,
+                  "lng": -117.8727736298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Inspiration Point",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 2448,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/101463766305133392426\">A Google User</a>"
+                ],
+                "photo_reference": "AeeoHcIvVqEXEA7PSEvwdnA3Obc7kKtT1y2PBXBys9fz-Xjaxffv0sLwPrQ3Ibt8Yz0Zx0KD3F6d-D8R6DUlkXORdfhiXbWinYa2Pvqk4mNilKo36VXzY8o-FjO7PdyaLa1yf2Bi_iwxw7wyLBD5EGskSLZ2hwfpBQ7TUB03gkie_lYSbJAO2gZkTabchzpFA5LA8EgMpUVizZRsdTgk5v_r8eq4b-FYlQzYDxCqjWYet767LCPtBNqUv88oLUSd71-xT-NQ6qhByXae4BwdDCb_1bRt_JMwRla_mFflBl8HUWEK_Ca-KDQ",
+                "width": 3264
+              }
+            ],
+            "place_id": "ChIJRwYkI_rg3IARia_5hFXqiY4",
+            "plus_code": {
+              "compound_code": "H4RH+W9 Corona Del Mar, Newport Beach, CA",
+              "global_code": "8554H4RH+W9"
+            },
+            "rating": 4.8,
+            "reference": "ChIJRwYkI_rg3IARia_5hFXqiY4",
+            "types": [
+              "tourist_attraction",
+              "landmark",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 3611
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "2837 Ocean Blvd, Corona Del Mar, CA 92625, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.5954189,
+                "lng": -117.8778234
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.59681282989273,
+                  "lng": -117.8764240201073
+                },
+                "southwest": {
+                  "lat": 33.59411317010728,
+                  "lng": -117.8791236798927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Lookout Point",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 2320,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/112818857337288296668\">Erick Tello</a>"
+                ],
+                "photo_reference": "AeeoHcLBdKzTsyemaeXmM6GsG1BiurbVB8Kbv6juO7yAh12T_pStFjzM07pLtx8QkiN7TEZOb5NLmAadvb1SDOkl-OOW9QUccWNlr7rgOcLtALgjTHglopNikXk8rh0MGHm2wbc2ciRT2d8dmMbDTD3e1WsJM47vsIH3Udmjqg37t0tVIzdZGqS8QDHxE2ar0qCIC-5Kfq0KFJE5hf0rdUvKvIDy_IGMOH9UV2V2RXSj3lI9UXO6Tfb4uPQTAY60IMvZSC9D_A-EWU3vdFnrbVpyRG-hjVUCz0ByB0oLSjtm96vqb3mTrOs",
+                "width": 4640
+              }
+            ],
+            "place_id": "ChIJvRZJKvbg3IARqk93eNGDZ70",
+            "plus_code": {
+              "compound_code": "H4WC+5V Corona Del Mar, Newport Beach, CA",
+              "global_code": "8554H4WC+5V"
+            },
+            "rating": 4.8,
+            "reference": "ChIJvRZJKvbg3IARqk93eNGDZ70",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1462
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "2889 Way Ln, Corona Del Mar, CA 92625, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.59452600000001,
+                "lng": -117.8787511
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.5967045,
+                  "lng": -117.8770388701073
+                },
+                "southwest": {
+                  "lat": 33.5934025,
+                  "lng": -117.8797385298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Pirates Cove Beach",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 4080,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/100105723917540846556\">Alex Smith Rose</a>"
+                ],
+                "photo_reference": "AeeoHcIoXb0oeK5pyxfhWpFA19Ivu1U-ncuWgmD3J8IYooePBm84NhKeQ7XBYjM1WjaNfrXw0WHMO62GcV2u4lDHwrwluSQwofQE_LATh4m45Ju2YtUv2SHKfFXT-hTCm1Zk_p_Fu-cUV6GN2vTSqtuPXnqSLrt6DZZBSX-B-UfprDOW3EcDFom0VDpR2PtcIDOMgh29lkdiqUwz_DzbWwV2G5rNQDQamHCaLy9L-Uopklf8B7sm553Dnel-ONRWYafkDODQlIrNsQ6DHiAyv2d0kO3ohbvx0Y87j78G_Lxirf_d74nrkHc",
+                "width": 3072
+              }
+            ],
+            "place_id": "ChIJA_hahR_h3IARxvI8Ig1DACI",
+            "plus_code": {
+              "compound_code": "H4VC+RF Corona Del Mar, Newport Beach, CA",
+              "global_code": "8554H4VC+RF"
+            },
+            "rating": 4.9,
+            "reference": "ChIJA_hahR_h3IARxvI8Ig1DACI",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 68
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "2300 Channel Rd, Newport Beach, CA 92661, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.5955665,
+                "lng": -117.8818277
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.59693202989272,
+                  "lng": -117.8806285701073
+                },
+                "southwest": {
+                  "lat": 33.59423237010728,
+                  "lng": -117.8833282298927
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "icon_background_color": "#4DB546",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+            "name": "West Jetty View Park",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 3024,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/114900564396055282832\">White Fields Community Church</a>"
+                ],
+                "photo_reference": "AeeoHcINukWtv4Yb6E6bquxQ7GTSL_SYYqCgMGaj_gPpw7u0ML7U6KnfORaJWaavUq4OnVxdrtNFTc0h2IqRBx6ucblHqWY4zimFewGKOOx6dmV2HjTB4gBkMOTxv8mftRz7o0SXlRVCIKINV2FPn59jNdNWoLk8H4EYWe8qSg4oeV1TRxcDDYJwZhekdNXy9-gSSQvA0wrBS0t7vRuZofgpgZ9FFrg-MpbPxO4hQPunTpaDgdrWvAyveX9a6xFLxz9w47UdjR-8fbfbxeEVFJaXWtLGGcATDjHgmkQRQwGbIvwEPtHCIcs",
+                "width": 4032
+              }
+            ],
+            "place_id": "ChIJD_CEPVng3IARST0KxU3ekrw",
+            "plus_code": {
+              "compound_code": "H4W9+67 Newport Beach, California",
+              "global_code": "8554H4W9+67"
+            },
+            "rating": 4.7,
+            "reference": "ChIJD_CEPVng3IARST0KxU3ekrw",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 1925
+          },
+          {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "Newport Beach, CA 92660, United States",
+            "geometry": {
+              "location": {
+                "lat": 33.6112001,
+                "lng": -117.8711104
+              },
+              "viewport": {
+                "northeast": {
+                  "lat": 33.61205742989272,
+                  "lng": -117.87025155
+                },
+                "southwest": {
+                  "lat": 33.60935777010727,
+                  "lng": -117.87308615
+                }
+              }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#13B5C7",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Bunnyhenge",
+            "opening_hours": {
+              "open_now": true
+            },
+            "photos": [
+              {
+                "height": 4032,
+                "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/110790284904078557964\">Ezia Auditore</a>"
+                ],
+                "photo_reference": "AeeoHcK3Xo_U4dQ7X7kW7Xs5XDpvg3hNWyimsnCC9pFxJxhXp4XPLDY9DVJ0FLW0Wfec_mijd05UMk9cbs6kl7SK2p4D8yVcvV7Bdd8sVXoe8i1IR13vqljlwmK8JI5R1yP9MhfNvi56k7GmGK0TjYMqTfTzebEZq124gchWcsdp3n59C1xyQnb4WATqpXCfd8q5T1bqff4QCl5296qZCRw1q_vWzrauYEHVZOHpvkHFwIGnhnRHyhpTKa072mzFWZnl3gTAT9ojW4_3us2M-zp4SqIgjvdAYDwALE9uUhgHv3cnTyQfhlA",
+                "width": 3024
+              }
+            ],
+            "place_id": "ChIJH2Iox47g3IARGwRmiQmYnAE",
+            "plus_code": {
+              "compound_code": "J46H+FH Newport Beach, California",
+              "global_code": "8554J46H+FH"
+            },
+            "rating": 4.8,
+            "reference": "ChIJH2Iox47g3IARGwRmiQmYnAE",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "user_ratings_total": 129
+          }
+        ],
+        "history": "Corona del Mar is a seaside neighborhood in the city of Newport Beach, California. It generally consists of all the land on the seaward face of the San Joaquin Hills south of Avocado Avenue to the city limits, as well as the development of Irvine Terrace, just north of Avocado. Corona del Mar is known for its beaches, tide pools, cliffside views and village shops. Beaches in the area include Corona del Mar State Beach as well as Crystal Cove State Park south of Corona del Mar, accessible by paths winding down a steep hillside. Corona del Mar has a representative to the Newport Beach City Council. Residents use a mailing address of Corona del Mar with the 92625 ZIP code."
+      }
     }
   ]
 }

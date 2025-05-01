@@ -15,6 +15,43 @@ function calculateActivityTime(day, activityIndex) {
     });
 }
 
+function hydrateClassicAutocompleteInputs() {
+        document.querySelectorAll('input.day-location').forEach(input => {
+            const autocomplete = new google.maps.places.Autocomplete(input);
+            autocomplete.addListener('place_changed', async () => {
+                const place = autocomplete.getPlace();
+                const dayIndex = input.dataset.dayIndex;
+                if (place?.formatted_address) {
+                    input.value = place.formatted_address;
+                    input.dispatchEvent(new Event('blur'));
+                }
+            });
+        });
+
+        document.querySelectorAll('input.activity-location').forEach(input => {
+            const autocomplete = new google.maps.places.Autocomplete(input);
+            autocomplete.addListener('place_changed', async () => {
+                const place = autocomplete.getPlace();
+                if (place?.name) {
+                    input.value = place.name;
+                    input.dispatchEvent(new Event('blur'));
+                }
+            });
+        });
+
+        document.querySelectorAll('input.hotel-name').forEach(input => {
+            const autocomplete = new google.maps.places.Autocomplete(input);
+            autocomplete.addListener('place_changed', async () => {
+                const place = autocomplete.getPlace();
+                const dayIndex = input.dataset.dayIndex;
+                input.value = place.name;
+                document.querySelector(`input[data-field="lodging.address"][data-day-index="${dayIndex}"]`).value = place.formatted_address || "";
+                document.querySelector(`input[data-field="lodging.phone"][data-day-index="${dayIndex}"]`).value = place.formatted_phone_number || "";
+                input.dispatchEvent(new Event('blur'));
+            });
+        });
+    }
+
 export function initDragAndDrop(tripData) {
     const containers = document.querySelectorAll(".activity-list");
 
@@ -246,10 +283,38 @@ function addMinutes(time, minutes) {
     return `${newHour}:${newMinute.toString().padStart(2, "0")} ${period}`;
 }
 
-export function renderTrip(tripData) {
+export function renderTrip(tripData, apiKey) {
     if (!tripData) return;
 
     const daysContainer = document.getElementById("days-container");
+
+    // Add this helper here:
+    function formatSuggestionSection(suggestions, location, apiKey) {
+        const formatCardsRow = (label, list) => {
+            if (!list?.length) return "";
+            return `
+                <h5 class="mt-3">${label}</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    ${list.map(p => `
+                        <div style="flex: 1 1 calc(20% - 10px); min-width: 200px;">
+                            <strong>${p.name}</strong><br>
+                            ${p.formatted_address}<br>
+                            ${p.place_id && apiKey ? `<iframe width="100%" height="200" frameborder="0" style="margin-top:5px"
+                                src="https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=place_id:${p.place_id}" allowfullscreen></iframe>` : ''}
+                        </div>
+                    `).join("")}
+                </div>
+            `;
+        };
+
+        return `
+            <div class="day-info-section">
+                ${formatCardsRow("Top 5 Restaurants Nearby", suggestions.restaurants)}
+                ${formatCardsRow("Top 5 Tourist Sights", suggestions.sights)}
+                ${suggestions.history ? `<div class="mt-4"><h5>History of ${location}</h5><p>${suggestions.history}</p></div>` : ""}
+            </div>
+        `;
+    }
 
     daysContainer.innerHTML = tripData.trip.map((day, dayIndex) => {
         const displayDate = moment(tripData.startDate, "YYYY-MM-DD")
@@ -300,42 +365,74 @@ export function renderTrip(tripData) {
                 <div class="row mb-2">
                     <label class="col-2 col-form-label">Location:</label>
                     <div class="col-10">
-                        <input type="text" class="form-control" value="${day.location || ""}"
-                            data-field="location" data-day-index="${dayIndex}">
+                        <input
+                          type="text"
+                          class="form-control day-location"
+                          value="${day.location || ""}"
+                          placeholder="Search location..."
+                          data-field="location"
+                          data-day-index="${dayIndex}"
+                        >
                     </div>
                 </div>
 
                 <div class="row mb-2">
                     <label class="col-2 col-form-label">Hotel Name:</label>
                     <div class="col-10">
-                        <input type="text" class="form-control" value="${day.lodging?.name || ""}"
-                            data-field="lodging.name" data-day-index="${dayIndex}">
+                        <input
+                            type="text"
+                            class="form-control hotel-name"
+                            value="${day.lodging?.name || ""}"
+                            placeholder="Search hotel..."
+                            data-field="lodging.name"
+                            data-day-index="${dayIndex}"
+                        >
                     </div>
                 </div>
 
                 <div class="row mb-2">
                     <label class="col-2 col-form-label">Address:</label>
                     <div class="col-10">
-                        <input type="text" class="form-control" value="${day.lodging?.address || ""}"
-                            data-field="lodging.address" data-day-index="${dayIndex}">
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="${day.lodging?.address || ""}"
+                            placeholder="Hotel address"
+                            data-field="lodging.address"
+                            data-day-index="${dayIndex}"
+                        >
                     </div>
                 </div>
 
                 <div class="row mb-2">
                     <label class="col-2 col-form-label">Phone:</label>
                     <div class="col-10">
-                        <input type="text" class="form-control" value="${day.lodging?.phone || ""}"
-                            data-field="lodging.phone" data-day-index="${dayIndex}">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="${day.lodging?.phone || ""}"
+                          placeholder="Hotel phone"
+                          data-field="lodging.phone"
+                          data-day-index="${dayIndex}"
+                        >
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <label class="col-2 col-form-label">Room Type:</label>
                     <div class="col-10">
-                        <input type="text" class="form-control" value="${day.lodging?.roomType || ""}"
-                            data-field="lodging.roomType" data-day-index="${dayIndex}">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="${day.lodging?.roomType || ""}"
+                          placeholder="Room type"
+                          data-field="lodging.roomType"
+                          data-day-index="${dayIndex}"
+                        >
                     </div>
                 </div>
+
+                ${day.suggestions ? formatSuggestionSection(day.suggestions, day.location, apiKey) : ""}
 
                 <div id="activity-list-${dayIndex}" class="activity-list" data-day-index="${dayIndex}">
                     ${day.activities.map((activity, activityIndex) => {
@@ -364,8 +461,15 @@ export function renderTrip(tripData) {
                                 <div class="row mb-2">
                                     <label class="col-2 col-form-label">Location:</label>
                                     <div class="col-10">
-                                        <input type="text" class="form-control" value="${activity.location || ""}"
-                                            data-day-index="${dayIndex}" data-activity-index="${activityIndex}" data-field="location">
+                                        <input
+                                          type="text"
+                                          class="form-control activity-location"
+                                          value="${activity.location || ""}"
+                                          placeholder="Search location..."
+                                          data-field="location"
+                                          data-day-index="${dayIndex}"
+                                          data-activity-index="${activityIndex}"
+                                        >
                                     </div>
                                 </div>
 
@@ -402,10 +506,10 @@ export function renderTrip(tripData) {
     }).join("");
 
     initDragAndDrop(tripData);
-    setupInputHandlers(tripData);
+    setupInputHandlers(tripData, apiKey);
 }
 
-export function setupInputHandlers(tripData) {
+export function setupInputHandlers(tripData, apiKey) {
     // Update fields on blur (user finishes editing)
     document.querySelectorAll("input[data-day-index], textarea[data-day-index]").forEach(el => {
         el.addEventListener("blur", async e => {
@@ -416,12 +520,20 @@ export function setupInputHandlers(tripData) {
 
             if (j !== undefined && j !== null) {
                 await updateActivityField(tripData, i, parseInt(j), field, value);
+                renderTrip(tripData, apiKey); // Optional: re-render if you want to see length effects
+                hydrateClassicAutocompleteInputs();
             } else {
                 await updateDayField(tripData, i, field, value);
+
+                if (field === "location" && value.trim()) {
+                    await fetchSightsAndRestaurantsAndHistory(value, i, apiKey, tripData); // Only suggestions
+                } else if (field === "wakeUpTime") {
+                    renderTrip(tripData, apiKey); // Recalculate times
+                    hydrateClassicAutocompleteInputs();
+                }
             }
         });
 
-        // Keep data-value up to date for change detection
         el.addEventListener("input", e => {
             e.target.setAttribute("data-value", e.target.value);
         });
@@ -433,7 +545,8 @@ export function setupInputHandlers(tripData) {
             const i = parseInt(e.target.dataset.dayIndex);
             const value = e.target.value;
             await updateDayField(tripData, i, "wakeUpTime", value);
-            renderTrip(tripData); // Recalculate times
+            renderTrip(tripData, apiKey); // Recalculate start times
+            hydrateClassicAutocompleteInputs();
         });
     });
 
@@ -444,7 +557,8 @@ export function setupInputHandlers(tripData) {
             const j = parseInt(e.target.dataset.activityIndex);
             const value = parseInt(e.target.value) || 0;
             await updateActivityField(tripData, i, j, "length", value);
-            renderTrip(tripData); // Recalculate times
+            renderTrip(tripData, apiKey); // Recalculate times
+            hydrateClassicAutocompleteInputs();
         });
     });
 
@@ -473,3 +587,85 @@ export function setupInputHandlers(tripData) {
         })
     );
 }
+
+const isSight = (place) => {
+    const types = place.types || [];
+    const blacklist = ["restaurant", "food", "cafe", "bar"];
+    const whitelist = [
+        "tourist_attraction", "point_of_interest", "park", "museum", "winery",
+        "natural_feature", "amusement_park", "zoo", "aquarium", "art_gallery"
+    ];
+
+    return whitelist.some(type => types.includes(type)) &&
+           !blacklist.some(type => types.includes(type));
+};
+
+function sanitizeForWikipedia(location) {
+    const stateAbbreviations = {
+        AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
+        CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
+        HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
+        KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
+        MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri",
+        MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey",
+        NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
+        OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
+        SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
+        VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming"
+    };
+
+    let cleaned = location.trim().replace(/,\s*USA$/, "");
+
+    const stateMatch = cleaned.match(/,\s*([A-Z]{2})$/);
+    if (stateMatch && stateAbbreviations[stateMatch[1]]) {
+        cleaned = cleaned.replace(/,\s*[A-Z]{2}$/, `, ${stateAbbreviations[stateMatch[1]]}`);
+    }
+
+    return cleaned;
+}
+
+// --- Fetch sights, restaurants, and Wikipedia history ---
+export async function fetchSightsAndRestaurantsAndHistory(location, dayIndex, apiKey, tripData) {
+    const dayEl = document.querySelector(`.day-entry[data-day-index="${dayIndex}"]`);
+    if (!dayEl) return;
+
+    console.log("➡️ Calling fetchSightsAndRestaurantsAndHistory for:", location, "with key:", apiKey);
+
+    try {
+        const cleanedLocation = sanitizeForWikipedia(location);
+        console.log("📝 Wikipedia lookup using:", cleanedLocation);
+
+        const [restaurantsRes, sightsRes, wikiRes] = await Promise.all([
+            fetch(`/getDiningSuggestions?location=${encodeURIComponent(location)}`),
+            fetch(`/getSiteSuggestions?location=${encodeURIComponent(location)}`),
+            fetch(`/getLocationHistory?location=${encodeURIComponent(cleanedLocation)}`)
+        ]);
+
+        const restaurantsData = await restaurantsRes.json();
+        const sightsData = await sightsRes.json();
+        const wiki = await wikiRes.json();
+
+        const restaurants = restaurantsData.results
+            .filter(p => p.types?.includes("restaurant"))
+            .slice(0, 5);
+
+        const sights = sightsData.results
+            .filter(isSight)
+            .slice(0, 5);
+
+        tripData.trip[dayIndex].suggestions = {
+            restaurants,
+            sights,
+            history: wiki?.extract || ""
+        };
+
+        await saveTripData(tripData);
+        renderTrip(tripData, apiKey);
+        hydrateClassicAutocompleteInputs();
+
+    } catch (err) {
+        console.error("Failed to fetch sights or history:", err);
+    }
+}
+
+export { hydrateClassicAutocompleteInputs };

@@ -56,39 +56,54 @@ app.get('/getDiningSuggestions', async (req, res) => {
     }
 });
 
+app.get('/getSiteSuggestions', async (req, res) => {
+    const { location } = req.query;
+    if (!location) {
+        return res.status(400).json({ error: "Missing location parameter" });
+    }
+
+    try {
+        const apiKey = googleApiKey;
+        const url = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=points+of+interest+near+${encodeURIComponent(location)}&key=${apiKey}`;
+        const response = await axios.get(url);
+        res.json(response.data);
+    } catch (error) {
+        console.error("Error fetching site suggestions:", error.message);
+        res.status(500).json({ error: "Failed to fetch site suggestions" });
+    }
+});
+
 // Route to get location history
 app.get('/getLocationHistory', async (req, res) => {
     const { location } = req.query;
     if (!location) {
-        console.error('Missing location parameter');
-        return res.status(400).send({ error: 'Missing location parameter' });
+        return res.status(400).json({ error: 'Missing location parameter' });
     }
 
-    const apiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(location)}`;
-
-    console.log(`Fetching location history for: ${location}`);
-
     try {
-        const response = await axios.get(apiUrl);
-        console.log('Location History API Response:', response.data);
+        // Step 1: Use OpenSearch to find the best matching Wikipedia title
+        const searchUrl = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${encodeURIComponent(location)}&limit=1&format=json&origin=*`;
+        const searchRes = await axios.get(searchUrl);
 
-        console.log('Rate Limit Headers:');
-        console.log('X-RateLimit-Limit:', response.headers['x-ratelimit-limit']);
-        console.log('X-RateLimit-Remaining:', response.headers['x-ratelimit-remaining']);
-        console.log('Retry-After:', response.headers['retry-after']);
-
-        res.json(response.data);
-    } catch (error) {
-        console.error('Error fetching location history:', {
-            status: error.response?.status,
-            message: error.response?.data || error.message,
-        });
-
-        if (error.response?.status === 429) {
-            console.error('Rate limit exceeded for Wikipedia API.');
+        const bestMatchTitle = searchRes.data[1]?.[0];
+        if (!bestMatchTitle) {
+            return res.status(404).json({ error: `No Wikipedia article found for ${location}` });
         }
 
-        res.status(error.response?.status || 500).send({
+        // Step 2: Fetch the summary for the matched title
+        const summaryUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(bestMatchTitle)}`;
+        const summaryRes = await axios.get(summaryUrl);
+
+        console.log(`✔️ Wikipedia summary found for "${bestMatchTitle}" (original query: "${location}")`);
+
+        res.json(summaryRes.data);
+    } catch (error) {
+        console.error('Error fetching location history:', {
+            message: error.message,
+            response: error.response?.data,
+        });
+
+        res.status(error.response?.status || 500).json({
             error: 'Failed to retrieve location history',
             details: error.response?.data || error.message,
         });
