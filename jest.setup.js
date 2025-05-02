@@ -1,5 +1,5 @@
-const $ = require('jquery');
-global.$ = global.jQuery = $;  // Expose jQuery globally for the test environment
+// jest.setup.js
+import { jest } from '@jest/globals';
 
 global.google = {
   maps: {
@@ -12,7 +12,7 @@ global.google = {
 };
 
 global.moment = jest.fn(() => ({
-  format: jest.fn(() => '8:00 AM'),
+  format: jest.fn(() => "8:00 AM"),
   add: jest.fn(() => this),
 }));
 

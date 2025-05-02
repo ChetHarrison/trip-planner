@@ -1,3 +1,72 @@
+import { memoizeAsyncPersistent } from './utils/memoize.js';
+import { sanitizeForWikipedia, isSight } from './utils/helpers.js';
+
+function debounce(fn, delay = 300) {
+    let timeoutId;
+    return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => fn.apply(this, args), delay);
+    };
+}
+
+async function getLocationSuggestions(location, apiKey) {
+    const cleanedLocation = sanitizeForWikipedia(location);
+
+    const [restaurantsRes, sightsRes, wikiRes] = await Promise.all([
+        fetch(`/getDiningSuggestions?location=${encodeURIComponent(location)}`),
+        fetch(`/getSiteSuggestions?location=${encodeURIComponent(location)}`),
+        fetch(`/getLocationHistory?location=${encodeURIComponent(cleanedLocation)}`)
+    ]);
+
+    const restaurantsData = await restaurantsRes.json();
+    const sightsData = await sightsRes.json();
+    const wiki = await wikiRes.json();
+
+    const restaurants = restaurantsData.results
+      .filter(p => p.types?.includes("restaurant"))
+      .slice(0, 5)
+      .map(p => ({
+        name: p.name,
+        formatted_address: p.formatted_address,
+        place_id: p.place_id
+      }));
+
+    const sights = sightsData.results
+      .filter(isSight)
+      .slice(0, 5)
+      .map(p => ({
+        name: p.name,
+        formatted_address: p.formatted_address,
+        place_id: p.place_id
+      }));
+
+    return {
+        restaurants,
+        sights,
+        history: wiki?.extract || ""
+    };
+}
+
+const getMemoizedLocationSuggestions = memoizeAsyncPersistent(getLocationSuggestions);
+
+export const fetchSightsAndRestaurantsAndHistory = debounce(
+    async function (location, dayIndex, apiKey, tripData) {
+        const dayEl = document.querySelector(`.day-entry[data-day-index="${dayIndex}"]`);
+        if (!dayEl) return;
+
+        try {
+            const suggestions = await getMemoizedLocationSuggestions(location, apiKey);
+            tripData.trip[dayIndex].suggestions = suggestions;
+            await saveTripData(tripData);
+            renderTrip(tripData, apiKey);
+            hydrateClassicAutocompleteInputs();
+        } catch (err) {
+            console.error("❌ Failed to fetch sights or history:", err);
+        }
+    },
+    500
+);
+
 function calculateActivityTime(day, activityIndex) {
     const startTime = new Date();
     const [hours, minutes] = day.wakeUpTime.split(":").map(Number);
@@ -15,7 +84,7 @@ function calculateActivityTime(day, activityIndex) {
     });
 }
 
-function hydrateClassicAutocompleteInputs() {
+export function hydrateClassicAutocompleteInputs() {
         document.querySelectorAll('input.day-location').forEach(input => {
             const autocomplete = new google.maps.places.Autocomplete(input);
             autocomplete.addListener('place_changed', async () => {
@@ -142,6 +211,9 @@ export async function fetchTripData(tripName) {
 // 🔹 3️⃣ Save trip data (✅ Now takes `tripData` as an argument)
 export async function saveTripData(tripData) {
     if (!tripData) return;
+
+    console.log("Trip size (KB):", JSON.stringify(tripData).length / 1024);
+
     try {
         await fetch('/saveTrip', {
             method: 'POST',
@@ -587,85 +659,3 @@ export function setupInputHandlers(tripData, apiKey) {
         })
     );
 }
-
-const isSight = (place) => {
-    const types = place.types || [];
-    const blacklist = ["restaurant", "food", "cafe", "bar"];
-    const whitelist = [
-        "tourist_attraction", "point_of_interest", "park", "museum", "winery",
-        "natural_feature", "amusement_park", "zoo", "aquarium", "art_gallery"
-    ];
-
-    return whitelist.some(type => types.includes(type)) &&
-           !blacklist.some(type => types.includes(type));
-};
-
-function sanitizeForWikipedia(location) {
-    const stateAbbreviations = {
-        AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
-        CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
-        HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
-        KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
-        MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri",
-        MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey",
-        NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
-        OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
-        SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
-        VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming"
-    };
-
-    let cleaned = location.trim().replace(/,\s*USA$/, "");
-
-    const stateMatch = cleaned.match(/,\s*([A-Z]{2})$/);
-    if (stateMatch && stateAbbreviations[stateMatch[1]]) {
-        cleaned = cleaned.replace(/,\s*[A-Z]{2}$/, `, ${stateAbbreviations[stateMatch[1]]}`);
-    }
-
-    return cleaned;
-}
-
-// --- Fetch sights, restaurants, and Wikipedia history ---
-export async function fetchSightsAndRestaurantsAndHistory(location, dayIndex, apiKey, tripData) {
-    const dayEl = document.querySelector(`.day-entry[data-day-index="${dayIndex}"]`);
-    if (!dayEl) return;
-
-    console.log("➡️ Calling fetchSightsAndRestaurantsAndHistory for:", location, "with key:", apiKey);
-
-    try {
-        const cleanedLocation = sanitizeForWikipedia(location);
-        console.log("📝 Wikipedia lookup using:", cleanedLocation);
-
-        const [restaurantsRes, sightsRes, wikiRes] = await Promise.all([
-            fetch(`/getDiningSuggestions?location=${encodeURIComponent(location)}`),
-            fetch(`/getSiteSuggestions?location=${encodeURIComponent(location)}`),
-            fetch(`/getLocationHistory?location=${encodeURIComponent(cleanedLocation)}`)
-        ]);
-
-        const restaurantsData = await restaurantsRes.json();
-        const sightsData = await sightsRes.json();
-        const wiki = await wikiRes.json();
-
-        const restaurants = restaurantsData.results
-            .filter(p => p.types?.includes("restaurant"))
-            .slice(0, 5);
-
-        const sights = sightsData.results
-            .filter(isSight)
-            .slice(0, 5);
-
-        tripData.trip[dayIndex].suggestions = {
-            restaurants,
-            sights,
-            history: wiki?.extract || ""
-        };
-
-        await saveTripData(tripData);
-        renderTrip(tripData, apiKey);
-        hydrateClassicAutocompleteInputs();
-
-    } catch (err) {
-        console.error("Failed to fetch sights or history:", err);
-    }
-}
-
-export { hydrateClassicAutocompleteInputs };
