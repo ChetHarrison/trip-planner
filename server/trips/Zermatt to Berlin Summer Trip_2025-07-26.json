@@ -23,64 +23,54 @@
         "restaurants": [
           {
             "name": "Zeughauskeller",
-            "lat": 47.3704167,
-            "lng": 8.5399783,
+            "formatted_address": "Bahnhofstrasse 28A, 8001 Zürich, Switzerland",
             "place_id": "ChIJX7fB6wAKkEcRhpTedk8sztg"
           },
           {
             "name": "zum Kropf",
-            "lat": 47.3706354,
-            "lng": 8.540244099999999,
+            "formatted_address": "In Gassen 16, 8001 Zürich, Switzerland",
             "place_id": "ChIJ27YcvwAKkEcROpgKdGSEyA4"
           },
           {
             "name": "Swiss Chuchi Restaurant",
-            "lat": 47.37316389999999,
-            "lng": 8.543659200000002,
+            "formatted_address": "Rosengasse 10, 8001 Zürich, Switzerland",
             "place_id": "ChIJTfaDxqmgmkcRN_HnS0olahk"
           },
           {
             "name": "Zunfthaus zur Waag",
-            "lat": 47.37021910000001,
-            "lng": 8.5403261,
+            "formatted_address": "Münsterhof 8, 8001 Zürich, Switzerland",
             "place_id": "ChIJi--VlgAKkEcRUkK9UpnXcdI"
           },
           {
             "name": "Anna",
-            "lat": 47.39928039999999,
-            "lng": 8.5400434,
+            "formatted_address": "Anna-Heer-Strasse 2, 8057 Zürich, Switzerland",
             "place_id": "ChIJlZ_TxAgLkEcREiINkuafAdc"
           }
         ],
         "sights": [
           {
             "name": "Lindenhof",
-            "lat": 47.37303370000001,
-            "lng": 8.540788599999999,
+            "formatted_address": "Lindenhof, 8001 Zürich, Switzerland",
             "place_id": "ChIJRactawcKkEcR-xqkb5ysLMc"
           },
           {
             "name": "Rotes Schloss",
-            "lat": 47.3650779,
-            "lng": 8.536622999999999,
+            "formatted_address": "General-Guisan-Quai 20/22, 8002 Zürich, Switzerland",
             "place_id": "ChIJJfBpqf8JkEcRuCIp5LoeEaA"
           },
           {
             "name": "Grossmünster",
-            "lat": 47.3700931,
-            "lng": 8.544054,
+            "formatted_address": "Zwinglipl. 7, 8001 Zürich, Switzerland",
             "place_id": "ChIJZWHfSaqgmkcREF9TlBQlGkk"
           },
           {
             "name": "Historic quayside on lake Zürich",
-            "lat": 47.3646961,
-            "lng": 8.545615399999999,
+            "formatted_address": "Utoquai 34, 8001 Zürich, Switzerland",
             "place_id": "ChIJ70wVnFSnmkcRqgvxQL3ZEEI"
           },
           {
             "name": "Ulrich Zwingli Monument",
-            "lat": 47.3694757,
-            "lng": 8.543286199999999,
+            "formatted_address": "Limmatquai 20, 8001 Zürich, Switzerland",
             "place_id": "ChIJVTw-WqqgmkcRgv9DVyo5o28"
           }
         ],

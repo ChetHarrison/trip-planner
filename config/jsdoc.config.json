@@ -1,0 +1,20 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": ["public/js", "server"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules|dist|diagnostics)"
+  },
+  "plugins": [],
+  "opts": {
+    "destination": "./diagnostics/docs",
+    "recurse": true,
+    "template": "node_modules/minami"
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false
+  }
+}
