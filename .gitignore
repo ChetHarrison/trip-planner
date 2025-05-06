@@ -2,6 +2,9 @@
 node_modules/
 bower_components/
 
+# Diagnostics
+diagnostics/
+
 # Logs
 logs/
 *.log
