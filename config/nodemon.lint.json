@@ -1,0 +1,7 @@
+{
+  "watch": ["public/js", "public/styles.css"],
+  "ignore": ["diagnostics", "diagnostics/**"],
+  "ext": "js,css",
+  "exec": "npm run lint",
+  "verbose": true
+}

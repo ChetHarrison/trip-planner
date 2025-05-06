@@ -58,3 +58,6 @@ Thumbs.db
 
 # Security
 config.js
+
+# JSDoc output
+.out/
