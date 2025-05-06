@@ -3,8 +3,8 @@
   "ext": "js",
   "exec": "npm run docs",
   "ignore": [
-    "diagnostics/docs/**",        // ignore the new path
-    "diagnostics/coverage/**",    // keep ignoring coverage
-    "diagnostics/test-report/**"  // optional: tests
+    "diagnostics/docs/**",
+    "diagnostics/coverage/**",
+    "diagnostics/test-report/**"
   ]
 }
