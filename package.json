@@ -21,7 +21,7 @@
       "lint:fix": "eslint --config config/eslint.config.mjs public/js --fix",
       "test": "jest --config=config/jest.config.mjs --coverage --coverageDirectory=diagnostics/coverage",
       "docs": "npx jsdoc -c config/jsdoc.config.json",
-      "serve:docs": "live-server diagnostics/docs --port=5000 --no-browser --quiet",
+      "serve:docs": "live-server diagnostics/docs --port=5003 --no-browser --quiet",
       "serve:coverage": "live-server diagnostics/coverage/lcov-report --port=5001 --no-browser --quiet",
       "serve:tests": "live-server diagnostics/test-report --port=5002 --no-browser --quiet"
   },

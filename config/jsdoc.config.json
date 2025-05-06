@@ -5,7 +5,7 @@
   "source": {
     "include": ["public/js", "server"],
     "includePattern": ".js$",
-    "excludePattern": "(node_modules|dist|diagnostics)"
+    "excludePattern": "(node_modules|dist)"
   },
   "plugins": [],
   "opts": {
