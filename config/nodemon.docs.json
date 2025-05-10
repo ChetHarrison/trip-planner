@@ -1,10 +1,10 @@
 {
-  "watch": ["public/js", "server"],
-  "ext": "js",
-  "exec": "npm run docs",
-  "ignore": [
-    "diagnostics/docs/**",
-    "diagnostics/coverage/**",
-    "diagnostics/test-report/**"
-  ]
+	"watch": ["public/js", "server"],
+	"ext": "js",
+	"exec": "npm run docs",
+	"ignore": [
+		"diagnostics/docs/**",
+		"diagnostics/coverage/**",
+		"diagnostics/test-report/**"
+	]
 }

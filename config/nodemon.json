@@ -1,6 +1,6 @@
 {
-  "watch": ["server"],
-  "ext": "js,json",
-  "ignore": ["diagnostics/**", "public/js/**"],
-  "exec": "node server/server.js"
+	"watch": ["server"],
+	"ext": "js,json",
+	"ignore": ["diagnostics/**", "public/js/**"],
+	"exec": "node server/server.js"
 }
