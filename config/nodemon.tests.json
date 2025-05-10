@@ -1,7 +1,7 @@
 {
-  "watch": ["public/js", "diagnostics/tests"],
-  "ignore": ["diagnostics/coverage", "diagnostics/coverage/**", "diagnostics/docs", "diagnostics/docs/**"],
-  "ext": "js",
-  "exec": "npm run test",
-  "verbose": true
+	"watch": ["public/js", "diagnostics/tests"],
+	"ignore": ["diagnostics/coverage", "diagnostics/coverage/**", "diagnostics/docs", "diagnostics/docs/**"],
+	"ext": "js",
+	"exec": "npm run test",
+	"verbose": true
 }

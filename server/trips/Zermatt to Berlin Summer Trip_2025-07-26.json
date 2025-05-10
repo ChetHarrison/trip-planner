@@ -4,18 +4,17 @@
   "trip": [
     {
       "wakeUpTime": "08:00",
-      "location": "Zürich, Switzerland",
+      "location": "Zürich",
       "lodging": {
-        "name": "Storchen Zurich",
-        "address": "Weinplatz 2, 8001 Zurich, Switzerland",
-        "phone": "",
-        "roomType": ""
+        "name": "Storchen",
+        "address": "Weinpl. 2, 8001 Zürich, Switzerland",
+        "phone": "044 227 27 27"
       },
       "activities": [
         {
           "name": "Check-in at Storchen Zurich",
           "length": 30,
-          "location": "Zurich",
+          "location": "Zürich",
           "notes": "Check-in at 3:00 PM"
         }
       ],
@@ -3233,5 +3232,6 @@
         }
       ]
     }
-  ]
+  ],
+  "apiKey": "AIzaSyAdR6HOr363y5hLoKbjO-V7ao_jF7OCT1U"
 }

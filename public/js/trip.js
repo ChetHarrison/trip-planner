@@ -1,210 +1,176 @@
 /**
  * @file trip.js
  * @description Impure UI logic and event handlers for the trip planner app.
- * Handles DOM manipulation, drag-and-drop, and input synchronization.
- * @module trip
+ * Centralizes trip state with TripStore and hydrates UI interactions.
  */
 
 import {
-    renderTripHTML,
-    renderActivityCard,
-    calculateActivityTime
+	renderTripHTML,
+	renderActivityCard,
+	calculateActivityTime
 } from './tripPure.js';
 
 /**
- * Persist trip data in local storage.
- * @param {TripData} data
+ * Creates a centralized TripStore to manage in-memory trip state and keep server in sync.
+ * @returns {{ get: () => TripData, set: (trip: TripData) => void, update: (fn: (TripData) => TripData) => void }}
  */
-export const saveTripData = (data) =>
-    localStorage.setItem('tripData', JSON.stringify(data));
+export const createTripStore = () => {
+	let tripData = null;
+
+	const store = {
+		get: () => tripData,
+
+		set: (trip) => {
+			tripData = trip;
+		},
+
+		update: (updateFn) => {
+			if (typeof updateFn !== 'function') {
+				throw new TypeError('[TripStore] update() expects a function');
+			}
+
+			tripData = updateFn(tripData);
+			renderTrip(tripData, tripData.apiKey, store.update);
+			saveTripToServer(tripData);
+		}
+	};
+
+	return store;
+};
 
 /**
- * Save and re-render the trip.
+ * Renders the trip UI and sets up Google Maps Autocomplete handlers.
+ * @param {TripData} tripData - Current trip state to render
+ * @param {string} apiKey - Google Maps API key
+ * @param {(updatedTrip: TripData) => void} onTripUpdate - Callback invoked with updated trip
+ */
+export const renderTrip = (tripData, apiKey, onTripUpdate) => {
+	const container = document.getElementById('trip-output');
+	if (!container) {
+		console.warn('[renderTrip] No container element with id #trip-output found.');
+		return;
+	}
+
+	container.innerHTML = renderTripHTML(tripData, apiKey);
+
+	hydrateClassicAutocompleteInputs(tripData, ({ field, place, input, dayIndex, activityIndex }) => {
+		const name = place?.name || '';
+		const address = place?.formatted_address || '';
+		const phone = place?.formatted_phone_number || '';
+
+		if (!input || !field) return;
+
+		const updatedTrip = structuredClone(tripData);
+		const day = updatedTrip.trip?.[dayIndex];
+		if (!day) return;
+
+		if (field === 'lodging.name') {
+			day.lodging = { name, address, phone };
+			input.value = name;
+
+			const wrapper = input.closest('.day-entry') || input.closest('.card');
+			const addressInput = wrapper && wrapper.querySelector('[data-field="lodging.address"]');
+			if (addressInput) addressInput.value = address;
+			const phoneInput = wrapper && wrapper.querySelector('[data-field="lodging.phone"]');
+			if (phoneInput) phoneInput.value = phone;
+		} else if (activityIndex !== undefined) {
+			day.activities[activityIndex][field] = name;
+			input.value = name;
+		} else {
+			day[field] = name;
+			input.value = name;
+		}
+
+		input.dispatchEvent(new Event('change', { bubbles: true }));
+		onTripUpdate(() => updatedTrip); // ✅ pass a function that returns the object
+	});
+};
+
+/**
+ * Hydrates classic autocomplete fields.
  * @param {TripData} tripData
- * @returns {TripData}
+ * @param {(args: PlaceSelectedArgs) => void} onPlaceSelected
  */
-export const persistAndRenderTrip = (tripData) => {
-    saveTripData(tripData);
-    renderTrip(tripData);
-    return tripData;
+export const hydrateClassicAutocompleteInputs = (tripData, onPlaceSelected = () => {}) => {
+	if (!window.google?.maps?.places?.Autocomplete) {
+		console.warn('[autocomplete] Google Maps Autocomplete is not available.');
+		return;
+	}
+
+	const selectors = [
+		['.classic-location-autocomplete', 'location'],
+		['.classic-hotel-autocomplete', 'lodging.name'],
+		['.classic-activity-autocomplete', 'location']
+	];
+
+	selectors.forEach(([selector, field]) => {
+		document.querySelectorAll(selector).forEach((input) => {
+			try {
+				const autocomplete = new google.maps.places.Autocomplete(input);
+				autocomplete.addListener('place_changed', () => {
+					const place = autocomplete.getPlace();
+					const dayIndex = input.dataset.dayIndex;
+					const activityIndex = input.dataset.activityIndex;
+					onPlaceSelected({ field, place, input, dayIndex, activityIndex });
+				});
+			} catch (err) {
+				console.error('[autocomplete] Failed to initialize:', err);
+			}
+		});
+	});
 };
 
 /**
- * Render trip HTML and bind interaction handlers.
- * @param {TripData} tripData
- * @param {string} apiKey
+ * Attaches a blur handler that persists updates to trip fields when input loses focus.
+ * @param {{ get: () => TripData, update: (fn: (TripData) => TripData) => void }} store - TripStore instance
  */
-export const renderTrip = (tripData, apiKey = '') => {
-    const container = document.getElementById('days-container');
-    if (!container || !tripData) return;
-    container.innerHTML = renderTripHTML(tripData, apiKey);
-    setupInputHandlers(tripData, apiKey);
-    initDragAndDrop(tripData, persistAndRenderTrip);
+export const setupBlurHandler = (store) => {
+	document.addEventListener('blur', (e) => {
+		if (!(e.target instanceof HTMLInputElement)) return;
+
+		const { field, dayIndex, activityIndex } = e.target.dataset;
+		if (dayIndex == null || field == null) return;
+
+		const value = e.target.value;
+		const updatedTrip = structuredClone(store.get());
+		const day = updatedTrip.trip?.[dayIndex];
+		if (!day) return;
+
+		if (typeof activityIndex !== 'undefined') {
+			day.activities[activityIndex][field] = value;
+		} else {
+			const [outer, inner] = field.split('.');
+			if (inner) {
+				day[outer] ||= {};
+				day[outer][inner] = value;
+			} else {
+				day[field] = value;
+			}
+		}
+
+		store.update(() => updatedTrip);
+  }, true); // Use capture phase
 };
 
 /**
- * Hydrates Google Places Autocomplete inputs on the page.
- *
- * This function looks for specific input fields (classic-location-autocomplete,
- * classic-hotel-autocomplete, classic-activity-autocomplete) and applies
- * Google Maps Autocomplete behavior to them. When a place is selected, it dispatches
- * a custom event (`autocomplete:update`) with the selected value and context indices.
- *
- * @param {string} apiKey - Google Maps API key used to initialize autocomplete.
+ * Saves the current trip data to the server.
+ * @param {TripData} tripData - The full trip data object to persist
+ * @returns {Promise<void>}
  */
-export const hydrateClassicAutocompleteInputs = (apiKey) => {
-    const selectors = [
-        ['.classic-location-autocomplete', 'location'],
-        ['.classic-hotel-autocomplete', 'lodging.name'],
-        ['.classic-activity-autocomplete', 'location'],
-    ];
+export const saveTripToServer = async (tripData) => {
+	try {
+		const response = await fetch('/saveTrip', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify(tripData)
+		});
 
-    selectors.forEach(([selector, field]) => {
-        document.querySelectorAll(selector).forEach((el) => {
-            const autocomplete = new google.maps.places.Autocomplete(el);
-            autocomplete.addListener('place_changed', () => {
-                const place = autocomplete.getPlace();
-                const dayIndex = el.dataset.dayIndex;
-                const activityIndex = el.dataset.activityIndex;
-                const event = new CustomEvent('autocomplete:update', {
-                    detail: { field, value: place.name, dayIndex, activityIndex },
-                });
-                document.dispatchEvent(event);
-            });
-        });
-    });
+		if (!response.ok) {
+			throw new Error(`Server responded with ${response.status}`);
+		}
+
+		console.log('[saveTripToServer] Trip saved successfully.');
+	} catch (error) {
+		console.error('[saveTripToServer] Failed to save trip:', error);
+	}
 };
-
-/**
- * Add a new empty day to the trip.
- * @param {TripData} trip
- * @returns {TripData}
- */
-export const handleAddDay = (trip) =>
-    persistAndRenderTrip({
-        ...trip,
-        trip: [
-            ...trip.trip,
-            { location: '', wakeUpTime: '08:00', lodging: {}, activities: [] }
-        ]
-    });
-
-/**
- * Add a blank activity to a given day.
- * @param {TripData} trip
- * @param {number} dayIndex
- * @returns {TripData}
- */
-export const handleAddActivity = (trip, dayIndex) =>
-    persistAndRenderTrip({
-        ...trip,
-        trip: trip.trip.map((day, i) =>
-            i === dayIndex
-                ? {
-                    ...day,
-                    activities: [
-                        ...day.activities,
-                        { name: '', length: 0, location: '', notes: '' }
-                    ]
-                }
-                : day
-        )
-    });
-
-/**
- * Delete a day from the trip.
- * @param {TripData} trip
- * @param {number} dayIndex
- * @returns {TripData}
- */
-export const handleDeleteDay = (trip, dayIndex) =>
-    persistAndRenderTrip({
-        ...trip,
-        trip: trip.trip.filter((_, i) => i !== dayIndex)
-    });
-
-/**
- * Delete an activity from a given day.
- * @param {TripData} trip
- * @param {number} dayIndex
- * @param {number} activityIndex
- * @returns {TripData}
- */
-export const handleDeleteActivity = (trip, dayIndex, activityIndex) =>
-    persistAndRenderTrip({
-        ...trip,
-        trip: trip.trip.map((day, i) =>
-            i === dayIndex
-                ? {
-                    ...day,
-                    activities: day.activities.filter((_, j) => j !== activityIndex)
-                }
-                : day
-        )
-    });
-
-/**
- * Initialize drag-and-drop behavior for activities using Dragula.
- * Reorders activities without affecting suggestions/maps.
- * @param {TripData} tripData - The original trip data
- * @param {function} persistAndRender - Function to persist and re-render the updated trip
- */
-export const initDragAndDrop = (tripData, persistAndRender) => {
-    if (!window.dragula) return;
-
-    const lists = Array.from(document.querySelectorAll('.activity-list'));
-    const drake = dragula(lists);
-
-    drake.on('drop', (_, target) => {
-        const dayIndex = parseInt(target.dataset.dayIndex, 10);
-        if (isNaN(dayIndex)) return;
-
-        // Rebuild the activity order based on DOM
-        const newActivities = Array.from(target.children).map(el => {
-            const originalDay = parseInt(el.dataset.dayIndex, 10);
-            const activityIndex = parseInt(el.dataset.activityIndex, 10);
-            return structuredClone(tripData.trip[originalDay].activities[activityIndex]);
-        });
-
-        // Create a shallow copy of the trip and only update the activity order
-        const updatedTrip = {
-            ...tripData,
-            trip: tripData.trip.map((day, i) =>
-                i === dayIndex
-                    ? { ...day, activities: newActivities } // keeps all other day fields like suggestions
-                    : day
-            )
-        };
-
-        persistAndRender(updatedTrip);
-    });
-};
-
-/**
- * Setup input field change and autocomplete synchronization.
- * @param {TripData} tripData
- * @param {string} apiKey
- */
-export function setupInputHandlers(tripData, apiKey) {
-    document.addEventListener('autocomplete:update', (e) => {
-        const { field, value, dayIndex, activityIndex } = e.detail;
-        const updatedTrip = [...tripData.trip];
-
-        if (typeof activityIndex !== 'undefined') {
-            updatedTrip[dayIndex].activities[activityIndex][field] = value;
-        } else {
-            const parts = field.split('.');
-            if (parts.length === 2) {
-                const [outer, inner] = parts;
-                updatedTrip[dayIndex][outer] ||= {};
-                updatedTrip[dayIndex][outer][inner] = value;
-            } else {
-                updatedTrip[dayIndex][field] = value;
-            }
-        }
-
-        persistAndRenderTrip({ ...tripData, trip: updatedTrip });
-    });
-
-    // More change handlers can be added here.
-}
