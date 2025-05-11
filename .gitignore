@@ -63,4 +63,4 @@ Thumbs.db
 config.js
 
 # JSDoc output
-.out/
+.out/replacements.txt
