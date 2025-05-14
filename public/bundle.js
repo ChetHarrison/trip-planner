@@ -5753,11 +5753,7 @@ var cloneTripWithMetadata = function cloneTripWithMetadata(tripData) {
  * Creates a centralized TripStore to manage in-memory trip state, trigger UI rendering,
  * and persist changes to the server.
  *
- * @returns {{
- *   get: () => TripData,
- *   set: (tripData: TripData) => void,
- *   update: (updateFunction: (currentTripData: TripData) => TripData | Promise<TripData>) => Promise<void>
- * }}
+ * @returns {Object} TripStore instance with get, set, and update methods.
  */
 var createTripStore = function createTripStore() {
   var tripData = null;
@@ -5818,7 +5814,7 @@ var createTripStore = function createTripStore() {
  *
  * @param {TripData} tripData - The current trip data to render.
  * @param {string} apiKey - Google Maps API key.
- * @param {(updateFn: (TripData) => TripData) => void} updateTrip - Function to update the trip state and trigger persistence.
+ * @param {Function} updateTrip - Function to update the trip state and trigger persistence.
  */
 var renderTrip = function renderTrip(tripData, apiKey, updateTrip) {
   var container = document.getElementById('trip-output');
@@ -5827,45 +5823,11 @@ var renderTrip = function renderTrip(tripData, apiKey, updateTrip) {
     return;
   }
   container.innerHTML = (0,_tripPure_js__WEBPACK_IMPORTED_MODULE_0__.renderTripHTML)(tripData, apiKey);
-  hydrateClassicAutocompleteInputs(tripData, function (_ref) {
-    var field = _ref.field,
-      place = _ref.place,
-      input = _ref.input,
-      dayIndex = _ref.dayIndex,
-      activityIndex = _ref.activityIndex;
-    var name = (place === null || place === void 0 ? void 0 : place.name) || '';
-    var address = (place === null || place === void 0 ? void 0 : place.formatted_address) || '';
-    var phone = (place === null || place === void 0 ? void 0 : place.formatted_phone_number) || '';
-    if (!input || !field) return;
-    var tripData = store.get();
-    var updatedTrip = cloneTripWithMetadata(tripData);
-    var day = updatedTrip.trip && updatedTrip.trip[dayIndex];
-    if (!day) return;
-    if (field === 'lodging.name') {
-      day.lodging = {
-        name: name,
-        address: address,
-        phone: phone
-      };
-      input.value = name;
-      var wrapper = input.closest('.day-entry') || input.closest('.card');
-      var addressInput = wrapper && wrapper.querySelector('[data-field="lodging.address"]');
-      if (addressInput) addressInput.value = address;
-      var phoneInput = wrapper && wrapper.querySelector('[data-field="lodging.phone"]');
-      if (phoneInput) phoneInput.value = phone;
-    } else if (activityIndex !== undefined) {
-      day.activities[activityIndex][field] = name;
-      input.value = name;
-    } else {
-      day[field] = name;
-      input.value = name;
-    }
-    input.dispatchEvent(new Event('change', {
-      bubbles: true
-    }));
-    updateTrip(function () {
-      return updatedTrip;
-    });
+  hydrateClassicAutocompleteInputs(tripData, {
+    get: function get() {
+      return tripData;
+    },
+    update: updateTrip
   });
 };
 
@@ -5875,10 +5837,8 @@ var renderTrip = function renderTrip(tripData, apiKey, updateTrip) {
  * trip state via the onPlaceSelected callback. Special-cases day location to trigger
  * suggestion fetching and server save.
  *
- * @param {TripData} tripData - The full trip object including tripName, startDate, and trip[]
- * @param {{
- *   update: (fn: (TripData) => TripData | Promise<TripData>) => void
- * }} store - The TripStore instance with .update(fn)
+ * @param {TripData} tripData - The full trip object.
+ * @param {Object} store - Store interface with get and update.
  */
 var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs(tripData, store) {
   var _window$google;
@@ -5887,26 +5847,24 @@ var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs
     return;
   }
   var selectors = [['.classic-location-autocomplete', 'location'], ['.classic-hotel-autocomplete', 'lodging.name'], ['.classic-activity-autocomplete', 'location']];
-  selectors.forEach(function (_ref2) {
-    var _ref3 = _slicedToArray(_ref2, 2),
-      selector = _ref3[0],
-      field = _ref3[1];
+  selectors.forEach(function (_ref) {
+    var _ref2 = _slicedToArray(_ref, 2),
+      selector = _ref2[0],
+      field = _ref2[1];
     document.querySelectorAll(selector).forEach(function (input) {
       try {
         var autocomplete = new google.maps.places.Autocomplete(input);
         autocomplete.addListener('place_changed', function () {
+          var _tripData$trip;
           var place = autocomplete.getPlace();
           var dayIndex = input.dataset.dayIndex;
           var activityIndex = input.dataset.activityIndex;
-          if (dayIndex == null || field == null || !tripData || !Array.isArray(tripData.trip) || !tripData.trip[dayIndex]) return;
-
-          // Suppress blur-triggered suggestion fetch
+          if (!(tripData !== null && tripData !== void 0 && (_tripData$trip = tripData.trip) !== null && _tripData$trip !== void 0 && _tripData$trip[dayIndex])) return;
           input._autocompleteJustSelected = true;
           var name = (place === null || place === void 0 ? void 0 : place.name) || '';
           var address = (place === null || place === void 0 ? void 0 : place.formatted_address) || '';
           var phone = (place === null || place === void 0 ? void 0 : place.formatted_phone_number) || '';
-          var tripData = store.get();
-          var updatedTrip = cloneTripWithMetadata(tripData);
+          var updatedTrip = cloneTripWithMetadata(store.get());
           var day = updatedTrip.trip[dayIndex];
           if (field === 'lodging.name') {
             day.lodging = {
@@ -5927,13 +5885,9 @@ var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs
             day[field] = name;
             input.value = name;
           }
-
-          // Dispatch change to allow any field listeners to react
           input.dispatchEvent(new Event('change', {
             bubbles: true
           }));
-
-          // Special case: fetch suggestions on day location change
           if (field === 'location') {
             fetchSuggestionsForDay(name).then(function (suggestions) {
               day.suggestions = suggestions;
@@ -5946,8 +5900,6 @@ var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs
               return updatedTrip;
             });
           }
-
-          // Clear the suppression flag after current tick
           setTimeout(function () {
             delete input._autocompleteJustSelected;
           }, 0);
@@ -5962,11 +5914,11 @@ var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs
 /**
  * Fetches updated dining, tourist sights, and history suggestions for a given location.
  *
- * @param {string} location - The name of the city or region
- * @returns {Promise<{ restaurants: any[], sights: any[], history: string }>} Suggestions object
+ * @param {string} location - Location name.
+ * @returns {Promise<{ restaurants: any[], sights: any[], history: string }>} Suggestion results.
  */
 var fetchSuggestionsForDay = /*#__PURE__*/function () {
-  var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(location) {
+  var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(location) {
     var _yield$Promise$all, _yield$Promise$all2, diningRes, sightsRes, historyRes;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
@@ -6003,24 +5955,20 @@ var fetchSuggestionsForDay = /*#__PURE__*/function () {
     }, _callee2);
   }));
   return function fetchSuggestionsForDay(_x2) {
-    return _ref4.apply(this, arguments);
+    return _ref3.apply(this, arguments);
   };
 }();
 
 /**
- * Handles saving field values on blur (when the user leaves an input).
- * Automatically persists the updated trip to the server and re-renders.
- * Special-cases day location blur to trigger restaurant/site/history updates.
+ * Sets up blur listeners on inputs to persist data changes.
  *
- * @param {{
- *   get: () => TripData,
- *   update: (fn: (TripData) => TripData | Promise<TripData>) => void
- * }} store - TripStore object containing get() and update() methods
+ * @param {Object} store - TripStore with get and update.
  */
 var setupBlurHandler = function setupBlurHandler(store) {
   document.addEventListener('blur', /*#__PURE__*/function () {
-    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4(e) {
-      var input, _input$dataset, field, dayIndex, activityIndex, value, oldTrip, tripData, updatedTrip, day, _field$split, _field$split2, outer, inner;
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4(e) {
+      var _updatedTrip$trip;
+      var input, _input$dataset, field, dayIndex, activityIndex, value, updatedTrip, day, _field$split, _field$split2, outer, inner;
       return _regeneratorRuntime().wrap(function _callee4$(_context4) {
         while (1) switch (_context4.prev = _context4.next) {
           case 0:
@@ -6032,31 +5980,22 @@ var setupBlurHandler = function setupBlurHandler(store) {
           case 2:
             input = e.target;
             _input$dataset = input.dataset, field = _input$dataset.field, dayIndex = _input$dataset.dayIndex, activityIndex = _input$dataset.activityIndex;
-            if (!(dayIndex == null || field == null)) {
+            if (!(dayIndex == null || field == null || input._autocompleteJustSelected)) {
               _context4.next = 6;
               break;
             }
             return _context4.abrupt("return");
           case 6:
-            if (!input._autocompleteJustSelected) {
-              _context4.next = 8;
-              break;
-            }
-            return _context4.abrupt("return");
-          case 8:
             value = input.value;
-            oldTrip = store.get(); // Ensure top-level trip metadata is preserved
-            tripData = store.get();
-            updatedTrip = cloneTripWithMetadata(tripData);
-            day = updatedTrip.trip && updatedTrip.trip[dayIndex];
+            updatedTrip = cloneTripWithMetadata(store.get());
+            day = (_updatedTrip$trip = updatedTrip.trip) === null || _updatedTrip$trip === void 0 ? void 0 : _updatedTrip$trip[dayIndex];
             if (day) {
-              _context4.next = 15;
+              _context4.next = 11;
               break;
             }
             return _context4.abrupt("return");
-          case 15:
-            // Apply the update to the cloned trip
-            if (typeof activityIndex !== 'undefined') {
+          case 11:
+            if (activityIndex !== undefined) {
               day.activities[activityIndex][field] = value;
             } else {
               _field$split = field.split('.'), _field$split2 = _slicedToArray(_field$split, 2), outer = _field$split2[0], inner = _field$split2[1];
@@ -6067,56 +6006,47 @@ var setupBlurHandler = function setupBlurHandler(store) {
                 day[field] = value;
               }
             }
-
-            // Update and conditionally fetch suggestions
-            store.update(/*#__PURE__*/function () {
-              var _ref6 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3(trip) {
-                var newTrip, suggestions;
-                return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-                  while (1) switch (_context3.prev = _context3.next) {
-                    case 0:
-                      newTrip = structuredClone(updatedTrip);
-                      if (!(field === 'location')) {
-                        _context3.next = 6;
-                        break;
-                      }
-                      _context3.next = 4;
-                      return fetchSuggestionsForDay(value);
-                    case 4:
-                      suggestions = _context3.sent;
-                      newTrip.trip[dayIndex].suggestions = suggestions;
-                    case 6:
-                      return _context3.abrupt("return", newTrip);
-                    case 7:
-                    case "end":
-                      return _context3.stop();
-                  }
-                }, _callee3);
-              }));
-              return function (_x4) {
-                return _ref6.apply(this, arguments);
-              };
-            }());
-          case 17:
+            store.update(/*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+              var newTrip;
+              return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+                while (1) switch (_context3.prev = _context3.next) {
+                  case 0:
+                    newTrip = structuredClone(updatedTrip);
+                    if (!(field === 'location')) {
+                      _context3.next = 5;
+                      break;
+                    }
+                    _context3.next = 4;
+                    return fetchSuggestionsForDay(value);
+                  case 4:
+                    newTrip.trip[dayIndex].suggestions = _context3.sent;
+                  case 5:
+                    return _context3.abrupt("return", newTrip);
+                  case 6:
+                  case "end":
+                    return _context3.stop();
+                }
+              }, _callee3);
+            })));
+          case 13:
           case "end":
             return _context4.stop();
         }
       }, _callee4);
     }));
     return function (_x3) {
-      return _ref5.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
-  }(), true); // Use capture phase to catch early
+  }(), true);
 };
 
 /**
- * Sends the current trip to the server to be saved.
+ * Sends the trip object to the server for persistence.
  *
- * @param {TripData} tripData - The trip object, including tripName, startDate, and trip array.
- * @returns {Promise<void>} A Promise that resolves when the trip is successfully saved.
+ * @param {TripData} tripData - Full trip object.
  */
 var saveTripToServer = /*#__PURE__*/function () {
-  var _ref7 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5(tripData) {
+  var _ref6 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5(tripData) {
     var tripName, startDate, trip, response;
     return _regeneratorRuntime().wrap(function _callee5$(_context5) {
       while (1) switch (_context5.prev = _context5.next) {
@@ -6162,8 +6092,8 @@ var saveTripToServer = /*#__PURE__*/function () {
       }
     }, _callee5, null, [[0, 12]]);
   }));
-  return function saveTripToServer(_x5) {
-    return _ref7.apply(this, arguments);
+  return function saveTripToServer(_x4) {
+    return _ref6.apply(this, arguments);
   };
 }();
 

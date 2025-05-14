@@ -1,23 +1,115 @@
-// server/helpers/diningHelpers.js
-import stringSimilarity from 'string-similarity';
+import axios from 'axios';
 
-export function deduplicateRestaurants(restaurants, threshold = 0.85) {
-	const deduped = [];
-	for (const candidate of restaurants) {
-		const isDuplicate = deduped.some(existing => {
-			const nameSim = stringSimilarity.compareTwoStrings(
-				existing.name.toLowerCase(),
-				candidate.name.toLowerCase()
-				);
-			const addressSim = existing.address && candidate.address
-			? stringSimilarity.compareTwoStrings(
-				existing.address.toLowerCase(),
-				candidate.address.toLowerCase()
-				)
-			: 0;
-			return nameSim >= threshold || (nameSim > 0.7 && addressSim > 0.7);
-		});
-		if (!isDuplicate) deduped.push(candidate);
+/**
+ * @typedef {Object} Restaurant
+ * @property {string} name - Display name of the restaurant
+ * @property {string} address - Full address
+ * @property {string} place_id - Google Maps place ID
+ * @property {string} source - Source label (e.g., 'Google', 'Michelin')
+
+ * @typedef {Object} SourceMetadata
+ * @property {string} source - Source name
+ * @property {'fulfilled'|'rejected'} status - Outcome of the fetch
+ * @property {number} [count] - Number of results returned (if successful)
+ * @property {string} [error] - Error message if rejected
+
+ * @typedef {Object} DiningResponse
+ * @property {Restaurant[]} data - Deduplicated list of restaurants
+ * @property {SourceMetadata[]} sources - Status from all sources
+ */
+
+/**
+ * Perform a single Google Places Text Search query and return top 5 results.
+ *
+ * @param {string} query - Text search query (e.g., "Michelin restaurants near Paris")
+ * @param {string} apiKey - Google API key
+ * @param {string} source - Source tag for metadata
+ * @returns {Promise<Restaurant[]>}
+ */
+async function fetchGoogleTextSearch(query, apiKey, source) {
+	const url = 'https://maps.googleapis.com/maps/api/place/textsearch/json';
+	const params = {
+		query,
+		key: apiKey,
+		type: 'restaurant',
+		rankby: 'prominence'
+	};
+
+	const res = await axios.get(url, { params });
+
+	if (res.data.status !== 'OK') {
+		console.warn(`[fetchGoogleTextSearch] Google returned status ${res.data.status} for source "${source}"`);
+		return [];
 	}
-	return deduped;
+
+	return res.data.results.slice(0, 5).map(place => ({
+		name: place.name,
+		address: place.formatted_address,
+		place_id: place.place_id,
+		source
+	}));
+}
+
+/**
+ * Deduplicates restaurants by `place_id` and limits to 5.
+ *
+ * @param {Restaurant[][]} resultSets - Array of arrays of restaurants
+ * @returns {Restaurant[]}
+ */
+function deduplicateRestaurants(resultSets) {
+	const seen = new Set();
+	const merged = [];
+
+	for (const group of resultSets) {
+		for (const r of group) {
+			if (!seen.has(r.place_id)) {
+				seen.add(r.place_id);
+				merged.push(r);
+			}
+			if (merged.length >= 5) break;
+		}
+		if (merged.length >= 5) break;
+	}
+
+	return merged;
+}
+
+/**
+ * Fetches dining suggestions from Google, Michelin, James Beard, and Eater.
+ *
+ * @param {string} location - Location string (e.g., "Newport Beach")
+ * @param {string} apiKey - Google Maps API key
+ * @returns {Promise<DiningResponse>}
+ */
+export async function fetchRestaurants(location, apiKey) {
+	const queries = [
+		{ source: 'Google', query: `restaurants near ${location}` },
+		{ source: 'Michelin', query: `michelin star restaurants near ${location}` },
+		{ source: 'JamesBeard', query: `james beard award restaurants near ${location}` },
+		{ source: 'Eater', query: `eater 38 restaurants near ${location}` }
+	];
+
+	const results = await Promise.allSettled(
+		queries.map(({ source, query }) =>
+			fetchGoogleTextSearch(query, apiKey, source)
+				.then(data => ({ source, status: 'fulfilled', data }))
+				.catch(error => ({ source, status: 'rejected', error: error.message }))
+		)
+	);
+
+	const fulfilled = results
+		.filter(r => r.status === 'fulfilled')
+		.map(r => r.data);
+
+	const sources = results.map(r => ({
+		source: r.source,
+		status: r.status,
+		count: r.data?.length || 0,
+		error: r.error || undefined
+	}));
+
+	return {
+		data: deduplicateRestaurants(fulfilled),
+		sources
+	};
 }
