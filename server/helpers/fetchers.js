@@ -1,16 +1,25 @@
 import axios from 'axios';
 
 /**
- * Generic helper for querying Google Places Text Search with filtering.
- * Applies ranking and type constraints and slices top 5 results.
- *
- * @param {string} query - Search query string (e.g., 'restaurants near Paris')
- * @param {string} apiKey - Google Maps API key
- * @param {string} source - Tag for the source of the query (e.g., 'Michelin')
- * @param {Object} [options={}] - Additional search options (e.g., type, rankby)
- * @returns {Promise<Array<{ name: string, address: string, place_id: string, source: string }>>}
+ * @typedef {Object} PlaceResult
+ * @property {string} name - Display name of the place
+ * @property {string} address - Formatted address from Google
+ * @property {string} place_id - Unique Google Maps place identifier
+ * @property {string} source - Label for the source that generated this result
  */
-async function fetchGoogleTextSearch(query, apiKey, source, options = {}) {
+
+/**
+ * Queries the Google Places Text Search API and returns simplified top 5 results.
+ *
+ * @param {string} query - Full query string, e.g., "michelin restaurants near Paris"
+ * @param {string} apiKey - Google Maps API key
+ * @param {string} source - Label for the source (e.g., "Eater")
+ * @param {Object} [options={}] - Optional filters like type or rankby
+ * @param {string} [options.type] - Google-supported place type (e.g., 'restaurant')
+ * @param {string} [options.rankby='prominence'] - Ranking criteria
+ * @returns {Promise<Restaurant[]>} Array of restaurant-like objects
+ */
+export async function fetchGoogleTextSearch(query, apiKey, source, options = {}) {
     const params = {
         query,
         key: apiKey,
@@ -19,28 +28,32 @@ async function fetchGoogleTextSearch(query, apiKey, source, options = {}) {
     };
 
     const url = 'https://maps.googleapis.com/maps/api/place/textsearch/json';
-    const res = await axios.get(url, { params });
+    try {
+        const res = await axios.get(url, { params });
 
-    if (res.data.status !== 'OK') {
-        console.warn(`[fetchGoogleTextSearch] Google API returned status: ${res.data.status}`);
+        if (res.data.status !== 'OK') {
+            console.warn(`[fetchGoogleTextSearch] [${source}] status: ${res.data.status}`);
+            return [];
+        }
+
+        return res.data.results.slice(0, 5).map(place => ({
+            name: place.name,
+            address: place.formatted_address,
+            place_id: place.place_id,
+            source
+        }));
+    } catch (error) {
+        console.error(`[fetchGoogleTextSearch] [${source}] failed:`, error.message);
         return [];
     }
-
-    return (res.data.results || []).slice(0, 5).map(p => ({
-        name: p.name,
-        address: p.formatted_address,
-        place_id: p.place_id,
-        source
-    }));
 }
 
 /**
- * Fetches top 5 general restaurants near a location using Google Places.
- * Uses type=restaurant for improved accuracy.
+ * Fetches top 5 general restaurants using Google Text Search.
  *
- * @param {string} location - Location name or address.
- * @param {string} apiKey - Google Maps API key.
- * @returns {Promise<Array>}
+ * @param {string} location - Location name (e.g., "San Francisco")
+ * @param {string} apiKey - Google Maps API key
+ * @returns {Promise<PlaceResult[]>}
  */
 export async function fetchGooglePlacesRestaurants(location, apiKey) {
     return fetchGoogleTextSearch(
@@ -52,11 +65,11 @@ export async function fetchGooglePlacesRestaurants(location, apiKey) {
 }
 
 /**
- * Fetches top 5 Michelin-style restaurants using Google Places with keyword.
+ * Fetches top 5 Michelin-style restaurants using keyword query.
  *
- * @param {string} location - Location name or address.
- * @param {string} apiKey - Google Maps API key.
- * @returns {Promise<Array>}
+ * @param {string} location - Location to search near
+ * @param {string} apiKey - Google Maps API key
+ * @returns {Promise<PlaceResult[]>}
  */
 export async function fetchMichelinRestaurants(location, apiKey) {
     return fetchGoogleTextSearch(
@@ -68,11 +81,11 @@ export async function fetchMichelinRestaurants(location, apiKey) {
 }
 
 /**
- * Fetches top 5 James Beard award-style restaurants using keyword match.
+ * Fetches top 5 James Beard award-style restaurants near location.
  *
- * @param {string} location - Location name or address.
- * @param {string} apiKey - Google Maps API key.
- * @returns {Promise<Array>}
+ * @param {string} location - City or region name
+ * @param {string} apiKey - Google Maps API key
+ * @returns {Promise<PlaceResult[]>}
  */
 export async function fetchJamesBeardRestaurants(location, apiKey) {
     return fetchGoogleTextSearch(
@@ -84,11 +97,11 @@ export async function fetchJamesBeardRestaurants(location, apiKey) {
 }
 
 /**
- * Fetches top 5 Eater 38 restaurants using Google Places Text Search.
+ * Fetches top 5 Eater 38 restaurants near a location.
  *
- * @param {string} location - Location name or address.
- * @param {string} apiKey - Google Maps API key.
- * @returns {Promise<Array>}
+ * @param {string} location - Location to search
+ * @param {string} apiKey - Google Maps API key
+ * @returns {Promise<PlaceResult[]>}
  */
 export async function fetchEaterRestaurants(location, apiKey) {
     return fetchGoogleTextSearch(

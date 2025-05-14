@@ -1,5 +1,12 @@
 import axios from 'axios';
 
+import {
+    fetchGooglePlacesRestaurants,
+    fetchMichelinRestaurants,
+    fetchJamesBeardRestaurants,
+    fetchEaterRestaurants
+} from './fetchers.js';
+
 /**
  * @typedef {Object} Restaurant
  * @property {string} name - Display name of the restaurant
@@ -51,65 +58,71 @@ async function fetchGoogleTextSearch(query, apiKey, source) {
 }
 
 /**
- * Deduplicates restaurants by `place_id` and limits to 5.
+ * Deduplicates restaurant results by `place_id` across sources and limits to top 5.
  *
- * @param {Restaurant[][]} resultSets - Array of arrays of restaurants
- * @returns {Restaurant[]}
+ * @param {Restaurant[][]} resultSets - Array of arrays of Restaurant objects from multiple sources
+ * @returns {Restaurant[]} Array of unique top 5 restaurants
  */
-function deduplicateRestaurants(resultSets) {
-	const seen = new Set();
-	const merged = [];
+export function deduplicateRestaurants(resultSets) {
+    const seen = new Set();
+    const merged = [];
 
-	for (const group of resultSets) {
-		for (const r of group) {
-			if (!seen.has(r.place_id)) {
-				seen.add(r.place_id);
-				merged.push(r);
-			}
-			if (merged.length >= 5) break;
-		}
-		if (merged.length >= 5) break;
-	}
+    for (const group of resultSets) {
+        for (const r of group) {
+            if (r.place_id && !seen.has(r.place_id)) {
+                seen.add(r.place_id);
+                merged.push(r);
+            }
+            if (merged.length >= 5) break;
+        }
+        if (merged.length >= 5) break;
+    }
 
-	return merged;
+    return merged;
 }
 
 /**
- * Fetches dining suggestions from Google, Michelin, James Beard, and Eater.
+ * Queries Google Places using multiple culinary keywords and combines results.
  *
- * @param {string} location - Location string (e.g., "Newport Beach")
- * @param {string} apiKey - Google Maps API key
+ * @param {string} location - Location name for restaurant queries.
+ * @param {string} apiKey - Google Maps API key.
  * @returns {Promise<DiningResponse>}
  */
 export async function fetchRestaurants(location, apiKey) {
-	const queries = [
-		{ source: 'Google', query: `restaurants near ${location}` },
-		{ source: 'Michelin', query: `michelin star restaurants near ${location}` },
-		{ source: 'JamesBeard', query: `james beard award restaurants near ${location}` },
-		{ source: 'Eater', query: `eater 38 restaurants near ${location}` }
-	];
+    const queries = [
+        { source: 'Google', query: `restaurants near ${location}` },
+        { source: 'Michelin', query: `michelin star restaurants near ${location}` },
+        { source: 'JamesBeard', query: `james beard award restaurants near ${location}` },
+        { source: 'Eater', query: `eater 38 restaurants near ${location}` }
+    ];
 
-	const results = await Promise.allSettled(
-		queries.map(({ source, query }) =>
-			fetchGoogleTextSearch(query, apiKey, source)
-				.then(data => ({ source, status: 'fulfilled', data }))
-				.catch(error => ({ source, status: 'rejected', error: error.message }))
-		)
-	);
+    const results = await Promise.allSettled(
+        queries.map(({ source, query }) =>
+            fetchGoogleTextSearch(query, apiKey, source)
+                .then(function (data) {
+                    return { source, status: 'fulfilled', data };
+                })
+                .catch(function (error) {
+                    return { source, status: 'rejected', error: error.message };
+                })
+        )
+    );
 
-	const fulfilled = results
-		.filter(r => r.status === 'fulfilled')
-		.map(r => r.data);
+    const fulfilled = results
+        .filter(function (r) { return r.status === 'fulfilled'; })
+        .map(function (r) { return r.value.data; });
 
-	const sources = results.map(r => ({
-		source: r.source,
-		status: r.status,
-		count: r.data?.length || 0,
-		error: r.error || undefined
-	}));
+    const sources = results.map(function (r) {
+        return {
+            source: r.value?.source || r.reason?.source || 'unknown',
+            status: r.status,
+            count: r.value?.data?.length || 0,
+            error: r.reason?.error || undefined
+        };
+    });
 
-	return {
-		data: deduplicateRestaurants(fulfilled),
-		sources
-	};
+    return {
+        data: deduplicateRestaurants(fulfilled),
+        sources
+    };
 }

@@ -4,11 +4,11 @@
   "trip": [
     {
       "wakeUpTime": "08:00",
-      "location": "Newport Beach",
+      "location": "Zürich",
       "lodging": {
-        "name": "The Resort at Pelican Hill",
-        "address": "22701 S Pelican Hill Rd South, Newport Coast, CA 92657, USA",
-        "phone": "(888) 352-1873"
+        "name": "Storchen",
+        "address": "Weinpl. 2, 8001 Zürich, Switzerland",
+        "phone": "044 227 27 27"
       },
       "activities": [
         {
@@ -21,7 +21,7 @@
     },
     {
       "wakeUpTime": "08:00",
-      "location": "Newport Beach",
+      "location": "Zermatt",
       "lodging": {
         "name": "Mont Cervin Palace",
         "address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
@@ -45,7 +45,7 @@
     },
     {
       "wakeUpTime": "08:00",
-      "location": "3920 Zermatt, Switzerland",
+      "location": "Zermatt, Switzerland",
       "lodging": {
         "name": "Mont Cervin Palace",
         "address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
@@ -119,7 +119,7 @@
       "activities": [
         {
           "name": "Check-in at Rosewood Vienna",
-          "length": 30,
+          "length": "30",
           "location": "Vienna",
           "notes": "Check-in at 3:00 PM"
         }

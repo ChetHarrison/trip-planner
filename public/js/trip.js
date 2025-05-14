@@ -77,13 +77,15 @@ export const renderTrip = (tripData, apiKey, updateTrip) => {
 };
 
 /**
- * Attaches Google Maps Autocomplete to input fields and handles place selection.
- * Supports location, hotel, and activity fields. On selecting a place, updates the
- * trip state via the onPlaceSelected callback. Special-cases day location to trigger
- * suggestion fetching and server save.
+ * Attaches Google Maps Autocomplete to hotel, activity, and day location fields.
+ * When a place is selected, updates relevant trip fields and UI inputs.
+ * Special-case: if location is changed, fetches new dining/sight/history suggestions.
  *
- * @param {TripData} tripData - The full trip object.
- * @param {Object} store - Store interface with get and update.
+ * @param {TripData} tripData - Full trip object with tripName, startDate, and trip[]
+ * @param {{
+ *   get: () => TripData,
+ *   update: (updateFn: (TripData) => TripData | Promise<TripData>) => void
+ * }} store - The TripStore instance for managing trip state
  */
 export const hydrateClassicAutocompleteInputs = (tripData, store) => {
     if (!window.google?.maps?.places?.Autocomplete) {
@@ -121,11 +123,11 @@ export const hydrateClassicAutocompleteInputs = (tripData, store) => {
                         day.lodging = { name, address, phone };
                         input.value = name;
 
-                        const wrapper = input.closest('.day-entry') || input.closest('.card');
-                        const addrInput = wrapper?.querySelector('[data-field="lodging.address"]');
-                        const phoneInput = wrapper?.querySelector('[data-field="lodging.phone"]');
+                        const addrInput = document.querySelector(`input[data-field="lodging.address"][data-day-index="${dayIndex}"]`);
+                        const phoneInput = document.querySelector(`input[data-field="lodging.phone"][data-day-index="${dayIndex}"]`);
                         if (addrInput) addrInput.value = address;
                         if (phoneInput) phoneInput.value = phone;
+
                     } else if (activityIndex !== undefined) {
                         day.activities[activityIndex][field] = name;
                         input.value = name;
@@ -157,26 +159,44 @@ export const hydrateClassicAutocompleteInputs = (tripData, store) => {
 };
 
 /**
- * Fetches updated dining, tourist sights, and history suggestions for a given location.
- *
- * @param {string} location - Location name.
- * @returns {Promise<{ restaurants: any[], sights: any[], history: string }>} Suggestion results.
+ * @typedef {Object} SuggestionResult
+ * @property {Restaurant[]} restaurants
+ * @property {Object[]} sights
+ * @property {string} history
  */
-export const fetchSuggestionsForDay = async (location) => {
-    if (!location) return {};
 
-    const [diningRes, sightsRes, historyRes] = await Promise.all([
-        fetch(`/getDiningSuggestions?location=${encodeURIComponent(location)}`).then(res => res.json()),
-        fetch(`/getSiteSuggestions?location=${encodeURIComponent(location)}`).then(res => res.json()),
-        fetch(`/getLocationHistory?location=${encodeURIComponent(location)}`).then(res => res.json())
-    ]);
+/**
+ * Fetches dining, sights, and history suggestions for a given location.
+ *
+ * @param {string} location - The name of the location to fetch suggestions for.
+ * @returns {Promise<SuggestionResult>} - Combined results from dining, sightseeing, and Wikipedia.
+ */
+export async function fetchSuggestionsForDay(location) {
+    if (!location) {
+        return { restaurants: [], sights: [], history: '' };
+    }
 
-    return {
-        restaurants: diningRes.data || [],
-        sights: sightsRes.results || [],
-        history: historyRes.extract || ''
-    };
-};
+    try {
+        const diningRes = await fetch(`/getDiningSuggestions?location=${encodeURIComponent(location)}`);
+        const sightsRes = await fetch(`/getSiteSuggestions?location=${encodeURIComponent(location)}`);
+        const historyRes = await fetch(`/getLocationHistory?location=${encodeURIComponent(location)}`);
+
+        const dining = await diningRes.json();
+        const sights = await sightsRes.json();
+        const history = await historyRes.json();
+
+        console.log('[fetchSuggestionsForDay] dining response:', dining);
+
+        return {
+            restaurants: dining.data || [],
+            sights: sights.results || [],
+            history: history.extract || ''
+        };
+    } catch (err) {
+        console.error('[fetchSuggestionsForDay] Error:', err);
+        return { restaurants: [], sights: [], history: '' };
+    }
+}
 
 /**
  * Sets up blur listeners on inputs to persist data changes.

@@ -178,13 +178,17 @@ export const renderDay = (day, dayIndex, tripName, displayDate, apiKey = '') => 
 };
 
 /**
- * Renders the restaurant, sights, and history sections for a day.
- * Limits restaurants and sights to 5 entries each.
+ * Formats the suggestions section for a day, including top restaurants, sights, and history.
+ * Renders embedded maps for each restaurant or sight that includes a place_id.
  *
- * @param {Object} suggestions - Suggestion data for the day
- * @param {string} location - The location string
- * @param {string} apiKey - Google Maps API key
- * @returns {string}
+ * @param {{
+ *   restaurants: Array<{ name: string, formatted_address: string, place_id?: string }>,
+ *   sights: Array<{ name: string, formatted_address: string, place_id?: string }>,
+ *   history: string
+ * }} suggestions - Suggestion data returned from the server
+ * @param {string} location - The city or region name (used in history section)
+ * @param {string} apiKey - Google Maps Embed API key
+ * @returns {string} HTML string for suggestion cards
  */
 export const formatSuggestionSection = (suggestions, location, apiKey) => {
     const formatCardsRow = (label, list) =>
@@ -194,12 +198,12 @@ export const formatSuggestionSection = (suggestions, location, apiKey) => {
                  ${list.slice(0, 5).map(p => `
                    <div style="flex: 1 1 calc(20% - 10px); min-width: 200px;">
                      <strong>${p.name}</strong><br>
-                     ${p.formatted_address}<br>
-                     ${p.place_id && apiKey ?
-                        `<iframe width="100%" height="200" frameborder="0" style="margin-top:5px"
-                         src="https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=place_id:${p.place_id}"
-                         allowfullscreen></iframe>`
-                      : ''}
+                     ${p.formatted_address || ''}<br>
+                     ${p.place_id && apiKey
+                        ? `<iframe width="100%" height="200" frameborder="0" style="margin-top:5px"
+                             src="https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=place_id:${p.place_id}"
+                             allowfullscreen></iframe>`
+                        : ''}
                    </div>`).join('')}
                </div>`
             : '';

@@ -101,26 +101,39 @@ app.get('/config', (_, res) => {
 });
 
 /**
- * GET /getDiningSuggestions?location=
- * Caches and fetches top restaurants using multiple sources.
+ * GET /getDiningSuggestions
+ *
+ * Fetches and caches dining suggestions from Google Places API using multiple keyword queries
+ * (e.g., Michelin, Eater, James Beard). Uses Redis to cache results for 1 hour.
+ *
+ * @typedef {import('./helpers/diningHelpers.js').DiningResponse} DiningResponse
+ *
+ * @route GET /getDiningSuggestions?location=<city>
  * @returns {DiningResponse}
  */
-app.get('/getDiningSuggestions', async (req, res) => {
-    const { location } = req.query;
-    if (!location) return res.status(400).json({ error: 'Location is required.' });
+app.get('/getDiningSuggestions', async function (req, res) {
+    const location = req.query.location;
+    if (!location) {
+        return res.status(400).json({ error: 'Location is required.' });
+    }
 
     const cacheKey = `dining:${location.toLowerCase()}`;
-    const cached = await redisClient.get(cacheKey);
-    if (cached) return res.json(JSON.parse(cached));
 
     try {
-        const { results, sources } = await fetchRestaurants(location, googleApiKey);
-        const response = { data: results, sources };
-        await redisClient.set(cacheKey, JSON.stringify(response), { EX: 3600 });
-        res.json(response);
+        const cached = await redisClient.get(cacheKey);
+        if (cached) {
+            return res.json(JSON.parse(cached));
+        }
+
+        const result = await fetchRestaurants(location, googleApiKey);
+        await redisClient.set(cacheKey, JSON.stringify(result), { EX: 3600 });
+        res.json(result);
     } catch (err) {
         console.error('❌ Error in getDiningSuggestions:', err.message);
-        res.status(500).json({ error: 'Dining suggestions fetch failed', details: err.message });
+        res.status(500).json({
+            error: 'Dining suggestions fetch failed',
+            details: err.message
+        });
     }
 });
 
@@ -145,22 +158,36 @@ app.get('/getSiteSuggestions', async (req, res) => {
 /**
  * GET /getLocationHistory?location=
  * Returns short summary from Wikipedia.
+ * Falls back to raw location string if no open search result.
  */
 app.get('/getLocationHistory', async (req, res) => {
     const { location } = req.query;
     if (!location) return res.status(400).json({ error: 'Missing location' });
 
+    const tryFetchSummary = async (term) => {
+        const summaryURL = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(term)}`;
+        try {
+            const { data } = await axios.get(summaryURL);
+            return data;
+        } catch (err) {
+            return null;
+        }
+    };
+
     try {
+        // Step 1: Try OpenSearch
         const searchURL = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${encodeURIComponent(location)}&limit=1&format=json&origin=*`;
         const searchRes = await axios.get(searchURL);
         const bestMatch = searchRes.data[1]?.[0];
 
-        if (!bestMatch) return res.status(404).json({ error: `No article found for ${location}` });
+        // Step 2: Try best match, or fallback to original location
+        const summary = await tryFetchSummary(bestMatch) || await tryFetchSummary(location);
 
-        const summaryURL = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(bestMatch)}`;
-        const summaryRes = await axios.get(summaryURL);
+        if (!summary) {
+            return res.status(404).json({ error: `No summary found for ${location}` });
+        }
 
-        res.json(summaryRes.data);
+        res.json(summary);
     } catch (err) {
         console.error('History fetch error:', err.message);
         res.status(err.response?.status || 500).json({
