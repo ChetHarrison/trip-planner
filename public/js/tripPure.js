@@ -218,10 +218,28 @@ export const formatSuggestionSection = (suggestions, location, apiKey) => {
         </div>`;
 };
 
+/**
+ * Renders the full trip into an HTML string.
+ *
+ * Iterates through each day in the trip and calls `renderDay` to produce both
+ * the screen and print-friendly markup for the day, including lodging, activities,
+ * suggestions (restaurants, sights, and history), and controls.
+ *
+ * @param {TripData} tripData - The entire trip structure with metadata and days.
+ * @param {string} [apiKey=''] - Google Maps API key used for embedded maps.
+ * @returns {string} HTML string representing the full trip layout.
+ */
 export const renderTripHTML = (tripData, apiKey = '') => {
-	if (!tripData || !Array.isArray(tripData.trip)) return '';
-	return tripData.trip
-	.map((day, index) =>
-		renderDay(day, index, tripData.tripName, calculateDate(tripData.startDate, index), apiKey)
-		).join('');
+  if (!tripData || !Array.isArray(tripData.trip)) return '';
+  return tripData.trip
+    .map((day, index) =>
+      renderDay(
+        day,
+        index,
+        tripData.tripName,
+        calculateDate(tripData.startDate, index),
+        apiKey
+      )
+    )
+    .join('');
 };

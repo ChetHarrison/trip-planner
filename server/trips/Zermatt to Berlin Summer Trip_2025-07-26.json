@@ -222,34 +222,16 @@
       "wakeUpTime": "08:00",
       "location": "Berlin",
       "lodging": {
-        "name": "Hotel de Rome",
-        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": []
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Berlin",
-      "lodging": {
-        "name": "Hotel de Rome",
-        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
-        "phone": "",
-        "roomType": ""
+        "name": "Hotel de Rome, a Rocco Forte Hotel",
+        "address": "Behrenstraße 37, 10117 Berlin, Germany",
+        "phone": "030 4606090"
       },
       "activities": [
         {
-          "name": "Flight to London (BA 0987)",
-          "length": 65,
-          "location": "BER to LHR",
-          "notes": "Departs 11:20 AM, Arrives 12:25 PM"
-        },
-        {
-          "name": "Flight to LAX (BA 0269)",
-          "length": 675,
-          "location": "LHR to LAX",
-          "notes": "Departs 2:20 PM, Arrives 5:35 PM"
+          "name": "foo",
+          "length": "20",
+          "location": "Lake Como",
+          "notes": ""
         }
       ]
     }

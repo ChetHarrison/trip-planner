@@ -48,75 +48,107 @@ export const renderTrip = (tripData, apiKey, store) => {
   handleAddDayButton(store);          // 🆕 NEW
   handleDeleteActivityButtons(store); // 🆕 NEW
   handleDeleteDayButtons(store);
+  initDragAndDrop(store);
 };
 
+/**
+ * Binds Google Maps Autocomplete to location inputs.
+ * Only day location inputs fetch suggestions and trigger re-renders.
+ *
+ * @param {TripData} tripData - The trip object.
+ * @param {TripStore} store - The centralized trip state manager.
+ */
 export const hydrateClassicAutocompleteInputs = (tripData, store) => {
-  if (!window.google?.maps?.places?.Autocomplete) return;
-  const selectors = [
-    ['.classic-location-autocomplete', 'location'],
-    ['.classic-hotel-autocomplete', 'lodging.name'],
-    ['.classic-activity-autocomplete', 'location']
+  if (!window.google?.maps?.places?.Autocomplete) {
+    console.warn('[autocomplete] Google Autocomplete not available.');
+    return;
+  }
+
+  const configs = [
+    { selector: '.day-location.classic-location-autocomplete', field: 'location', scope: 'day' },
+    { selector: '.classic-hotel-autocomplete', field: 'lodging.name', scope: 'hotel' },
+    { selector: '.activity-location.classic-activity-autocomplete', field: 'location', scope: 'activity' }
   ];
-  selectors.forEach(([selector, field]) => {
-    document.querySelectorAll(selector).forEach(input => {
+
+  configs.forEach(({ selector, field, scope }) => {
+    document.querySelectorAll(selector).forEach((input) => {
       try {
         const autocomplete = new google.maps.places.Autocomplete(input);
+
         autocomplete.addListener('place_changed', () => {
           const place = autocomplete.getPlace();
           const dayIndex = input.dataset.dayIndex;
           const activityIndex = input.dataset.activityIndex;
+
           const name = place?.name || '';
           const address = place?.formatted_address || '';
           const phone = place?.formatted_phone_number || '';
+
           const updatedTrip = cloneTripWithMetadata(store.get());
           const day = updatedTrip.trip[dayIndex];
+
+          input._autocompleteJustSelected = true;
+
           if (field === 'lodging.name') {
             day.lodging = { name, address, phone };
             input.value = name;
 
             const addrInput = document.querySelector(`input[data-field="lodging.address"][data-day-index="${dayIndex}"]`);
-            if (addrInput) addrInput.value = address;
-
             const phoneInput = document.querySelector(`input[data-field="lodging.phone"][data-day-index="${dayIndex}"]`);
+            if (addrInput) addrInput.value = address;
             if (phoneInput) phoneInput.value = phone;
 
-          } else if (activityIndex !== undefined) {
+            store.update(() => updatedTrip);
+
+          } else if (scope === 'activity') {
             day.activities[activityIndex][field] = name;
             input.value = name;
-          } else {
+            store.update(() => updatedTrip);
+
+          } else if (scope === 'day') {
             day[field] = name;
             input.value = name;
+
+            fetchSuggestionsForDay(name).then((suggestions) => {
+              day.suggestions = suggestions;
+              store.update(() => updatedTrip);
+            });
           }
 
           input.dispatchEvent(new Event('change', { bubbles: true }));
-          const doUpdate = () => store.update(() => updatedTrip);
-          if (field === 'location') {
-            fetchSuggestionsForDay(name).then(suggestions => {
-              day.suggestions = suggestions;
-              doUpdate();
-            });
-          } else {
-            doUpdate();
-          }
+          setTimeout(() => delete input._autocompleteJustSelected, 0);
         });
+
       } catch (err) {
-        console.error('[autocomplete] Failed:', err);
+        console.error('[autocomplete] Failed to init:', err);
       }
     });
   });
 };
 
+const suggestionCache = new Map();
+
+/**
+ * @param {string} location
+ * @returns {Promise<SuggestionResult>}
+ */
 export const fetchSuggestionsForDay = async (location) => {
   if (!location) return { restaurants: [], sights: [], history: '' };
+  if (suggestionCache.has(location)) return suggestionCache.get(location);
+
   try {
     const diningRes = await fetch(`/getDiningSuggestions?location=${encodeURIComponent(location)}`);
     const sightsRes = await fetch(`/getSiteSuggestions?location=${encodeURIComponent(location)}`);
     const historyRes = await fetch(`/getLocationHistory?location=${encodeURIComponent(location)}`);
-    return {
+
+    const result = {
       restaurants: (await diningRes.json()).data || [],
       sights: (await sightsRes.json()).results || [],
       history: (await historyRes.json()).extract || ''
     };
+
+    suggestionCache.set(location, result);
+    return result;
   } catch (err) {
     console.error('[fetchSuggestionsForDay] Error:', err);
     return { restaurants: [], sights: [], history: '' };
@@ -129,6 +161,7 @@ export const setupBlurHandler = (store) => {
 
   async function blurListener(e) {
     if (!(e.target instanceof HTMLInputElement)) return;
+
     const input = e.target;
     const { field, dayIndex, activityIndex } = input.dataset;
     if (dayIndex == null || field == null || input._autocompleteJustSelected) return;
@@ -150,14 +183,40 @@ export const setupBlurHandler = (store) => {
       }
     }
 
+    const isDayLocation = input.classList.contains('dayLocation');
+
     store.update(async () => {
       const newTrip = structuredClone(updatedTrip);
-      if (field === 'location') {
+      if (isDayLocation) {
         newTrip.trip[dayIndex].suggestions = await fetchSuggestionsForDay(value);
       }
       return newTrip;
     });
   }
+};
+
+/**
+ * Sets up drag-and-drop sorting using dragula.
+ * Reorders activities within each day and updates trip state.
+ *
+ * @param {TripStore} store
+ */
+export const initDragAndDrop = (store) => {
+  if (typeof dragula !== 'function') return;
+
+  const containers = Array.from(document.querySelectorAll('.activity-list'));
+  const drake = dragula(containers);
+
+  drake.on('drop', (el, target) => {
+    const dayIndex = parseInt(target.dataset.dayIndex, 10);
+    const updatedTrip = cloneTripWithMetadata(store.get());
+    const newOrder = Array.from(target.children).map((el) => {
+      const index = parseInt(el.dataset.activityIndex, 10);
+      return updatedTrip.trip[dayIndex].activities[index];
+    });
+    updatedTrip.trip[dayIndex].activities = newOrder;
+    store.update(() => updatedTrip);
+  });
 };
 
 export const attachButtonHandlers = (store) => {

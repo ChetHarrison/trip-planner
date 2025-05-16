@@ -5716,6 +5716,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   handleDeleteActivityButtons: () => (/* binding */ handleDeleteActivityButtons),
 /* harmony export */   handleDeleteDayButtons: () => (/* binding */ handleDeleteDayButtons),
 /* harmony export */   hydrateClassicAutocompleteInputs: () => (/* binding */ hydrateClassicAutocompleteInputs),
+/* harmony export */   initDragAndDrop: () => (/* binding */ initDragAndDrop),
 /* harmony export */   renderTrip: () => (/* binding */ renderTrip),
 /* harmony export */   saveTripToServer: () => (/* binding */ saveTripToServer),
 /* harmony export */   setupBlurHandler: () => (/* binding */ setupBlurHandler)
@@ -5814,15 +5815,39 @@ var renderTrip = function renderTrip(tripData, apiKey, store) {
   handleAddDayButton(store); // 🆕 NEW
   handleDeleteActivityButtons(store); // 🆕 NEW
   handleDeleteDayButtons(store);
+  initDragAndDrop(store);
 };
+
+/**
+ * Binds Google Maps Autocomplete to location inputs.
+ * Only day location inputs fetch suggestions and trigger re-renders.
+ *
+ * @param {TripData} tripData - The trip object.
+ * @param {TripStore} store - The centralized trip state manager.
+ */
 var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs(tripData, store) {
   var _window$google;
-  if (!((_window$google = window.google) !== null && _window$google !== void 0 && (_window$google = _window$google.maps) !== null && _window$google !== void 0 && (_window$google = _window$google.places) !== null && _window$google !== void 0 && _window$google.Autocomplete)) return;
-  var selectors = [['.classic-location-autocomplete', 'location'], ['.classic-hotel-autocomplete', 'lodging.name'], ['.classic-activity-autocomplete', 'location']];
-  selectors.forEach(function (_ref) {
-    var _ref2 = _slicedToArray(_ref, 2),
-      selector = _ref2[0],
-      field = _ref2[1];
+  if (!((_window$google = window.google) !== null && _window$google !== void 0 && (_window$google = _window$google.maps) !== null && _window$google !== void 0 && (_window$google = _window$google.places) !== null && _window$google !== void 0 && _window$google.Autocomplete)) {
+    console.warn('[autocomplete] Google Autocomplete not available.');
+    return;
+  }
+  var configs = [{
+    selector: '.day-location.classic-location-autocomplete',
+    field: 'location',
+    scope: 'day'
+  }, {
+    selector: '.classic-hotel-autocomplete',
+    field: 'lodging.name',
+    scope: 'hotel'
+  }, {
+    selector: '.activity-location.classic-activity-autocomplete',
+    field: 'location',
+    scope: 'activity'
+  }];
+  configs.forEach(function (_ref) {
+    var selector = _ref.selector,
+      field = _ref.field,
+      scope = _ref.scope;
     document.querySelectorAll(selector).forEach(function (input) {
       try {
         var autocomplete = new google.maps.places.Autocomplete(input);
@@ -5835,6 +5860,7 @@ var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs
           var phone = (place === null || place === void 0 ? void 0 : place.formatted_phone_number) || '';
           var updatedTrip = cloneTripWithMetadata(store.get());
           var day = updatedTrip.trip[dayIndex];
+          input._autocompleteJustSelected = true;
           if (field === 'lodging.name') {
             day.lodging = {
               name: name,
@@ -5843,42 +5869,50 @@ var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs
             };
             input.value = name;
             var addrInput = document.querySelector("input[data-field=\"lodging.address\"][data-day-index=\"".concat(dayIndex, "\"]"));
-            if (addrInput) addrInput.value = address;
             var phoneInput = document.querySelector("input[data-field=\"lodging.phone\"][data-day-index=\"".concat(dayIndex, "\"]"));
+            if (addrInput) addrInput.value = address;
             if (phoneInput) phoneInput.value = phone;
-          } else if (activityIndex !== undefined) {
+            store.update(function () {
+              return updatedTrip;
+            });
+          } else if (scope === 'activity') {
             day.activities[activityIndex][field] = name;
             input.value = name;
-          } else {
+            store.update(function () {
+              return updatedTrip;
+            });
+          } else if (scope === 'day') {
             day[field] = name;
             input.value = name;
+            fetchSuggestionsForDay(name).then(function (suggestions) {
+              day.suggestions = suggestions;
+              store.update(function () {
+                return updatedTrip;
+              });
+            });
           }
           input.dispatchEvent(new Event('change', {
             bubbles: true
           }));
-          var doUpdate = function doUpdate() {
-            return store.update(function () {
-              return updatedTrip;
-            });
-          };
-          if (field === 'location') {
-            fetchSuggestionsForDay(name).then(function (suggestions) {
-              day.suggestions = suggestions;
-              doUpdate();
-            });
-          } else {
-            doUpdate();
-          }
+          setTimeout(function () {
+            return delete input._autocompleteJustSelected;
+          }, 0);
         });
       } catch (err) {
-        console.error('[autocomplete] Failed:', err);
+        console.error('[autocomplete] Failed to init:', err);
       }
     });
   });
 };
+var suggestionCache = new Map();
+
+/**
+ * @param {string} location
+ * @returns {Promise<SuggestionResult>}
+ */
 var fetchSuggestionsForDay = /*#__PURE__*/function () {
-  var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(location) {
-    var diningRes, sightsRes, historyRes;
+  var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(location) {
+    var diningRes, sightsRes, historyRes, result;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
@@ -5892,74 +5926,82 @@ var fetchSuggestionsForDay = /*#__PURE__*/function () {
             history: ''
           });
         case 2:
-          _context2.prev = 2;
-          _context2.next = 5;
+          if (!suggestionCache.has(location)) {
+            _context2.next = 4;
+            break;
+          }
+          return _context2.abrupt("return", suggestionCache.get(location));
+        case 4:
+          _context2.prev = 4;
+          _context2.next = 7;
           return fetch("/getDiningSuggestions?location=".concat(encodeURIComponent(location)));
-        case 5:
+        case 7:
           diningRes = _context2.sent;
-          _context2.next = 8;
+          _context2.next = 10;
           return fetch("/getSiteSuggestions?location=".concat(encodeURIComponent(location)));
-        case 8:
+        case 10:
           sightsRes = _context2.sent;
-          _context2.next = 11;
+          _context2.next = 13;
           return fetch("/getLocationHistory?location=".concat(encodeURIComponent(location)));
-        case 11:
+        case 13:
           historyRes = _context2.sent;
-          _context2.next = 14;
+          _context2.next = 16;
           return diningRes.json();
-        case 14:
+        case 16:
           _context2.t0 = _context2.sent.data;
           if (_context2.t0) {
-            _context2.next = 17;
+            _context2.next = 19;
             break;
           }
           _context2.t0 = [];
-        case 17:
+        case 19:
           _context2.t1 = _context2.t0;
-          _context2.next = 20;
+          _context2.next = 22;
           return sightsRes.json();
-        case 20:
+        case 22:
           _context2.t2 = _context2.sent.results;
           if (_context2.t2) {
-            _context2.next = 23;
+            _context2.next = 25;
             break;
           }
           _context2.t2 = [];
-        case 23:
+        case 25:
           _context2.t3 = _context2.t2;
-          _context2.next = 26;
+          _context2.next = 28;
           return historyRes.json();
-        case 26:
+        case 28:
           _context2.t4 = _context2.sent.extract;
           if (_context2.t4) {
-            _context2.next = 29;
+            _context2.next = 31;
             break;
           }
           _context2.t4 = '';
-        case 29:
+        case 31:
           _context2.t5 = _context2.t4;
-          return _context2.abrupt("return", {
+          result = {
             restaurants: _context2.t1,
             sights: _context2.t3,
             history: _context2.t5
-          });
-        case 33:
-          _context2.prev = 33;
-          _context2.t6 = _context2["catch"](2);
+          };
+          suggestionCache.set(location, result);
+          return _context2.abrupt("return", result);
+        case 37:
+          _context2.prev = 37;
+          _context2.t6 = _context2["catch"](4);
           console.error('[fetchSuggestionsForDay] Error:', _context2.t6);
           return _context2.abrupt("return", {
             restaurants: [],
             sights: [],
             history: ''
           });
-        case 37:
+        case 41:
         case "end":
           return _context2.stop();
       }
-    }, _callee2, null, [[2, 33]]);
+    }, _callee2, null, [[4, 37]]);
   }));
   return function fetchSuggestionsForDay(_x2) {
-    return _ref3.apply(this, arguments);
+    return _ref2.apply(this, arguments);
   };
 }();
 var setupBlurHandler = function setupBlurHandler(store) {
@@ -5970,7 +6012,7 @@ var setupBlurHandler = function setupBlurHandler(store) {
   }
   function _blurListener() {
     _blurListener = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4(e) {
-      var input, _input$dataset, field, dayIndex, activityIndex, value, updatedTrip, day, _field$split, _field$split2, outer, inner;
+      var input, _input$dataset, field, dayIndex, activityIndex, value, updatedTrip, day, _field$split, _field$split2, outer, inner, isDayLocation;
       return _regeneratorRuntime().wrap(function _callee4$(_context4) {
         while (1) switch (_context4.prev = _context4.next) {
           case 0:
@@ -6008,13 +6050,14 @@ var setupBlurHandler = function setupBlurHandler(store) {
                 day[field] = value;
               }
             }
+            isDayLocation = input.classList.contains('dayLocation');
             store.update(/*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
               var newTrip;
               return _regeneratorRuntime().wrap(function _callee3$(_context3) {
                 while (1) switch (_context3.prev = _context3.next) {
                   case 0:
                     newTrip = structuredClone(updatedTrip);
-                    if (!(field === 'location')) {
+                    if (!isDayLocation) {
                       _context3.next = 5;
                       break;
                     }
@@ -6030,7 +6073,7 @@ var setupBlurHandler = function setupBlurHandler(store) {
                 }
               }, _callee3);
             })));
-          case 13:
+          case 14:
           case "end":
             return _context4.stop();
         }
@@ -6038,6 +6081,30 @@ var setupBlurHandler = function setupBlurHandler(store) {
     }));
     return _blurListener.apply(this, arguments);
   }
+};
+
+/**
+ * Sets up drag-and-drop sorting using dragula.
+ * Reorders activities within each day and updates trip state.
+ *
+ * @param {TripStore} store
+ */
+var initDragAndDrop = function initDragAndDrop(store) {
+  if (typeof dragula !== 'function') return;
+  var containers = Array.from(document.querySelectorAll('.activity-list'));
+  var drake = dragula(containers);
+  drake.on('drop', function (el, target) {
+    var dayIndex = parseInt(target.dataset.dayIndex, 10);
+    var updatedTrip = cloneTripWithMetadata(store.get());
+    var newOrder = Array.from(target.children).map(function (el) {
+      var index = parseInt(el.dataset.activityIndex, 10);
+      return updatedTrip.trip[dayIndex].activities[index];
+    });
+    updatedTrip.trip[dayIndex].activities = newOrder;
+    store.update(function () {
+      return updatedTrip;
+    });
+  });
 };
 var attachButtonHandlers = function attachButtonHandlers(store) {
   var container = document.getElementById('trip-output');
@@ -6170,7 +6237,7 @@ var handleAddDayButton = function handleAddDayButton(store) {
   btn.addEventListener('click', btn._handler);
 };
 var saveTripToServer = /*#__PURE__*/function () {
-  var _ref5 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5(tripData) {
+  var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5(tripData) {
     var tripName, startDate, trip, res;
     return _regeneratorRuntime().wrap(function _callee5$(_context5) {
       while (1) switch (_context5.prev = _context5.next) {
@@ -6216,7 +6283,7 @@ var saveTripToServer = /*#__PURE__*/function () {
     }, _callee5, null, [[0, 11]]);
   }));
   return function saveTripToServer(_x4) {
-    return _ref5.apply(this, arguments);
+    return _ref4.apply(this, arguments);
   };
 }();
 
@@ -6485,6 +6552,18 @@ var formatSuggestionSection = function formatSuggestionSection(suggestions, loca
   };
   return "\n        <div class=\"day-info-section\">\n            ".concat(formatCardsRow('Top 5 Restaurants Nearby', (suggestions === null || suggestions === void 0 ? void 0 : suggestions.restaurants) || []), "\n            ").concat(formatCardsRow('Top 5 Tourist Sights', (suggestions === null || suggestions === void 0 ? void 0 : suggestions.sights) || []), "\n            ").concat(suggestions !== null && suggestions !== void 0 && suggestions.history ? "<div class=\"mt-4\"><h5>History of ".concat(location, "</h5><p>").concat(suggestions.history, "</p></div>") : '', "\n        </div>");
 };
+
+/**
+ * Renders the full trip into an HTML string.
+ *
+ * Iterates through each day in the trip and calls `renderDay` to produce both
+ * the screen and print-friendly markup for the day, including lodging, activities,
+ * suggestions (restaurants, sights, and history), and controls.
+ *
+ * @param {TripData} tripData - The entire trip structure with metadata and days.
+ * @param {string} [apiKey=''] - Google Maps API key used for embedded maps.
+ * @returns {string} HTML string representing the full trip layout.
+ */
 var renderTripHTML = function renderTripHTML(tripData) {
   var apiKey = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
   if (!tripData || !Array.isArray(tripData.trip)) return '';
