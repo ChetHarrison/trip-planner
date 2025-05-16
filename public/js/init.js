@@ -94,7 +94,7 @@ const loadSelectedTrip = async (tripName, apiKey) => {
     const enrichedTrip = { ...tripData, trip: daysWithSuggestions };
 
     TripStore.set(enrichedTrip);
-    renderTrip(enrichedTrip, apiKey, TripStore.update);
+    renderTrip(enrichedTrip, apiKey, TripStore);
 };
 
 /**
