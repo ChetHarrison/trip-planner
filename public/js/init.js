@@ -3,29 +3,10 @@
  * @description Bootstraps the trip planner app: loads trips, fetches config, and wires up UI event listeners.
  */
 
-import { renderTrip, createTripStore, setupBlurHandler, fetchSuggestionsForDay } from './trip.js';
+import { renderTrip, createTripStore, setupBlurHandler } from './trip.js';
 
 // Create and persist the trip store instance globally
 const TripStore = createTripStore();
-
-/**
- * Dynamically loads the Google Maps JavaScript API
- * @param {string} apiKey
- * @returns {Promise<void>}
- */
-const loadGoogleMapsScript = (apiKey) => new Promise((resolve, reject) => {
-    if (window.google?.maps?.places?.Autocomplete) return resolve();
-
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
-    script.defer = true;
-    script.onload = () => {
-        if (window.google?.maps?.places?.Autocomplete) resolve();
-        else reject(new Error('Google Maps loaded but Autocomplete not found'));
-    };
-    script.onerror = () => reject(new Error('Failed to load Google Maps API'));
-    document.head.appendChild(script);
-});
 
 /**
  * @returns {Promise<{ googleMapsApiKey: string }>}
@@ -67,7 +48,7 @@ const populateTripSelector = (tripNames) => {
 };
 
 /**
- * Loads a selected trip from disk, attaches API key, refetches suggestions, and renders.
+ * Loads a selected trip from disk and renders it.
  *
  * @param {string} tripName
  * @param {string} apiKey
@@ -76,25 +57,11 @@ const loadSelectedTrip = async (tripName, apiKey) => {
     console.log('[loadSelectedTrip] tripName:', tripName);
     if (!tripName || tripName === 'new') return;
 
-    await loadGoogleMapsScript(apiKey);
     const tripData = await fetchTripData(tripName);
     tripData.apiKey = apiKey;
 
-    // Refetch suggestions for each day with a valid location
-    const daysWithSuggestions = await Promise.all(
-        tripData.trip.map(async (day) => {
-            if (day.location) {
-                const suggestions = await fetchSuggestionsForDay(day.location);
-                return { ...day, suggestions };
-            }
-            return day;
-        })
-    );
-
-    const enrichedTrip = { ...tripData, trip: daysWithSuggestions };
-
-    TripStore.set(enrichedTrip);
-    renderTrip(enrichedTrip, apiKey, TripStore);
+    TripStore.set(tripData);
+    renderTrip(tripData, apiKey, TripStore);
 };
 
 /**
@@ -129,7 +96,6 @@ const initApp = async () => {
 initApp();
 
 export const __testHooks = {
-    loadGoogleMapsScript,
     fetchConfig,
     fetchTripList,
     fetchTripData,

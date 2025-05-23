@@ -13,6 +13,12 @@
       },
       "activities": [
         {
+          "name": "Uber to Airport",
+          "length": 20,
+          "location": "SNA",
+          "notes": ""
+        },
+        {
           "name": "Flight to Concord (JSX SNA → CCR)",
           "length": 95,
           "location": "JSX Terminal SNA",
@@ -25,10 +31,22 @@
           "notes": ""
         },
         {
+          "name": "Car service to Auro",
+          "length": 20,
+          "location": "Concord to Meadowood",
+          "notes": ""
+        },
+        {
           "name": "Dinner at Auro (Four Seasons)",
           "length": 120,
-          "location": "Calistoga, CA",
-          "notes": "6:30 PM Reservation"
+          "location": "Four Seasons Resort and Residences Napa Valley, Silverado Trail North, Calistoga, CA, USA",
+          "notes": ""
+        },
+        {
+          "name": "Car Service to Hotel",
+          "length": 20,
+          "location": "Meadowood",
+          "notes": ""
         }
       ]
     },
@@ -43,16 +61,52 @@
       },
       "activities": [
         {
+          "name": "House Car to Breakfast",
+          "length": 15,
+          "location": "Model Bakery, St Helena",
+          "notes": ""
+        },
+        {
+          "name": "Breakfast at the Model Bakery",
+          "length": 60,
+          "location": "The Model Bakery",
+          "notes": ""
+        },
+        {
+          "name": "House Car to Hotel",
+          "length": 15,
+          "location": "Meadowood Napa Valley",
+          "notes": ""
+        },
+        {
+          "name": "Cart to TNVR",
+          "length": 120,
+          "location": "",
+          "notes": ""
+        },
+        {
           "name": "Blending Session at The Napa Valley Reserve",
           "length": 90,
           "location": "TNVR",
           "notes": "10:00 AM"
         },
         {
+          "name": "House car to Lunch",
+          "length": 12,
+          "location": "St. Helena",
+          "notes": ""
+        },
+        {
           "name": "Lunch at Gott’s Roadside",
           "length": 60,
           "location": "St. Helena",
-          "notes": "11:45 AM"
+          "notes": ""
+        },
+        {
+          "name": "Car Service to Tasting",
+          "length": 60,
+          "location": "St. Helena",
+          "notes": "guys will do Beer in St. Helena and get the house car back to the hotel."
         },
         {
           "name": "Diamond Creek Tasting (Ladies)",
@@ -67,7 +121,7 @@
           "notes": "6:00 PM"
         },
         {
-          "name": "Drinks at Charter Oak",
+          "name": "Sunset on the Deck",
           "length": 90,
           "location": "St. Helena",
           "notes": "8:15 PM"
@@ -85,10 +139,28 @@
       },
       "activities": [
         {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "Meadowood",
+          "notes": ""
+        },
+        {
+          "name": "Car Service to Harlan Estate",
+          "length": 30,
+          "location": "Harlan Estate",
+          "notes": ""
+        },
+        {
           "name": "Tasting at Harlan Estate",
-          "length": 120,
+          "length": 90,
           "location": "Oakville, CA",
           "notes": "10:00 AM"
+        },
+        {
+          "name": "Car Service to Luncheon",
+          "length": 30,
+          "location": "Oakville Grocery",
+          "notes": ""
         },
         {
           "name": "Lunch at Oakville Grocery",
@@ -97,16 +169,34 @@
           "notes": "12:00 PM"
         },
         {
+          "name": "Car Service to Promontory",
+          "length": 30,
+          "location": "Harlan Estate",
+          "notes": ""
+        },
+        {
           "name": "Tasting at Promontory",
           "length": 90,
           "location": "Oakville, CA",
           "notes": "2:00 PM"
         },
         {
-          "name": "Bocce, Champagne and Mez Plates",
+          "name": "Car Service to Hotel",
+          "length": 30,
+          "location": "Meadowood",
+          "notes": ""
+        },
+        {
+          "name": "Relax, Napa Nap and Get Ready for Dinner",
           "length": 60,
-          "location": "TNVR",
+          "location": "Meadowood",
           "notes": "6:00 PM"
+        },
+        {
+          "name": "Cart to TNVR",
+          "length": 30,
+          "location": "The Napa Valley Reserve",
+          "notes": ""
         },
         {
           "name": "Birthday Dinner at TNVR with Chef Monson",
@@ -143,6 +233,12 @@
           "length": 85,
           "location": "JSX Terminal CCR",
           "notes": "Departs 10:15 AM"
+        },
+        {
+          "name": "Uber Home",
+          "length": 15,
+          "location": "611 Carnation",
+          "notes": ""
         }
       ]
     }

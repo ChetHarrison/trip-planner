@@ -5711,11 +5711,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   attachButtonHandlers: () => (/* binding */ attachButtonHandlers),
 /* harmony export */   cloneTripWithMetadata: () => (/* binding */ cloneTripWithMetadata),
 /* harmony export */   createTripStore: () => (/* binding */ createTripStore),
-/* harmony export */   fetchSuggestionsForDay: () => (/* binding */ fetchSuggestionsForDay),
 /* harmony export */   handleAddDayButton: () => (/* binding */ handleAddDayButton),
 /* harmony export */   handleDeleteActivityButtons: () => (/* binding */ handleDeleteActivityButtons),
 /* harmony export */   handleDeleteDayButtons: () => (/* binding */ handleDeleteDayButtons),
-/* harmony export */   hydrateClassicAutocompleteInputs: () => (/* binding */ hydrateClassicAutocompleteInputs),
 /* harmony export */   initDragAndDrop: () => (/* binding */ initDragAndDrop),
 /* harmony export */   renderTrip: () => (/* binding */ renderTrip),
 /* harmony export */   saveTripToServer: () => (/* binding */ saveTripToServer),
@@ -5732,17 +5730,11 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
-// trip.js
-// Impure UI logic and event handlers for the trip planner app.
-
-
-
 /**
- * @typedef {Object} TripStore
- * @property {function(): TripData} get
- * @property {function(TripData): void} set
- * @property {function(function(TripData): TripData | Promise<TripData>): Promise<void>} update
+ * @file trip.js
+ * @description Impure UI logic and event handlers for the trip planner app.
  */
+
 
 var cloneTripWithMetadata = function cloneTripWithMetadata(tripData) {
   return {
@@ -5809,286 +5801,47 @@ var renderTrip = function renderTrip(tripData, apiKey, store) {
   var container = document.getElementById('trip-output');
   if (!container) return;
   container.innerHTML = (0,_tripPure_js__WEBPACK_IMPORTED_MODULE_0__.renderTripHTML)(tripData, apiKey);
-  hydrateClassicAutocompleteInputs(tripData, store);
   setupBlurHandler(store);
-  attachButtonHandlers(store); // existing
-  handleAddDayButton(store); // 🆕 NEW
-  handleDeleteActivityButtons(store); // 🆕 NEW
+  attachButtonHandlers(store);
+  handleAddDayButton(store);
+  handleDeleteActivityButtons(store);
   handleDeleteDayButtons(store);
   initDragAndDrop(store);
 };
-
-/**
- * Binds Google Maps Autocomplete to location inputs.
- * Only day location inputs fetch suggestions and trigger re-renders.
- *
- * @param {TripData} tripData - The trip object.
- * @param {TripStore} store - The centralized trip state manager.
- */
-var hydrateClassicAutocompleteInputs = function hydrateClassicAutocompleteInputs(tripData, store) {
-  var _window$google;
-  if (!((_window$google = window.google) !== null && _window$google !== void 0 && (_window$google = _window$google.maps) !== null && _window$google !== void 0 && (_window$google = _window$google.places) !== null && _window$google !== void 0 && _window$google.Autocomplete)) {
-    console.warn('[autocomplete] Google Autocomplete not available.');
-    return;
-  }
-  var configs = [{
-    selector: '.day-location.classic-location-autocomplete',
-    field: 'location',
-    scope: 'day'
-  }, {
-    selector: '.classic-hotel-autocomplete',
-    field: 'lodging.name',
-    scope: 'hotel'
-  }, {
-    selector: '.activity-location.classic-activity-autocomplete',
-    field: 'location',
-    scope: 'activity'
-  }];
-  configs.forEach(function (_ref) {
-    var selector = _ref.selector,
-      field = _ref.field,
-      scope = _ref.scope;
-    document.querySelectorAll(selector).forEach(function (input) {
-      try {
-        var autocomplete = new google.maps.places.Autocomplete(input);
-        autocomplete.addListener('place_changed', function () {
-          var place = autocomplete.getPlace();
-          var dayIndex = input.dataset.dayIndex;
-          var activityIndex = input.dataset.activityIndex;
-          var name = (place === null || place === void 0 ? void 0 : place.name) || '';
-          var address = (place === null || place === void 0 ? void 0 : place.formatted_address) || '';
-          var phone = (place === null || place === void 0 ? void 0 : place.formatted_phone_number) || '';
-          var updatedTrip = cloneTripWithMetadata(store.get());
-          var day = updatedTrip.trip[dayIndex];
-          input._autocompleteJustSelected = true;
-          if (field === 'lodging.name') {
-            day.lodging = {
-              name: name,
-              address: address,
-              phone: phone
-            };
-            input.value = name;
-            var addrInput = document.querySelector("input[data-field=\"lodging.address\"][data-day-index=\"".concat(dayIndex, "\"]"));
-            var phoneInput = document.querySelector("input[data-field=\"lodging.phone\"][data-day-index=\"".concat(dayIndex, "\"]"));
-            if (addrInput) addrInput.value = address;
-            if (phoneInput) phoneInput.value = phone;
-            store.update(function () {
-              return updatedTrip;
-            });
-          } else if (scope === 'activity') {
-            day.activities[activityIndex][field] = name;
-            input.value = name;
-            store.update(function () {
-              return updatedTrip;
-            });
-          } else if (scope === 'day') {
-            day[field] = name;
-            input.value = name;
-            fetchSuggestionsForDay(name).then(function (suggestions) {
-              day.suggestions = suggestions;
-              store.update(function () {
-                return updatedTrip;
-              });
-            });
-          }
-          input.dispatchEvent(new Event('change', {
-            bubbles: true
-          }));
-          setTimeout(function () {
-            return delete input._autocompleteJustSelected;
-          }, 0);
-        });
-      } catch (err) {
-        console.error('[autocomplete] Failed to init:', err);
-      }
-    });
-  });
-};
-var suggestionCache = new Map();
-
-/**
- * @param {string} location
- * @returns {Promise<SuggestionResult>}
- */
-var fetchSuggestionsForDay = /*#__PURE__*/function () {
-  var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(location) {
-    var diningRes, sightsRes, historyRes, result;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
-        case 0:
-          if (location) {
-            _context2.next = 2;
-            break;
-          }
-          return _context2.abrupt("return", {
-            restaurants: [],
-            sights: [],
-            history: ''
-          });
-        case 2:
-          if (!suggestionCache.has(location)) {
-            _context2.next = 4;
-            break;
-          }
-          return _context2.abrupt("return", suggestionCache.get(location));
-        case 4:
-          _context2.prev = 4;
-          _context2.next = 7;
-          return fetch("/getDiningSuggestions?location=".concat(encodeURIComponent(location)));
-        case 7:
-          diningRes = _context2.sent;
-          _context2.next = 10;
-          return fetch("/getSiteSuggestions?location=".concat(encodeURIComponent(location)));
-        case 10:
-          sightsRes = _context2.sent;
-          _context2.next = 13;
-          return fetch("/getLocationHistory?location=".concat(encodeURIComponent(location)));
-        case 13:
-          historyRes = _context2.sent;
-          _context2.next = 16;
-          return diningRes.json();
-        case 16:
-          _context2.t0 = _context2.sent.data;
-          if (_context2.t0) {
-            _context2.next = 19;
-            break;
-          }
-          _context2.t0 = [];
-        case 19:
-          _context2.t1 = _context2.t0;
-          _context2.next = 22;
-          return sightsRes.json();
-        case 22:
-          _context2.t2 = _context2.sent.results;
-          if (_context2.t2) {
-            _context2.next = 25;
-            break;
-          }
-          _context2.t2 = [];
-        case 25:
-          _context2.t3 = _context2.t2;
-          _context2.next = 28;
-          return historyRes.json();
-        case 28:
-          _context2.t4 = _context2.sent.extract;
-          if (_context2.t4) {
-            _context2.next = 31;
-            break;
-          }
-          _context2.t4 = '';
-        case 31:
-          _context2.t5 = _context2.t4;
-          result = {
-            restaurants: _context2.t1,
-            sights: _context2.t3,
-            history: _context2.t5
-          };
-          suggestionCache.set(location, result);
-          return _context2.abrupt("return", result);
-        case 37:
-          _context2.prev = 37;
-          _context2.t6 = _context2["catch"](4);
-          console.error('[fetchSuggestionsForDay] Error:', _context2.t6);
-          return _context2.abrupt("return", {
-            restaurants: [],
-            sights: [],
-            history: ''
-          });
-        case 41:
-        case "end":
-          return _context2.stop();
-      }
-    }, _callee2, null, [[4, 37]]);
-  }));
-  return function fetchSuggestionsForDay(_x2) {
-    return _ref2.apply(this, arguments);
-  };
-}();
 var setupBlurHandler = function setupBlurHandler(store) {
   document.removeEventListener('blur', blurListener, true);
   document.addEventListener('blur', blurListener, true);
-  function blurListener(_x3) {
-    return _blurListener.apply(this, arguments);
-  }
-  function _blurListener() {
-    _blurListener = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4(e) {
-      var input, _input$dataset, field, dayIndex, activityIndex, value, updatedTrip, day, _field$split, _field$split2, outer, inner, isDayLocation;
-      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-        while (1) switch (_context4.prev = _context4.next) {
-          case 0:
-            if (e.target instanceof HTMLInputElement) {
-              _context4.next = 2;
-              break;
-            }
-            return _context4.abrupt("return");
-          case 2:
-            input = e.target;
-            _input$dataset = input.dataset, field = _input$dataset.field, dayIndex = _input$dataset.dayIndex, activityIndex = _input$dataset.activityIndex;
-            if (!(dayIndex == null || field == null || input._autocompleteJustSelected)) {
-              _context4.next = 6;
-              break;
-            }
-            return _context4.abrupt("return");
-          case 6:
-            value = input.value;
-            updatedTrip = cloneTripWithMetadata(store.get());
-            day = updatedTrip.trip[dayIndex];
-            if (day) {
-              _context4.next = 11;
-              break;
-            }
-            return _context4.abrupt("return");
-          case 11:
-            if (activityIndex !== undefined) {
-              day.activities[activityIndex][field] = value;
-            } else {
-              _field$split = field.split('.'), _field$split2 = _slicedToArray(_field$split, 2), outer = _field$split2[0], inner = _field$split2[1];
-              if (inner) {
-                day[outer] || (day[outer] = {});
-                day[outer][inner] = value;
-              } else {
-                day[field] = value;
-              }
-            }
-            isDayLocation = input.classList.contains('dayLocation');
-            store.update(/*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-              var newTrip;
-              return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-                while (1) switch (_context3.prev = _context3.next) {
-                  case 0:
-                    newTrip = structuredClone(updatedTrip);
-                    if (!isDayLocation) {
-                      _context3.next = 5;
-                      break;
-                    }
-                    _context3.next = 4;
-                    return fetchSuggestionsForDay(value);
-                  case 4:
-                    newTrip.trip[dayIndex].suggestions = _context3.sent;
-                  case 5:
-                    return _context3.abrupt("return", newTrip);
-                  case 6:
-                  case "end":
-                    return _context3.stop();
-                }
-              }, _callee3);
-            })));
-          case 14:
-          case "end":
-            return _context4.stop();
-        }
-      }, _callee4);
-    }));
-    return _blurListener.apply(this, arguments);
+  function blurListener(e) {
+    if (!(e.target instanceof HTMLInputElement)) return;
+    var input = e.target;
+    var _input$dataset = input.dataset,
+      field = _input$dataset.field,
+      dayIndex = _input$dataset.dayIndex,
+      activityIndex = _input$dataset.activityIndex;
+    if (dayIndex == null || field == null) return;
+    var value = input.value;
+    var updatedTrip = cloneTripWithMetadata(store.get());
+    var day = updatedTrip.trip[dayIndex];
+    if (!day) return;
+    if (activityIndex !== undefined) {
+      day.activities[activityIndex][field] = value;
+    } else {
+      var _field$split = field.split('.'),
+        _field$split2 = _slicedToArray(_field$split, 2),
+        outer = _field$split2[0],
+        inner = _field$split2[1];
+      if (inner) {
+        day[outer] || (day[outer] = {});
+        day[outer][inner] = value;
+      } else {
+        day[field] = value;
+      }
+    }
+    store.update(function () {
+      return updatedTrip;
+    });
   }
 };
-
-/**
- * Sets up drag-and-drop sorting using dragula.
- * Reorders activities within each day and updates trip state.
- *
- * @param {TripStore} store
- */
 var initDragAndDrop = function initDragAndDrop(store) {
   if (typeof dragula !== 'function') return;
   var containers = Array.from(document.querySelectorAll('.activity-list'));
@@ -6157,13 +5910,6 @@ var attachButtonHandlers = function attachButtonHandlers(store) {
     btn.addEventListener('click', btn._handler);
   });
 };
-
-/**
- * Hooks up all "Delete Activity" buttons and binds them to remove an activity and re-render.
- * Requires buttons with class "delete-activity-button" and dataset dayIndex + activityIndex.
- *
- * @param {TripStore} store - The centralized trip state store.
- */
 var handleDeleteActivityButtons = function handleDeleteActivityButtons(store) {
   var container = document.getElementById('trip-output');
   if (!container) return;
@@ -6181,13 +5927,6 @@ var handleDeleteActivityButtons = function handleDeleteActivityButtons(store) {
     btn.addEventListener('click', btn._handler);
   });
 };
-
-/**
- * Hooks up all "Delete Day" buttons to remove the day at the given index and re-render the trip.
- * Buttons must have class "delete-day-button" and data-day-index attribute.
- *
- * @param {TripStore} store - The centralized trip state store.
- */
 var handleDeleteDayButtons = function handleDeleteDayButtons(store) {
   var container = document.getElementById('trip-output');
   if (!container) return;
@@ -6204,13 +5943,6 @@ var handleDeleteDayButtons = function handleDeleteDayButtons(store) {
     btn.addEventListener('click', btn._handler);
   });
 };
-
-/**
- * Binds the main "Add Day" button to append a new day and scroll into view.
- * Requires the button to have id="add-day-button".
- *
- * @param {TripStore} store - The centralized trip state store.
- */
 var handleAddDayButton = function handleAddDayButton(store) {
   var btn = document.getElementById('add-day-button');
   if (!btn) return;
@@ -6237,20 +5969,20 @@ var handleAddDayButton = function handleAddDayButton(store) {
   btn.addEventListener('click', btn._handler);
 };
 var saveTripToServer = /*#__PURE__*/function () {
-  var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5(tripData) {
+  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(tripData) {
     var tripName, startDate, trip, res;
-    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
-      while (1) switch (_context5.prev = _context5.next) {
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          _context5.prev = 0;
+          _context2.prev = 0;
           tripName = tripData.tripName, startDate = tripData.startDate, trip = tripData.trip;
           if (!(!tripName || !startDate || !Array.isArray(trip))) {
-            _context5.next = 4;
+            _context2.next = 4;
             break;
           }
           throw new Error('Missing trip metadata');
         case 4:
-          _context5.next = 6;
+          _context2.next = 6;
           return fetch('/saveTrip', {
             method: 'POST',
             headers: {
@@ -6263,27 +5995,27 @@ var saveTripToServer = /*#__PURE__*/function () {
             })
           });
         case 6:
-          res = _context5.sent;
+          res = _context2.sent;
           if (res.ok) {
-            _context5.next = 9;
+            _context2.next = 9;
             break;
           }
           throw new Error("Server responded ".concat(res.status));
         case 9:
-          _context5.next = 14;
+          _context2.next = 14;
           break;
         case 11:
-          _context5.prev = 11;
-          _context5.t0 = _context5["catch"](0);
-          console.error('[saveTripToServer]', _context5.t0);
+          _context2.prev = 11;
+          _context2.t0 = _context2["catch"](0);
+          console.error('[saveTripToServer]', _context2.t0);
         case 14:
         case "end":
-          return _context5.stop();
+          return _context2.stop();
       }
-    }, _callee5, null, [[0, 11]]);
+    }, _callee2, null, [[0, 11]]);
   }));
-  return function saveTripToServer(_x4) {
-    return _ref4.apply(this, arguments);
+  return function saveTripToServer(_x2) {
+    return _ref.apply(this, arguments);
   };
 }();
 
@@ -6302,7 +6034,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   calculateDate: () => (/* binding */ calculateDate),
 /* harmony export */   dataAttrs: () => (/* binding */ dataAttrs),
 /* harmony export */   formRowLabeled: () => (/* binding */ formRowLabeled),
-/* harmony export */   formatSuggestionSection: () => (/* binding */ formatSuggestionSection),
 /* harmony export */   getNested: () => (/* binding */ getNested),
 /* harmony export */   inputField: () => (/* binding */ inputField),
 /* harmony export */   renderActivityCard: () => (/* binding */ renderActivityCard),
@@ -6328,7 +6059,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * @file tripPure.js
  * @description Pure rendering utilities for the trip planner UI.
- * Includes form generators, suggestion rendering, and full day layout generation.
+ * Includes form generators and full day layout generation.
  * Declarative, point-free, and fully testable.
  */
 
@@ -6349,7 +6080,7 @@ var dataAttrs = function dataAttrs() {
 };
 var formRowLabeled = function formRowLabeled(label, id) {
   return function (html) {
-    return "\n  <div class=\"row mb-2\">\n    <label class=\"col-2 col-form-label\" for=\"".concat(id, "\">").concat(label, "</label>\n    <div class=\"col-10\">").concat(html, "</div>\n\t</div>");
+    return "\n  <div class=\"row mb-2\">\n    <label class=\"col-2 col-form-label\" for=\"".concat(id, "\">").concat(label, "</label>\n    <div class=\"col-10\">").concat(html, "</div>\n  </div>");
   };
 };
 var inputField = function inputField(type) {
@@ -6384,13 +6115,6 @@ var renderFormField = function renderFormField(label, type, value) {
   });
   return formRowLabeled(label, id)(input);
 };
-
-/**
- * Calculates the display date string for a day in the trip.
- * @param {string} startDate - The trip start date in YYYY-MM-DD format
- * @param {number} index - Index of the day relative to start date
- * @returns {string} Formatted date string, e.g., "Monday, July 1st 2025"
- */
 var calculateDate = function calculateDate(startDate, index) {
   return moment__WEBPACK_IMPORTED_MODULE_0__(startDate, 'YYYY-MM-DD').add(index, 'days').format('dddd, MMMM Do YYYY');
 };
@@ -6421,14 +6145,12 @@ var dayFieldConfigs = [{
   label: 'Location',
   type: 'text',
   key: 'location',
-  className: 'day-location classic-location-autocomplete',
-  placeholder: 'Search location...'
+  placeholder: 'Enter location'
 }, {
   label: 'Hotel Name',
   type: 'text',
   key: 'lodging.name',
-  className: 'hotel-name classic-hotel-autocomplete',
-  placeholder: 'Search hotel...'
+  placeholder: 'Hotel name'
 }, {
   label: 'Address',
   type: 'text',
@@ -6458,8 +6180,7 @@ var activityFieldConfigs = [{
   label: 'Location',
   type: 'text',
   key: 'location',
-  className: 'activity-location classic-activity-autocomplete',
-  placeholder: 'Search location...'
+  placeholder: 'Activity location'
 }, {
   label: 'Notes',
   type: 'textarea',
@@ -6496,74 +6217,21 @@ var renderActivityFields = function renderActivityFields(activity, dayIndex, act
     });
   }).join('');
 };
-
-/**
- * Renders a single activity card in the editable day view.
- * @param {Activity} activity - Activity object containing name, location, notes, etc.
- * @param {number} dayIndex - Index of the day in the trip
- * @param {number} activityIndex - Index of the activity within the day
- * @param {string} time - Computed start time string (e.g., "10:30 AM")
- * @returns {string} HTML string representing the activity card
- */
 var renderActivityCard = function renderActivityCard(activity, dayIndex, activityIndex, time) {
-  return "\n        <div class=\"activity p-2 border mb-3 draggable\"\n            data-day-index=\"".concat(dayIndex, "\"\n            data-activity-index=\"").concat(activityIndex, "\">\n            <h4>").concat(time, " ").concat(activity.name || '', "</h4>\n            ").concat(renderActivityFields(activity, dayIndex, activityIndex), "\n            <button class=\"btn btn-danger delete-activity-button mt-2\"\n                data-day-index=\"").concat(dayIndex, "\" data-activity-index=\"").concat(activityIndex, "\">\n                Delete Activity\n            </button>\n        </div>");
+  return "\n    <div class=\"activity p-2 border mb-3 draggable\"\n        data-day-index=\"".concat(dayIndex, "\"\n        data-activity-index=\"").concat(activityIndex, "\">\n        <h4>").concat(time, " ").concat(activity.name || '', "</h4>\n        ").concat(renderActivityFields(activity, dayIndex, activityIndex), "\n        <button class=\"btn btn-danger delete-activity-button mt-2\"\n            data-day-index=\"").concat(dayIndex, "\" data-activity-index=\"").concat(activityIndex, "\">\n            Delete Activity\n        </button>\n    </div>");
 };
-
-/**
- * Renders a single day card with print and screen views.
- * @param {Day} day - The day data
- * @param {number} dayIndex - Index of the day in the trip
- * @param {string} tripName - Trip name for header (only shown on first day)
- * @param {string} displayDate - Formatted date string (e.g., "Monday, July 1st")
- * @param {string} apiKey - Google Maps API key
- * @returns {string} HTML string for the full day section
- */
 var renderDay = function renderDay(day, dayIndex, tripName, displayDate) {
   var _day$lodging, _day$lodging2, _day$lodging3, _day$lodging4;
   var apiKey = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : '';
   var time = function time(i) {
     return calculateActivityTime(day, i);
   };
-  return "\n        <div class=\"day-wrapper print-only\" data-day-index=\"".concat(dayIndex, "\">\n            <div class=\"day-entry print-only\" data-day-index=\"").concat(dayIndex, "\">\n                ").concat(dayIndex === 0 ? "<div class=\"trip-header\">".concat(tripName || 'Trip', "</div>") : '', "\n                <div class=\"date-line\">").concat(displayDate, "</div>\n                <h1 class=\"location\">").concat(day.location || '', "</h1>\n                <div class=\"hotel-details\">\n                    ").concat(((_day$lodging = day.lodging) === null || _day$lodging === void 0 ? void 0 : _day$lodging.name) || '', "<br>\n                    ").concat(((_day$lodging2 = day.lodging) === null || _day$lodging2 === void 0 ? void 0 : _day$lodging2.address) || '', "<br>\n                    ").concat((_day$lodging3 = day.lodging) !== null && _day$lodging3 !== void 0 && _day$lodging3.phone ? "Phone: ".concat(day.lodging.phone, "<br>") : '', "\n                    ").concat((_day$lodging4 = day.lodging) !== null && _day$lodging4 !== void 0 && _day$lodging4.roomType ? "Room: ".concat(day.lodging.roomType) : '', "\n                </div>\n                <hr class=\"separator\">\n                <div class=\"activities\">\n                    ").concat(day.activities.map(function (a, i) {
-    return "\n                        <div class=\"activity-block\">\n                            <h1 class=\"activity-title\">".concat(time(i), " ").concat(a.name || '', "</h1>\n                            ").concat(a.location ? "<p class=\"activity-location\">\uD83D\uDCCD ".concat(a.location, "</p>") : '', "\n                            ").concat(a.notes ? "<p class=\"activity-notes\"><strong>Notes:</strong> ".concat(a.notes, "</p>") : '', "\n                        </div>");
-  }).join(''), "\n                </div>\n            </div>\n        </div>\n\n        <div class=\"day-wrapper no-print\" data-day-index=\"").concat(dayIndex, "\">\n            <div class=\"day-entry card mb-3 p-3\" data-day-index=\"").concat(dayIndex, "\">\n                <h3>").concat(displayDate, "</h3>\n                ").concat(renderDayFields(day, dayIndex), "\n                ").concat(day.suggestions ? formatSuggestionSection(day.suggestions, day.location, apiKey) : '', "\n                <div id=\"activity-list-").concat(dayIndex, "\" class=\"activity-list\" data-day-index=\"").concat(dayIndex, "\">\n                    ").concat(day.activities.map(function (a, i) {
+  return "\n    <div class=\"day-wrapper print-only\" data-day-index=\"".concat(dayIndex, "\">\n      <div class=\"day-entry print-only\" data-day-index=\"").concat(dayIndex, "\">\n        ").concat(dayIndex === 0 ? "<div class=\"trip-header\">".concat(tripName || 'Trip', "</div>") : '', "\n        <div class=\"date-line\">").concat(displayDate, "</div>\n        <h1 class=\"location\">").concat(day.location || '', "</h1>\n        <div class=\"hotel-details\">\n          ").concat(((_day$lodging = day.lodging) === null || _day$lodging === void 0 ? void 0 : _day$lodging.name) || '', "<br>\n          ").concat(((_day$lodging2 = day.lodging) === null || _day$lodging2 === void 0 ? void 0 : _day$lodging2.address) || '', "<br>\n          ").concat((_day$lodging3 = day.lodging) !== null && _day$lodging3 !== void 0 && _day$lodging3.phone ? "Phone: ".concat(day.lodging.phone, "<br>") : '', "\n          ").concat((_day$lodging4 = day.lodging) !== null && _day$lodging4 !== void 0 && _day$lodging4.roomType ? "Room: ".concat(day.lodging.roomType) : '', "\n        </div>\n        <hr class=\"separator\">\n        <div class=\"activities\">\n          ").concat(day.activities.map(function (a, i) {
+    return "\n            <div class=\"activity-block\">\n              <h1 class=\"activity-title\">".concat(time(i), " ").concat(a.name || '', "</h1>\n              ").concat(a.location ? "<p class=\"activity-location\">\uD83D\uDCCD ".concat(a.location, "</p>") : '', "\n              ").concat(a.notes ? "<p class=\"activity-notes\"><strong>Notes:</strong> ".concat(a.notes, "</p>") : '', "\n            </div>");
+  }).join(''), "\n        </div>\n      </div>\n    </div>\n\n    <div class=\"day-wrapper no-print\" data-day-index=\"").concat(dayIndex, "\">\n      <div class=\"day-entry card mb-3 p-3\" data-day-index=\"").concat(dayIndex, "\">\n        <h3>").concat(displayDate, "</h3>\n        ").concat(renderDayFields(day, dayIndex), "\n        <div id=\"activity-list-").concat(dayIndex, "\" class=\"activity-list\" data-day-index=\"").concat(dayIndex, "\">\n          ").concat(day.activities.map(function (a, i) {
     return renderActivityCard(a, dayIndex, i, time(i));
-  }).join(''), "\n                </div>\n                <button class=\"btn btn-primary mt-3 add-activity-button\" data-day-index=\"").concat(dayIndex, "\">Add Activity</button>\n                <button class=\"btn btn-danger delete-day-button\" data-day-index=\"").concat(dayIndex, "\">Delete Day</button>\n            </div>\n        </div>");
+  }).join(''), "\n        </div>\n        <button class=\"btn btn-primary mt-3 add-activity-button\" data-day-index=\"").concat(dayIndex, "\">Add Activity</button>\n        <button class=\"btn btn-danger delete-day-button\" data-day-index=\"").concat(dayIndex, "\">Delete Day</button>\n      </div>\n    </div>");
 };
-
-/**
- * Formats the suggestions section for a day, including top restaurants, sights, and history.
- * Renders embedded maps for each restaurant or sight that includes a place_id.
- *
- * @param {{
- *   restaurants: Array<{ name: string, formatted_address: string, place_id?: string }>,
- *   sights: Array<{ name: string, formatted_address: string, place_id?: string }>,
- *   history: string
- * }} suggestions - Suggestion data returned from the server
- * @param {string} location - The city or region name (used in history section)
- * @param {string} apiKey - Google Maps Embed API key
- * @returns {string} HTML string for suggestion cards
- */
-var formatSuggestionSection = function formatSuggestionSection(suggestions, location, apiKey) {
-  var formatCardsRow = function formatCardsRow(label, list) {
-    return list !== null && list !== void 0 && list.length ? "<h5 class=\"mt-3\">".concat(label, "</h5>\n               <div class=\"d-flex flex-wrap gap-2 mb-3\">\n                 ").concat(list.slice(0, 5).map(function (p) {
-      return "\n                   <div style=\"flex: 1 1 calc(20% - 10px); min-width: 200px;\">\n                     <strong>".concat(p.name, "</strong><br>\n                     ").concat(p.formatted_address || '', "<br>\n                     ").concat(p.place_id && apiKey ? "<iframe width=\"100%\" height=\"200\" frameborder=\"0\" style=\"margin-top:5px\"\n                             src=\"https://www.google.com/maps/embed/v1/place?key=".concat(apiKey, "&q=place_id:").concat(p.place_id, "\"\n                             allowfullscreen></iframe>") : '', "\n                   </div>");
-    }).join(''), "\n               </div>") : '';
-  };
-  return "\n        <div class=\"day-info-section\">\n            ".concat(formatCardsRow('Top 5 Restaurants Nearby', (suggestions === null || suggestions === void 0 ? void 0 : suggestions.restaurants) || []), "\n            ").concat(formatCardsRow('Top 5 Tourist Sights', (suggestions === null || suggestions === void 0 ? void 0 : suggestions.sights) || []), "\n            ").concat(suggestions !== null && suggestions !== void 0 && suggestions.history ? "<div class=\"mt-4\"><h5>History of ".concat(location, "</h5><p>").concat(suggestions.history, "</p></div>") : '', "\n        </div>");
-};
-
-/**
- * Renders the full trip into an HTML string.
- *
- * Iterates through each day in the trip and calls `renderDay` to produce both
- * the screen and print-friendly markup for the day, including lodging, activities,
- * suggestions (restaurants, sights, and history), and controls.
- *
- * @param {TripData} tripData - The entire trip structure with metadata and days.
- * @param {string} [apiKey=''] - Google Maps API key used for embedded maps.
- * @returns {string} HTML string representing the full trip layout.
- */
 var renderTripHTML = function renderTripHTML(tripData) {
   var apiKey = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
   if (!tripData || !Array.isArray(tripData.trip)) return '';
@@ -6656,11 +6324,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _trip_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./trip.js */ "./public/js/trip.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
@@ -6678,29 +6341,6 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 
 // Create and persist the trip store instance globally
 var TripStore = (0,_trip_js__WEBPACK_IMPORTED_MODULE_0__.createTripStore)();
-
-/**
- * Dynamically loads the Google Maps JavaScript API
- * @param {string} apiKey
- * @returns {Promise<void>}
- */
-var loadGoogleMapsScript = function loadGoogleMapsScript(apiKey) {
-  return new Promise(function (resolve, reject) {
-    var _window$google;
-    if ((_window$google = window.google) !== null && _window$google !== void 0 && (_window$google = _window$google.maps) !== null && _window$google !== void 0 && (_window$google = _window$google.places) !== null && _window$google !== void 0 && _window$google.Autocomplete) return resolve();
-    var script = document.createElement('script');
-    script.src = "https://maps.googleapis.com/maps/api/js?key=".concat(apiKey, "&libraries=places");
-    script.defer = true;
-    script.onload = function () {
-      var _window$google2;
-      if ((_window$google2 = window.google) !== null && _window$google2 !== void 0 && (_window$google2 = _window$google2.maps) !== null && _window$google2 !== void 0 && (_window$google2 = _window$google2.places) !== null && _window$google2 !== void 0 && _window$google2.Autocomplete) resolve();else reject(new Error('Google Maps loaded but Autocomplete not found'));
-    };
-    script.onerror = function () {
-      return reject(new Error('Failed to load Google Maps API'));
-    };
-    document.head.appendChild(script);
-  });
-};
 
 /**
  * @returns {Promise<{ googleMapsApiKey: string }>}
@@ -6743,76 +6383,36 @@ var populateTripSelector = function populateTripSelector(tripNames) {
 };
 
 /**
- * Loads a selected trip from disk, attaches API key, refetches suggestions, and renders.
+ * Loads a selected trip from disk and renders it.
  *
  * @param {string} tripName
  * @param {string} apiKey
  */
 var loadSelectedTrip = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(tripName, apiKey) {
-    var tripData, daysWithSuggestions, enrichedTrip;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
+  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(tripName, apiKey) {
+    var tripData;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
         case 0:
           console.log('[loadSelectedTrip] tripName:', tripName);
           if (!(!tripName || tripName === 'new')) {
-            _context2.next = 3;
+            _context.next = 3;
             break;
           }
-          return _context2.abrupt("return");
+          return _context.abrupt("return");
         case 3:
-          _context2.next = 5;
-          return loadGoogleMapsScript(apiKey);
-        case 5:
-          _context2.next = 7;
+          _context.next = 5;
           return fetchTripData(tripName);
-        case 7:
-          tripData = _context2.sent;
+        case 5:
+          tripData = _context.sent;
           tripData.apiKey = apiKey;
-
-          // Refetch suggestions for each day with a valid location
-          _context2.next = 11;
-          return Promise.all(tripData.trip.map(/*#__PURE__*/function () {
-            var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(day) {
-              var suggestions;
-              return _regeneratorRuntime().wrap(function _callee$(_context) {
-                while (1) switch (_context.prev = _context.next) {
-                  case 0:
-                    if (!day.location) {
-                      _context.next = 5;
-                      break;
-                    }
-                    _context.next = 3;
-                    return (0,_trip_js__WEBPACK_IMPORTED_MODULE_0__.fetchSuggestionsForDay)(day.location);
-                  case 3:
-                    suggestions = _context.sent;
-                    return _context.abrupt("return", _objectSpread(_objectSpread({}, day), {}, {
-                      suggestions: suggestions
-                    }));
-                  case 5:
-                    return _context.abrupt("return", day);
-                  case 6:
-                  case "end":
-                    return _context.stop();
-                }
-              }, _callee);
-            }));
-            return function (_x3) {
-              return _ref2.apply(this, arguments);
-            };
-          }()));
-        case 11:
-          daysWithSuggestions = _context2.sent;
-          enrichedTrip = _objectSpread(_objectSpread({}, tripData), {}, {
-            trip: daysWithSuggestions
-          });
-          TripStore.set(enrichedTrip);
-          (0,_trip_js__WEBPACK_IMPORTED_MODULE_0__.renderTrip)(enrichedTrip, apiKey, TripStore);
-        case 15:
+          TripStore.set(tripData);
+          (0,_trip_js__WEBPACK_IMPORTED_MODULE_0__.renderTrip)(tripData, apiKey, TripStore);
+        case 9:
         case "end":
-          return _context2.stop();
+          return _context.stop();
       }
-    }, _callee2);
+    }, _callee);
   }));
   return function loadSelectedTrip(_x, _x2) {
     return _ref.apply(this, arguments);
@@ -6836,43 +6436,42 @@ var enableAddDayButton = function enableAddDayButton() {
  * Main app entrypoint
  */
 var initApp = /*#__PURE__*/function () {
-  var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+  var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
     var config, tripNames;
-    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-      while (1) switch (_context3.prev = _context3.next) {
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          _context3.prev = 0;
-          _context3.next = 3;
+          _context2.prev = 0;
+          _context2.next = 3;
           return fetchConfig();
         case 3:
-          config = _context3.sent;
-          _context3.next = 6;
+          config = _context2.sent;
+          _context2.next = 6;
           return fetchTripList();
         case 6:
-          tripNames = _context3.sent;
+          tripNames = _context2.sent;
           populateTripSelector(tripNames);
           attachTripSelectorListener(config.googleMapsApiKey);
           enableAddDayButton();
           (0,_trip_js__WEBPACK_IMPORTED_MODULE_0__.setupBlurHandler)(TripStore);
-          _context3.next = 16;
+          _context2.next = 16;
           break;
         case 13:
-          _context3.prev = 13;
-          _context3.t0 = _context3["catch"](0);
-          console.error('🚨 Error initializing app:', _context3.t0);
+          _context2.prev = 13;
+          _context2.t0 = _context2["catch"](0);
+          console.error('🚨 Error initializing app:', _context2.t0);
         case 16:
         case "end":
-          return _context3.stop();
+          return _context2.stop();
       }
-    }, _callee3, null, [[0, 13]]);
+    }, _callee2, null, [[0, 13]]);
   }));
   return function initApp() {
-    return _ref3.apply(this, arguments);
+    return _ref2.apply(this, arguments);
   };
 }();
 initApp();
 var __testHooks = {
-  loadGoogleMapsScript: loadGoogleMapsScript,
   fetchConfig: fetchConfig,
   fetchTripList: fetchTripList,
   fetchTripData: fetchTripData,
