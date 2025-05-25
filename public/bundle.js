@@ -5808,18 +5808,52 @@ var renderTrip = function renderTrip(tripData, apiKey, store) {
   handleDeleteDayButtons(store);
   initDragAndDrop(store);
 };
-var setupBlurHandler = function setupBlurHandler(store) {
+
+/**
+ * Attaches a global blur event listener to capture and persist input changes.
+ * Converts known numeric fields (like 'length') to integers for all activities.
+ *
+ * @param {Object} store - The trip store with get/update methods.
+ * @returns {void}
+ */
+function setupBlurHandler(store) {
   document.removeEventListener('blur', blurListener, true);
   document.addEventListener('blur', blurListener, true);
+
+  /**
+   * Normalizes numeric fields like 'length' within a day object.
+   *
+   * @param {Object} day
+   */
+  function normalizeDay(day) {
+    if (Array.isArray(day.activities)) {
+      day.activities.forEach(function (activity) {
+        if ('length' in activity) {
+          activity.length = parseInt(activity.length, 10);
+          if (isNaN(activity.length)) activity.length = 0;
+        }
+      });
+    }
+  }
+
+  /**
+   * Handles blur events on input fields and persists sanitized trip data.
+   *
+   * @param {FocusEvent} e
+   */
   function blurListener(e) {
-    if (!(e.target instanceof HTMLInputElement)) return;
     var input = e.target;
+    if (!(input instanceof HTMLInputElement || input instanceof HTMLTextAreaElement)) return;
     var _input$dataset = input.dataset,
       field = _input$dataset.field,
       dayIndex = _input$dataset.dayIndex,
       activityIndex = _input$dataset.activityIndex;
     if (dayIndex == null || field == null) return;
     var value = input.value;
+    if (field === 'length') {
+      value = parseInt(value, 10);
+      if (isNaN(value)) value = 0;
+    }
     var updatedTrip = cloneTripWithMetadata(store.get());
     var day = updatedTrip.trip[dayIndex];
     if (!day) return;
@@ -5837,11 +5871,12 @@ var setupBlurHandler = function setupBlurHandler(store) {
         day[field] = value;
       }
     }
+    normalizeDay(day); // ✅ sanitize all activity lengths
     store.update(function () {
       return updatedTrip;
     });
   }
-};
+}
 var initDragAndDrop = function initDragAndDrop(store) {
   if (typeof dragula !== 'function') return;
   var containers = Array.from(document.querySelectorAll('.activity-list'));

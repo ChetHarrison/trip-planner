@@ -207,7 +207,7 @@
       ]
     },
     {
-      "wakeUpTime": "07:30",
+      "wakeUpTime": "08:00",
       "location": "Meadowood Napa Valley",
       "lodging": {
         "name": "Meadowood Napa Valley",
@@ -217,8 +217,8 @@
       },
       "activities": [
         {
-          "name": "Pickup Breakfast at Bouchon Bakery",
-          "length": 20,
+          "name": "Relax",
+          "length": "240",
           "location": "Yountville, CA",
           "notes": "8:20 AM"
         },
@@ -229,8 +229,20 @@
           "notes": "Departs hotel around 8:40 AM"
         },
         {
+          "name": "Lunch in Napa",
+          "length": "195",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Drive to Airport",
+          "length": "120",
+          "location": "",
+          "notes": ""
+        },
+        {
           "name": "Flight to SNA (JSX CCR → SNA)",
-          "length": 85,
+          "length": "80",
           "location": "JSX Terminal CCR",
           "notes": "Departs 10:15 AM"
         },

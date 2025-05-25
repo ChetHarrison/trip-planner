@@ -79,6 +79,12 @@
           "notes": ""
         },
         {
+          "name": "Relax and Get Ready for Dinner",
+          "length": 65,
+          "location": "",
+          "notes": ""
+        },
+        {
           "name": "Dinner at La Rôtisserie",
           "length": 120,
           "location": "Zurich",
@@ -97,19 +103,31 @@
       },
       "activities": [
         {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Zurich",
-          "notes": ""
-        },
-        {
-          "name": "EXPLORE ZURICH ON FOOT",
+          "name": "Wakey",
           "length": 60,
           "location": "Zurich",
           "notes": ""
         },
         {
-          "name": "Mercedes Van Transfer from Storchen Zurich to Brig",
+          "name": "Walk to Breakfast",
+          "length": 5,
+          "location": "Zurich",
+          "notes": ""
+        },
+        {
+          "name": "Breakfast at Café & Conditorei 1842",
+          "length": 80,
+          "location": "Napfgasse 4 8001 Zurich",
+          "notes": "Known for it's choclates."
+        },
+        {
+          "name": "Walk Back to Hotel",
+          "length": 5,
+          "location": "Zurich",
+          "notes": ""
+        },
+        {
+          "name": "Mercedes Van Transfer",
           "length": 175,
           "location": "Zermatt",
           "notes": "Departs July 27 at 10:30 LET'S CHANGE THIS TO 9:30. Includes 90-minute lunch break. WE DON'T NEED A 90 MIN LUNCH, 60 MIN WILL DO. CHF 1’580.00. Contact: +41 44 227 21 14."
@@ -133,16 +151,28 @@
           "notes": "Check-in at 3:00 PM"
         },
         {
-          "name": "Afternoon Activity",
-          "length": 90,
+          "name": "Summit the Klein Matterhorn",
+          "length": 120,
           "location": "Zermatt",
-          "notes": "Village walk or optional spa time"
+          "notes": "Take the Trockener Steg lift, where you can buy a ticket to the Matterhorn Glacier Paradise, a mountain station — complete with a restaurant and gift shop — that’s built into the summit of the Klein Matterhorn at the rather breathless altitude of more than 12,700 feet."
         },
         {
-          "name": "DINNER",
+          "name": "Relax at Hotel",
+          "length": 115,
+          "location": "Zermatt",
+          "notes": "Take the Trockener Steg lift, where you can buy a ticket to the Matterhorn Glacier Paradise, a mountain station — complete with a restaurant and gift shop — that’s built into the summit of the Klein Matterhorn at the rather breathless altitude of more than 12,700 feet."
+        },
+        {
+          "name": "Dinner at Grill Le Cervin NEEDS TO BE BOOKED",
           "length": 90,
           "location": "Zermatt",
-          "notes": "FIND RACLETTE DINNER"
+          "notes": "This is the Hotel Restaurant"
+        },
+        {
+          "name": "Night Cap at Joseph's Bar & Terrace",
+          "length": 60,
+          "location": "Zermatt",
+          "notes": "This is the Hotel Bar"
         }
       ]
     },
@@ -163,14 +193,14 @@
           "notes": ""
         },
         {
-          "name": "ACTIVITY",
+          "name": "Shop for Watches",
           "length": 90,
           "location": "",
           "notes": ""
         },
         {
-          "name": "Transport to Cornergrat Train",
-          "length": 15,
+          "name": "Walk to Cornergrat Train",
+          "length": 5,
           "location": "",
           "notes": ""
         },
@@ -187,16 +217,28 @@
           "notes": "We have a noon reservation. Serving world famous classic Swiss dishes using local cheeses melted into delicious varieties of fondue and raclette with a Valais dried meat platter to start and a Toblerone fondue to finish."
         },
         {
-          "name": "Train back to Zermatt",
-          "length": 60,
+          "name": "Train back to Zermatt 1/2 Way",
+          "length": 90,
           "location": "Zermatt",
-          "notes": "Return journey down"
+          "notes": "We can hike beautiful trails the rest of the journey down"
         },
         {
           "name": "Walking tour of Zermatt. NEED TO BOOK THIS",
           "length": 90,
           "location": "Zermatt",
           "notes": "Shops, museums, and old chalets"
+        },
+        {
+          "name": "Relax",
+          "length": 170,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Walk to Dinner",
+          "length": 2,
+          "location": "",
+          "notes": ""
         },
         {
           "name": "Dinner Alpine Gourmet Prato Borni",
@@ -224,7 +266,7 @@
         },
         {
           "name": "Private transfer from Zermatt to Lake Como",
-          "length": 270,
+          "length": 120,
           "location": "Lake Como",
           "notes": "Private car via Simplon Pass or scenic route"
         },
@@ -235,8 +277,8 @@
           "notes": "On the terrace or by the pool"
         },
         {
-          "name": "Private transfer from Zermatt to Lake Como",
-          "length": 270,
+          "name": "Continue to Lake Como",
+          "length": 150,
           "location": "Lake Como",
           "notes": "Private car via Simplon Pass or scenic route"
         },
@@ -247,16 +289,34 @@
           "notes": "Check-in at 3:00 PM"
         },
         {
+          "name": "Relax and Explore the Hotel",
+          "length": 60,
+          "location": "Como",
+          "notes": "Visit cathedral, promenade, local shops"
+        },
+        {
           "name": "Walking tour of Como NEED TO BOOK",
           "length": 90,
           "location": "Como",
           "notes": "Visit cathedral, promenade, local shops"
         },
         {
-          "name": "Dinner NEED TO BOOK",
+          "name": "Relax and Prep for Dinner",
+          "length": 90,
+          "location": "Como",
+          "notes": "Visit cathedral, promenade, local shops"
+        },
+        {
+          "name": "Dinner at Veranda NEED TO BOOK",
           "length": 90,
           "location": "Lake Como",
-          "notes": "Lakeside dining at the hotel"
+          "notes": "Lakeside dining at the hotel. DRESS CODE: Smart casual for lunch and elegant attire for dinner. Located in the Cardinal’s Building, the fine-dining Veranda restaurant offers glorious views of the lake, gardens and Mosaic. The retractable windows remain open throughout the summer and, weather permitting, diners can savour dinner on the lakeside terrace. Classic and contemporary Italian cuisine is ennobled with international touches. Executive Chef Michele Zambanini blends ceaseless research and the finest ingredients with the utmost respect for seasonal produce. In this formal, elegant setting, guests experience haute cuisine alongside a curated wine selection, in addition to professional service tailored to the desires of every guest."
+        },
+        {
+          "name": "Night Cap at Canova Bar and Lake Terrace",
+          "length": 90,
+          "location": "Lake Como",
+          "notes": "The Canova Bar has been regarded as the most glamorous place to sip a cocktail on Lake Como since 1873. The sumptuous interior make the bar an exclusive spot to people-watch and to be seen at any time of day. Throughout the summer, guests are invited to sit alfresco on the lake terrace, beneath majestic chestnut trees and surrounded by the scent of jasmine."
         }
       ]
     },
@@ -301,7 +361,7 @@
           "notes": ""
         },
         {
-          "name": "Boat to Bellagio",
+          "name": "Ferry to Bellagio DO WE NEEED TO BOOK?",
           "length": 30,
           "location": "Lake Como",
           "notes": ""
@@ -313,15 +373,39 @@
           "notes": "Scenic village with boutique shops"
         },
         {
-          "name": "Boat and driver to hotel NEED TO BOOK",
+          "name": "Ferry to Varenna",
+          "length": 15,
+          "location": "Varenn, Italy",
+          "notes": ""
+        },
+        {
+          "name": "Walking tour of Varenna",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Ferry to Menaggio",
+          "length": 20,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Walking Tour of Menaggio",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Driver to hotel NEED TO BOOK",
           "length": 30,
           "location": "Cernobbio",
           "notes": "Return via water and road"
         },
         {
-          "name": "Driver to Hotel",
-          "length": 30,
-          "location": "Como",
+          "name": "Relax at Hotel",
+          "length": 95,
+          "location": "",
           "notes": ""
         },
         {
@@ -343,26 +427,62 @@
       },
       "activities": [
         {
+          "name": "Breakfast at Veranda",
+          "length": 90,
+          "location": "Hotel",
+          "notes": ""
+        },
+        {
+          "name": "Tennis and Swim at the Pool",
+          "length": 150,
+          "location": "Hotel",
+          "notes": ""
+        },
+        {
+          "name": "Lunch at Sundeck",
+          "length": 60,
+          "location": "",
+          "notes": "Adjacent to the floating pool, the Sundeck is a superb place for a light snack paired with an exquisitely made cocktail in the warmer months."
+        },
+        {
+          "name": "ACTIVITY",
+          "length": 360,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Grill NEED TO BOOK",
+          "length": 60,
+          "location": "",
+          "notes": "DRESS CODE: Smart casual attire. Located near the Queen’s Pavilion, the Grill is a cosy and casual restaurant. In the summer, guests can dine in the garden beneath the shade of centuries-old trees, while enjoying picturesque lakeside views. Grilled meat and classic fish dishes take centre stage on the menu, alongside a choice of appetizers that showcase Mediterranean culinary traditions centred on the sea and land. Enticing pairings can be found on the wine list and the service is attentive and never pretentious."
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Vienna",
+      "lodging": {
+        "name": "Rosewood Vienna",
+        "address": "Petersplatz, 1010 Vienna, Austria",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
           "name": "Breakfast",
           "length": 90,
           "location": "Hotel",
           "notes": ""
         },
         {
-          "name": "Drive to Milan",
-          "length": 60,
-          "location": "Milan",
-          "notes": ""
-        },
-        {
-          "name": "Lunch by Duomo di Milano NEED TO BOOK",
-          "length": 60,
-          "location": "Milan",
-          "notes": ""
-        },
-        {
           "name": "Drive to Milan Airport (MXP)",
           "length": 60,
+          "location": "Milan",
+          "notes": "11:45 am Departure transfer with Mercedes V Class Minivan (suitable for up to 6 passengers & 8 large/medium and 4 small luggages plus 5 bags) from Villa d'Este to Milan Malpensa Airport (Flight OS#510 due to depart"
+        },
+        {
+          "name": "Check In to Flight and Eat Luncheon at Airport",
+          "length": 150,
           "location": "MXP",
           "notes": ""
         },
@@ -391,10 +511,10 @@
           "notes": ""
         },
         {
-          "name": "Dinner at Meissl & Schadn NEED TO BOOK",
-          "length": 90,
-          "location": "Vienna",
-          "notes": "Wiener schnitzel and classic Viennese cuisine"
+          "name": "Dinner at Amador (Amy & Chet)",
+          "length": 120,
+          "location": "Grinzinger Straße 86, Vienna, 1190, Austria",
+          "notes": "3 Michelin-starred tasting menu. We have a table for 2 guests reserved, on Friday 1 August at 7:00 PM. A culinary highlight for the city and for Austria. This restaurant's location on the outskirts of the city in the Hajszan Neumann wine estate is something special in itself. Here, a wonderful brick vaulted ceiling and stylish interior design make for a distinctive look. Juan Amador's cuisine more than lives up to the setting: the finest ingredients are used to create a modern and sophisticated set menu comprising dishes that are finely balanced and consistently harmonious. The creative mastermind of this operation is supported by a highly motivated and pleasingly cordial team. Impressive wine list."
         }
       ]
     },
@@ -415,58 +535,40 @@
           "notes": ""
         },
         {
-          "name": "ACTIVITY",
-          "length": 90,
-          "location": "Hotel",
+          "name": "Driver to Museum",
+          "length": 25,
+          "location": "",
           "notes": ""
         },
         {
-          "name": "Luncheon NEED TO BOOK",
-          "length": 60,
-          "location": "Vienna",
-          "notes": ""
-        },
-        {
-          "name": "Stroll Ringstrasse + Stadtpark",
-          "length": 60,
-          "location": "Vienna",
-          "notes": "Get bearings in central Vienna"
-        },
-        {
-          "name": "Dinner",
-          "length": 90,
-          "location": "Vienna",
-          "notes": "NEED TO BOOK"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Vienna",
-      "lodging": {
-        "name": "Rosewood Vienna",
-        "address": "Petersplatz, 1010 Vienna, Austria",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Schönbrunn Palace Tour",
+          "name": "Private Schönbrunn Palace Tour NEED TO BOOK",
           "length": 120,
           "location": "Vienna",
           "notes": "Habsburg summer palace, Rococo interiors, and imperial gardens"
         },
         {
+          "name": "Walk Through the Gardens to Lunch",
+          "length": 20,
+          "location": "",
+          "notes": ""
+        },
+        {
           "name": "Luncheon at Gloriette Café",
           "length": 60,
           "location": "Schönbrunn",
-          "notes": "Hilltop café overlooking the palace"
+          "notes": "Hilltop café overlooking the palace. Schönbrunn Palace has a massive gardens much like Versiles. It also houses the world's oldest zoo (1757). We will take a 1.2 mile stroll though a segnificant portion of the gardens to reach the cafe"
+        },
+        {
+          "name": "Walk to Driver Pick Up",
+          "length": 10,
+          "location": "Behindertenparkplatz, Tivolibrücke, Hohenbergstraße, 1130 Wien, Austria",
+          "notes": "We will head west to Behindertenparkplatz on Gloriettestraße footpath to meet our taxi."
+        },
+        {
+          "name": "Driver to Museum",
+          "length": 20,
+          "location": "",
+          "notes": ""
         },
         {
           "name": "Kunsthistorisches Museum",
@@ -475,58 +577,46 @@
           "notes": "Old masters, Caravaggio, Raphael, and Brueghel collection"
         },
         {
-          "name": "Relax at Café Sperl",
-          "length": 60,
-          "location": "Vienna",
-          "notes": "Historic coffeehouse for cake and local vibe"
+          "name": "Taxi to Hotel",
+          "length": 20,
+          "location": "",
+          "notes": ""
         },
         {
-          "name": "Dinner at Steirereck im Stadtpark",
-          "length": 120,
-          "location": "Vienna",
-          "notes": "Michelin-starred tasting menu in Stadtpark"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Vienna / Wachau Valley",
-      "lodging": {
-        "name": "Rosewood Vienna",
-        "address": "Petersplatz, 1010 Vienna, Austria",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
+          "name": "Coffee Lovers Walk to Café Central for Esspreso",
+          "length": 30,
+          "location": "",
+          "notes": "The cafe is a 7 minute walk from the hotel. Long-standing venue for Viennese cuisine, with famous historic links including to Freud & Trotsky."
+        },
         {
-          "name": "Breakfast",
-          "length": 90,
+          "name": "Relax",
+          "length": 85,
           "location": "Hotel",
           "notes": ""
         },
         {
-          "name": "Day Trip to Melk Abbey and Wachau Valley",
-          "length": 360,
-          "location": "Wachau",
-          "notes": "Baroque abbey, library, and church; includes scenic Danube cruise to Krems"
-        },
-        {
-          "name": "Luncheon along the Danube",
-          "length": 60,
-          "location": "Dürnstein",
-          "notes": "Traditional tavern or riverside café"
-        },
-        {
-          "name": "Return to Vienna + Relax at Hotel",
-          "length": 60,
+          "name": "Dinner at Neue Hoheit",
+          "length": 105,
           "location": "Vienna",
-          "notes": "Freshen up after countryside trip"
+          "notes": "This is the Hotel Restaurant. Your reservation number is RWVIE-5MCHDD3CRH7R"
         },
         {
-          "name": "Dinner at Heuriger Wine Garden",
-          "length": 90,
-          "location": "Vienna Woods",
-          "notes": "Simple buffet dinner, local wine, and music"
+          "name": "Taxi to Concert",
+          "length": 10,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Concert",
+          "length": 20,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Classical Concert at Musikverein - Golden Hall",
+          "length": 120,
+          "location": "Bösendorferstrasse 12, 1010 Wien/Vienna",
+          "notes": "This is your Booking Confirmation for the following Event: Vienna Mozart Orchestra / Musikverein - Golden Hall. Please Show this Confirmation at the evening box office (Print or Mobile Device). This E-Mail Confirmation is your Ticket. Booking number: 25052500205, Event: Vienna Mozart Orchestra. Admission: 30 minutes before begin time."
         }
       ]
     },
@@ -556,7 +646,7 @@
           "name": "Luncheon",
           "length": 60,
           "location": "Vienna",
-          "notes": "Café Central or equivalent"
+          "notes": "Café Central or Salon Sacher at Hotel Sacher"
         },
         {
           "name": "Belvedere Palace and gardens",
@@ -571,16 +661,10 @@
           "notes": ""
         },
         {
-          "name": "Dinner at Steirereck im Stadtpark",
-          "length": 120,
+          "name": "Dinner at Meissl & Schadn NEED TO BOOK",
+          "length": 90,
           "location": "Vienna",
-          "notes": "Michelin-starred tasting menu"
-        },
-        {
-          "name": "Evening classical concert",
-          "length": 120,
-          "location": "Vienna",
-          "notes": "Mozart or Strauss performance"
+          "notes": "Wiener schnitzel and classic Viennese cuisine"
         }
       ]
     },
@@ -601,6 +685,12 @@
           "notes": ""
         },
         {
+          "name": "Train to Salzburg",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
           "name": "Driver to Eagle's Nest",
           "length": 45,
           "location": "Berchtesgaden",
@@ -617,12 +707,6 @@
           "length": 45,
           "location": "Salzburg",
           "notes": ""
-        },
-        {
-          "name": "Luncheon",
-          "length": 60,
-          "location": "Salzburg",
-          "notes": "Restaurant near Old Town"
         },
         {
           "name": "Visit Mozart's Birthplace",
@@ -661,7 +745,7 @@
           "notes": ""
         },
         {
-          "name": "Tour of Salzburg Fortress (Hohensalzburg)",
+          "name": "Private Tour of Salzburg Fortress (Hohensalzburg) NEED TO BOOK",
           "length": 90,
           "location": "Salzburg",
           "notes": "Funicular ride up and tour of medieval fortress"
@@ -679,22 +763,22 @@
           "notes": "Lunch near Mirabellplatz"
         },
         {
-          "name": "Mozart Concert at Mirabell Palace",
-          "length": 90,
-          "location": "Mirabell Palace",
-          "notes": "Afternoon or early evening string performance"
-        },
-        {
-          "name": "Relax or shopping in Getreidegasse",
+          "name": "Shopping at Trachten Stassny Gesellschaft m.b.H.",
           "length": 60,
-          "location": "Salzburg",
-          "notes": "Historic shopping street and cafés"
+          "location": "Getreidegasse 355020 Salzburg Österreich",
+          "notes": "Located nexct to our hotel selling updated traditional native fashon."
         },
         {
           "name": "Dinner at Gasthof Goldgasse",
           "length": 90,
           "location": "Salzburg",
           "notes": "Refined traditional Austrian cuisine"
+        },
+        {
+          "name": "Mozart Concert at Mirabell Palace",
+          "length": 90,
+          "location": "Mirabell Palace",
+          "notes": "booked"
         }
       ]
     },
@@ -815,6 +899,72 @@
           "length": 90,
           "location": "Berlin",
           "notes": "Michelin-starred contemporary German cuisine"
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "07:00",
+      "location": "Berlin",
+      "lodging": {
+        "name": "Hotel de Rome",
+        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Early Breakfast",
+          "length": 60,
+          "location": "Hotel",
+          "notes": "Quick breakfast before train departure"
+        },
+        {
+          "name": "Train to Leipzig",
+          "length": 75,
+          "location": "Berlin Hauptbahnhof to Leipzig Hauptbahnhof",
+          "notes": "High-speed ICE train"
+        },
+        {
+          "name": "Leipzig City Walk",
+          "length": 90,
+          "location": "Leipzig",
+          "notes": "Market Square, St. Thomas Church (Bach), Nikolaikirche, and historic arcades"
+        },
+        {
+          "name": "Lunch in Leipzig",
+          "length": 60,
+          "location": "Leipzig",
+          "notes": "Local Saxon cuisine or modern cafes near Augustusplatz"
+        },
+        {
+          "name": "Train to Weimar",
+          "length": 60,
+          "location": "Leipzig to Weimar",
+          "notes": "Regional train"
+        },
+        {
+          "name": "Weimar Highlights Tour",
+          "length": 120,
+          "location": "Weimar",
+          "notes": "Schiller’s House, Goethe’s House, Bauhaus sites, and walk through Ilm Park"
+        },
+        {
+          "name": "Coffee & Cake at Café Residenz",
+          "length": 45,
+          "location": "Weimar",
+          "notes": "Afternoon break before return train"
+        },
+        {
+          "name": "Train to Berlin",
+          "length": 120,
+          "location": "Weimar to Berlin",
+          "notes": "Evening return by ICE"
+        },
+        {
+          "name": "Light Dinner or Room Service",
+          "length": 60,
+          "location": "Hotel de Rome",
+          "notes": "Optional depending on return time"
         }
       ]
     },

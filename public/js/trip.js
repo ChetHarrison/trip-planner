@@ -45,37 +45,71 @@ export const renderTrip = (tripData, apiKey, store) => {
   initDragAndDrop(store);
 };
 
-export const setupBlurHandler = (store) => {
-  document.removeEventListener('blur', blurListener, true);
-  document.addEventListener('blur', blurListener, true);
+/**
+ * Attaches a global blur event listener to capture and persist input changes.
+ * Converts known numeric fields (like 'length') to integers for all activities.
+ *
+ * @param {Object} store - The trip store with get/update methods.
+ * @returns {void}
+ */
+export function setupBlurHandler(store) {
+    document.removeEventListener('blur', blurListener, true);
+    document.addEventListener('blur', blurListener, true);
 
-  function blurListener(e) {
-    if (!(e.target instanceof HTMLInputElement)) return;
-
-    const input = e.target;
-    const { field, dayIndex, activityIndex } = input.dataset;
-    if (dayIndex == null || field == null) return;
-
-    const value = input.value;
-    const updatedTrip = cloneTripWithMetadata(store.get());
-    const day = updatedTrip.trip[dayIndex];
-    if (!day) return;
-
-    if (activityIndex !== undefined) {
-      day.activities[activityIndex][field] = value;
-    } else {
-      const [outer, inner] = field.split('.');
-      if (inner) {
-        day[outer] ||= {};
-        day[outer][inner] = value;
-      } else {
-        day[field] = value;
-      }
+    /**
+     * Normalizes numeric fields like 'length' within a day object.
+     *
+     * @param {Object} day
+     */
+    function normalizeDay(day) {
+        if (Array.isArray(day.activities)) {
+            day.activities.forEach(activity => {
+                if ('length' in activity) {
+                    activity.length = parseInt(activity.length, 10);
+                    if (isNaN(activity.length)) activity.length = 0;
+                }
+            });
+        }
     }
 
-    store.update(() => updatedTrip);
-  }
-};
+    /**
+     * Handles blur events on input fields and persists sanitized trip data.
+     *
+     * @param {FocusEvent} e
+     */
+    function blurListener(e) {
+        const input = e.target;
+        if (!(input instanceof HTMLInputElement || input instanceof HTMLTextAreaElement)) return;
+
+        const { field, dayIndex, activityIndex } = input.dataset;
+        if (dayIndex == null || field == null) return;
+
+        let value = input.value;
+        if (field === 'length') {
+            value = parseInt(value, 10);
+            if (isNaN(value)) value = 0;
+        }
+
+        const updatedTrip = cloneTripWithMetadata(store.get());
+        const day = updatedTrip.trip[dayIndex];
+        if (!day) return;
+
+        if (activityIndex !== undefined) {
+            day.activities[activityIndex][field] = value;
+        } else {
+            const [outer, inner] = field.split('.');
+            if (inner) {
+                day[outer] ||= {};
+                day[outer][inner] = value;
+            } else {
+                day[field] = value;
+            }
+        }
+
+        normalizeDay(day); // ✅ sanitize all activity lengths
+        store.update(() => updatedTrip);
+    }
+}
 
 export const initDragAndDrop = (store) => {
   if (typeof dragula !== 'function') return;
