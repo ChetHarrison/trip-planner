@@ -4,8 +4,8 @@
   "trip": [
     {
       "date": "Saturday, February 14th, 2026",
-      "wakeUpTime": "06:00",
-      "location": "Belize International Airport → San Pedro (Ambergris Caye)",
+      "wakeUpTime": "03:30",
+      "location": "San Pedro (Ambergris Caye)",
       "lodging": {
         "name": "Ramon's Village Resort",
         "address": "",
@@ -15,20 +15,32 @@
       },
       "activities": [
         {
+          "name": "Driver for Chet and Oliver to LAX",
+          "length": 60,
+          "location": "Corona del Mar",
+          "notes": "NEED TO BOOK THIS"
+        },
+        {
+          "name": "Meet Riley and Check In to Flight",
+          "length": 90,
+          "location": "",
+          "notes": "NEED TO PICK MEETING LOCATION WITH RILEY"
+        },
+        {
           "name": "United Airlines Flight UA 654 (LAX → IAH)",
-          "length": 195,
+          "length": 358,
           "location": "Los Angeles International Airport → George Bush Intercontinental Airport",
-          "notes": "Departs 06:00 AM Los Angeles time. Arrives 11:15 AM Houston time. Economy."
+          "notes": "Departs 06:00 AM Los Angeles time. Arrives 11:15 AM Houston time. Economy. We have a 43 minute layover."
         },
         {
           "name": "United Airlines Flight UA 1569 (IAH → BZE)",
           "length": 154,
-          "location": "George Bush Intercontinental Airport → Philip S.W. Goldson International Airport",
+          "location": "George Bush Intercontinental Airport",
           "notes": "Departs 11:58 AM Houston time. Arrives 02:32 PM Belize time. Economy."
         },
         {
           "name": "Airport Meet & Greet Service",
-          "length": 127,
+          "length": 128,
           "location": "Belize International Airport",
           "notes": "A representative of Viaventure will be waiting for you at the airport exit door holding a signboard with your name. Upon arrival to Belize, and after going through immigration and picking up your luggage, please do NOT go straight to the connections area. You MUST exit the airport in order for the representative to meet you outside and guide you to the connections area afterwards."
         },
