@@ -1,0 +1,70 @@
+{
+  "tripName": "The Eagles at the Sphere, Part II",
+  "startDate": "2025-09-12",
+  "trip": [
+    {
+      "location": "Las Vegas, NV",
+      "wakeUpTime": "06:00",
+      "lodging": {
+        "name": "The Wynn",
+        "address": "3131 Las Vegas Blvd South, Las Vegas, NV 89109",
+        "phone": "(702) 770-7000"
+      },
+      "activities": [
+        { "name": "Wake up", "length": 0, "location": "", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Pick Up Lucy", "length": 0, "location": "", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Flight JSX SNA → LAS", "length": 0, "location": "SNA → LAS", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Check In to Hotel", "length": 0, "location": "The Wynn", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Crossroads Kitchen", "length": 0, "location": "The Venetian (Grand Canal Shoppes)", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Neon Museum", "length": 0, "location": "770 Las Vegas Blvd N", "notes": "" }
+      ]
+    },
+    {
+      "location": "Las Vegas, NV",
+      "wakeUpTime": "07:00",
+      "lodging": {
+        "name": "The Wynn",
+        "address": "3131 Las Vegas Blvd South, Las Vegas, NV 89109",
+        "phone": "(702) 770-7000"
+      },
+      "activities": [
+        { "name": "Wake up", "length": 0, "location": "", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Hike Red Rock Canyon", "length": 0, "location": "Red Rock Canyon NCA", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Breakfast at Bouchon", "length": 0, "location": "The Venetian", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Relax at Hotel", "length": 0, "location": "The Wynn", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Dinner at Delilah", "length": 0, "location": "The Wynn", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "The Eagles at the Sphere", "length": 0, "location": "Sphere, 255 Sands Ave", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Night Cap", "length": 0, "location": "", "notes": "" }
+      ]
+    },
+    {
+      "location": "Las Vegas, NV",
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "The Wynn",
+        "address": "3131 Las Vegas Blvd South, Las Vegas, NV 89109",
+        "phone": "(702) 770-7000"
+      },
+      "activities": [
+        { "name": "Wake up", "length": 0, "location": "", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Breakfast Room Service", "length": 0, "location": "The Wynn", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Flight JSX LAS → SNA", "length": 0, "location": "LAS → SNA", "notes": "" },
+        { "name": "Driver", "length": 0, "location": "", "notes": "" },
+        { "name": "Arrive at Home", "length": 0, "location": "", "notes": "" }
+      ]
+    }
+  ]
+}

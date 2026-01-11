@@ -1,0 +1,282 @@
+{
+  "tripName": "Paris 2026",
+  "startDate": "2026-04-21",
+  "trip": [
+    {
+      "wakeUpTime": "08:00",
+      "location": "Los Angeles",
+      "lodging": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Flight: Air France LAX → CDG",
+          "length": 630,
+          "location": "Los Angeles International Airport (LAX)",
+          "notes": "Departs 1:40 PM on Air France."
+        },
+        {
+          "name": "Dinner",
+          "length": 90,
+          "location": "Onboard Flight",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "location": "Paris",
+      "lodging": {
+        "name": "Hotel Le Bristol",
+        "address": "112 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+        "phone": "+33 1 53 43 43 00",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "Le Bristol",
+          "notes": ""
+        },
+        {
+          "name": "Arrival: CDG Airport",
+          "length": 45,
+          "location": "Charles de Gaulle Airport (CDG)",
+          "notes": "Land 9:30 AM. Private transfer to hotel."
+        },
+        {
+          "name": "Lunch",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Tour d’Argent",
+          "length": 120,
+          "location": "15 Quai de la Tournelle, 75005 Paris, France",
+          "notes": "One Michelin star. Founded in 1582. Iconic riverside setting with views of Notre-Dame. Wine cellar with 300,000+ bottles. Phone: +33 1 43 54 23 31."
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Paris",
+      "lodging": {
+        "name": "Hotel Le Bristol",
+        "address": "112 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+        "phone": "+33 1 53 43 43 00",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Le Pré Catelan",
+          "length": 120,
+          "location": "Route de Suresnes — Bois de Boulogne, 75016 Paris, France",
+          "notes": "Three Michelin stars. Chef Frédéric Anton leads a refined, precision‑driven menu focusing on top‑drawer produce. Closed Mon & Sun; dinner seating 19:00–20:45."
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "07:30",
+      "location": "Champagne",
+      "lodging": {
+        "name": "Château de Sacy",
+        "address": "Rue des Croisettes, 51500 Sacy, France",
+        "phone": "+33 3 26 07 60 38",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "Le Bristol",
+          "notes": ""
+        },
+        {
+          "name": "TGV to Champagne",
+          "length": 90,
+          "location": "Paris Gare de l'Est → Reims",
+          "notes": "High-speed train to Reims, Champagne region."
+        },
+        {
+          "name": "Private Driver to Louis Roederer",
+          "length": 20,
+          "location": "21 Boulevard Lundy, 51100 Reims, France",
+          "notes": ""
+        },
+        {
+          "name": "Wine Tasting at Louis Roederer",
+          "length": 90,
+          "location": "Louis Roederer Champagne House",
+          "notes": "Private tasting. One of the oldest independent Champagne houses, founded in 1776."
+        },
+        {
+          "name": "Private Driver to Bollinger",
+          "length": 35,
+          "location": "16 Rue Jules Lobet, 51160 Aÿ-Champagne, France",
+          "notes": "35-minute drive from Reims to Aÿ."
+        },
+        {
+          "name": "Wine Tasting at Bollinger",
+          "length": 90,
+          "location": "Bollinger Champagne House",
+          "notes": "Renowned for its full-bodied Pinot Noir–dominant cuvées and association with James Bond films."
+        },
+        {
+          "name": "Private Driver back to Château de Sacy",
+          "length": 35,
+          "location": "Château de Sacy, Rue des Croisettes",
+          "notes": "Return to hotel for rest."
+        },
+        {
+          "name": "Dinner",
+          "length": 90,
+          "location": "Château de Sacy",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Champagne",
+      "lodging": {
+        "name": "Château de Sacy",
+        "address": "Rue des Croisettes, 51500 Sacy, France",
+        "phone": "+33 3 26 07 60 38",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Visit to Reims Cathedral",
+          "length": 90,
+          "location": "Place du Cardinal Luçon, 51100 Reims, France",
+          "notes": "Site of coronation of French kings. UNESCO World Heritage Site. Gothic masterpiece completed in the 13th century."
+        },
+        {
+          "name": "Lunch",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "TGV to Paris",
+          "length": 90,
+          "location": "Reims → Paris Gare de l'Est",
+          "notes": "Return by high-speed train."
+        },
+        {
+          "name": "Check-in: Hotel Cheval Blanc",
+          "length": 30,
+          "location": "8 Quai du Louvre, 75001 Paris, France",
+          "notes": "Luxury hotel facing the Seine."
+        },
+        {
+          "name": "Dinner at Le Tout‑Paris",
+          "length": 120,
+          "location": "Cheval Blanc Paris, 8 Quai du Louvre, 75001 Paris, France",
+          "notes": "One Michelin star. Elegant brasserie under Arnaud Donckele. Dishes include macaroni with foie gras & truffle and grilled sea bass. Terrace view. Phone: +33 1 79 35 50 22."
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Paris",
+      "lodging": {
+        "name": "Hotel Cheval Blanc",
+        "address": "8 Quai du Louvre, 75001 Paris, France",
+        "phone": "+33 1 79 35 50 00",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "location": "Paris",
+      "lodging": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "roomType": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Flight: CDG → LAX",
+          "length": 720,
+          "location": "Charles de Gaulle Airport (CDG)",
+          "notes": "Air France departs at 3:55 PM. Arrives in LAX at 6:15 PM local time."
+        },
+        {
+          "name": "Dinner",
+          "length": 90,
+          "location": "In-flight",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

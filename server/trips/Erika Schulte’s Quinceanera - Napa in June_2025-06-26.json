@@ -1,17 +1,23 @@
 {
-  "tripName": "Erika Schulte’s Quinceanera - Napa in June",
+  "tripName": "Erika's Napa Birthday",
   "startDate": "2025-06-26",
   "trip": [
     {
       "wakeUpTime": "08:00",
-      "location": "Corona del Mar",
+      "location": "Napa Valley",
       "lodging": {
-        "name": "Home",
-        "address": "",
-        "phone": "",
+        "name": "Meadowood",
+        "address": "900 Meadowood Ln, St Helena, CA 94574",
+        "phone": "(707) 531-4788",
         "roomType": ""
       },
       "activities": [
+        {
+          "name": "Pack",
+          "length": 360,
+          "location": "",
+          "notes": ""
+        },
         {
           "name": "Uber to Airport",
           "length": 20,
@@ -19,28 +25,40 @@
           "notes": ""
         },
         {
-          "name": "Flight to Concord (JSX SNA → CCR)",
+          "name": "Flight XE 143 to Concord (JSX SNA → CCR)",
           "length": 95,
-          "location": "JSX Terminal SNA",
-          "notes": "Departs 2:05 PM, Arrives 3:40 PM"
+          "location": "3000 Airway Avenue, Costa Mesa, CA 92626",
+          "notes": "PLEASE NOTE: the new terminal is now on the north side of the runway. They no longer fly out of ACI FBO on Campus."
+        },
+        {
+          "name": "Car service to Leila by the Bay",
+          "length": 30,
+          "location": "1991 Railroad Ave, Hercules, CA 94547",
+          "notes": "We will drop Anna with the Lees at this restaurant with lovely views of a train track and the Bay."
         },
         {
           "name": "Car service to Meadowood",
           "length": 80,
           "location": "Concord to Meadowood",
+          "notes": "Transfer · Napa Valley Tours & Transportation 707.251.9463"
+        },
+        {
+          "name": "Check In and Get Ready For Dinner",
+          "length": 130,
+          "location": "",
           "notes": ""
         },
         {
           "name": "Car service to Auro",
           "length": 20,
-          "location": "Concord to Meadowood",
+          "location": "",
           "notes": ""
         },
         {
           "name": "Dinner at Auro (Four Seasons)",
           "length": 120,
           "location": "Four Seasons Resort and Residences Napa Valley, Silverado Trail North, Calistoga, CA, USA",
-          "notes": ""
+          "notes": "Rogelio Garcia helms the kitchen of Auro, as well as oversees the talented team of chefs and adds his culinary touch to TRUSS Restaurant + Bar. Auro received a coveted Michelin star under the helm of Garcia and his team in the 2023 Michelin Guide California. Born in Mexico City and raised in Los Angeles and Napa, Garcia held positions in some of wine country’s most respected Michelin-starred restaurants, from Cyrus to The French Laundry. Following his time in wine country, Garcia set forth to San Francisco where he earned Michelin stars of his own in 2018 and 2019 at Spruce. Garcia is a James Beard Foundation finalist for Best Chef: California; an alumnus of Bravo’s “Top Chef” Season 15; and author of an upcoming cookbook, “Convivir: Modern Mexican Cuisine in California’s Wine Country.”"
         },
         {
           "name": "Car Service to Hotel",
@@ -52,199 +70,247 @@
     },
     {
       "wakeUpTime": "08:00",
-      "location": "Meadowood Napa Valley",
+      "location": "Napa Valley",
       "lodging": {
-        "name": "Meadowood Napa Valley",
-        "address": "",
-        "phone": "",
+        "name": "Meadowood",
+        "address": "900 Meadowood Ln, St Helena, CA 94574",
+        "phone": "(707) 531-4788",
         "roomType": ""
       },
       "activities": [
         {
           "name": "House Car to Breakfast",
           "length": 15,
-          "location": "Model Bakery, St Helena",
+          "location": "",
           "notes": ""
         },
         {
           "name": "Breakfast at the Model Bakery",
           "length": 60,
-          "location": "The Model Bakery",
-          "notes": ""
+          "location": " 1357 Main St, St Helena, CA 94574",
+          "notes": "The English Muffins ae to die for."
         },
         {
           "name": "House Car to Hotel",
           "length": 15,
-          "location": "Meadowood Napa Valley",
-          "notes": ""
-        },
-        {
-          "name": "Cart to TNVR",
-          "length": 120,
           "location": "",
           "notes": ""
         },
         {
-          "name": "Blending Session at The Napa Valley Reserve",
-          "length": 90,
-          "location": "TNVR",
-          "notes": "10:00 AM"
+          "name": "Dress Warm for Blending in the Cave",
+          "length": 20,
+          "location": "",
+          "notes": ""
         },
         {
-          "name": "House car to Lunch",
+          "name": "Cart to TNVR and Walk to the Cave",
+          "length": 10,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Blending Session at The Napa Valley Reserve with Marco & Will",
+          "length": 90,
+          "location": "",
+          "notes": "Marco Gressi is the winemaker of The Napa Valley Reserve. Bring your questions. You will probably never get to spend this much time with one of the worlds greatest winemaking tallents. "
+        },
+        {
+          "name": "Car Service to Lunch",
           "length": 12,
-          "location": "St. Helena",
+          "location": "",
           "notes": ""
         },
         {
           "name": "Lunch at Gott’s Roadside",
           "length": 60,
-          "location": "St. Helena",
+          "location": " 933 Main St #29, St Helena, CA 94574",
           "notes": ""
         },
         {
           "name": "Car Service to Tasting",
-          "length": 60,
-          "location": "St. Helena",
-          "notes": "guys will do Beer in St. Helena and get the house car back to the hotel."
+          "length": 78,
+          "location": "",
+          "notes": "Guys will do Beer in St. Helena and get the house car back to the hotel. The car ride to Diamond Creek is 60 minutes."
         },
         {
           "name": "Diamond Creek Tasting (Ladies)",
           "length": 90,
-          "location": "Diamond Creek",
-          "notes": "2:00 PM"
+          "location": "1500 Diamond Mountain Road Calistoga, California, 94515,  707-942-6926",
+          "notes": "Driving Directions:\nAbout one half of a mile up Diamond Mountain Road, there will be a fork in the road and a large silver mailbox with 1500 posted on the side. Veer to the right and cross a small stone bridge.\n \nProceed to the gate on your left with ornate vines and rock pillars that reads “1500 Offices.” To the left is a private residence. Pull up very close to the gate and it will open away from you. Follow the driveway up one quarter of a mile to the winery. Parking is available right in front of the building. "
+        },
+        {
+          "name": "Car Service Back to Hotel",
+          "length": 60,
+          "location": "",
+          "notes": "Guys can call the house car when they are done to return to the hotel."
+        },
+        {
+          "name": "Relax and Napa Nap Time",
+          "length": 125,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Cart or house car to TNVR",
+          "length": 10,
+          "location": "",
+          "notes": ""
         },
         {
           "name": "Dinner at TNVR - 'Casual Friday'",
           "length": 120,
-          "location": "TNVR",
-          "notes": "6:00 PM"
+          "location": "",
+          "notes": "We are free to bring whatever wine we would like."
         },
         {
           "name": "Sunset on the Deck",
           "length": 90,
-          "location": "St. Helena",
-          "notes": "8:15 PM"
+          "location": "",
+          "notes": ""
         }
       ]
     },
     {
       "wakeUpTime": "08:00",
-      "location": "Meadowood Napa Valley",
+      "location": "Napa Valley",
       "lodging": {
-        "name": "Meadowood Napa Valley",
-        "address": "",
-        "phone": "",
+        "name": "Meadowood",
+        "address": "900 Meadowood Ln, St Helena, CA 94574",
+        "phone": "(707) 531-4788",
         "roomType": ""
       },
       "activities": [
         {
           "name": "Breakfast",
           "length": 90,
-          "location": "Meadowood",
+          "location": "",
           "notes": ""
         },
         {
-          "name": "Car Service to Harlan Estate",
+          "name": "Hike to the Labyrinth",
           "length": 30,
-          "location": "Harlan Estate",
-          "notes": ""
+          "location": "",
+          "notes": "A short fun hike near our rooms."
         },
         {
-          "name": "Tasting at Harlan Estate",
-          "length": 90,
-          "location": "Oakville, CA",
-          "notes": "10:00 AM"
-        },
-        {
-          "name": "Car Service to Luncheon",
-          "length": 30,
-          "location": "Oakville Grocery",
-          "notes": ""
-        },
-        {
-          "name": "Lunch at Oakville Grocery",
+          "name": "Get Your Wine Drinking Pants On",
           "length": 60,
-          "location": "Oakville, CA",
-          "notes": "12:00 PM"
+          "location": "",
+          "notes": ""
         },
         {
           "name": "Car Service to Promontory",
           "length": 30,
-          "location": "Harlan Estate",
+          "location": "",
           "notes": ""
         },
         {
           "name": "Tasting at Promontory",
           "length": 90,
-          "location": "Oakville, CA",
-          "notes": "2:00 PM"
+          "location": "1601 Oakville Grade Rd, Oakville, CA 94562",
+          "notes": ""
+        },
+        {
+          "name": "Car Service to Luncheon",
+          "length": 5,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch at Oakville Grocery",
+          "length": 120,
+          "location": "7856 St Helena Hwy, Oakville, CA 94562",
+          "notes": ""
         },
         {
           "name": "Car Service to Hotel",
-          "length": 30,
-          "location": "Meadowood",
+          "length": 20,
+          "location": "",
           "notes": ""
         },
         {
-          "name": "Relax, Napa Nap and Get Ready for Dinner",
-          "length": 60,
-          "location": "Meadowood",
-          "notes": "6:00 PM"
+          "name": "Dip in the Pool, James Bond Paperback and Get Ready for Dinner",
+          "length": 145,
+          "location": "",
+          "notes": "The Lee's will drop Anna off around 4 PM for a few hours while they attend a wedding and pick her up around 8 PM."
         },
         {
           "name": "Cart to TNVR",
-          "length": 30,
-          "location": "The Napa Valley Reserve",
+          "length": 10,
+          "location": "",
           "notes": ""
+        },
+        {
+          "name": "Bocce, Champagne and Canape Reception",
+          "length": 60,
+          "location": "",
+          "notes": "Sunset is at 8:30 PM and average tempuratures are typically in the low 80's. I recomend stylish but practical clothing. For the ladies there is a lot of gravel and grass so choose your shoes wisely."
         },
         {
           "name": "Birthday Dinner at TNVR with Chef Monson",
           "length": 120,
-          "location": "TNVR",
-          "notes": "7:00 PM"
+          "location": "",
+          "notes": ""
         }
       ]
     },
     {
-      "wakeUpTime": "08:00",
-      "location": "Meadowood Napa Valley",
+      "wakeUpTime": "10:00",
+      "location": "Napa Valley",
       "lodging": {
-        "name": "Meadowood Napa Valley",
-        "address": "",
-        "phone": "",
+        "name": "Meadowood",
+        "address": "900 Meadowood Ln, St Helena, CA 94574",
+        "phone": "(707) 531-4788",
         "roomType": ""
       },
       "activities": [
         {
-          "name": "Relax",
-          "length": "240",
-          "location": "Yountville, CA",
-          "notes": "8:20 AM"
+          "name": "Sleep In and Brunch at Hotel",
+          "length": 120,
+          "location": "",
+          "notes": ""
         },
         {
-          "name": "Drive to JSX Concord Terminal",
-          "length": 70,
-          "location": "Meadowood to CCR",
-          "notes": "Departs hotel around 8:40 AM"
+          "name": "Car Service to Harlan Estate",
+          "length": 45,
+          "location": "",
+          "notes": ""
         },
         {
-          "name": "Lunch in Napa",
-          "length": "195",
+          "name": "Tasting at Harlan Estate",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Car Service to Yountville and Napa",
+          "length": 30,
+          "location": "",
+          "notes": "We have 3 hours and a driver to explore and make our way down to Napa."
+        },
+        {
+          "name": "Dinner at Oxbow Public Market",
+          "length": 140,
           "location": "",
           "notes": ""
         },
         {
           "name": "Drive to Airport",
-          "length": "120",
+          "length": 60,
           "location": "",
           "notes": ""
         },
         {
+          "name": "Check In to Flight",
+          "length": 20,
+          "location": "",
+          "notes": "The Lees will drop Anna at the airport."
+        },
+        {
           "name": "Flight to SNA (JSX CCR → SNA)",
-          "length": "80",
+          "length": 80,
           "location": "JSX Terminal CCR",
-          "notes": "Departs 10:15 AM"
+          "notes": ""
         },
         {
           "name": "Uber Home",

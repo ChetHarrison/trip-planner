@@ -1,1074 +1,1681 @@
 {
-  "tripName": "Zermatt to Berlin Summer Trip",
-  "startDate": "2025-07-25",
-  "trip": [
-    {
-      "wakeUpTime": "14:35",
-      "location": "Los Angeles",
-      "lodging": {
-        "name": "Home",
-        "address": "611 Carnation Ave, Corona del Mar, CA",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Trip Prep",
-          "length": 90,
-          "location": "Home",
-          "notes": ""
-        },
-        {
-          "name": "Driver to LAX",
-          "length": 90,
-          "location": "Corona del Mar to LAX",
-          "notes": ""
-        },
-        {
-          "name": "Check In to Flight and Eat Dinner",
-          "length": 120,
-          "location": "LAX",
-          "notes": "With our Swiss Air Business Class tickest we get access to the Star Alliance Business Class Lounge on level 6. Border Grill: Mexican specialties from chefs Susan Feniger and Mary Sue Milliken or ink.sack: Classic and modern sandwiches in half portions by chef Michael Voltaggio."
-        },
-        {
-          "name": "Flight to Zurich (LX 41)",
-          "length": 670,
-          "location": "LAX to ZRH",
-          "notes": "In our SWISS Business on the Boeing 777-300ER and the Airbus A340-300, you can convert your seat into a bed over two metres long, and control the seat hardness individually. Additional features for more privacy and space for storing your personal belongings plus a new, easy-to-handle table will make your flight even pleasanter. The 16 inch touch screen provides the best entertainment. On our flights departing from Zurich we serve you seasonal delicacies created by top Swiss chefs, taking you on a journey through the variety of Swiss cuisine. Enjoy the award-winning dishes with multiple courses, or make individual selections at the time of your choosing."
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "15:35",
-      "location": "Zurich",
-      "lodging": {
-        "name": "Storchen Zurich",
-        "address": "Weinplatz 2, 8001 Zurich, Switzerland",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Mercedes Van Pickup from Zurich Airport to Storchen Zurich",
-          "length": 20,
-          "location": "Zurich",
-          "notes": "Flight LX41 from LAX, arrives July 26 at 15:35. Driver will greet in main arrival area with nameboard. CHF 180.00. Contact: +41 44 227 21 14."
-        },
-        {
-          "name": "Check-in at Storchen Zurich",
-          "length": 30,
-          "location": "Zurich",
-          "notes": ""
-        },
-        {
-          "name": "Car to Lindt",
-          "length": 15,
-          "location": "Zurich",
-          "notes": ""
-        },
-        {
-          "name": "Tour of  Lindt Home of Chocolate",
-          "length": 60,
-          "location": "Zurich",
-          "notes": "Thank you for your booking with file no 1589673."
-        },
-        {
-          "name": "Car to Hotel",
-          "length": 15,
-          "location": "Zurich",
-          "notes": ""
-        },
-        {
-          "name": "Relax and Get Ready for Dinner",
-          "length": 65,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Dinner at La Rôtisserie",
-          "length": 120,
-          "location": "Zurich",
-          "notes": "This is the Hotel Restaurant. NEED TO BOOK"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Zermatt",
-      "lodging": {
-        "name": "Mont Cervin Palace",
-        "address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Wakey",
-          "length": 60,
-          "location": "Zurich",
-          "notes": ""
-        },
-        {
-          "name": "Walk to Breakfast",
-          "length": 5,
-          "location": "Zurich",
-          "notes": ""
-        },
-        {
-          "name": "Breakfast at Café & Conditorei 1842",
-          "length": 80,
-          "location": "Napfgasse 4 8001 Zurich",
-          "notes": "Known for it's choclates."
-        },
-        {
-          "name": "Walk Back to Hotel",
-          "length": 5,
-          "location": "Zurich",
-          "notes": ""
-        },
-        {
-          "name": "Mercedes Van Transfer",
-          "length": 175,
-          "location": "Zermatt",
-          "notes": "Departs July 27 at 10:30 LET'S CHANGE THIS TO 9:30. Includes 90-minute lunch break. WE DON'T NEED A 90 MIN LUNCH, 60 MIN WILL DO. CHF 1’580.00. Contact: +41 44 227 21 14."
-        },
-        {
-          "name": "LUNCH NEED TO FIGURE OUT WHERE",
-          "length": 60,
-          "location": "",
-          "notes": "NEED TO FIND"
-        },
-        {
-          "name": "Driver to Zermatt",
-          "length": 40,
-          "location": "Zermatt",
-          "notes": "Check-in at 3:00 PM"
-        },
-        {
-          "name": "Check-in at Mont Cervin Palace",
-          "length": 30,
-          "location": "Zermatt",
-          "notes": "Check-in at 3:00 PM"
-        },
-        {
-          "name": "Summit the Klein Matterhorn",
-          "length": 120,
-          "location": "Zermatt",
-          "notes": "Take the Trockener Steg lift, where you can buy a ticket to the Matterhorn Glacier Paradise, a mountain station — complete with a restaurant and gift shop — that’s built into the summit of the Klein Matterhorn at the rather breathless altitude of more than 12,700 feet."
-        },
-        {
-          "name": "Relax at Hotel",
-          "length": 115,
-          "location": "Zermatt",
-          "notes": "Take the Trockener Steg lift, where you can buy a ticket to the Matterhorn Glacier Paradise, a mountain station — complete with a restaurant and gift shop — that’s built into the summit of the Klein Matterhorn at the rather breathless altitude of more than 12,700 feet."
-        },
-        {
-          "name": "Dinner at Grill Le Cervin NEEDS TO BE BOOKED",
-          "length": 90,
-          "location": "Zermatt",
-          "notes": "This is the Hotel Restaurant"
-        },
-        {
-          "name": "Night Cap at Joseph's Bar & Terrace",
-          "length": 60,
-          "location": "Zermatt",
-          "notes": "This is the Hotel Bar"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Zermatt",
-      "lodging": {
-        "name": "Mont Cervin Palace",
-        "address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Shop for Watches",
-          "length": 90,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Walk to Cornergrat Train",
-          "length": 5,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Cogwheel Train to Gornergrat",
-          "length": 33,
-          "location": "Zermatt",
-          "notes": "Scenic ride to 3,100 meters. The train has no rservations. It takes 33 minutes to get to the top."
-        },
-        {
-          "name": "Lunch at Bergrestaurant 3100 Kulmhotel",
-          "length": 90,
-          "location": "Gornergrat",
-          "notes": "We have a noon reservation. Serving world famous classic Swiss dishes using local cheeses melted into delicious varieties of fondue and raclette with a Valais dried meat platter to start and a Toblerone fondue to finish."
-        },
-        {
-          "name": "Train back to Zermatt 1/2 Way",
-          "length": 90,
-          "location": "Zermatt",
-          "notes": "We can hike beautiful trails the rest of the journey down"
-        },
-        {
-          "name": "Walking tour of Zermatt. NEED TO BOOK THIS",
-          "length": 90,
-          "location": "Zermatt",
-          "notes": "Shops, museums, and old chalets"
-        },
-        {
-          "name": "Relax",
-          "length": 170,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Walk to Dinner",
-          "length": 2,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Dinner Alpine Gourmet Prato Borni",
-          "length": 90,
-          "location": "Zermatt",
-          "notes": "7 PM reservation. The fine dining restaurant of the Grand Hotel Zermatterhof, in the town centre, serves two fantastic set menus made with top-notch ingredients: Heimat seeks inspiration in the region and Fernweh looks to foreign climes. The classically elegant dining area is done out with fine wood panelling, and the front-of-house team provides well-coordinated service. Impressive wine list!"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Lake Como",
-      "lodging": {
-        "name": "Villa d'Este",
-        "address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Zermatt",
-          "notes": ""
-        },
-        {
-          "name": "Private transfer from Zermatt to Lake Como",
-          "length": 120,
-          "location": "Lake Como",
-          "notes": "Private car via Simplon Pass or scenic route"
-        },
-        {
-          "name": "Luncheon SOMEWHERE ON THE WAY",
-          "length": 60,
-          "location": "Hotel",
-          "notes": "On the terrace or by the pool"
-        },
-        {
-          "name": "Continue to Lake Como",
-          "length": 150,
-          "location": "Lake Como",
-          "notes": "Private car via Simplon Pass or scenic route"
-        },
-        {
-          "name": "Check-in at Villa d'Este",
-          "length": 30,
-          "location": "Lake Como",
-          "notes": "Check-in at 3:00 PM"
-        },
-        {
-          "name": "Relax and Explore the Hotel",
-          "length": 60,
-          "location": "Como",
-          "notes": "Visit cathedral, promenade, local shops"
-        },
-        {
-          "name": "Walking tour of Como NEED TO BOOK",
-          "length": 90,
-          "location": "Como",
-          "notes": "Visit cathedral, promenade, local shops"
-        },
-        {
-          "name": "Relax and Prep for Dinner",
-          "length": 90,
-          "location": "Como",
-          "notes": "Visit cathedral, promenade, local shops"
-        },
-        {
-          "name": "Dinner at Veranda NEED TO BOOK",
-          "length": 90,
-          "location": "Lake Como",
-          "notes": "Lakeside dining at the hotel. DRESS CODE: Smart casual for lunch and elegant attire for dinner. Located in the Cardinal’s Building, the fine-dining Veranda restaurant offers glorious views of the lake, gardens and Mosaic. The retractable windows remain open throughout the summer and, weather permitting, diners can savour dinner on the lakeside terrace. Classic and contemporary Italian cuisine is ennobled with international touches. Executive Chef Michele Zambanini blends ceaseless research and the finest ingredients with the utmost respect for seasonal produce. In this formal, elegant setting, guests experience haute cuisine alongside a curated wine selection, in addition to professional service tailored to the desires of every guest."
-        },
-        {
-          "name": "Night Cap at Canova Bar and Lake Terrace",
-          "length": 90,
-          "location": "Lake Como",
-          "notes": "The Canova Bar has been regarded as the most glamorous place to sip a cocktail on Lake Como since 1873. The sumptuous interior make the bar an exclusive spot to people-watch and to be seen at any time of day. Throughout the summer, guests are invited to sit alfresco on the lake terrace, beneath majestic chestnut trees and surrounded by the scent of jasmine."
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Lake Como",
-      "lodging": {
-        "name": "Villa d'Este",
-        "address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Driver to Villa del Balbianello NEED TO BOOK",
-          "length": 45,
-          "location": "Tremezzo",
-          "notes": ""
-        },
-        {
-          "name": "Tour Villa del Balbianello NEED TO BOOK",
-          "length": 45,
-          "location": "Tremezzo",
-          "notes": ""
-        },
-        {
-          "name": "Driver to Villa Carlotta NEED TO BOOK",
-          "length": 5,
-          "location": "Tremezzo",
-          "notes": ""
-        },
-        {
-          "name": "Tour Villa Carlotta NEED TO BOOK",
-          "length": 45,
-          "location": "Tremezzo",
-          "notes": ""
-        },
-        {
-          "name": "Ferry to Bellagio DO WE NEEED TO BOOK?",
-          "length": 30,
-          "location": "Lake Como",
-          "notes": ""
-        },
-        {
-          "name": "Lunch and shopping in Bellagio",
-          "length": 120,
-          "location": "Bellagio",
-          "notes": "Scenic village with boutique shops"
-        },
-        {
-          "name": "Ferry to Varenna",
-          "length": 15,
-          "location": "Varenn, Italy",
-          "notes": ""
-        },
-        {
-          "name": "Walking tour of Varenna",
-          "length": 60,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Ferry to Menaggio",
-          "length": 20,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Walking Tour of Menaggio",
-          "length": 60,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Driver to hotel NEED TO BOOK",
-          "length": 30,
-          "location": "Cernobbio",
-          "notes": "Return via water and road"
-        },
-        {
-          "name": "Relax at Hotel",
-          "length": 95,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Dinner",
-          "length": 90,
-          "location": "Lake Como",
-          "notes": "NEED TO BOOK"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Lake Como",
-      "lodging": {
-        "name": "Villa d'Este",
-        "address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast at Veranda",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Tennis and Swim at the Pool",
-          "length": 150,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Lunch at Sundeck",
-          "length": 60,
-          "location": "",
-          "notes": "Adjacent to the floating pool, the Sundeck is a superb place for a light snack paired with an exquisitely made cocktail in the warmer months."
-        },
-        {
-          "name": "ACTIVITY",
-          "length": 360,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Dinner at Grill NEED TO BOOK",
-          "length": 60,
-          "location": "",
-          "notes": "DRESS CODE: Smart casual attire. Located near the Queen’s Pavilion, the Grill is a cosy and casual restaurant. In the summer, guests can dine in the garden beneath the shade of centuries-old trees, while enjoying picturesque lakeside views. Grilled meat and classic fish dishes take centre stage on the menu, alongside a choice of appetizers that showcase Mediterranean culinary traditions centred on the sea and land. Enticing pairings can be found on the wine list and the service is attentive and never pretentious."
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Vienna",
-      "lodging": {
-        "name": "Rosewood Vienna",
-        "address": "Petersplatz, 1010 Vienna, Austria",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Drive to Milan Airport (MXP)",
-          "length": 60,
-          "location": "Milan",
-          "notes": "11:45 am Departure transfer with Mercedes V Class Minivan (suitable for up to 6 passengers & 8 large/medium and 4 small luggages plus 5 bags) from Villa d'Este to Milan Malpensa Airport (Flight OS#510 due to depart"
-        },
-        {
-          "name": "Check In to Flight and Eat Luncheon at Airport",
-          "length": 150,
-          "location": "MXP",
-          "notes": ""
-        },
-        {
-          "name": "Flight to Vienna (OS 0510)",
-          "length": 85,
-          "location": "MXP to VIE",
-          "notes": "Departs 2:45 PM, Arrives 4:10 PM"
-        },
-        {
-          "name": "Transfer from VIE Airport to Rosewood Vienna",
-          "length": 60,
-          "location": "Vienna",
-          "notes": "Arriving 4:10pm on OS#510 from Milan, Mercedes-Benz V-Class"
-        },
-        {
-          "name": "Check-in at Rosewood Vienna",
-          "length": 30,
-          "location": "Vienna",
-          "notes": ""
-        },
-        {
-          "name": "Relax at Hotel",
-          "length": 60,
-          "location": "Vienna",
-          "notes": ""
-        },
-        {
-          "name": "Dinner at Amador (Amy & Chet)",
-          "length": 120,
-          "location": "Grinzinger Straße 86, Vienna, 1190, Austria",
-          "notes": "3 Michelin-starred tasting menu. We have a table for 2 guests reserved, on Friday 1 August at 7:00 PM. A culinary highlight for the city and for Austria. This restaurant's location on the outskirts of the city in the Hajszan Neumann wine estate is something special in itself. Here, a wonderful brick vaulted ceiling and stylish interior design make for a distinctive look. Juan Amador's cuisine more than lives up to the setting: the finest ingredients are used to create a modern and sophisticated set menu comprising dishes that are finely balanced and consistently harmonious. The creative mastermind of this operation is supported by a highly motivated and pleasingly cordial team. Impressive wine list."
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Vienna",
-      "lodging": {
-        "name": "Rosewood Vienna",
-        "address": "Petersplatz, 1010 Vienna, Austria",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Driver to Museum",
-          "length": 25,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Private Schönbrunn Palace Tour NEED TO BOOK",
-          "length": 120,
-          "location": "Vienna",
-          "notes": "Habsburg summer palace, Rococo interiors, and imperial gardens"
-        },
-        {
-          "name": "Walk Through the Gardens to Lunch",
-          "length": 20,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Luncheon at Gloriette Café",
-          "length": 60,
-          "location": "Schönbrunn",
-          "notes": "Hilltop café overlooking the palace. Schönbrunn Palace has a massive gardens much like Versiles. It also houses the world's oldest zoo (1757). We will take a 1.2 mile stroll though a segnificant portion of the gardens to reach the cafe"
-        },
-        {
-          "name": "Walk to Driver Pick Up",
-          "length": 10,
-          "location": "Behindertenparkplatz, Tivolibrücke, Hohenbergstraße, 1130 Wien, Austria",
-          "notes": "We will head west to Behindertenparkplatz on Gloriettestraße footpath to meet our taxi."
-        },
-        {
-          "name": "Driver to Museum",
-          "length": 20,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Kunsthistorisches Museum",
-          "length": 120,
-          "location": "Vienna",
-          "notes": "Old masters, Caravaggio, Raphael, and Brueghel collection"
-        },
-        {
-          "name": "Taxi to Hotel",
-          "length": 20,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Coffee Lovers Walk to Café Central for Esspreso",
-          "length": 30,
-          "location": "",
-          "notes": "The cafe is a 7 minute walk from the hotel. Long-standing venue for Viennese cuisine, with famous historic links including to Freud & Trotsky."
-        },
-        {
-          "name": "Relax",
-          "length": 85,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Dinner at Neue Hoheit",
-          "length": 105,
-          "location": "Vienna",
-          "notes": "This is the Hotel Restaurant. Your reservation number is RWVIE-5MCHDD3CRH7R"
-        },
-        {
-          "name": "Taxi to Concert",
-          "length": 10,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Check In to Concert",
-          "length": 20,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Classical Concert at Musikverein - Golden Hall",
-          "length": 120,
-          "location": "Bösendorferstrasse 12, 1010 Wien/Vienna",
-          "notes": "This is your Booking Confirmation for the following Event: Vienna Mozart Orchestra / Musikverein - Golden Hall. Please Show this Confirmation at the evening box office (Print or Mobile Device). This E-Mail Confirmation is your Ticket. Booking number: 25052500205, Event: Vienna Mozart Orchestra. Admission: 30 minutes before begin time."
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Vienna",
-      "lodging": {
-        "name": "Rosewood Vienna",
-        "address": "Petersplatz, 1010 Vienna, Austria",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Visit Kunsthistorisches Museum",
-          "length": 120,
-          "location": "Vienna",
-          "notes": "World-class art collection"
-        },
-        {
-          "name": "Luncheon",
-          "length": 60,
-          "location": "Vienna",
-          "notes": "Café Central or Salon Sacher at Hotel Sacher"
-        },
-        {
-          "name": "Belvedere Palace and gardens",
-          "length": 90,
-          "location": "Vienna",
-          "notes": "Baroque palace with Klimt’s The Kiss"
-        },
-        {
-          "name": "Relax",
-          "length": 60,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Dinner at Meissl & Schadn NEED TO BOOK",
-          "length": 90,
-          "location": "Vienna",
-          "notes": "Wiener schnitzel and classic Viennese cuisine"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Salzburg",
-      "lodging": {
-        "name": "Hotel Goldener Hirsch",
-        "address": "Getreidegasse 37, Salzburg, Austria",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Train to Salzburg",
-          "length": 90,
-          "location": "",
-          "notes": ""
-        },
-        {
-          "name": "Driver to Eagle's Nest",
-          "length": 45,
-          "location": "Berchtesgaden",
-          "notes": ""
-        },
-        {
-          "name": "Tour and Tea at the Eagle's Nest",
-          "length": 90,
-          "location": "Berchtesgaden",
-          "notes": "Panoramic views and WWII history"
-        },
-        {
-          "name": "Drive back to Salzburg",
-          "length": 45,
-          "location": "Salzburg",
-          "notes": ""
-        },
-        {
-          "name": "Visit Mozart's Birthplace",
-          "length": 60,
-          "location": "Salzburg",
-          "notes": "Interactive exhibits and musical history"
-        },
-        {
-          "name": "Schnapps tasting at Sporer",
-          "length": 60,
-          "location": "Getreidegasse",
-          "notes": "Traditional Austrian schnapps in historic shop"
-        },
-        {
-          "name": "Dinner at St. Peter Stiftskulinarium",
-          "length": 90,
-          "location": "Salzburg",
-          "notes": "Historic restaurant with Austrian cuisine"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Salzburg",
-      "lodging": {
-        "name": "Hotel Goldener Hirsch",
-        "address": "Getreidegasse 37, Salzburg, Austria",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Private Tour of Salzburg Fortress (Hohensalzburg) NEED TO BOOK",
-          "length": 90,
-          "location": "Salzburg",
-          "notes": "Funicular ride up and tour of medieval fortress"
-        },
-        {
-          "name": "Stroll through Mirabell Gardens",
-          "length": 45,
-          "location": "Salzburg",
-          "notes": "Famous filming location for Sound of Music"
-        },
-        {
-          "name": "Luncheon",
-          "length": 60,
-          "location": "Salzburg",
-          "notes": "Lunch near Mirabellplatz"
-        },
-        {
-          "name": "Shopping at Trachten Stassny Gesellschaft m.b.H.",
-          "length": 60,
-          "location": "Getreidegasse 355020 Salzburg Österreich",
-          "notes": "Located nexct to our hotel selling updated traditional native fashon."
-        },
-        {
-          "name": "Dinner at Gasthof Goldgasse",
-          "length": 90,
-          "location": "Salzburg",
-          "notes": "Refined traditional Austrian cuisine"
-        },
-        {
-          "name": "Mozart Concert at Mirabell Palace",
-          "length": 90,
-          "location": "Mirabell Palace",
-          "notes": "booked"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Berlin",
-      "lodging": {
-        "name": "Hotel de Rome",
-        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Salzburg",
-          "notes": ""
-        },
-        {
-          "name": "Transfer to Salzburg Airport",
-          "length": 30,
-          "location": "Salzburg",
-          "notes": "Private car transfer"
-        },
-        {
-          "name": "Flight to Berlin (EW 4342)",
-          "length": 65,
-          "location": "SZG to BER",
-          "notes": "Departs Wed Aug 6 at 3:25 PM, arrives 4:30 PM Terminal 1. Airbus A319 operated by Eurowings Europe."
-        },
-        {
-          "name": "Mercedes V-Class Transfer from BER Airport to Hotel de Rome",
-          "length": 45,
-          "location": "Berlin",
-          "notes": "Chet Harrison + 4 guests incl. Anna (age 11)\nFlight: EW 4342\nPickup: 16:30 at BER Airport\nVehicle: Mercedes V-Class\nPrice: €230 incl. 30 min wait; €135/hr for overages"
-        },
-        {
-          "name": "Check-in at Hotel de Rome",
-          "length": 30,
-          "location": "Berlin",
-          "notes": "Check-in at 5:00 PM"
-        },
-        {
-          "name": "Luncheon",
-          "length": 60,
-          "location": "Berlin",
-          "notes": "Late lunch after arrival"
-        },
-        {
-          "name": "Tour Brandenburg Gate",
-          "length": 90,
-          "location": "Berlin",
-          "notes": "Short walk from hotel"
-        },
-        {
-          "name": "Dinner at Borchardt",
-          "length": 90,
-          "location": "Berlin",
-          "notes": "Classic Berlin brasserie near Gendarmenmarkt"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Berlin",
-      "lodging": {
-        "name": "Hotel de Rome",
-        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Jewish Memorial",
-          "length": 60,
-          "location": "Berlin",
-          "notes": "Walk from hotel"
-        },
-        {
-          "name": "Checkpoint Charlie",
-          "length": 30,
-          "location": "Berlin",
-          "notes": "Historical Cold War checkpoint"
-        },
-        {
-          "name": "Berlin Wall Memorial",
-          "length": 30,
-          "location": "Berlin",
-          "notes": "Preserved wall section and visitor center"
-        },
-        {
-          "name": "Luncheon",
-          "length": 60,
-          "location": "Berlin",
-          "notes": "Lunch at local cafe near museum island"
-        },
-        {
-          "name": "Museum Island Tour",
-          "length": 120,
-          "location": "Berlin",
-          "notes": "Pergamon Museum, Altes Museum, Neues Museum"
-        },
-        {
-          "name": "Relax at Hotel Spa",
-          "length": 60,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Dinner at Rutz",
-          "length": 90,
-          "location": "Berlin",
-          "notes": "Michelin-starred contemporary German cuisine"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "07:00",
-      "location": "Berlin",
-      "lodging": {
-        "name": "Hotel de Rome",
-        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Early Breakfast",
-          "length": 60,
-          "location": "Hotel",
-          "notes": "Quick breakfast before train departure"
-        },
-        {
-          "name": "Train to Leipzig",
-          "length": 75,
-          "location": "Berlin Hauptbahnhof to Leipzig Hauptbahnhof",
-          "notes": "High-speed ICE train"
-        },
-        {
-          "name": "Leipzig City Walk",
-          "length": 90,
-          "location": "Leipzig",
-          "notes": "Market Square, St. Thomas Church (Bach), Nikolaikirche, and historic arcades"
-        },
-        {
-          "name": "Lunch in Leipzig",
-          "length": 60,
-          "location": "Leipzig",
-          "notes": "Local Saxon cuisine or modern cafes near Augustusplatz"
-        },
-        {
-          "name": "Train to Weimar",
-          "length": 60,
-          "location": "Leipzig to Weimar",
-          "notes": "Regional train"
-        },
-        {
-          "name": "Weimar Highlights Tour",
-          "length": 120,
-          "location": "Weimar",
-          "notes": "Schiller’s House, Goethe’s House, Bauhaus sites, and walk through Ilm Park"
-        },
-        {
-          "name": "Coffee & Cake at Café Residenz",
-          "length": 45,
-          "location": "Weimar",
-          "notes": "Afternoon break before return train"
-        },
-        {
-          "name": "Train to Berlin",
-          "length": 120,
-          "location": "Weimar to Berlin",
-          "notes": "Evening return by ICE"
-        },
-        {
-          "name": "Light Dinner or Room Service",
-          "length": 60,
-          "location": "Hotel de Rome",
-          "notes": "Optional depending on return time"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "08:00",
-      "location": "Berlin",
-      "lodging": {
-        "name": "Hotel de Rome",
-        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Breakfast",
-          "length": 90,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Shopping or Leisure Walk",
-          "length": 120,
-          "location": "Berlin",
-          "notes": "Kurfürstendamm, Gendarmenmarkt, or local markets"
-        },
-        {
-          "name": "Luncheon",
-          "length": 60,
-          "location": "Berlin",
-          "notes": "Light lunch at a local bistro"
-        },
-        {
-          "name": "Visit East Side Gallery",
-          "length": 90,
-          "location": "Berlin",
-          "notes": "Open-air gallery on the longest remaining section of the Berlin Wall"
-        },
-        {
-          "name": "Relax at hotel or local café",
-          "length": 60,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Dinner at Tim Raue",
-          "length": 90,
-          "location": "Berlin",
-          "notes": "Contemporary Asian cuisine near Checkpoint Charlie"
-        }
-      ]
-    },
-    {
-      "wakeUpTime": "07:50",
-      "location": "Berlin",
-      "lodging": {
-        "name": "Hotel de Rome",
-        "address": "Behrenstrasse 37, 10117 Berlin, Germany",
-        "phone": "",
-        "roomType": ""
-      },
-      "activities": [
-        {
-          "name": "Wake Up",
-          "length": 30,
-          "location": "Hotel",
-          "notes": ""
-        },
-        {
-          "name": "Mercedes Transfer from Hotel de Rome to BER Airport",
-          "length": 30,
-          "location": "Berlin",
-          "notes": "Mercedes V-Class transfer for 5 guests to BER, BA 987 departs at 11:20 AM, suggested pickup 08:20. €230 flat; €135/hr if exceeded."
-        },
-        {
-          "name": "Check In to Flight and get breakfast",
-          "length": 150,
-          "location": "Berlin",
-          "notes": "Mercedes V-Class transfer for 5 guests to BER, BA 987 departs at 11:20 AM, suggested pickup 08:20. €230 flat; €135/hr if exceeded."
-        },
-        {
-          "name": "Flight to London (BA 0987)",
-          "length": 65,
-          "location": "BER to LHR",
-          "notes": "Departs 11:20 AM, Arrives 12:25 PM"
-        },
-        {
-          "name": "Luncheon and Transfer in LHR",
-          "length": 115,
-          "location": "Plane",
-          "notes": ""
-        },
-        {
-          "name": "Flight to LAX (BA 0269)",
-          "length": 195,
-          "location": "LHR to LAX",
-          "notes": "Departs 2:20 PM, Arrives 5:35 PM"
-        },
-        {
-          "name": "Driver from LAX to Home",
-          "length": 80,
-          "location": "Los Angeles",
-          "notes": ""
-        }
-      ]
-    }
-  ]
+	"tripName": "Zermatt to Berlin Summer Trip",
+	"startDate": "2025-07-25",
+	"trip": [
+		{
+			"wakeUpTime": "14:15",
+			"location": "Los Angeles",
+			"lodging": {
+				"name": "Home",
+				"address": "611 Carnation Ave, Corona del Mar, CA",
+				"phone": "",
+				"roomType": ""
+			},
+			"activities": [
+				{
+					"name": "Trip Prep",
+					"length": 90,
+					"location": "Home",
+					"notes": ""
+				},
+				{
+					"name": "Driver to LAX",
+					"length": 90,
+					"location": "Corona del Mar to LAX",
+					"notes": "Booked with Al Joon 818 621 0310"
+				},
+				{
+					"name": "Check In to Flight and Eat Dinner",
+					"length": 140,
+					"location": "LAX",
+					"notes": "With our Swiss Air Business Class tickest we get access to the Star Alliance Business Class Lounge on level 6. Border Grill: Mexican specialties from chefs Susan Feniger and Mary Sue Milliken or ink.sack: Classic and modern sandwiches in half portions by chef Michael Voltaggio."
+				},
+				{
+					"name": "Flight to Zurich (LX 41) Swiss Air",
+					"length": 670,
+					"location": "LAX to ZRH",
+					"notes": "#2QN7MI Seats 17 D, G and 12, 15, 17 K. Access to the Star Alliance lounge on the 6th flour. In our SWISS Business on the Boeing 777-300ER and the Airbus A340-300, you can convert your seat into a bed over two metres long, and control the seat hardness individually. Additional features for more privacy and space for storing your personal belongings plus a new, easy-to-handle table will make your flight even pleasanter. The 16 inch touch screen provides the best entertainment. On our flights departing from Zurich we serve you seasonal delicacies created by top Swiss chefs, taking you on a journey through the variety of Swiss cuisine. Enjoy the award-winning dishes with multiple courses, or make individual selections at the time of your choosing."
+				}
+			]
+		},
+		{
+			"wakeUpTime": "15:35",
+			"location": "Zurich",
+			"lodging": {
+				"name": "Storchen Zurich",
+				"address": "Weinplatz 2, 8001 Zurich, Switzerland",
+				"phone": "+41 44 227 27 27",
+				"roomType": "City Queen and City Doubles #CI596O7H, CI596OAB. $100 hotel credit. Daily breakfast for two, Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability."
+			},
+			"activities": [
+				{
+					"name": "Mercedes Van Pickup from Zurich Airport to Storchen Zurich",
+					"length": 20,
+					"location": "",
+					"notes": "Flight LX41 from LAX, arrives July 26 at 15:45. Driver will greet in main arrival area with nameboard. CHF 180.00. Contact: +41 44 227 21 14."
+				},
+				{
+			        "name": "Check-in at Storchen Zürich",
+			        "length": 30,
+			        "location": "Hotel Storchen Zürich, Weinplatz 2, 8001 Zürich, Switzerland",
+			        "notes": "Storchen Zürich is a historic hotel on the banks of the Limmat River, offering elegant rooms and direct access to the old town."
+			    },
+			    {
+			        "name": "Walk to Fraumünster",
+			        "length": 5,
+			        "location": "Walk southwest along Weinplatz and cross Münsterbrücke to reach Stadthausquai.",
+			        "notes": ""
+			    },
+			    {
+			        "name": "Visit Fraumünster",
+			        "length": 40,
+			        "location": "Fraumünster Church, Stadthausquai 19, 8001 Zürich, Switzerland",
+			        "notes": "Features five stained glass windows by Marc Chagall, each illustrating biblical scenes, and a radiant 9m stained glass in the north transept by Augusto Giacometti."
+			    },
+			    {
+			        "name": "Walk to Cabaret Voltaire",
+			        "length": 5,
+			        "location": "Walk northeast across the Limmat River, turn right onto Spiegelgasse 1.",
+			        "notes": ""
+			    },
+			    {
+			        "name": "Drinks at Cabaret Voltaire",
+			        "length": 40,
+			        "location": "Cabaret Voltaire, Spiegelgasse 1, 8001 Zürich, Switzerland",
+			        "notes": "Founded in 1916, Cabaret Voltaire is the birthplace of the Dada art movement, launched by artists including Hugo Ball and Emmy Hennings. The venue hosted experimental performances and avant-garde artists such as Kandinsky, Klee, and Arp, and remains a creative space for the arts today."
+			    },
+			    {
+			        "name": "Walk to Hotel",
+			        "length": 5,
+			        "location": "Return to Storchen Zürich via Münstergasse and Weinplatz.",
+			        "notes": ""
+			    },
+				{
+					"name": "Relax and Get Ready for Dinner",
+					"length": 60,
+					"location": "",
+					"notes": ""
+				},
+				{
+					"name": "Dinner at La Rôtisserie",
+					"length": 120,
+					"location": "Zurich",
+					"notes": "This is the Hotel Restaurant. We have a reservation at 7 PM on the terrace."
+				}
+			]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Zermatt",
+	"lodging": {
+		"name": "Mont Cervin Palace",
+		"address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
+		"phone": "+41 44 227 21 14",
+		"roomType": "Alpine Matterhorn Suite and Alpine Matterhorn Jr Suite, #6922SE006441, 6922SE006442. $100 hotel credit. Daily buffet or continental breakfast for two. Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability"
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 90,
+			"location": "Room Service",
+			"notes": ""
+		},
+		{
+			"name": "Mercedes Van Transfer",
+			"length": 110,
+			"location": "",
+			"notes": "Contact: +41 44 227 21 14. Confirmed by Storchen Zurich Concierge"
+		},
+		{
+			"name": "Walk to the Bern Bridge",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Vist the Bern Bridge",
+			"length": 15,
+			"location": "",
+			"notes": "Bern Bridge (Pont de Berne) A classic covered wooden bridge dating from 1653 spans the Sarine River and connects the upper and lower towns."
+		},
+		{
+			"name": "Explore Fribourg and Walk to Restaurant",
+			"length": 45,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Luncheon at Restaurant Schweizerhalle",
+			"length": 60,
+			"location": "Grand-Rue 67, 1700 Fribourg, Switzerland",
+			"notes": "Fribourg is a bilingual medieval city located on the Sarine River in western Switzerland. It sits at the crossroads of the French- and German-speaking regions, making it culturally rich and architecturally distinctive."
+		},
+		{
+			"name": "Walk Back to the car",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Driver to Zermatt",
+			"length": 150,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Check-in at Mont Cervin Palace",
+			"length": 30,
+			"location": "",
+			"notes": "Check-in at 3:00 PM"
+		},
+		{
+			"name": "Relax at Hotel",
+			"length": 140,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Grill Le Cervin",
+			"length": 90,
+			"location": "",
+			"notes": "7 PM Reservation for 5x confirmed. This is the Hotel Restaurant"
+		},
+		{
+			"name": "Night Cap at Joseph's Bar & Terrace",
+			"length": 60,
+			"location": "Zermatt",
+			"notes": "This is the Hotel Bar"
+		}
+	]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Zermatt",
+	"lodging": {
+		"name": "Mont Cervin Palace",
+		"address": "Bahnhofstrasse 31, 3920 Zermatt, Switzerland",
+		"phone": "+41 44 227 21 14",
+		"roomType": "Alpine Matterhorn Suite and Alpine Matterhorn Jr Suite, #6922SE006441, 6922SE006442. $100 hotel credit. Daily buffet or continental breakfast for two. Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability"
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 90,
+			"location": "Hotel",
+			"notes": ""
+		},
+		{
+			"name": "Walk to Trockener Steg",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Summit the Klein Matterhorn",
+			"length": 90,
+			"location": "",
+			"notes": "The gondola ride takes 11 minutes. Take the Trockener Steg lift, where you can buy a ticket to the Matterhorn Glacier Paradise, a mountain station — complete with a restaurant and gift shop — that’s built into the summit of the Klein Matterhorn at the rather breathless altitude of more than 12,700 feet."
+		},
+		{
+			"name": "Walk to Cornergrat Train",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Cogwheel Train to Gornergrat",
+			"length": 35,
+			"location": "Zermatt",
+			"notes": "Scenic ride to 3,100 meters. The train has no rservations. It takes 33 minutes to get to the top."
+		},
+		{
+			"name": "Lunch at Bergrestaurant 3100 Kulmhotel",
+			"length": 60,
+			"location": "Gornergrat",
+			"notes": "We have a noon reservation. Serving world famous classic Swiss dishes using local cheeses melted into delicious varieties of fondue and raclette with a Valais dried meat platter to start and a Toblerone fondue to finish."
+		},
+		{
+			"name": "Train back to Zermatt to Rotenboden Station",
+			"length": 10,
+			"location": "",
+			"notes": "Trail Map https://zermatt.swiss/en/map. "
+		},
+		{
+			"name": "Hike 3k to Riffelberg Station",
+			"length": 60,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Train back to Zermatt From Riffelberg Station",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Walk Back to Hotel",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Relax",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Walking tour of Zermatt",
+			"length": 90,
+			"location": "Zermatt",
+			"notes": "3 PM We meet our guide Elizabeth Fux in the lobby of the hotel. Shops, museums, and old chalets"
+		},
+		{
+			"name": "Relax",
+			"length": 148,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Walk to Dinner",
+			"length": 2,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner Alpine Gourmet Prato Borni",
+			"length": 90,
+			"location": "Zermatt",
+			"notes": "7 PM reservation. The fine dining restaurant of the Grand Hotel Zermatterhof, in the town centre, serves two fantastic set menus made with top-notch ingredients: Heimat seeks inspiration in the region and Fernweh looks to foreign climes. The classically elegant dining area is done out with fine wood panelling, and the front-of-house team provides well-coordinated service. Impressive wine list!"
+		}
+	]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Lake Como",
+	"lodging": {
+		"name": "Villa d'Este",
+		"address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
+		"phone": "+39 031-3481",
+		"roomType": "Double Deluxe Lake View and Junior Suite Lake View. #6789SE108222, 6789SE108223. $100 dining credit. Suite Amenity: Welcome amenities of Premium Champagne, fruit bowl, flowers and friandises. Daily buffet breakfast for two served in the restaurant or in-room dining. Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability."
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 90,
+			"location": "Zermatt",
+			"notes": ""
+		},
+		{
+			"name": "Private transfer from Zermatt to Stresa, Lake Maggiore",
+			"length": 150,
+			"location": "",
+			"notes": "Private car via Simplon Pass"
+		},
+		{
+		    "name": "Luncheon in Stresa",
+		    "length": 60,
+		    "location": "Grand Hotel des Iles Borromées, Corso Umberto I, 67, 28838 Stresa VB, Italy",
+		    "notes": "Enjoy lunch at the Grand Hotel des Iles Borromées, a luxurious Belle Époque landmark on Lake Maggiore. Ernest Hemingway stayed here in 1918 while recovering from war wounds, later immortalizing it in his novel 'A Farewell to Arms.' Winston Churchill also visited the hotel, drawn by its grandeur and lakeside tranquility. The historic setting offers exquisite cuisine and panoramic lake views that have inspired generations of statesmen, artists, and writers."
+		},
+		{
+		    "name": "Visit Isola Bella",
+		    "length": 120,
+		    "location": "Isola Bella, Lake Maggiore, 28838 Stresa VB, Italy",
+		    "notes": "Isola Bella, named for Isabella, Countess Borromeo, was originally a barren rock. After initial developments by Count Carlo III (1629–1652), his son Vitaliano VI transformed it into a lavish summer palace, importing vast amounts of soil to create ten elaborate terraced gardens. The palace contains Lombard paintings and Flemish tapestries. Napoleon and Joséphine Bonaparte visited in 1797 and were guests of the Borromeo family, impressed by the grandeur. In the 20th century, Benito Mussolini met with foreign ministers on the island in 1935 during the Stresa Conference, which attempted to reaffirm European unity in the face of rising tensions. These layers of political and artistic history make Isola Bella a cultural landmark as well as a visual marvel."
+		},
+		{
+			"name": "Continue to Lake Como",
+			"length": 80,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Check-in at Villa d'Este",
+			"length": 30,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Relax and Explore the Hotel",
+			"length": 160,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Veranda",
+			"length": 90,
+			"location": "",
+			"notes": "Lakeside dining at the hotel. DRESS CODE: Jackets, long trousers, and closed shoes are required for gentlemen at dinner. Located in the Cardinal’s Building, the fine-dining Veranda restaurant offers glorious views of the lake, gardens and Mosaic. The retractable windows remain open throughout the summer and, weather permitting, diners can savour dinner on the lakeside terrace. Classic and contemporary Italian cuisine is ennobled with international touches. Executive Chef Michele Zambanini blends ceaseless research and the finest ingredients with the utmost respect for seasonal produce. In this formal, elegant setting, guests experience haute cuisine alongside a curated wine selection, in addition to professional service tailored to the desires of every guest."
+		},
+		{
+			"name": "Night Cap at Canova Bar and Lake Terrace",
+			"length": 90,
+			"location": "",
+			"notes": "The Canova Bar has been regarded as the most glamorous place to sip a cocktail on Lake Como since 1873. The sumptuous interior make the bar an exclusive spot to people-watch and to be seen at any time of day. Throughout the summer, guests are invited to sit alfresco on the lake terrace, beneath majestic chestnut trees and surrounded by the scent of jasmine."
+		}
+	]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Lake Como",
+	"lodging": {
+		"name": "Villa d'Este",
+		"address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
+		"phone": "+39 031-3481",
+		"roomType": "Double Deluxe Lake View and Junior Suite Lake View. #6789SE108222, 6789SE108223. $100 dining credit. Suite Amenity: Welcome amenities of Premium Champagne, fruit bowl, flowers and friandises. Daily buffet breakfast for two served in the restaurant or in-room dining. Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability."
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 120,
+			"location": "Hotel",
+			"notes": "Check with hotel about reserving the house car for dinner."
+		},
+		{
+			"name": "8 Hour Private Boat Tour of the Lake",
+			"length": 60,
+			"location": "",
+			"notes": "Vaporinas were the first motorboats to be created on Lake Como in the late 1800s.\nElongated with a sleek design, the roof was originally partly covered in glass. Naval\narchitect Carlo Bertorello worked with yacht manufacturer extraordinaire Cantiere Riva to\nmodernize this charming boat, adding comfort and technology, while upholding the\nclassic style. It’s definitely worth a ride!"
+		},
+		{
+			"name": "Tour Villa Carlotta",
+			"length": 50,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Lunch at Da Giacomo al Lago at the Grand Hotel Tremezzo",
+			"length": 60,
+			"location": "Tremezzo",
+			"notes": "In the 1930s, Greta Garbo, Alfred Hitchcock, and Frank Sinatra made the location famous for not just vacations, but as a scenic setting for movies of all genres. Today, celebrities and dignitaries alike flock to the shores of Lake Como, recognizing its beautiful treasured waters."
+		},
+		{
+			"name": "Boat to Bellagio",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+		    "name": "Explore Bellagio and enjoy a quick drink at Alle Darsene di Loppia",
+		    "length": 60,
+		    "location": "Bellagio",
+		    "notes": "Begin with a walk through Bellagio’s scenic village—boutique shops, cobblestone lanes, and panoramic lake views from the peninsula tip. Wrap up with a quick drink at Alle Darsene di Loppia, a charming lakeside restaurant located near the gardens of Villa Melzi. This quiet harbor spot offers a relaxing pause before continuing your journey."
+		},
+		{
+	        "name": "Visit Villa Melzi",
+	        "length": 50,
+	        "location": "Lungolago Europa, 22021 Bellagio CO, Italy",
+	        "notes": "Villa Melzi d'Eril was built between 1808 and 1810 for Francesco Melzi d'Eril, vice president of the Napoleonic Italian Republic. The neoclassical villa is surrounded by English-style botanical gardens with rare exotic plants, sculptures, and breathtaking lake views."
+	    },
+	    {
+	        "name": "Boat to Varenna",
+	        "length": 15,
+	        "location": "",
+	        "notes": ""
+	    },
+	    {
+	        "name": "Explore Varenna",
+	        "length": 50,
+	        "location": "Varenna, Lecco, Italy",
+	        "notes": "Varenna is a picturesque lakeside town known for its narrow alleyways, colorful houses, and romantic atmosphere. Stroll along the 'Passeggiata degli Innamorati' (Lovers’ Walk) and stop for a coffee at Il Bar al Molo, a cozy café with waterside views near the ferry dock."
+	    },
+	    {
+	        "name": "Visit Villa Monastero",
+	        "length": 50,
+	        "location": "Via Giovanni Polvani, 4, 23829 Varenna LC, Italy",
+	        "notes": "Originally a 12th-century Cistercian convent, Villa Monastero was transformed into a noble residence and is now a museum and conference center. The villa boasts eclectic interiors and extensive botanical gardens stretching nearly 2 kilometers along the lake."
+	    },
+		{
+			"name": "Boat to Hotel",
+			"length": 70,
+			"location": "Cernobbio",
+			"notes": ""
+		},
+		{
+			"name": "Relax at Hotel",
+			"length": 80,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Driver to Restaurant",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Il Gatto Nero Amy and Chet",
+			"length": 90,
+			"location": "Via Della Liberta', 69, 22012 Cernobbio CO, Italy",
+			"notes": "Il Gatto Nero restaurant, with its wonderful view over lake Como, is located along the road that leads up towards Monte Bisbino, perched over the lake in a position that affords our dinners an unparalled panorama of the local scenery. Ideal for romantic encounters, as well as business and group dinners. The Gatto Nero restaurant is a popular destination for visiting celebrities, including George Clooney and other well-known Hollywood stars, Italian and international politicians, world-famous sportsmen and women, in addition to a large, local clientele."
+		}
+	]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Lake Como",
+	"lodging": {
+		"name": "Villa d'Este",
+		"address": "Via Regina, 40, 22012 Cernobbio CO, Italy",
+		"phone": "+39 031-3481",
+		"roomType": "Double Deluxe Lake View and Junior Suite Lake View. #6789SE108222, 6789SE108223. $100 dining credit. Suite Amenity: Welcome amenities of Premium Champagne, fruit bowl, flowers and friandises. Daily buffet breakfast for two served in the restaurant or in-room dining. Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability."
+	},
+	"activities": [
+		{
+			"name": "Breakfast at Veranda",
+			"length": 60,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Tennis Reservation",
+			"length": 90,
+			"location": "",
+			"notes": "Villa d'Este Tennis has confirmed one tennis lesson for Oliver, Riley, and Anna from 9 am to 10:25 am and one court for Mr. and Dr. Harrison at 9 am. The tennis club house has towels and water bottles, and it is possible to rent rackets and balls free of charge for hotel guests."
+		},
+		{
+			"name": "Swim in the Pool",
+			"length": 90,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Lunch at Sundeck",
+			"length": 60,
+			"location": "",
+			"notes": "Adjacent to the floating pool, the Sundeck is a superb place for a light snack paired with an exquisitely made cocktail in the warmer months."
+		},
+		{
+			"name": "Get Dressed for Como Walking Tour",
+			"length": 105,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Walk to Water Taxi Dock",
+			"length": 5,
+			"location": "Cernobbio Square (Piazza Risorgimento)",
+			"notes": "Walk south from he hotel on  left on Via Giuseppe Garibaldi"
+		},
+		{
+			"name": "Water Taxi to Como",
+			"length": 20,
+			"location": "Como",
+			"notes": "There's a public ferry dock in Cernobbio Square (Piazza Risorgimento), just a five-minute walk from the hotel. The ferry ride to Como takes approximately 12 minutes."
+		},
+		{
+			"name": "Walk to Tempio Voltiano",
+			"length": 20,
+			"location": "Viale Marconi, Como",
+			"notes": "We will meet our guide at the museum."
+		},
+		{
+			"name": "Private Guided Tour of Tempio Voltiano and Como",
+			"length": 40,
+			"location": "Viale Marconi, Como",
+			"notes": "Neoclassical museum dedicated to Alessandro Volta Alessandro Volta (1745-1827), surrounded by lakefront gardens. Volta, a prominent scientist, was the inventor of the electric battery in the summer of 1799. The term volt is derived from his name."
+		},
+		{
+			"name": "Walk to Piazza Volta",
+			"length": 10,
+			"location": "Lakeside to Piazza Volta",
+			"notes": "Walk north along the lake and cut into town toward the square."
+		},
+		{
+			"name": "Coffee Break at Piazza Volta",
+			"length": 20,
+			"location": "Piazza Volta, Como",
+			"notes": "Enjoy espresso or gelato in this lively, café-filled square."
+		},
+		{
+			"name": "Walk to Como Duomo",
+			"length": 8,
+			"location": "Piazza Volta to Piazza Duomo",
+			"notes": "Wander narrow lanes from the square to the Duomo through Old Town alleys."
+		},
+		{
+			"name": "Visit Como Duomo",
+			"length": 30,
+			"location": "Piazza Duomo, Como",
+			"notes": "One of northern Italy’s finest cathedrals with ornate Gothic architecture. Closes at 5:30 PM."
+		},
+		{
+			"name": "Walk to Funicular Station",
+			"length": 8,
+			"location": "Piazza De Gasperi",
+			"notes": "Walk back to the lake and head east along the lakeside to the station."
+		},
+		{
+			"name": "Take Funicular to Brunate",
+			"length": 80,
+			"location": "Funicolare Como–Brunate",
+			"notes": "Enjoy panoramic views of Lake Como from the hilltop village of Brunate. Runs every 15 mins."
+		},
+		{
+			"name": "Walk the Lakeside Promenade",
+			"length": 14,
+			"location": "Lungo Lario Trento to Viale Geno",
+			"notes": "This is an 8 minute scenic walk from the funicular past gardens and sculptures along the waterfront."
+		},
+		{
+			"name": "Dinner at Sottovoce",
+			"length": 90,
+			"location": "Vista Palazzo, Viale Geno 6, Como",
+			"notes": "We have a reservation. Rooftop fine dining overlooking Lake Como at sunset."
+		},
+		{
+			"name": "Taxi to Hotel",
+			"length": 20,
+			"location": "",
+			"notes": "Sottovoce is in a hotel. We can order a txi from the hotel valet."
+		}
+	]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Vienna",
+	"lodging": {
+		"name": "Rosewood Vienna",
+		"address": "Petersplatz, 1010 Vienna, Austria",
+		"phone": "+43 1 7999888",
+		"roomType": "Deluxe Room and Premier Room #37577SE068936, 37577SE068937. €100 equivalent dining and spa credit. Daily breakfast for two at the Neue Hoheit Brasserie. Early check-in and late checkout, subject to availability Upgrade at time of booking, subject to availability, applicable up to St. Stephen's Suite"
+	},
+	"activities": [
+		{
+			"name": "Breakfast and Pack",
+			"length": 225,
+			"location": "Hotel",
+			"notes": "We have time to pack in the morning."
+		},
+		{
+			"name": "Drive to Milan Airport (MXP)",
+			"length": 60,
+			"location": "Milan",
+			"notes": "11:45 am Departure transfer with Mercedes V Class Minivan (suitable for up to 6 passengers & 8 large/medium and 4 small luggages plus 5 bags) from Villa d'Este to Milan Malpensa Airport (Flight OS#510 due to depart"
+		},
+		{
+			"name": "Check In to Flight and Eat Luncheon at Airport",
+			"length": 120,
+			"location": "MXP",
+			"notes": ""
+		},
+		{
+			"name": "Flight Austrian Air to Vienna (OS 0510)",
+			"length": 85,
+			"location": "MXP to VIE",
+			"notes": "#3EF25C"
+		},
+		{
+			"name": "Transfer from VIE Airport to Rosewood Vienna",
+			"length": 60,
+			"location": "",
+			"notes": "Arriving 4:10pm on OS#510 from Milan, Mercedes-Benz V-Class. Our driver will expect you in the arrival hall after customs on the right-hand side with a Rosewood Vienna logo sign. For your privacy, we do not display the name. In case of any irregularity or emergency please dial +43 (1) 7 999 888 8442."
+		},
+		{
+			"name": "Check-in at Rosewood Vienna",
+			"length": 30,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Relax at Hotel",
+			"length": 45,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Visit St. Peter's Church",
+			"length": 20,
+			"location": "Across the street from our hotel",
+			"notes": "Confession is available until 7PM just in case. Church of St. Peter, one of Vienna's most beautiful Baroque churches, built between 1701 and 1733 according to plans by Lukas von Hildebrandt. Our city's first church stood on this site in the 4th century, near the Roman encampment of Vindobona. Services have been held here ever since."
+		},
+		{
+			"name": "Driver to Dinner",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Amador Amy & Chet",
+			"length": 120,
+			"location": "Grinzinger Straße 86, Vienna, 1190, Austria",
+			"notes": "3 Michelin-starred tasting menu. We have a table for 2 guests reserved, on Friday 1 August at 7:00 PM. A culinary highlight for the city and for Austria. This restaurant's location on the outskirts of the city in the Hajszan Neumann wine estate is something special in itself. Here, a wonderful brick vaulted ceiling and stylish interior design make for a distinctive look. Juan Amador's cuisine more than lives up to the setting: the finest ingredients are used to create a modern and sophisticated set menu comprising dishes that are finely balanced and consistently harmonious. The creative mastermind of this operation is supported by a highly motivated and pleasingly cordial team. Impressive wine list."
+		},
+		{
+			"name": "Driver to Hotel",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		}
+	]
+},
+{
+	"wakeUpTime": "07:30",
+	"location": "Vienna",
+	"lodging": {
+		"name": "Rosewood Vienna",
+		"address": "Petersplatz, 1010 Vienna, Austria",
+		"phone": "+43 1 7999888",
+		"roomType": "Deluxe Room and Premier Room #37577SE068936, 37577SE068937. €100 equivalent dining and spa credit. Daily breakfast for two at the Neue Hoheit Brasserie. Early check-in and late checkout, subject to availability Upgrade at time of booking, subject to availability, applicable up to St. Stephen's Suite"
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 90,
+			"location": "Hotel",
+			"notes": ""
+		},
+		{
+			"name": "Taxi to Museum",
+			"length": 30,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Private Schönbrunn Palace Tour",
+			"length": 150,
+			"location": "Schloßstrasse 47",
+			"notes": "We have a private tour booked 9:30 to 12:00. Habsburg summer palace, Rococo interiors, and imperial gardens. Meeting Point: You will meet your expert guide at Schönbrunn Palace located at Schönbrunner Schloßstrasse 47. Your meeting point is located on the corner of the arcades to your right as you walk through the main entrance (you will have the parking lot for the buses on your left side behind you as you enter)."
+		},
+		{
+			"name": "Walk Through the Gardens to Lunch",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Luncheon at Gloriette Café",
+			"length": 60,
+			"location": "Schönbrunn",
+			"notes": "Hilltop café overlooking the palace. Schönbrunn Palace has a massive gardens much like Versiles. It also houses the world's oldest zoo (1757). We will take a 1.2 mile stroll though a segnificant portion of the gardens to reach the cafe"
+		},
+		{
+			"name": "Walk to Driver Pick Up",
+			"length": 10,
+			"location": "Behindertenparkplatz, Tivolibrücke, Hohenbergstraße, 1130 Wien, Austria",
+			"notes": "We will head west to Behindertenparkplatz on Gloriettestraße footpath to meet our taxi."
+		},
+		{
+			"name": "Taxi to Hotel",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Coffee Lovers Walk to Café Central for Esspreso",
+			"length": 30,
+			"location": "",
+			"notes": "The cafe is a 7 minute walk from the hotel. Long-standing venue for Viennese cuisine, with famous historic links including to Freud & Trotsky."
+		},
+		{
+			"name": "Relax",
+			"length": 220,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Neue Hoheit",
+			"length": 105,
+			"location": "",
+			"notes": "This is the Hotel Restaurant. Your reservation number is RWVIE-5MCHDD3CRH7R"
+		},
+		{
+			"name": "Taxi to Concert",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Check In to Concert",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Classical Concert at Musikverein - Golden Hall",
+			"length": 120,
+			"location": "Bösendorferstrasse 12, 1010 Wien/Vienna",
+			"notes": "This is your Booking Confirmation for the following Event: Vienna Mozart Orchestra / Musikverein - Golden Hall. Please Show this Confirmation at the evening box office (Print or Mobile Device). This E-Mail Confirmation is your Ticket. Booking number: 25052500205, Event: Vienna Mozart Orchestra. Admission: 30 minutes before begin time."
+		}
+	]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Vienna",
+	"lodging": {
+		"name": "Rosewood Vienna",
+		"address": "Petersplatz, 1010 Vienna, Austria",
+		"phone": "+43 1 7999888",
+		"roomType": "Deluxe Room and Premier Room #37577SE068936, 37577SE068937. €100 equivalent dining and spa credit. Daily breakfast for two at the Neue Hoheit Brasserie. Early check-in and late checkout, subject to availability Upgrade at time of booking, subject to availability, applicable up to St. Stephen's Suite"
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 95,
+			"location": "Hotel",
+			"notes": ""
+		},
+		{
+			"name": "Walk to Museum",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Check In to Tour",
+			"length": 15,
+			"location": "",
+			"notes": "Meeting Point: You will meet your expert guide in front of the Kunsthistorisches Museum located at Burgring 5."
+		},
+		{
+	        "name": "Visit Kunsthistorisches Museum",
+	        "length": 115,
+	        "location": "Maria-Theresien-Platz, 1010 Wien, Austria",
+	        "notes": "Confirmation for Kunsthistorisches Museum Tour: A Guided Crash Course. You will meet your expert guide in front of the Kunsthistorisches Museum located at Burgring 5. Opened in 1891 by Emperor Franz Joseph I, the Kunsthistorisches Museum is one of the most important art museums in the world, housing works by masters such as Bruegel, Caravaggio, and Velázquez in a grand neo-Renaissance palace."
+	    },
+	    {
+	        "name": "Walk to Luncheon",
+	        "length": 10,
+	        "location": "From Kunsthistorisches Museum to Bitzinger Würstelstand Albertina",
+	        "notes": "Scenic walk through Vienna’s historic center, passing monuments and gardens."
+	    },
+	    {
+	        "name": "Luncheon at Bitzinger Würstelstand Albertina",
+	        "length": 40,
+	        "location": "Maria-Theresien-Platz, 1010 Wien, Austria",
+	        "notes": "Vienna is legendary for its Würstelstands, hot dog stands. We can grab a sassy Käsekrainer and Ottakringer and walk across the street to Hotel Sacher for dessert. This stand near the Albertina is one of Vienna’s most iconic, known for elevating sausage culture with flair and quality since the early 2000s."
+	    },
+	    {
+	        "name": "Dessert at Hotel Sacher",
+	        "length": 50,
+	        "location": "Philharmoniker Str. 4",
+	        "notes": "We have 12:45 reservation at Café Sacher Wien. The coffee, hot chocolate and Sacher-Torte, a chocolate cake, are legendary. The original Sacher-Torte was created in 1832 by Franz Sacher for Prince Metternich and has become one of Austria’s most famous culinary creations."
+	    },
+	    {
+	        "name": "Order Cab at Hotel Sacher to Belvedere Palace",
+	        "length": 15,
+	        "location": "Pickup from Hotel Sacher",
+	        "notes": "Scenic drive past the historic Ringstraße boulevard."
+	    },
+	    {
+	        "name": "Check In to Tour",
+	        "length": 10,
+	        "location": "Belvedere Palace. You will meet your guide in front of the Lower Belvedere located at Rennweg 6, 1030 Wien, Austria. Your meeting point is located just after the gate to the right in front of the Museum entrance.",
+	        "notes": "Built in the early 18th century by Prince Eugene of Savoy, the Belvedere complex is a masterpiece of baroque architecture."
+	    },
+	    {
+	        "name": "Belvedere Palace and gardens",
+	        "length": 150,
+	        "location": "Vienna",
+	        "notes": "Baroque palace with Klimt’s The Kiss. Confirmation for Belvedere Palace Tour: A Guided Crash Course. The Upper Belvedere houses Austria’s most famous painting, Gustav Klimt’s 'The Kiss,' and showcases works from the Middle Ages to modern Austrian art, all within the magnificent baroque halls and manicured gardens overlooking Vienna."
+	    },
+	    {
+	        "name": "Taxi to Hotel",
+	        "length": 15,
+	        "location": "Hotel",
+	        "notes": "Return drive through Vienna’s historic streets."
+	    },
+	    {
+	        "name": "Relax and Pack",
+	        "length": 125,
+	        "location": "Hotel",
+	        "notes": "Unwind after a day exploring Vienna's art and history. Time to pack for the next leg of the journey."
+	    },
+	    {
+	        "name": "Walk to dinner",
+	        "length": 10,
+	        "location": "From hotel to Restaurant Pürstner",
+	        "notes": "Evening walk through the city center toward a cozy Austrian dinner."
+	    },
+	    {
+	        "name": "Dinner Restaurant Pürstner",
+	        "length": 90,
+	        "location": "Riemergasse 10, 1010 Wien, Austria",
+	        "notes": "We have a reservation. Pürstner is a traditional Viennese tavern (Wirtshaus) known for its rustic ambiance and hearty Austrian classics like Wiener schnitzel and Tafelspitz, served with warm hospitality since the 18th century."
+	    },
+		{
+			"name": "Walk Back to Hotel",
+			"length":10,
+			"location": "",
+			"notes": ""
+		}
+	]
+},
+{
+	"wakeUpTime": "07:30",
+	"location": "Salzburg",
+	"lodging": {
+		"name": "Hotel Goldener Hirsch",
+		"address": "Getreidegasse 37, Salzburg, Austria",
+		"phone": "+43 662 80840",
+		"roomType": "Classic King and Junior Suite. #94984103, 94988950. $100 dining credit Daily breakfast for two served at Rosa Salon Early check-in and late checkout, subject to availability. Daily breakfast for two served at Rosa Salon Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability"
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 70,
+			"location": "Hotel",
+			"notes": ""
+		},
+		{
+			"name": "Transfer to Train Station",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Check In to Train",
+			"length": 33,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Rail Jet Express 562 to Salzburg",
+			"length": 145,
+			"location": "",
+			"notes": "Confermation: 0353494533710849. Leaves 9:28 AM Arrives 11:53 AM."
+		},
+		{
+			"name": "Transfer to Hotel",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Drop Bags at Front Desk",
+			"length": 12,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Luncheon at Hotel",
+			"length": 60,
+			"location": "",
+			"notes": "Bring warm clothes for the Eagle's Nest."
+		},
+		{
+			"name": "Check In to Hotel",
+			"length": 25,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Driver to Eagle's Nest",
+			"length": 45,
+			"location": "Berchtesgaden",
+			"notes": "The Kehlsteinhaus (Eagle's Nest) is a building situated atop the Kehlstein, a rocky promontory above Obersalzberg near Berchtesgaden, in southeastern Germany. Completed in 1938, it was commissioned by the Nazi Party for official and social functions and was visited by Adolf Hitler on at least fourteen documented occasions."
+		},
+		{
+			"name": "Tour and Tea at the Eagle's Nest",
+			"length": 120,
+			"location": "Berchtesgaden",
+			"notes": "Panoramic views and WWII history"
+		},
+		{
+			"name": "Drive back to Hotel",
+			"length": 45,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Relax",
+			"length": 85,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Cab to Dinner",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Senns Restaurant Chet & Amy",
+			"length": 120,
+			"location": "Söllheimerstraße 16 Gußwerk Object 6 5020 Salzburg",
+			"notes": "2 Michelin Stars. In the breathtaking ambience of a former 19th-century bell foundry, Andreas Senn succeeds in creating a spectacular contrast. Free from all constraints and norms, Senn and his team impress and inspire their guests with a cosmopolitan line of cuisine – a dazzling display of flavours and tastes based on the absolute best quality products."
+		},
+		{
+			"name": "Cab to Hotel",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Night Cap at Bar Goldener Hirsch",
+			"length": 90,
+			"location": "",
+			"notes": ""
+		}
+	]
+},
+{
+	"wakeUpTime": "08:00",
+	"location": "Salzburg",
+	"lodging": {
+		"name": "Hotel Goldener Hirsch",
+		"address": "Getreidegasse 37, Salzburg, Austria",
+		"phone": "+43 662 80840",
+		"roomType": "Classic King and Junior Suite. #94984103, 94988950. $100 dining credit Daily breakfast for two served at Rosa Salon Early check-in and late checkout, subject to availability. Daily breakfast for two served at Rosa Salon Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability"
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 90,
+			"location": "Hotel",
+			"notes": ""
+		},
+		{
+			"name": "Meet Guide at Hotel Lobby and Walk to Hohensalzburg",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+	        "name": "Private Tour of Salzburg Fortress (Hohensalzburg)",
+	        "length": 90,
+	        "location": "Mönchsberg 34, 5020",
+	        "notes": "Opens at 8:30 AM 7 days a week. Funicular ride up and tour of medieval fortress. The Hohensalzburg Fortress, perched atop the Festungsberg hill, is one of the largest and best-preserved medieval castles in Europe. Construction began in 1077 under Archbishop Gebhard during a period of conflict between the Pope and the Holy Roman Emperor. Over centuries, it was expanded into a mighty bastion of ecclesiastical power, symbolizing the independence and influence of the Prince-Archbishops of Salzburg. It was never conquered by foreign troops and offers panoramic views of the city and Alps."
+	    },
+	    {
+	        "name": "Walk to Salzburg Cathedral",
+	        "length": 10,
+	        "location": "Domplatz 1a, 5020",
+	        "notes": "Scenic walk through Salzburg’s Old Town, a UNESCO World Heritage Site, rich with baroque architecture and historic charm."
+	    },
+	    {
+	        "name": "DomQuartier and Salzburg Cathedral",
+	        "length": 45,
+	        "location": "Residenzplatz 1, 5020 Salzburg",
+	        "notes": "Tour the DomQuartier, a baroque museum complex that includes the Salzburg Cathedral, the Residenz Palace, and the Cathedral Museum. In The Temptation of St Anthony (c 1500) an imaginative follower of Hieronymus Bosch depicts hell encroaching upon earth. Highlights include state rooms with elaborate ceiling frescoes, a view into the cathedral nave from the organ loft, and rare religious art. This complex captures the grandeur of Salzburg’s ecclesiastical past under the Prince-Archbishops. The Salzburg Cathedral itself was consecrated in 1628 and is renowned for its monumental baroque façade, twin towers, and the baptismal font in which Wolfgang Amadeus Mozart was baptized."
+	    },
+		{
+			"name": "Walk to Luncheon",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Lunch at Meissl & Schadn",
+			"length": 60,
+			"location": "Getreidegasse 50, 5020 Salzburg",
+			"notes": "Customize your Wiener schnitzel at Meissl & Schadn, where you can choose from clarified butter, lard, or vegetable oil. Side dishes are taken seriously: try the parsley potatoes, cucumber salad, or the classic 'Wiener Garnitur' (chopped egg, capers, anchovy, and herbs). Vegetarian schnitzel made with celery root is available. For dessert or a light treat, grab a scoop from Moritz Eis across the street."
+		},
+		{
+			"name": "Shnapps and Shops at Sporer and Stassny",
+			"length": 90,
+			"location": "Hotel",
+			"notes": "Both located on either side of our hotel Sporer specializes in Shnapps and Stassny in updated traditional native fashon."
+		},
+		{
+			"name": "Relax",
+			"length": 90,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Tour Mozart’s Birthplace and Salzburg Heimatwerk",
+			"length": 45,
+			"location": "Getreidegasse 9 & Residenzplatz 9, 5020 Salzburg",
+			"notes": "Visit the apartment where Wolfgang Amadeus Mozart was born in 1756, now a well-designed museum showcasing the composer’s early life and work. Notable exhibits include his childhood violin and set designs from his operas. Nearby, explore the Salzburg Heimatwerk for upscale traditional clothing and crafts. The dirndls are made to last generations, priced around €1,000, and tailored with exacting detail."
+		},
+		{
+			"name": "Relax",
+			"length": 55,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Restaurant Goldener Hirsch",
+			"length": 90,
+			"location": "",
+			"notes": "We have a reservation."
+		},
+		{
+			"name": "Cab to Concert and Find Seats",
+			"length": 30,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Mozart Concert at Mirabell Palace",
+			"length": 90,
+			"location": "Mirabell Palace",
+			"notes": "Booking Confirmation: Salzburg Palace Concerts / Marble Hall in Mirabell Palace. Please Show this email Confirmation at the evening box office (Print or Mobile Device). This E-Mail Confirmation is your Ticket."
+		},
+		{
+			"name": "Cab to Hotel",
+			"length": 5,
+			"location": "",
+			"notes": ""
+		}
+	]
+},
+{
+	"date": "2025-08-06",
+	"wakeUpTime": "08:00",
+	"location": "Berlin",
+	"lodging": {
+		"name": "Hotel de Rome",
+		"address": "Behrenstrasse 37, 10117 Berlin, Germany",
+		"phone": "",
+		"roomType": ""
+	},
+	"activities": [
+		{
+			"name": "Wake Up",
+			"length": 50,
+			"location": "Salzburg",
+			"notes": ""
+		},
+		{
+			"name": "Check Out and Drop Our Bags",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Walk to Breakfast",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Salzburger Nockerl at Café Habakuk",
+			"length": 60,
+			"location": "Linzergasse 26, 5020 Salzburg",
+			"notes": "Sample Salzburg’s signature dessert — Salzburger Nockerl — at Café Habakuk, a cozy spot on the busy Linzergasse. This fluffy, custardy soufflé arrives warm, with raspberry sauce at the bottom. The café is beloved for its house-made pastries and local charm. Expect about 20 minutes of preparation time for the Nockerl, which costs €13. It's the perfect indulgence before or after a walk through the nearby Old Town."
+		},
+		{
+			"name": "Explore Steingasse and Antiquariat Weinek",
+			"length": 45,
+			"location": "Steingasse 14, 5020 Salzburg",
+			"notes": "Walk off breakfast with a stroll down the historic Steingasse, a narrow, atmospheric street dating to the 16th century. Stop into Antiquariat Weinek, a rare book shop and gallery that doubles as a café. It's a treasure trove of vintage volumes, prints, and local flair, serving coffee, craft beer, and wine. Even if you're not shopping, it's worth a peek for the ambiance and views."
+		},
+		{
+			"name": "Walk to Mirabell Gardens",
+			"length": 10,
+			"location": "",
+			"notes": "As you cross the bridge discover contemporary art installations along Salzburg's Walk of Modern Art, including Marina Abramovic’s 'Spirit of Mozart' and Brigitte Kowanz’s 'Beyond Recall'."
+		},
+		{
+			"name": "Stroll through Mirabell Gardens",
+			"length": 60,
+			"location": "",
+			"notes": "Mirabell Gardens in Salzburg is a prominent filming location for \"The Sound of Music.\" Specifically, the \"Do-Re-Mi\" song sequence, where Maria and the Von Trapp children sing and dance, was filmed there. The iconic Pegasus Fountain and the steps leading to the rose garden are recognizable elements from the movie. The Pegasus Fountain is where the children dance around and Maria sings from its edge during the “Do-Re-Mi” scene. The musical steps leading up to the rose garden serve as a visual representation of the musical scale as Maria sings. At the garden’s entrance, the Greek fencing statues are featured as the children mimic their poses. Another memorable location within Mirabell Gardens is the Dwarf Garden, where the whimsical gnome statues make a charming appearance in the film."
+		},
+		{
+			"name": "Walk to Luncheon",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Luncheon and Coffee at Café Tomaselli or 220Grad Rupertinum",
+			"length": 60,
+			"location": "Alter Markt 9 & Wiener-Philharmoniker-Gasse 9, 5020 Salzburg",
+			"notes": "Café Tomaselli, in business since 1703, is a Salzburg institution known for its classic charm, wooden interiors, and excellent cakes. For a more modern take, 220Grad Rupertinum serves third-wave coffee in a bright, stylish space near the Museum der Moderne. Both offer great people-watching and a break from sightseeing."
+		},
+		{
+			"name": "Walk to Hotel, Collect Bags and Wait for Driver",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Transfer to Salzburg Airport",
+			"length": 15,
+			"location": "",
+			"notes": "Private car transfer booked through the concierge"
+		},
+		{
+			"name": "Check In to Flight",
+			"length": 90,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Flight Eurowings to Berlin (EW 4342)",
+			"length": 65,
+			"location": "SZG to BER",
+			"notes": "#3EONQS. Departs 15:25, arrives 16:30"
+		},
+		{
+			"name": "Mercedes V-Class Transfer to Hotel de Rome",
+			"length": 45,
+			"location": "",
+			"notes": "Pickup 16:30, €230 incl. 30 min wait. Hotel de Rome Concierge +49 (30) 460 60 91 120"
+		},
+		{
+			"name": "Check-in at Hotel de Rome",
+			"length": 30,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Relax",
+			"length": 70,
+			"location": "",
+			"notes": "In front of our hotel is where the Nazis burned books from Humboldt University across the street."
+		},
+		{
+			"name": "Walk to Dinner",
+			"length": 5,
+			"location": "",
+			"notes": "A block from our hotel"
+		},
+		{
+			"name": "Dinner at Borchardt",
+			"length": 90,
+			"location": "Französische Straße 47, 10117 Berlin",
+			"notes": "We are happy to confirm your reservation at our restaurant borchardt for August 6, 2025 at 7:00 PM for 5 people."
+		},
+		{
+			"name": "Night Cap Roof Top Bar",
+			"length": 30,
+			"location": "",
+			"notes": "Charge up the iPads, we have 4+ hours of trains tomorrow."
+		}
+	]
+},
+{
+	"date": "2025-08-07",
+	"wakeUpTime": "08:00",
+	"location": "Berlin",
+	"lodging": {
+		"name": "Hotel de Rome",
+		"address": "Behrenstrasse 37, 10117 Berlin, Germany",
+		"phone": "49-30-4606091414",
+		"roomType": "2x Deluxe City View Room #65209SE077103, 65209SE077102. $100 hotel credit, applied in local currency, for stays in a guestroom and junior suite. Daily full American breakfast for two. Early check-in and late checkout, subject to availability. Upgrade at time of check-in, subject to availability."
+
+
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 80,
+			"location": "Hotel: Behrenstraße 37, 10117 Berlin, Germany",
+			"notes": "BRING PASSPORTS. THEY ARE REQUIRED AT THE REICHSTAG."
+		},
+		{
+			"name": "Walk to Checkpoint Charlie",
+			"length": 15,
+			"location": "",
+			"notes": "Head southeast on Friedrichstraße for ~1.1 km. Turn left on Zimmerstraße. Checkpoint Charlie is at the intersection."
+		},
+		{
+		    "name": "Checkpoint Charlie",
+		    "length": 50,
+		    "location": "Friedrichstraße 43-45, 10117 Berlin, Germany",
+		    "notes": "Checkpoint Charlie was the best-known Berlin Wall crossing point during the Cold War (1947–1991), symbolizing the division of East and West. In October 1961, it was the site of a dramatic tank standoff between American and Soviet forces after a dispute over travel rights for U.S. diplomats—one of the Cold War's most dangerous moments. Today, the nearby Checkpoint Charlie Museum (Haus am Checkpoint Charlie) documents stories of escape attempts, border history, and Cold War tensions through exhibits of photographs, artifacts, and even homemade contraptions used by defectors."
+		},
+		{
+			"name": "Walk to Topography of Terror",
+			"length": 10,
+			"location": "",
+			"notes": "Walk one block south on Wilhelmstraße. The Topography of Terror museum is on the left."
+		},
+		{
+			"name": "Topography of Terror",
+			"length": 40,
+			"location": "Niederkirchnerstraße 8, 10963 Berlin, Germany",
+			"notes": "An outdoor and indoor history museum located on the site of buildings which during the Nazi regime were the headquarters of the Gestapo and the SS."
+		},
+		{
+			"name": "Walk to Luftwaffe Building",
+			"length": 10,
+			"location": "",
+			"notes": "From Topography of Terror, walk northeast along Niederkirchnerstraße toward Wilhelmstraße. Turn left on Wilhelmstraße. The Luftwaffe Building (Detlev-Rohwedder-Haus) is at the corner of Leipziger Straße."
+		},
+		{
+			"name": "Visit Luftwaffe Building (Detlev-Rohwedder-Haus)",
+			"length": 20,
+			"location": "Wilhelmstraße 97, 10117 Berlin, Germany",
+			"notes": "Former Luftwaffe headquarters and later the seat of East Germany’s government. Under Soviet control the subect of all art was required to inspire communist ideals. Check out Detail from Max Lingner’s monumental mural “Aufbau der Republik” (“Building the Republic”)."
+		},
+		{
+			"name": "Walk to Führerbunker Site",
+			"length": 10,
+			"location": "",
+			"notes": "From Detlev-Rohwedder-Haus, continue north on Wilhelmstraße. Turn left onto In den Ministergärten. The site of the Führerbunker is located near the corner with Gertrud-Kolmar-Straße and is marked with an informational sign."
+		},
+		{
+		    "name": "Luncheon",
+		    "length": 40,
+		    "location": "India Club Berlin, Behrenstraße 72, 10117 Berlin, Germany",
+		    "notes": "India Club Berlin is a refined restaurant located near Brandenburg Gate, offering upscale North Indian cuisine in an elegant colonial-inspired interior. Known for its tandoori dishes, fragrant curries, and extensive wine selection, the India Club does not serve beef or pork, maintaining authenticity to Indian culinary traditions. The restaurant is attached to the exclusive Hotel Adlon complex, and has become a favorite of diplomats, locals, and international visitors alike."
+		},
+		{
+			"name": "Führerbunker Site",
+			"length": 15,
+			"location": "In den Ministergärten 1, 10117 Berlin, Germany",
+			"notes": "The Führerbunker was an air-raid shelter located near the Reich Chancellery in Berlin, where Adolf Hitler spent the final weeks of World War II and died."
+		},
+		{
+			"name": "Walk to Memorial to the Murdered Jews of Europe",
+			"length": 10,
+			"location": "",
+			"notes": "Continue north on Wilhelmstraße, turn left on Behrenstraße and right onto Ebertstraße. The memorial will be on your left."
+		},
+		{
+			"name": "Memorial to the Murdered Jews of Europe",
+			"length": 60,
+			"location": "Cora-Berliner-Straße 1, 10117 Berlin, Germany",
+			"notes": "A memorial to the Jewish victims of the Holocaust, consisting of 2,711 concrete slabs, designed by architect Peter Eisenman."
+		},
+		{
+			"name": "Walk to Brandenburg Gate",
+			"length": 5,
+			"location": "",
+			"notes": "Head north along Ebertstraße for about 300 meters. The Brandenburg Gate will be directly ahead at Pariser Platz."
+		},
+		{
+			"name": "Stop at Brandenburg Gate",
+			"length": 20,
+			"location": "Pariser Platz, 10117 Berlin, Germany",
+			"notes": "Look for bullet holes! One of Berlin’s most iconic landmarks, the neoclassical Brandenburg Gate once symbolized division and now represents unity. Originally commissioned by King Frederick William II in the late 18th century."
+		},
+		{
+			"name": "S Bahn Subway and Russian Embassy FSB Headquarters",
+			"length": 25,
+			"location": "Brandenburger Tor, 10117 Berlin, Germany",
+			"notes": "The FSB operates at a level of opacity, brutality, and reach that places it among the most feared and criticized intelligence services globally. Its tactics — including poisonings, surveillance, torture, and suppression of dissent — have led many to describe it as not just “messed up” but a critical instrument of authoritarian control in modern Russia."
+		},
+		{
+			"name": "Walk to Reichstag",
+			"length": 5,
+			"location": "",
+			"notes": "From Brandenburg Gate, continue north on Ebertstraße for another 300 meters. The Reichstag Building will be on your left."
+		},
+		{
+			"name": "Tour of Reichstag",
+			"length": 75,
+			"location": "Platz der Republik 1, 11011 Berlin, Germany",
+			"notes": "#SYS-20250709-111808. The Reichstag is one of the most iconic buildings in Berlin and a symbol of German democracy. Constructed between 1884 and 1894 by architect Paul Wallot, it originally housed the Imperial Diet (Reichstag) of the German Empire. It remained the seat of parliament through the Weimar Republic but lost significance under Nazi rule. In 1933, it was severely damaged by a fire—an event the Nazis used to justify a crackdown on civil liberties and consolidate power. Near the end of World War II, the Reichstag became the site of the Nazi regime’s last stand in Berlin; Soviet forces captured it during the Battle of Berlin in April 1945, famously raising their flag atop its ruins. After the war, the building sat in ruins near the Berlin Wall, symbolically divided between East and West, and was used only for occasional symbolic events in West Germany."
+		},
+		{
+			"name": "Walk to Boat Tour",
+			"length": 10,
+			"location": "Anlegestelle am Paul-Löbe-Haus / Reichstag Berlin, Berlin 10557",
+			"notes": "The pier is located between the Marschall Bridge and the Kronprinzen Bridge. The sign on the pier reads \"Anlegestelle Paul-Löbe-Haus / Reichstag\"."
+		},
+		{
+			"name": "Check In",
+			"length": 10,
+			"location": "",
+			"notes": "Operator: FLAGSHIP.BERLIN GmbH +49 30 75437753"
+		},
+		{
+			"name": "Private One Hour Boat Tour on the Spree",
+			"length": 60,
+			"location": "",
+			"notes": "Booking #294490001. Historic Cruise through Berlin's city center."
+		},
+		{
+			"name": "Walk to Humboldt University",
+			"length": 10,
+			"location": "Unter den Linden 6, 10099 Berlin, Germany",
+			"notes": "We Debark at Am Lustgarten. On the walk back we can see the statue of Frederick the Great and the Apmpleman store on Frederick street. Humboldt University, founded in 1810 by Wilhelm von Humboldt, is one of Berlin's oldest and most prestigious universities. It pioneered the modern research university model. Karl Marx studied philosophy here in the 1830s; Vladimir Lenin researched in the library in 1895; and Albert Einstein was a professor from 1914 to 1933. Located across from Bebelplatz, it remains a hub of academic excellence. It is also where the Nazi's burned the books of their library."
+		},
+		{
+			"name": "Walk to Hotel",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Relax at Hotel",
+			"length": 60,
+			"location": "Behrenstraße 37, 10117 Berlin, Germany",
+			"notes": ""
+		},
+		{
+			"name": "Cab to Dinner",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Rutz Chet & Amy",
+			"length": 90,
+			"location": "Chausseestraße 8, 10115 Berlin, Germany",
+			"notes": "Rutz is a 3 Michelin-star restaurant with innovative cuisine by chef Marco Müller, located in central Berlin."
+		},
+		{
+			"name": "Cab to Hotel",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Night Cap at Hotel Roof Top Bar",
+			"length": 10,
+			"location": "",
+			"notes": ""
+		}
+	]
+},
+{
+	"date": "2025-08-08",
+	"wakeUpTime": "08:00",
+	"location": "Berlin",
+	"lodging": {
+		"name": "Hotel de Rome",
+		"address": "Behrenstrasse 37, 10117 Berlin, Germany",
+		"phone": "",
+		"roomType": ""
+	},
+	"activities": [
+		{
+			"name": "Wakey",
+			"length": 34,
+			"location": "",
+			"notes": "We will have breakfast on the train. Wear comfortable shoes. There will be a lot of walking today."
+		},
+		{
+			"name": "Taxi from Hotel to Berlin Hbf",
+			"length": 10,
+			"location": "Behrenstraße 37, 10117 Berlin, Germany to Berlin Hauptbahnhof",
+			"notes": ""
+		},
+		{
+			"name": "Check In to Train",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Trian: ICE 1105",
+			"length": 104,
+			"location": "Berlin Central Station to Erfurt Central Station",
+			"notes": "Comfort Class. Coach 29, Seats 61, 63, 64, 65, 66. They serve breakfast on the train. Departs Berlin Hbf at 9:04 AM, arrives Erfurt Hbf at 10:48 AM."
+		},
+		{
+			"name": "Transfer: Erfurt Station Platform Change",
+			"length": 13,
+			"location": "Erfurt Central Station",
+			"notes": "13 minute platform change between to the local train. Seat reservations not included"
+		},
+		{
+			"name": "Train: RB 74617",
+			"length": 15,
+			"location": "Erfurt Central Station to Weimar",
+			"notes": "Departs at 11:01 AM, arrives in Weimar at 11:16 AM. This regional train connects two important cultural centers in Thuringia, with Weimar known for its role in the Bauhaus, classical German literature, and the Weimar Republic."
+		},
+		{
+			"name": "Walk to Bauhaus Museum Weimar",
+			"length": 6,
+			"location": "Walk northeast from Weimar Hauptbahnhof via Carl-August-Allee to Stéphane-Hessel-Platz.",
+			"notes": "Direct walk toward Weimar’s modern design legacy."
+		},
+		{
+			"name": "Visit the Bauhaus Museum Weimar",
+			"length": 60,
+			"location": "Stéphane-Hessel-Platz 1, 99423 Weimar, Germany",
+			"notes": "Opening hours: 9:30 AM – 6:00 PM. The Bauhaus was founded by architect Walter Gropius in Weimar. It became one of the most influential movements in modern design and architecture. The museum holds over 13,000 objects related to Bauhaus history."
+		},
+		{
+			"name": "Walk to Luncheon at AnnA, Hotel Elephant",
+			"length": 6,
+			"location": "Walk along Steubenstraße and Markt.",
+			"notes": ""
+		},
+		{
+			"name": "Luncheon at AnnA, Hotel Elephant",
+			"length": 60,
+			"location": "Hotel Elephant Weimar, Markt 19, 99423 Weimar, Germany",
+			"notes": "Upscale regional German cuisine served in a historic hotel on the Markt square. The hotel hosted literary figures like Goethe and Thomas Mann, and political leaders including Hitler held speeches from its balcony during the Nazi era."
+		},
+		{
+			"name": "Walk to Franz Liszt House",
+			"length": 11,
+			"location": "Walk southeast along Frauentorstraße and Marienstraße.",
+			"notes": ""
+		},
+		{
+			"name": "Visit the House of Franz Liszt",
+			"length": 60,
+			"location": "Marienstraße 17, 99423 Weimar, Germany",
+			"notes": "Opening hours: 10:00 AM – 6:00 PM. The Liszt House was built as the court gardener’s residence. Composer Franz Liszt lived here from 1869 and held public musical salons. The museum preserves his living quarters and musical instruments."
+		},
+		{
+			"name": "Walk to Anna Amalia Library",
+			"length": 10,
+			"location": "Walk via Puschkinstraße and Platz der Demokratie.",
+			"notes": ""
+		},
+		{
+			"name": "Visit the Rococo Hall in Anna Amalia Library",
+			"length": 60,
+			"location": "Platz der Demokratie 1, 99423 Weimar, Germany",
+			"notes": "Opening hours: 9:00 AM – 6:00 PM. Famous for its Rococo Hall and literary archives, the library is a UNESCO World Heritage Site. Founded in 1691, it became renowned under Duchess Anna Amalia in the 18th century and contains over a million volumes."
+		},
+		{
+			"name": "Walk to Goethe House",
+			"length": 5,
+			"location": "Walk southwest via Goetheplatz and Frauenplan.",
+			"notes": ""
+		},
+		{
+			"name": "Visit the Goethe House",
+			"length": 60,
+			"location": "Frauenplan 1, 99423 Weimar, Germany",
+			"notes": "Opening hours: 9:30 AM – 6:00 PM. Historic residence of Johann Wolfgang von Goethe, now a museum chronicling his life and works. Goethe lived here for nearly 50 years and received many European intellectuals during the Enlightenment."
+		},
+		{
+			"name": "Walk to Café-Restaurant ANNO 1900",
+			"length": 10,
+			"location": "Walk via Schillerstraße and Bauhausstraße.",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Café-Restaurant ANNO 1900",
+			"length": 68,
+			"location": "Bauhausstraße 12, 99423 Weimar, Germany",
+			"notes": "Classic German cuisine in a cozy vintage atmosphere. Recommended to dine between 5:30–6:30 PM. The name evokes the turn of the century when Weimar was a flourishing center for arts, literature, and reform."
+		},
+		{
+			"name": "Walk to Weimar Station",
+			"length": 10,
+			"location": "Walk northwest via Carl-August-Allee.",
+			"notes": ""
+		},
+		{
+			"name": "Check In and Wait at Weimar Station",
+			"length": 20,
+			"location": "Weimar Hauptbahnhof",
+			"notes": "Allow 20 minutes buffer before boarding RB 20 train to Erfurt."
+		},
+		{
+			"name": "Train: Abellio Rail Mitteldeutschland RB 20 074628",
+			"length": 16,
+			"location": "Weimar to Erfurt Central Station (Platform 3)",
+			"notes": "Departs Weimar at 6:42 PM, arrives Erfurt at 6:58 PM with 2 stops."
+		},
+		{
+			"name": "Transfer at Erfurt Hbf",
+			"length": 13,
+			"location": "Erfurt Central Station",
+			"notes": "13-minute change time between RE and ICE trains."
+		},
+		{
+			"name": "Train: ICE 1104",
+			"length": 105,
+			"location": "Erfurt Central Station to Berlin Central Station",
+			"notes": "Comfort Class, Coach 28, Seats 41, 43, 44, 45, 46. Departs at 7:11 PM, arrives in Berlin at 8:56 PM. 2 stops."
+		},
+		{
+			"name": "Taxi or Walk from Berlin Hbf to Hotel",
+			"length": 10,
+			"location": "Berlin Hauptbahnhof to Behrenstraße 37, 10117 Berlin, Germany",
+			"notes": "Ride share or short walk depending on time and energy after return from Weimar."
+		}
+	]
+},
+{
+	"date": "2025-08-09",
+	"wakeUpTime": "08:10",
+	"location": "Berlin",
+	"lodging": {
+		"name": "Hotel de Rome",
+		"address": "Behrenstrasse 37, 10117 Berlin, Germany",
+		"phone": "",
+		"roomType": ""
+	},
+	"activities": [
+		{
+			"name": "Breakfast",
+			"length": 90,
+			"location": "Hotel",
+			"notes": ""
+		},
+		{
+			"name": "Cab to Gemäldegalerie",
+			"length": 20,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Visit Gemäldegalerie",
+			"length": 60,
+			"location": "Matthäikirchplatz, 10785 Berlin, Germany",
+			"notes": "Opens at 10 AM. The Gemäldegalerie houses one of the world's finest collections of European painting from the 13th to the 18th century, including masterpieces by Botticelli, Caravaggio, Rembrandt, and Vermeer. Situated adjacent to the Kupferstichkabinett in the Kulturforum."
+		},
+		{
+			"name": "Visit Kupferstichkabinett",
+			"length": 60,
+			"location": "Matthäikirchplatz 8, 10785 Berlin, Germany",
+			"notes": "The Kupferstichkabinett (Museum of Prints and Drawings) holds one of the most important collections of graphic art in the world, featuring works by Albrecht Dürer, Botticelli, Rembrandt, and Picasso. Located in the Kulturforum complex."
+		},
+		{
+			"name": "Cab to Kunstmarkt",
+			"length": 15,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Luncheon and Shopping at Kunstmarkt an der Museumsinsel",
+			"length": 45,
+			"location": "Am Kupfergraben 1, 10117 Berlin, Germany",
+			"notes": "Open-air art and craft market featuring local artists, prints, jewelry, and photography. Great for souvenir browsing."
+		},
+		{
+			"name": "Walk to Museum Island",
+			"length": 5,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Tour of Museum Island",
+			"length": 180,
+			"location": "Bodestraße 1-3, 10178 Berlin, Germany",
+			"notes": "Museum Island is a UNESCO World Heritage Site featuring five internationally significant museums. Tour includes the Pergamon, Neues Museum, and Altes Museum with a guide."
+		},
+		{
+			"name": "Walk to DDR Museum",
+			"length": 5,
+			"location": "",
+			"notes": "Walk east from Museum Island along the Spree River promenade. The DDR Museum is just past the Berliner Dom."
+		},
+		{
+			"name": "Visit DDR Museum",
+			"length": 30,
+			"location": "Karl-Liebknecht-Str. 1, 10178 Berlin, Germany",
+			"notes": "The DDR Museum offers an interactive experience of life in former East Germany, featuring recreated apartments, surveillance technology, and propaganda exhibits. Open daily 9:00–21:00."
+		},
+		{
+			"name": "Drive to Alexanderplatz",
+			"length": 10,
+			"location": "Alexanderplatz, 10178 Berlin, Germany",
+			"notes": "Large public square and transport hub. Notable landmarks include the World Time Clock and the TV Tower (Fernsehturm)."
+		},
+		{
+			"name": "Drive Karl-Marx-Allee",
+			"length": 15,
+			"location": "Karl-Marx-Allee, Berlin",
+			"notes": "Monumental socialist boulevard lined with Stalinist architecture. Originally named Stalinallee, it was the showcase of GDR urban planning."
+		},
+		{
+			"name": "Visit East Side Gallery",
+			"length": 30,
+			"location": "Mühlenstraße 3-100, 10243 Berlin, Germany",
+			"notes": "The longest remaining stretch of the Berlin Wall, now an open-air gallery covered in murals by artists from around the world."
+		},
+		{
+			"name": "Drive back to Hotel",
+			"length": 15,
+			"location": "Behrenstraße 37, 10117 Berlin, Germany",
+			"notes": "Return to Hotel de Rome in Mitte via Oberbaumbrücke and Leipziger Straße."
+		},
+		{
+			"name": "Pack Bags",
+			"length": 70,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Dinner at Chiaro",
+			"length": 60,
+			"location": "Chiaro, Hotel de Rome, Behrenstraße 37, 10117 Berlin, Germany",
+			"notes": "The hotel has an inner courtyard with seating. Chiaro, located inside Hotel de Rome, offers innovative Italian cuisine by chef Tim Mälzer. The stylish interior and rooftop terrace create an upscale yet relaxed setting for dinner."
+		}
+	]
+},
+{
+	"date": "2025-08-10",
+	"wakeUpTime": "08:00",
+	"location": "Berlin",
+	"lodging": {
+		"name": "Hotel de Rome",
+		"address": "Behrenstrasse 37, 10117 Berlin, Germany",
+		"phone": "",
+		"roomType": ""
+	},
+	"activities": [
+		{
+			"name": "Wakey",
+			"length": 50,
+			"location": "",
+			"notes": ""
+		},
+		{
+			"name": "Mercedes Transfer to BER Airport",
+			"length": 30,
+			"location": "Berlin",
+			"notes": "Pickup 08:20 for 11:20 AM flight"
+		},
+		{
+			"name": "Check In to Flight and Grab Breakfast",
+			"length": 120,
+			"location": "BER Airport",
+			"notes": "British Airways Confirmation: 3EBK6H"
+		},
+		{
+			"name": "Flight to London (BA 987)",
+			"length": 65,
+			"location": "BER to LHR",
+			"notes": "Departs 11:20, arrives 12:25"
+		},
+		{
+			"name": "LHR Transfer and Wait",
+			"length": 115,
+			"location": "Plane",
+			"notes": "Transfer to T5"
+		},
+		{
+			"name": "Flight to LAX (BA 269)",
+			"length": 195,
+			"location": "LHR to LAX",
+			"notes": "Departs 14:20, arrives 17:35"
+		},
+		{
+			"name": "Transfer Home",
+			"length": 80,
+			"location": "Los Angeles",
+			"notes": "Booked with Al Joon 818 621 0310"
+		}
+	]
+}
+]
 }

@@ -1,0 +1,249 @@
+{
+  "tripName": "Harvest_TNVR",
+  "startDate": "2025-09-19",
+  "trip": [
+    {
+      "location": "Napa Valley, CA",
+      "wakeUpTime": "06:00",
+      "lodging": {
+        "name": "Meadowood Napa Valley",
+        "address": "900 Meadowood Ln, St Helena, CA 94574",
+        "phone": "(707) 963-3646"
+      },
+      "activities": [
+        {
+          "name": "Wake up",
+          "length": 0,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Driver",
+          "length": 30,
+          "location": "John Wayne Airport (SNA), 18601 Airport Way, Santa Ana, CA 92707",
+          "notes": "Napa Valley Transportation"
+        },
+        {
+          "name": "Flight JSX SNA → CCR",
+          "length": 95,
+          "location": "Orange County (SNA) → Concord (CCR)",
+          "notes": "Flight XE 143, Dep 8:00 AM, Arr 9:35 AM"
+        },
+        {
+          "name": "Driver",
+          "length": 60,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": "Napa Valley Transportation"
+        },
+        {
+          "name": "Check In to Meadowood",
+          "length": 30,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": ""
+        },
+        {
+          "name": "Hotel Car",
+          "length": 10,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Wine Tasting",
+          "length": 90,
+          "location": "The Napa Valley Reserve, 100 Rutherford Hill Rd, St Helena, CA 94574",
+          "notes": "Phone: (707) 967-6950, 4:15 PM"
+        },
+        {
+          "name": "Hotel Car",
+          "length": 10,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Welcome Fiesta",
+          "length": 120,
+          "location": "The Napa Valley Reserve, 100 Rutherford Hill Rd, St Helena, CA 94574",
+          "notes": "Phone: (707) 967-6950, 6:00 PM"
+        },
+        {
+          "name": "Hotel Car",
+          "length": 10,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Return to Hotel",
+          "length": 15,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "location": "Napa Valley, CA",
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Meadowood Napa Valley",
+        "address": "900 Meadowood Ln, St Helena, CA 94574",
+        "phone": "(707) 963-3646"
+      },
+      "activities": [
+        {
+          "name": "Breakfast Room Service",
+          "length": 90,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": ""
+        },
+        {
+          "name": "Hotel Car",
+          "length": 10,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Picking of the Vines",
+          "length": 120,
+          "location": "The Napa Valley Reserve, 100 Rutherford Hill Rd, St Helena, CA 94574",
+          "notes": "Phone: (707) 967-6950"
+        },
+        {
+          "name": "Hotel Car to Lunch",
+          "length": 15,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Lunch at Auberge du Soleil",
+          "length": 60,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": ""
+        },
+        {
+          "name": "Hotel Car to Meadowood",
+          "length": 15,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Branding Wine Boxes",
+          "length": 60,
+          "location": "The Napa Valley Reserve, 100 Rutherford Hill Rd, St Helena, CA 94574",
+          "notes": ""
+        },
+        {
+          "name": "House Car to Room",
+          "length": 10,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": "Napa Valley Transportation"
+        },
+        {
+          "name": "Relax by the Pool",
+          "length": 120,
+          "location": "Meadowood Pool, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": ""
+        },
+        {
+          "name": "Hotel Car",
+          "length": 10,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Gala Celebration (The Harvest)",
+          "length": 180,
+          "location": "The Napa Valley Reserve, 100 Rutherford Hill Rd, St Helena, CA 94574",
+          "notes": "Phone: (707) 967-6950, 6:00 PM"
+        },
+        {
+          "name": "Hotel Car",
+          "length": 10,
+          "location": "",
+          "notes": "Meadowood house car"
+        },
+        {
+          "name": "Return to Hotel",
+          "length": 15,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "location": "Napa Valley, CA",
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Our House",
+        "address": "611 Carnation Ave, Corona Del Mar, CA 92625",
+        "phone": ""
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": 90,
+          "location": "Meadowood Napa Valley, 900 Meadowood Ln, St Helena, CA 94574",
+          "notes": ""
+        },
+        {
+          "name": "Driver",
+          "length": 10,
+          "location": "Gott's Roadside, 933 Main St, St Helena, CA 94574",
+          "notes": "Napa Valley Transportation"
+        },
+        {
+          "name": "Lunch at Gott's",
+          "length": 60,
+          "location": "Gott's Roadside, 933 Main St, St Helena, CA 94574",
+          "notes": "Phone: (707) 963-3486"
+        },
+        {
+          "name": "Driver",
+          "length": 25,
+          "location": "CIA at Copia, 500 1st St, Napa, CA 94559",
+          "notes": "Napa Valley Transportation"
+        },
+        {
+          "name": "“Willy Wonka” at CIA at Copia",
+          "length": 120,
+          "location": "CIA at Copia, 500 1st St, Napa, CA 94559",
+          "notes": "Phone: (707) 967-2500"
+        },
+        {
+          "name": "Driver",
+          "length": 5,
+          "location": "Oxbow Public Market, 610 1st St, Napa, CA 94559",
+          "notes": "Napa Valley Transportation"
+        },
+        {
+          "name": "Dinner at Oxbow Public Market",
+          "length": 90,
+          "location": "Oxbow Public Market, 610 1st St, Napa, CA 94559",
+          "notes": "Phone: (707) 226-6529"
+        },
+        {
+          "name": "Driver",
+          "length": 60,
+          "location": "Buchanan Field Airport (CCR), 550 Sally Ride Dr, Concord, CA 94520",
+          "notes": "Napa Valley Transportation"
+        },
+        {
+          "name": "Flight JSX CCR → SNA",
+          "length": 80,
+          "location": "Concord (CCR) → Orange County (SNA)",
+          "notes": "Flight XE 146, Dep 6:25 PM, Arr 7:45 PM"
+        },
+        {
+          "name": "Uber",
+          "length": 30,
+          "location": "611 Carnation Ave, Corona Del Mar, CA 92625",
+          "notes": ""
+        },
+        {
+          "name": "Arrive Home",
+          "length": 0,
+          "location": "",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}
