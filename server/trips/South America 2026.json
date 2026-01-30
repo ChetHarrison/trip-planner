@@ -1,0 +1,202 @@
+{
+    "tripName": "South America 2026",
+    "startDate": "2026-06-11",
+    "trip": [
+        {
+            "day": "Day 1 - Thursday, June 11th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Los Angeles → Santiago",
+            "lodging": { "name": "", "address": "", "phone": "", "roomType": "" },
+            "activities": [
+                { "name": "Transfer to LAX", "length": 60, "location": "Home → Los Angeles International Airport (LAX)", "notes": "" },
+                { "name": "Check-in & Security", "length": 175, "location": "Los Angeles International Airport (LAX)", "notes": "" },
+                { "name": "Flight: LAX → Santiago", "length": 640, "location": "LAX → Arturo Merino Benítez International Airport (SCL)", "notes": "LATAM Airlines 603 · Boeing 787-8 · Overnight flight." }
+            ]
+        },
+        {
+            "day": "Day 2 - Friday, June 12th 2026",
+            "wakeUpTime": "05:35",
+            "location": "Santiago",
+            "lodging": { "name": "The Singular Santiago, Lastarria Hotel", "address": "Merced 294, Santiago, Chile", "phone": "+56 2 2666 6900", "roomType": "" },
+            "activities": [
+                { "name": "Arrival, Immigration & Customs", "length": 75, "location": "SCL Airport", "notes": "" },
+                { "name": "Transfer to Hotel", "length": 45, "location": "SCL → Santiago", "notes": "" },
+                { "name": "Check In and Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Cerro Santa Lucía", "length": 75, "location": "Av. Libertador Bernardo O'Higgins, Santiago", "notes": "" },
+                { "name": "Museo Nacional de Bellas Artes", "length": 90, "location": "José Miguel de la Barra 650, Santiago", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Lastarria District", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Santiago", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 3 - Saturday, June 13th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Santiago",
+            "lodging": { "name": "The Singular Santiago, Lastarria Hotel", "address": "Merced 294, Santiago, Chile", "phone": "+56 2 2666 6900", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "La Moneda Palace Tour", "length": 75, "location": "Moneda S/N, Santiago", "notes": "" },
+                { "name": "Plaza de Armas & Museums", "length": 120, "location": "Plaza de Armas, Santiago", "notes": "" },
+                { "name": "Lunch at Mercado Central", "length": 75, "location": "San Pablo 967, Santiago", "notes": "" },
+                { "name": "Museum of Memory & Human Rights", "length": 90, "location": "Matucana 501, Santiago", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Santiago", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 4 - Sunday, June 14th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Santiago",
+            "lodging": { "name": "The Singular Santiago, Lastarria Hotel", "address": "Merced 294, Santiago, Chile", "phone": "+56 2 2666 6900", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Casablanca Valley Winery Tour", "length": 240, "location": "Casablanca Valley", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Santiago", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 5 - Monday, June 15th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Santiago → Valparaiso",
+            "lodging": { "name": "TBD", "address": "", "phone": "", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Transfer to Valparaiso", "length": 120, "location": "Santiago → Valparaiso", "notes": "" },
+                { "name": "Explore Valparaiso Historic Quarter", "length": 180, "location": "Cerro Alegre & Concepción", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Valparaiso", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Valparaiso", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 6 - Tuesday, June 16th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Valparaiso",
+            "lodging": { "name": "TBD", "address": "", "phone": "", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "La Sebastiana (Pablo Neruda House)", "length": 120, "location": "Ricardo de Ferrari 692, Valparaiso", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Valparaiso", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Valparaiso", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 7 - Wednesday, June 17th 2026",
+            "wakeUpTime": "07:00",
+            "location": "Valparaiso → Lima",
+            "lodging": { "name": "Miraflores Park, A Belmond Hotel", "address": "Av. Malecón de la Reserva 1035, Lima", "phone": "+51 1 6104000", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 60, "location": "Hotel", "notes": "" },
+                { "name": "Transfer to Santiago Airport", "length": 60, "location": "Valparaiso → SCL", "notes": "" },
+                { "name": "Check-in & Security", "length": 120, "location": "SCL", "notes": "" },
+                { "name": "Flight: Santiago → Lima", "length": 235, "location": "SCL → LIM", "notes": "" },
+                { "name": "Arrival & Immigration", "length": 60, "location": "LIM", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Lima", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 8 - Thursday, June 18th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Lima",
+            "lodging": { "name": "Miraflores Park, A Belmond Hotel", "address": "Av. Malecón de la Reserva 1035, Lima", "phone": "+51 1 6104000", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Museo Larco", "length": 120, "location": "Av. Simón Bolívar 1515, Lima", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Pueblo Libre", "notes": "" },
+                { "name": "Huaca Pucllana", "length": 90, "location": "Miraflores", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Lima", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 9 - Friday, June 19th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Lima",
+            "lodging": { "name": "Miraflores Park, A Belmond Hotel", "address": "Av. Malecón de la Reserva 1035, Lima", "phone": "+51 1 6104000", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Historic Center of Lima", "length": 180, "location": "Plaza Mayor", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Lima", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 10 - Saturday, June 20th 2026",
+            "wakeUpTime": "07:00",
+            "location": "Lima → Cusco → Machu Picchu",
+            "lodging": { "name": "Sanctuary Lodge, A Belmond Hotel, Machu Picchu", "address": "Machu Picchu", "phone": "+51 84 582030", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 60, "location": "Hotel", "notes": "" },
+                { "name": "Transfer to LIM", "length": 60, "location": "Hotel → LIM", "notes": "" },
+                { "name": "Flight: Lima → Cusco", "length": 85, "location": "LIM → CUZ", "notes": "" },
+                { "name": "Transfer to Train Station", "length": 30, "location": "Cusco", "notes": "" },
+                { "name": "Train to Machu Picchu", "length": 272, "location": "Sacred Valley Rail Line", "notes": "" },
+                { "name": "Check In & Relax at Hotel", "length": 120, "location": "Hotel", "notes": "" },
+                { "name": "Dinner at Hotel", "length": 90, "location": "Hotel", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 11 - Sunday, June 21st 2026",
+            "wakeUpTime": "07:30",
+            "location": "Machu Picchu → Ollantaytambo",
+            "lodging": { "name": "Rio Sagrado, A Belmond Hotel", "address": "Sacred Valley, Ollantaytambo", "phone": "+51 84 201700", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Machu Picchu Guided Tour", "length": 210, "location": "Machu Picchu Citadel", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Aguas Calientes", "notes": "" },
+                { "name": "Train to Ollantaytambo", "length": 90, "location": "Rail Line", "notes": "" },
+                { "name": "Transfer to Hotel", "length": 30, "location": "Ollantaytambo", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Hotel", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 12 - Monday, June 22nd 2026",
+            "wakeUpTime": "08:00",
+            "location": "Sacred Valley → Cusco",
+            "lodging": { "name": "Palacio Nazarenas / Monasterio / Inkaterra La Casona", "address": "Cusco", "phone": "", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Sacred Valley Exploration", "length": 240, "location": "Ollantaytambo & Moray", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Sacred Valley", "notes": "" },
+                { "name": "Return to Cusco & Hotel Check-in", "length": 120, "location": "Cusco", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Cusco", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 13 - Tuesday, June 23rd 2026",
+            "wakeUpTime": "08:00",
+            "location": "Cusco",
+            "lodging": { "name": "Palacio Nazarenas / Monasterio / Inkaterra La Casona", "address": "Cusco", "phone": "", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Inti Raymi Festival & Walking Tour", "length": 240, "location": "Cusco Historic Center", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Cusco", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Cusco", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 14 - Wednesday, June 24th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Cusco",
+            "lodging": { "name": "Palacio Nazarenas / Monasterio / Inkaterra La Casona", "address": "Cusco", "phone": "", "roomType": "" },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
+                { "name": "Cusco Festivities & Free Exploration", "length": 240, "location": "Cusco", "notes": "" },
+                { "name": "Lunch", "length": 60, "location": "Cusco", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Cusco", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 15 - Thursday, June 25th 2026",
+            "wakeUpTime": "10:00",
+            "location": "Cusco → Puno (The Andean Explorer)",
+            "lodging": { "name": "The Andean Explorer", "address": "Lake Titicaca Station - Puno Dock", "phone": "", "roomType": "1x" },
+            "activities": [
+                { "name": "Check-in at Monasterio, A Belmond Hotel", "length": 60, "location": "Cusco", "notes": "" },
+                { "name": "Departure of the train from Cusco", "length": 90, "location": "Cusco", "notes": "" },
+                { "name": "Brunch on board", "length": 90, "location": "Train", "notes": "" },
+                { "name": "Visit: Archaeological site of Raqchi", "length": 200, "location": "Raqchi", "notes": "" },
+                { "name": "Arrival at La Raya", "length": 100, "location": "La Raya Pass", "notes": "" },
+                { "name": "Cocktails and canapés", "length": 30, "location": "Piano Bar Car", "notes": "" },
+                { "name": "Dinner on board", "length": 240, "location": "Dining Car", "notes": "" },
+                { "name": "Arrival: Lake Titicaca station - Puno Dock", "length": 0, "location": "Puno Dock", "notes": "" }
+            ]
+        }
+    ]
+}

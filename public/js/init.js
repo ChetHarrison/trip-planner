@@ -54,7 +54,8 @@ const populateTripSelector = (tripNames) => {
  * @param {string} apiKey
  */
 const loadSelectedTrip = async (tripName, apiKey) => {
-    console.log('[loadSelectedTrip] tripName:', tripName);
+    // console.log('[loadSelectedTrip] tripName:', tripName);
+    console.trace('[loadSelectedTrip] tripName:', tripName);
     if (!tripName || tripName === 'new') return;
 
     const tripData = await fetchTripData(tripName);

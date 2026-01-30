@@ -1,0 +1,233 @@
+{
+  "tripName": "Paradise Valley 2026",
+  "startDate": "2026-01-15",
+  "trip": [
+    {
+      "wakeUpTime": "11:25",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522",
+        "roomType": "Spa Suite King"
+      },
+      "activities": [
+        {
+          "name": "Uber to SNA",
+          "length": "15",
+          "location": "19301 Campus Drive, Santa Ana, CA 92707",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "JSX Flight SNA -> SCF XE 751",
+          "length": "130",
+          "location": "",
+          "notes": "Seats 3A, 3C"
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "30",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Hotel The Sanctuary",
+          "length": "10",
+          "location": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+          "notes": "Confirmation: 589302216"
+        },
+        {
+          "name": "Relax",
+          "length": "160",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Amy and Sarah Sound Healing",
+          "length": "135",
+          "location": "Hotel",
+          "notes": ""
+        },
+        {
+          "name": "Driver to Dinner",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Shinbay",
+          "length": "120",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "08:00",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522"
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Drive to Gateway Hike",
+          "length": "105",
+          "location": "18333 N. Thompson Peak Pkwy. Scottsdale, AZ 85255",
+          "notes": ""
+        },
+        {
+          "name": "Drive to Luncheon",
+          "length": "30",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Lunch at Mr Piro",
+          "length": "60",
+          "location": "4502 e. thomas road, Phoenix, az",
+          "notes": ""
+        },
+        {
+          "name": "Drive to Dinner",
+          "length": 30,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Course",
+          "length": "90",
+          "location": "7366 E Shea Blvd Suite 106, Scottsdale, AZ 85260-6471, (480) 687-0491",
+          "notes": "Confirmation #: 5152"
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522"
+      },
+      "activities": [
+        {
+          "name": "Breakfast",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Relax",
+          "length": "60",
+          "location": "Hotel",
+          "notes": ""
+        },
+        {
+          "name": "Pilates Amy & Sarah",
+          "length": "90",
+          "location": "Hotel",
+          "notes": ""
+        },
+        {
+          "name": "Luncheon at Paradise Valley Burger Company",
+          "length": "45",
+          "location": "15689 Hayden Rd, Scottsdale, AZ 85260",
+          "notes": ""
+        },
+        {
+          "name": "Boys Top Golf and Girls Massage",
+          "length": 360,
+          "location": "",
+          "notes": ""
+        }
+        {
+          "name": "Relax",
+          "length": "60",
+          "location": "Hotel",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Dinner",
+          "length": "15",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at Alma 6:30",
+          "length": "90",
+          "location": "7001 N Scottsdale Rd, Scottsdale, AZ, 85253, (480) 687-2612",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "wakeUpTime": "09:00",
+      "lodging": {
+        "name": "Sanctuary Camelback Mountain, A Gurney's Resort & Spa",
+        "address": "5700 E McDonald Dr, Paradise Valley, AZ 85253, USA",
+        "phone": "(855) 421-3522"
+      },
+      "activities": [
+        {
+          "name": "Room Service",
+          "length": "60",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Pack and Order Uber",
+          "length": "20",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Airport",
+          "length": "30",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight",
+          "length": "25",
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "JSX Flight SCF -> SNA XE 750",
+          "length": "20",
+          "location": "",
+          "notes": "Seats 3A, 3C"
+        },
+        {
+          "name": "Uber Home",
+          "length": "",
+          "location": "",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

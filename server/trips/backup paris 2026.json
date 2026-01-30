@@ -1,0 +1,366 @@
+{
+    "tripName": "Paris 2026",
+    "startDate": "2026-04-21",
+    "trip": [
+        {
+            "wakeUpTime": "12:25",
+            "location": "Los Angeles",
+            "lodging": {
+                "name": "",
+                "address": "",
+                "phone": "",
+                "roomType": ""
+            },
+            "activities": [
+                {
+                    "name": "Driver to LAX",
+                    "length": 60,
+                    "location": "",
+                    "notes": "Need to book"
+                },
+                {
+                    "name": "Check In to Flight and Eat Lunch",
+                    "length": 120,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Flight: Air France LAX → CDG",
+                    "length": 630,
+                    "location": "Los Angeles International Airport (LAX)",
+                    "notes": "Confirmation: YZIYVJ. Departs 3:25 PM on Air France."
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "11:15",
+            "location": "Reims",
+            "lodging": {
+                "name": "Domaine Les Crayères",
+                "address": "64 boulevard Henry Vasnier 51100 Reims, France",
+                "phone": "+33 (0)3 26 24 90 00",
+                "roomType": ""
+            },
+            "activities": [
+                {
+                    "name": "Arrive at Paris Charles de Gaulle Airport",
+                    "length": 45,
+                    "location": "Paris Charles de Gaulle Airport, 95700 Roissy-en-France, France",
+                    "notes": "Arrival at CDG. Proceed to Terminal 2 TGV station."
+                },
+                {
+                    "name": "Get Train Tickets",
+                    "length": 11,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Train: TGV INOUI 12526 CDG → Marne-la-Vallée Chessy",
+                    "length": 21,
+                    "location": "Aéroport Charles de Gaulle 2 TGV",
+                    "notes": "Departs 12:11 PM. Non-stop. Platform 6."
+                },
+                {
+                    "name": "Train: TGV INOUI 5440 Marne-la-Vallée → Champagne-Ardenne TGV",
+                    "length": 29,
+                    "location": "Marne-la-Vallée Chessy",
+                    "notes": "Departs 12:32 PM. Non-stop service toward Strasbourg."
+                },
+                {
+                    "name": "Transfer: Champagne-Ardenne TGV",
+                    "length": 9,
+                    "location": "Champagne-Ardenne TGV",
+                    "notes": "Short platform transfer (~1 minute walk)."
+                },
+                {
+                    "name": "Train: TER 839739 Champagne-Ardenne → Reims",
+                    "length": 12,
+                    "location": "Champagne-Ardenne TGV",
+                    "notes": "Departs 1:10 PM. 3 stops. Toward Sedan."
+                },
+                {
+                    "name": "Arrive in Reims",
+                    "length": 0,
+                    "location": "Reims, France",
+                    "notes": "Arrival at Reims station at approximately 1:22 PM."
+                },
+                {
+                    "name": "Cab to Hotel",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Visit to Reims Cathedral",
+                    "length": 90,
+                    "location": "Place du Cardinal Luçon, 51100 Reims, France",
+                    "notes": "Site of coronation of French kings. UNESCO World Heritage Site. Gothic masterpiece completed in the 13th century."
+                },
+                {
+                    "name": "Dinner at Restaurant Le Parc",
+                    "length": 120,
+                    "location": "The hotel",
+                    "notes": "We have a reservation. It is a 2 star Michelin restaurant"
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "07:55",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Le Bristol",
+                "address": "112 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+                "phone": "+33 1 53 43 43 00",
+                "roomType": "unior Suite Deluxe. Confirmation: 21310965"
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car Service to Bollinger",
+                    "length": 35,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Taste and Tour Bollinger",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car Service to Hotel For Lunch",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Lunch at Hotel",
+                    "length": 60,
+                    "location": "3",
+                    "notes": ""
+                },
+                {
+                    "name": "Car Service to Krug",
+                    "length": 60,
+                    "location": "Krug Maison De Champagne, 1, Rue Coquebert - 51100 Reims - France",
+                    "notes": "Krug will cover car service from hotel to Krug and then on to the train station. Our Krug contact is Tessa Flores, Chargée De Programme Expérience Invités - Planning And Private Clients Co-Ordinator. Tflores@Moethennessy.Com, Tel : + 33 (0)3 26 53 69 68"
+                },
+                {
+                    "name": "Taste at Krug",
+                    "length": 120,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car Service to Train Station",
+                    "length": 15,
+                    "location": "",
+                    "notes": "Krug will cover car service"
+                },
+                {
+                    "name": "Purchase Tickets",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Train to Paris",
+                    "length": 60,
+                    "location": "",
+                    "notes": "18:11 Champagne-Ardenne TGV → 18:52 Paris Est · 41 min · Direct · TGV INOUI"
+                },
+                {
+                    "name": "Car Service to Hotel",
+                    "length": 25,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Check In to Hotel",
+                    "length": 60,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Dinner at bistro",
+                    "length": 60,
+                    "location": "",
+                    "notes": ""
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "07:30",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Le Bristol",
+                "address": "112 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+                "phone": "+33 1 53 43 43 00",
+                "roomType": "unior Suite Deluxe. Confirmation: 21310965"
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Lunch",
+                    "length": 60,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Driver to Dinner",
+                    "length": 60,
+                    "location": "",
+                    "notes": "Arranged by the hotel."
+                },
+                {
+                    "name": "Dinner at Le Pré Catelan",
+                    "length": 120,
+                    "location": "Route de Suresnes — Bois de Boulogne, 75016 Paris, France",
+                    "notes": "7:15 PM. We have pre paid reservation. Three Michelin stars. Chef Frédéric Anton leads a refined, precision-driven menu focusing on top-drawer produce. Closed Mon & Sun; dinner seating 19:00–20:45."
+                },
+                {
+                    "name": "Driver to Hotel",
+                    "length": 60,
+                    "location": "",
+                    "notes": "Arranged by the hotel."
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "08:00",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Cheval Blanc",
+                "address": "8 Quai du Louvre, 75001 Paris, France",
+                "phone": "+33 1 79 35 50 00",
+                "roomType": "Pont Neuf Deluxe"
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Tour of Mom's Museum",
+                    "length": 60,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Lunch",
+                    "length": 60,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Check-in: Hotel Cheval Blanc",
+                    "length": 30,
+                    "location": "8 Quai du Louvre, 75001 Paris, France",
+                    "notes": "Luxury hotel facing the Seine."
+                },
+                {
+                    "name": "Dinner at Le Tour d'Argent",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "08:00",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Cheval Blanc",
+                "address": "8 Quai du Louvre, 75001 Paris, France",
+                "phone": "+33 1 79 35 50 00",
+                "roomType": "Pont Neuf Deluxe"
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Lunch",
+                    "length": 60,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Dinner at Le Tout-Paris",
+                    "length": 120,
+                    "location": "Cheval Blanc Paris, 8 Quai du Louvre, 75001 Paris, France",
+                    "notes": "One Michelin star. Elegant brasserie under Arnaud Donckele."
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "06:40",
+            "location": "Newport Beach",
+            "lodging": {
+                "name": "Home",
+                "address": "",
+                "phone": "",
+                "roomType": ""
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Cab to Station",
+                    "length": 120,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Purchase Train Tickets",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Train to Airport",
+                    "length": 50,
+                    "location": "Charles Degaulle",
+                    "notes": ""
+                },
+                {
+                    "name": "Check into Flight and Lunch",
+                    "length": 120,
+                    "location": "Terminal 2E",
+                    "notes": ""
+                },
+                {
+                    "name": "Flight: AF0024 CDG → LAX",
+                    "length": 995,
+                    "location": "Charles de Gaulle Airport (CDG)",
+                    "notes": "Air France departs at 1:30 PM. Arrives in LAX at 6:05 PM local time."
+                },
+                {
+                    "name": "Driver Home",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                }
+            ]
+        }
+    ]
+}

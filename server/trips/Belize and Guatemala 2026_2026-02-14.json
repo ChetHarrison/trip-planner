@@ -1,7 +1,51 @@
 {
   "tripName": "Belize and Guatemala 2026",
-  "startDate": "2026-02-14",
+  "startDate": "2026-02-13",
   "trip": [
+    {
+      "date": "Friday, February 13th, 2026",
+      "wakeUpTime": "18:00",
+      "location": "Los Angeles",
+      "lodging": {
+        "name": "Hyatt Regency Los Angeles International Airport",
+        "address": " 6225 W Century Blvd, Los Angeles, CA 90045",
+        "phone": "(424) 702-1234",
+        "roomType": "",
+        "confirmation": "NEED TO BOOK. Has airport shuttle."
+      },
+      "activities": [
+        {
+          "name": "Driver for Chet and Oliver to Hotel",
+          "length": 60,
+          "location": "Corona del Mar",
+          "notes": "NEED TO BOOK THIS"
+        },
+        {
+          "name": "Meet Riley at Hotel",
+          "length": 10,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Dinner",
+          "length": 20,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner",
+          "length": 60,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Uber to Hotel",
+          "length": 20,
+          "location": "",
+          "notes": "A representative of Viaventure will be waiting for you at the airport exit door holding a signboard with your name. Upon arrival to Belize, and after going through immigration and picking up your luggage, please do NOT go straight to the connections area. You MUST exit the airport in order for the representative to meet you outside and guide you to the connections area afterwards."
+        }
+      ]
+    },
     {
       "date": "Saturday, February 14th, 2026",
       "wakeUpTime": "03:30",
@@ -10,21 +54,27 @@
         "name": "Ramon's Village Resort",
         "address": "",
         "phone": "+(501) 226 2071",
-        "roomType": "Jungle Deluxe Cabana with King Bed",
+        "roomType": "2x Jungle Deluxe Cabana with King Bed",
         "confirmation": "66192/66193"
       },
       "activities": [
         {
-          "name": "Driver for Chet and Oliver to LAX",
-          "length": 60,
+          "name": "Wake Up",
+          "length": 30,
           "location": "Corona del Mar",
           "notes": "NEED TO BOOK THIS"
         },
         {
-          "name": "Meet Riley and Check In to Flight",
+          "name": "Shuttle to LAX",
+          "length": 30,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Check In to Flight and Breakfast",
           "length": 90,
           "location": "",
-          "notes": "NEED TO PICK MEETING LOCATION WITH RILEY"
+          "notes": ""
         },
         {
           "name": "United Airlines Flight UA 654 (LAX → IAH)",
@@ -48,19 +98,31 @@
           "name": "Domestic Flight to San Pedro (Ambergris Caye) (Tropic Air 9N 110)",
           "length": 13,
           "location": "Belize International Airport → San Pedro Airport",
-          "notes": "Flight 9N 110 departs 16:40 and arrives 16:53. Confirmation number: 00PORU. Luggage: 1 carry-on 15 lbs max (must fit in lap) + 1 checked bag max 50 lbs and 62 in total linear dimensions; additional/overweight subject to fees and space."
+          "notes": "2 hour and 7 min layover. Flight 9N 110 departs 16:40 and arrives 16:53. Confirmation number: 00PORU. Luggage: 1 carry-on 15 lbs max (must fit in lap) + 1 checked bag max 50 lbs and 62 in total linear dimensions; additional/overweight subject to fees and space."
         },
         {
           "name": "Shared Transfer: San Pedro Airport → Ramon's Village Resort",
           "length": 10,
           "location": "San Pedro (Ambergris Caye)",
-          "notes": "Pick up time: 4:13 PM. A representative of Ramon's Village Resort will meet you at the airport exit door."
+          "notes": "Pick up time: 4:13 PM. A representative of Ramon's Village Resort will meet you at the airport exit door. THIS IS 40 MINUTES BEFORE WE LAND."
+        },
+        {
+          "name": "Check In to Hotel and Relax",
+          "length": 87,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner",
+          "length": 0,
+          "location": "",
+          "notes": "OPTIMIZE DINNER. PROBABLY THE HOTEL. We have an 8 AM snorkle so grab breakfast early."
         }
       ]
     },
     {
       "date": "Sunday, February 15th, 2026",
-      "wakeUpTime": "",
+      "wakeUpTime": "7:00",
       "location": "San Pedro (Ambergris Caye)",
       "lodging": {
         "name": "Ramon's Village Resort",
@@ -72,21 +134,27 @@
       "activities": [
         {
           "name": "Breakfast",
-          "length": 300,
+          "length": 50,
           "location": "Ramon's Village Resort",
-          "notes": "Breakfast window 06:00–11:00."
+          "notes": "Dress for Snorkeling."
         },
         {
-          "name": "Hol Chan & Shark Ray Alley Snorkel Tour (Private/Guided/Boat/No Meals)",
-          "length": 180,
+          "name": "Private Guided Hol Chan & Shark Ray Alley Snorkel Boat Tour",
+          "length": 220,
           "location": "Hol Chan Marine Reserve / Shark Ray Alley",
-          "notes": "Start time 08:00 AM. Shoe size information is mandatory. Includes park fee per person, snorkel equipment, transfers and guide. Lunch not included. Bring towels, hat, sunscreen, camera. A representative of Searious Adventures will meet you at the hotel dock."
+          "notes": "THIS IS TOTALY FUCKED UP. WE NEED TO CLEAN UP AFTER A SNORKEL AND CANT MAKE A DEPARTURE IN 30 MINUTES. Start time 08:00 AM. Shoe size information is mandatory. Includes park fee per person, snorkel equipment, transfers and guide. Lunch not included. Bring towels, hat, sunscreen, camera. A representative of Searious Adventures will meet you at the hotel dock."
         },
         {
           "name": "Shared Transfer: Hotel → San Pedro Airport",
           "length": 10,
           "location": "San Pedro (Ambergris Caye)",
           "notes": "Pick up time 11:30 AM. Please reconfirm at the front desk a day prior; shuttle normally departs 45–60 minutes before flight schedule."
+        },
+        {
+          "name": "Check In to Flight",
+          "length": 50,
+          "location": "",
+          "notes": ""
         },
         {
           "name": "Domestic Flight to Belize International Airport (Tropic Air 9N 079)",
@@ -99,12 +167,30 @@
           "length": 240,
           "location": "Belize International Airport → Cahal Pech → San Ignacio",
           "notes": "Pick up time 12:43 PM. Includes private guide & transfer, entrance fee & restaurant lunch. Viaventure representative meets at airport exit holding a signboard with your name."
+        },
+        {
+          "name": "Check In to Hotel",
+          "length": 30,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Relax",
+          "length": 47,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Dinner at The Guava Limb",
+          "length": 0,
+          "location": "",
+          "notes": "NEED TO GET RESERVATIONS"
         }
       ]
     },
     {
       "date": "Monday, February 16th, 2026",
-      "wakeUpTime": "",
+      "wakeUpTime": "07:00",
       "location": "San Ignacio → Guatemala (Flores/Tikal)",
       "lodging": {
         "name": "Hotel Isla de Flores",
@@ -116,7 +202,7 @@
       "activities": [
         {
           "name": "American Breakfast",
-          "length": 210,
+          "length": 60,
           "location": "San Ignacio Resort Hotel",
           "notes": "Breakfast window 06:30–10:00."
         },
@@ -124,19 +210,31 @@
           "name": "Xunantunich Maya Site en route to Guatemala Border (Private/Guided/Minibus/No Meals)",
           "length": 180,
           "location": "Cayo District → Melchor de Mencos Border",
-          "notes": "Pick up time 08:00 AM. Includes private guide & transfers and entrance fees. Viaventure representative meets at hotel reception."
+          "notes": "I DON'T WANT TO SPEND 3 HOURS ANYWHERE IN THE WORLD. Pick up time 08:00 AM. Includes private guide & transfers and entrance fees. Viaventure representative meets at hotel reception."
+        },
+        {
+          "name": "Lunch",
+          "length": 60,
+          "location": "",
+          "notes": "WHERE AND WHAT"
         },
         {
           "name": "Tikal: Archeological Tour & Sundown Experience (Private/Guided/Minibus/Lunch)",
           "length": 420,
           "location": "Tikal National Park",
-          "notes": "Pick up time 12:00 PM (flexible). Includes private guide & private transfers, Tikal regular entrance fee, Tikal sunset entrance fee, onsite museums entrance fees, and restaurant lunch. Dinner not included. Viaventure representative meets on the Guatemalan side of the border."
+          "notes": "I DON'T WANT TO SPEND MORE THAN 90 MINUTES AT ANY SITE. Pick up time 12:00 PM (flexible). Includes private guide & private transfers, Tikal regular entrance fee, Tikal sunset entrance fee, onsite museums entrance fees, and restaurant lunch. Dinner not included. Viaventure representative meets on the Guatemalan side of the border."
+        },
+        {
+          "name": "Driver to Hotel",
+          "length": 30,
+          "location": "",
+          "notes": "DO WE HAVE TRANSPORTATION"
         }
       ]
     },
     {
       "date": "Tuesday, February 17th, 2026",
-      "wakeUpTime": "",
+      "wakeUpTime": "07:30",
       "location": "Flores → Guatemala City",
       "lodging": {
         "name": "Westin Camino Real",
@@ -148,7 +246,7 @@
       "activities": [
         {
           "name": "Breakfast A La Carte",
-          "length": 300,
+          "length": 90,
           "location": "Hotel Isla de Flores",
           "notes": "Breakfast window 06:00–11:00."
         },
@@ -157,6 +255,12 @@
           "length": 15,
           "location": "Flores",
           "notes": "Pick up time 08:30 AM. Transfer times are estimated and may vary due to traffic/weather. Viaventure representative meets at hotel reception."
+        },
+        {
+          "name": "Check In to Flight",
+          "length": 70,
+          "location": "",
+          "notes": ""
         },
         {
           "name": "Domestic Flight to Guatemala City Airport (TAG 5U-141)",
@@ -174,13 +278,13 @@
           "name": "Free Afternoon in Guatemala City (Unguided)",
           "length": 0,
           "location": "Guatemala City",
-          "notes": "Hotel check-in is 3:00 PM; room may not be ready upon arrival. Common facilities available in the meantime."
+          "notes": "NEED TO PLAN WHAT TO SEE IN GUATAMALA CITY. Hotel check-in is 3:00 PM; room may not be ready upon arrival. Common facilities available in the meantime."
         }
       ]
     },
     {
       "date": "Wednesday, February 18th, 2026",
-      "wakeUpTime": "",
+      "wakeUpTime": "08:00",
       "location": "Guatemala City → Guatemala City Airport",
       "lodging": {
         "name": "",
@@ -190,21 +294,34 @@
       "activities": [
         {
           "name": "Breakfast Buffet",
-          "length": 240,
+          "length": 90,
           "location": "Westin Camino Real",
           "notes": "Breakfast window 06:00–10:00. If breakfast is required before 06:00, box breakfast can be requested (additional cost)."
         },
         {
-          "name": "Private Unguided Transfer: Hotel → Guatemala City Airport (Minibus)",
+          "name": "Transfer: Hotel to Guatemala City Airport (Minibus)",
           "length": 20,
           "location": "Guatemala City",
-          "notes": "Pick up time 08:00 AM. Viaventure representative meets at hotel reception."
+          "notes": "Viaventure representative meets at hotel reception."
         },
         {
-          "name": "Trip Ends: International Departure (AS 1354 @ 11:20)",
-          "length": 0,
+          "name": "Check In to Flight",
+          "length": 90,
+          "location": "",
+          "notes": ""
+        },
+        {
+          "name": "Flight Alaska Airlines AS 1354 @ 11:20",
+          "length": 228,
           "location": "Guatemala City Airport",
+          "confirmation": "LOLZFM",
           "notes": "If flight is canceled or issues arise, call Viaventure 24-hour phone immediately."
+        },
+        {
+          "name": "Driver Home ",
+          "length": 60,
+          "location": "",
+          "notes": "NEED TO BOOK DRIVER. MAX TRAFFIC TO GRAB DINNER IN LA."
         }
       ]
     }

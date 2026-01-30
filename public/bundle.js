@@ -6429,7 +6429,8 @@ var loadSelectedTrip = /*#__PURE__*/function () {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          console.log('[loadSelectedTrip] tripName:', tripName);
+          // console.log('[loadSelectedTrip] tripName:', tripName);
+          console.trace('[loadSelectedTrip] tripName:', tripName);
           if (!(!tripName || tripName === 'new')) {
             _context.next = 3;
             break;

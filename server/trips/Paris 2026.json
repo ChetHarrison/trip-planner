@@ -1,0 +1,570 @@
+{
+    "tripName": "Paris 2026",
+    "startDate": "2026-04-21",
+    "trip": [
+        {
+            "wakeUpTime": "12:25",
+            "location": "Los Angeles",
+            "lodging": {
+                "name": "",
+                "address": "",
+                "phone": "",
+                "roomType": ""
+            },
+            "activities": [
+                {
+                    "name": "Driver to LAX",
+                    "length": 60,
+                    "location": "",
+                    "notes": "Need to book"
+                },
+                {
+                    "name": "Check In to Flight and Eat Lunch Head to Lounge",
+                    "length": 120,
+                    "location": "",
+                    "notes": "At the airport, follow the SkyPriority signs to the priority check-in and baggage drop-off areas reserved for you. Enjoy priority boarding thanks to dedicated lines. When you arrive, your baggage will be delivered as a priority on the baggage carrousel.Enjoy the peaceful atmosphere of our Business lounges, away from the hustle and bustle of the airport. Take a personalized tour to discover the spaces and services available to you. Whether you wish to dine, work, catch up on the news, or simply relax, our lounges are designed to meet all your needs."
+                },
+                {
+                    "name": "Flight: Air France LAX → CDG",
+                    "length": 630,
+                    "location": "Los Angeles International Airport (LAX)",
+                    "notes": "Confirmation: YZIYVJ. Departs 3:25 PM on Air France."
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "11:15",
+            "location": "Reims",
+            "lodging": {
+                "name": "Domaine Les Crayères",
+                "address": "64 boulevard Henry Vasnier 51100 Reims, France",
+                "phone": "+33 (0)3 26 24 90 00",
+                "roomType": ""
+            },
+            "activities": [
+                {
+                    "name": "Arrive at Paris Charles de Gaulle Airport",
+                    "length": 45,
+                    "location": "Paris Charles de Gaulle Airport, 95700 Roissy-en-France, France",
+                    "notes": "Arrival at CDG. Proceed to Terminal 2 TGV station. At Paris–Charles de Gaulle airport, enjoy personalized assistance with our Concierge services."
+                },
+                {
+                    "name": "Get Train Tickets",
+                    "length": 11,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Train: TGV INOUI 12526 CDG → Marne-la-Vallée Chessy",
+                    "length": 21,
+                    "location": "Aéroport Charles de Gaulle 2 TGV",
+                    "notes": "Departs 12:11 PM. Non-stop. Platform 6."
+                },
+                {
+                    "name": "Train: TGV INOUI 5440 Marne-la-Vallée → Champagne-Ardenne TGV",
+                    "length": 29,
+                    "location": "Marne-la-Vallée Chessy",
+                    "notes": "Departs 12:32 PM. Non-stop service toward Strasbourg."
+                },
+                {
+                    "name": "Transfer: Champagne-Ardenne TGV",
+                    "length": 9,
+                    "location": "Champagne-Ardenne TGV",
+                    "notes": "Short platform transfer (~1 minute walk)."
+                },
+                {
+                    "name": "Train: TER 839739 Champagne-Ardenne → Reims",
+                    "length": 12,
+                    "location": "Champagne-Ardenne TGV",
+                    "notes": "Departs 1:10 PM. 3 stops. Toward Sedan."
+                },
+                {
+                    "name": "Cab to Hotel",
+                    "length": 15,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Check In to Hotel and Relax",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Cab to Reims Cathedral",
+                    "length": 13,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Visit to Reims Cathedral",
+                    "length": 60,
+                    "location": "Place du Cardinal Luçon, 51100 Reims, France",
+                    "notes": "Site of coronation of French kings. UNESCO World Heritage Site. Gothic masterpiece completed in the 13th century."
+                },
+                {
+                    "name": "Explore Centre-Ville on Foot",
+                    "length": 90,
+                    "location": "",
+                    "notes": "Stately, cobbled Centre-Ville centers around the arcaded Place Royale. The Place du Forum has Roman ruins, and the Gothic buttresses of Notre-Dame cathedral tower over the elegant Palais du Tau, where French kings were once crowned. European art is on show at the Museum of Fine Arts and the half-timbered Le Vergeur Museum. Bistros, wine caves, and busy champagne bars cluster in medieval streets and leafy squares."
+                },
+                {
+                    "name": "Cab to Hotel",
+                    "length": 15,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Relax",
+                    "length": 85,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Dinner at Restaurant Le Parc",
+                    "length": 120,
+                    "location": "The hotel",
+                    "notes": "We have a reservation. It is a 2 star Michelin restaurant"
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "07:55",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Le Bristol",
+                "address": "112 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+                "phone": "+33 1 53 43 43 00",
+                "roomType": "unior Suite Deluxe. Confirmation: 21310965"
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car Service to Bollinger",
+                    "length": 35,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Taste and Tour Bollinger",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car Service to Hotel For Lunch",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Lunch at Brasserie Le Jardin",
+                    "length": 60,
+                    "location": "Our Hotel",
+                    "notes": "We have a noon reservation."
+                },
+                {
+                    "name": "Car Service to Krug",
+                    "length": 60,
+                    "location": "Krug Maison De Champagne, 1, Rue Coquebert - 51100 Reims - France",
+                    "notes": "Krug will cover car service from hotel to Krug and then on to the train station. Our Krug contact is Tessa Flores, Chargée De Programme Expérience Invités - Planning And Private Clients Co-Ordinator. Tflores@Moethennessy.Com, Tel : + 33 (0)3 26 53 69 68"
+                },
+                {
+                    "name": "Taste at Krug",
+                    "length": 120,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car Service to Train Station",
+                    "length": 15,
+                    "location": "",
+                    "notes": "Krug will cover car service"
+                },
+                {
+                    "name": "Purchase Tickets",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Train to Paris",
+                    "length": 60,
+                    "location": "",
+                    "notes": "18:11 Champagne-Ardenne TGV → 18:52 Paris Est · 41 min · Direct · TGV INOUI"
+                },
+                {
+                    "name": "Car Service to Hotel",
+                    "length": 25,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Check In to Hotel and Relax",
+                    "length": 80,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Dinner at 114 Faubourg",
+                    "length": 120,
+                    "location": "In the hotel",
+                    "notes": "Has one Michelin star. We have a 7:30 reservation."
+                },
+                {
+                    "name": "Night Cap at Le Bar",
+                    "length": 60,
+                    "location": "In the hotel",
+                    "notes": ""
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "08:00",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Le Bristol",
+                "address": "112 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+                "phone": "+33 1 53 43 43 00",
+                "roomType": "unior Suite Deluxe. Confirmation: 21310965"
+            },
+            "activities": [
+                {
+                    "name": "Wake Up",
+                    "length": 60,
+                    "location": "In the Hotel",
+                    "notes": "A three Michelin star restaurant only open to guests at Breakfast."
+                },
+                {
+                    "name": "Breakfast at Epicure",
+                    "length": 60,
+                    "location": "In the Hotel",
+                    "notes": "A three Michelin star restaurant only open to guests at Breakfast."
+                },
+                {
+                    "name": "Walk to Grand Palais",
+                    "length": 15,
+                    "location": "",
+                    "notes": "Head south on Ave Matignon. Cross the Champs-Élysées to Ave Franklin Delano Roosevelt. Left on Rue Goujon."
+                },
+                {
+                    "name": "Visit Grand Palais",
+                    "length": 60,
+                    "location": "17 Av. du Général Eisenhower",
+                    "notes": "Opens at 9:30. The entrance is on the north side. If you map the location it will show you the door. Exit on the east side onto Ave Winston Churchill and head south (right)."
+                },
+                {
+                    "name": "architectural Walking Tour",
+                    "length": 75,
+                    "location": "",
+                    "notes": "Bring Included map. Head south to the Seine. The Pont Alexandre III bridge is an icon in its own right. Opened for the 1900 Universal Exhibition, the bridge was intended to symbolize Franco-Russian friendship. Take some time to admire the 22 sculptures adorning the 160-metre length of this architectural gem, and see if you can spot all the 32 bronze candelabra that illuminate the bridge. They were made by the firm Lacarrière, best known for creating the impressive chandelier in the Opéra Garnier. Another not-to-miss detail: the four lamp posts surrounded by the sculptor Henri Désiré Gauquié’s Amours (Loves) statues of dancing cherubs with fish, crabs and frogs at their feet. Turn right after we cross the Seine. 69, Quai d’Orsay is an example of the simplicity of 1930s buildings, albeit with a rounded corner and curved entrance. The gilded door handles are in the shape of mermaids, and there are two high reliefs (one representing an African figure with a snake, the other an allegory of the Seine) on either side of the door. Number 71 is equally noteworthy, with a bas-relief in the shape of a garland on the door frame. Numbers 91-93 house a building designed by the French architect Léon Azéma in 1931, with a striking pattern resembling turtle shells cut into the stone. At 29 Avenue Rapp one of Paris’s most striking buildings. The entire façade of the amazing building located at Number 29 is covered in ceramic tiles and sculpted plant and animal motifs. It was built by the architect Jules Lavirotte , one of the most prominent practitioners of Art Nouveau."
+                },
+                {
+                    "name": "Lunch at Petrossian",
+                    "length": 60,
+                    "location": "13 Boulevard de la Tour-Maubourg 75007, PARIS",
+                    "notes": "12:30 reservation"
+                },
+                {
+                    "name": "Uber to Galerie Vivienne",
+                    "length": 15,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Shop at Galerie Vivienne",
+                    "length": 40,
+                    "location": "",
+                    "notes": "beautiful historical covered passage full of Parisian charm. Located opposite the National Library, this elegant gallery dates back to 1823 and feels like stepping into 19th-century Paris. The vaulted glass roof, intricately ornate mosaic floors with geometric patterns, and charming boutiques create a neoclassical atmosphere with a romantic touch. With antique shops, bookstores, cafés, and restaurants."
+                },
+                {
+                    "name": "Visit Domaine National and Garden du Palais-Royal",
+                    "length": 40,
+                    "location": "Across the street from Vivienne",
+                    "notes": "The Palais Royal complex was originally built in the 1630s for Cardinal Richelieu and later became a royal residence. The black and white striped pillars of varying heights were reportedly created by artist Daniel Buren around 1986."
+                },
+                {
+                    "name": "Stroll Back to Hotel",
+                    "length": 15,
+                    "location": "Across the street from Vivienne",
+                    "notes": "The Palais Royal complex was originally built in the 1630s for Cardinal Richelieu and later became a royal residence. The black and white striped pillars of varying heights were reportedly created by artist Daniel Buren around 1986."
+                },
+                {
+                    "name": "Relax and Get Ready For Dinner",
+                    "length": 230,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Driver to Dinner",
+                    "length": 20,
+                    "location": "",
+                    "notes": "Arranged by the hotel."
+                },
+                {
+                    "name": "Dinner at Le Pré Catelan",
+                    "length": 120,
+                    "location": "Route de Suresnes — Bois de Boulogne, 75016 Paris, France",
+                    "notes": "7:15 PM. We have pre paid reservation. Three Michelin stars. Chef Frédéric Anton leads a refined, precision-driven menu focusing on top-drawer produce. Closed Mon & Sun; dinner seating 19:00–20:45."
+                },
+                {
+                    "name": "Driver to Hotel",
+                    "length": 20,
+                    "location": "",
+                    "notes": "Arranged by the hotel."
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "07:00",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Cheval Blanc",
+                "address": "8 Quai du Louvre, 75001 Paris, France",
+                "phone": "+33 1 79 35 50 00",
+                "roomType": "Pont Neuf Deluxe"
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Driver to Hotel",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Check-in: Hotel Cheval Blanc",
+                    "length": 30,
+                    "location": "8 Quai du Louvre, 75001 Paris, France",
+                    "notes": "Luxury hotel facing the Seine."
+                },
+                {
+                    "name": "Metro to Museum",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Guided Tour of Carnavalet Museum",
+                    "length": 180,
+                    "location": " 23 Rue de Sévigné, 75003 Paris, France",
+                    "notes": "10 AM Sandrine Voillet is our guide +33 6 33 69 81 33 www.sandrinevoillet.com. The Musée Carnavalet in Paris is dedicated to the history of the city. The museum occupies two neighboring mansions: the Hôtel Carnavalet and the former Hôtel Le Peletier de Saint Fargeau. "
+                },
+                {
+                    "name": "Metro to Lunch",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Lunch Crêperie de l’Île Saint-Louis",
+                    "length": 60,
+                    "location": "88 Rue Saint-Louis en l'Île, 75004 Paris, France",
+                    "notes": ""
+                },
+                {
+                    "name": "Walk to Notre Dame",
+                    "length": 15,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Visit Notre Dame",
+                    "length": 60,
+                    "location": "",
+                    "notes": "Find the Killer Rabbit and climb to the top of the belltower to see the referbished roof and gargoyles. The \"killer rabbit\" carving, which inspired the Rabbit of Caerbannog in Monty Python and the Holy Grail, is found on the western façade of Notre Dame de Paris. It is located specifically within the carved, detailed medallions that decorate the base of the central portal (often referred to as the portal of the Last Judgment or related to the Vices and Virtues)."
+                },
+                {
+                    "name": "Cab to and Visit Place des Vosges",
+                    "length": 50,
+                    "location": "",
+                    "notes": "5 minute cab ride. Place des Vosges is the oldest planned square in Paris, completed in 1605 in the Marais district (3rd/4th arrondissements). Known for its symmetrical red-brick, Renaissance-style buildings, arcades, and central park, this historic, formerly royal square serves as a peaceful residential area, popular park, and cultural site, featuring galleries and Victor Hugo's house."
+                },
+                {
+                    "name": "Cab to and Vist Cimetière du Père-Lachaise",
+                    "length": 60,
+                    "location": "",
+                    "notes": "It's 11 minute cab ride. The most popular cemetery in Paris, Père-Lachaise is also the most coveted, and many personalities have the honor of spending eternity there. A stroll among the graves plunges visitors into a truly atypical exploration of French and international cultural heritage: Honoré de Balzac, Colette, Eugène Delacroix, Raymond Radiguet, Maria Callas, Sarah Bernhardt... the list of personalities resting here is long, with more than 40 singers, 40 composers, 75 painters... and many more!"
+                },
+                {
+                    "name": "Cab to Hotel",
+                    "length": 30,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Relax at Hotel",
+                    "length": 75,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Driver to Dinner",
+                    "length": 10,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Dinner at Le Tour d'Argent",
+                    "length": 90,
+                    "location": "",
+                    "notes": "We have a 7:30 reservation. The restaurant was owned in the 1890s and 1900s by Frédéric Delair, who began the tradition of presenting a numbered certificate to each person who ate the restaurant's signature dish, pressed duck. A dinner was held there for the Wright Brothers in 1906. In 1912, the Terrail family bought the restaurant. It was operated first by André Terrail, then by his son Claude, who died in 2006 at the age of 88, and then by Claude's son André. Duck, especially the pressed duck, is the speciality (Canard à la presse, Caneton à la presse, Caneton Tour d'Argent, and recently renamed “Caneton de Frédéric Delair”). The restaurant raises its ducks on its own farm. Diners who order the duck receive a postcard with the bird's serial number, now well over 1 million. (Serial number #112,151 went to U.S. President Franklin Delano Roosevelt, #203,728 went to Marlene Dietrich, and #253,652 went to Charlie Chaplin"
+                },
+                {
+                    "name": "Tour the Cellar of Le Tour d'Argent",
+                    "length": 40,
+                    "location": "",
+                    "notes": "We will tour cellar with the sommelier that took care of your table. The restaurant's wine cellar, guarded around the clock, contains more than 450,000 bottles whose value was estimated in 2009 at 25 million euros (£22.5 million). Some 15,000 wines are offered to diners on a 400-page list. During a routine inventory control in 2024, wine worth more than €1.5m was found to be missing from the wine cellar."
+                },
+                {
+                    "name": "Night Cap at Hotel Bar",
+                    "length": 10,
+                    "location": "",
+                    "notes": ""
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "08:00",
+            "location": "Paris",
+            "lodging": {
+                "name": "Hotel Cheval Blanc",
+                "address": "8 Quai du Louvre, 75001 Paris, France",
+                "phone": "+33 1 79 35 50 00",
+                "roomType": "Pont Neuf Deluxe"
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 100,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car to Cluny",
+                    "length": 10,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Guided Tour of the Cluny Museum",
+                    "length": 120,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car to Lunch",
+                    "length": 10,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Lunch at Le Récamier",
+                    "length": 60,
+                    "location": "4 Rue Juliette Récamier, 75007 Paris, France",
+                    "notes": "Try the dory and the souffle"
+                },
+                {
+                    "name": "Car to Hotel",
+                    "length": 30,
+                    "location": "",
+                    "notes": "Get ready for the spa."
+                },
+                {
+                    "name": "Message at Spa",
+                    "length": 60,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Relax and Pack",
+                    "length": 300,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Dinner at Le Tout-Paris",
+                    "length": 90,
+                    "location": "Cheval Blanc Paris, 8 Quai du Louvre, 75001 Paris, France",
+                    "notes": "One Michelin star. Elegant brasserie under Arnaud Donckele."
+                },
+                {
+                    "name": "Driver to Harry's NY Bar",
+                    "length": 15,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Drinks at Harry's NY Bar",
+                    "length": 60,
+                    "location": "5 Rue Daunou, 75002 Paris, France",
+                    "notes": "Whisky is the other great passion of our century-old establishment. Through the ages we have accumulated bottles that are now collectibles, looking towards the future. We also produce our own whisky in partnership with friendly distilleries in Scotland. Currently, we have the most beautiful whisky cellar in France. With more than 350 references. Over the years, Harry's New York Bar was frequented by a number of famous American expatriates and international celebrities such as Prince Serge Obolensky, Knute Rockne, Sinclair Lewis, Ernest Hemingway,[5] Daft Punk,[6] Bill Tilden, Coco Chanel, Jack Dempsey, Primo Carnera, Ramon Novarro, Aly Khan, Rita Hayworth, Humphrey Bogart, Brendan Behan (who worked there circa 1948–49 according to his memoirs Confessions of an Irish Rebel), and even, occasionally, the Duke of Windsor. In the 1960 Ian Fleming short story \"From a View to a Kill\", James Bond recalls visiting Harry's Bar during his first visit to Paris at age 16. He followed the instructions in Harry's advertisement in the Continental Daily Mail, and told his taxi driver \"Sank Roo Doe Noo\". He recalls \"That had started one of the memorable evenings of his life, culminating in the loss, almost simultaneous, of his virginity and his notecase\"."
+                },
+                {
+                    "name": "Driver to Hotel",
+                    "length": 10,
+                    "location": "",
+                    "notes": ""
+                }
+            ]
+        },
+        {
+            "wakeUpTime": "08:00",
+            "location": "Newport Beach",
+            "lodging": {
+                "name": "Home",
+                "address": "",
+                "phone": "",
+                "roomType": ""
+            },
+            "activities": [
+                {
+                    "name": "Breakfast",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Pack",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Car to Airport",
+                    "length": 30,
+                    "location": "Charles Degaulle",
+                    "notes": ""
+                },
+                {
+                    "name": "Check into Flight and Lunch",
+                    "length": 120,
+                    "location": "Terminal 2E",
+                    "notes": ""
+                },
+                {
+                    "name": "Flight: AF0024 CDG → LAX",
+                    "length": 275,
+                    "location": "Charles de Gaulle Airport (CDG)",
+                    "notes": "Air France departs at 1:30 PM. Arrives in LAX at 6:05 PM local time."
+                },
+                {
+                    "name": "Driver Home",
+                    "length": 90,
+                    "location": "",
+                    "notes": ""
+                }
+            ]
+        }
+    ]
+}
