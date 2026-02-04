@@ -1,66 +1,90 @@
 {
-  "tripName": "Salvatores Take Napa",
-  "startDate": "2026-02-19",
-  "trip": [
-    {
-      "location": "Napa",
-      "wakeUpTime": "06:00",
-      "lodging": {
-        "name": "Meadowood",
-        "address": "",
-        "phone": ""
-      },
-      "activities": [
-        { "name": "Driver to SNA", "length": 0, "location": "", "notes": "" },
-        { "name": "Flight JSX SNA → CCR", "length": 95, "location": "SNA → LAS", "notes": "" },
-        { "name": "Driver to Meadowood", "length": 0, "location": "", "notes": "" },
-        { "name": "Check In to Hotel", "length": 0, "location": "", "notes": "Get ready for dinner at Cyrus" },
-        { "name": "Driver", "length": 60, "location": "", "notes": "" },
-        { "name": "Dinner at Cyrus", "length": 0, "location": "Gyserville", "notes": "" },
-        { "name": "Driver to Hotel", "length": 0, "location": "", "notes": "" }
-      ]
-    },
-    {
-      "location": "Napa",
-      "wakeUpTime": "08:00",
-      "lodging": {
-        "name": "Meadowood",
-        "address": "",
-        "phone": ""
-      },
-      "activities": [
-        { "name": "Wake up", "length": 0, "location": "", "notes": "" },
-        { "name": "Driver to Promontory", "length": 0, "location": "", "notes": "" },
-        { "name": "Tasting at Promontory", "length": 0, "location": "Red Rock Canyon NCA", "notes": "" },
-        { "name": "Driver to ", "length": 0, "location": "", "notes": "" },
-        { "name": "Breakfast at Bouchon", "length": 0, "location": "The Venetian", "notes": "" },
-        { "name": "Driver", "length": 0, "location": "", "notes": "" },
-        { "name": "Relax at Hotel", "length": 0, "location": "The Wynn", "notes": "" },
-        { "name": "Driver", "length": 0, "location": "", "notes": "" },
-        { "name": "Dinner at Delilah", "length": 0, "location": "The Wynn", "notes": "" },
-        { "name": "Driver", "length": 0, "location": "", "notes": "" },
-        { "name": "The Eagles at the Sphere", "length": 0, "location": "Sphere, 255 Sands Ave", "notes": "" },
-        { "name": "Driver", "length": 0, "location": "", "notes": "" },
-        { "name": "Night Cap", "length": 0, "location": "", "notes": "" }
-      ]
-    },
-    {
-      "location": "Corona del Mar",
-      "wakeUpTime": "08:00",
-      "lodging": {
-        "name": "The Wynn",
-        "address": "3131 Las Vegas Blvd South, Las Vegas, NV 89109",
-        "phone": "(702) 770-7000"
-      },
-      "activities": [
-        { "name": "Wake up", "length": 0, "location": "", "notes": "" },
-        { "name": "Driver", "length": 0, "location": "", "notes": "" },
-        { "name": "Breakfast Room Service", "length": 0, "location": "The Wynn", "notes": "" },
-        { "name": "Driver", "length": 0, "location": "", "notes": "" },
-        { "name": "Flight JSX LAS → SNA", "length": 0, "location": "LAS → SNA", "notes": "" },
-        { "name": "Driver", "length": 0, "location": "", "notes": "" },
-        { "name": "Arrive at Home", "length": 0, "location": "", "notes": "" }
-      ]
-    }
-  ]
+    "tripName": "Salvatores Take Napa",
+    "startDate": "2026-03-19",
+    "trip": [
+        {
+            "day": "Day 1 - Thursday, March 19th 2026",
+            "wakeUpTime": "13:30",
+            "location": "Orange County → Napa Valley",
+            "lodging": {
+                "name": "Meadowood Napa Valley",
+                "address": "900 Meadowood Ln, St Helena, CA 94574",
+                "phone": "(707) 963-3646",
+                "roomType": "2x Treeline Suite · Reservation: RMED11F82C.1, RMED11F82C.2"
+            },
+            "activities": [
+                { "name": "Driver to SNA", "length": 15, "location": "", "notes": "" },
+                { "name": "Check In to Flight", "length": 20, "location": "", "notes": "" },
+                { "name": "Flight JSX SNA → CCR XE 143", "length": 95, "location": "SNA → Concord Buchanan Field (CCR)", "notes": "" },
+                { "name": "Driver to Meadowood", "length": 70, "location": "CCR → Meadowood Napa Valley", "notes": "Napa Valley Transportation" },
+                { "name": "Check In to Hotel and Relax", "length": 90, "location": "Meadowood Napa Valley", "notes": "Stock wine storage. Get ready for dinner at Cyrus." },
+                { "name": "Driver to Dinner", "length": 70, "location": "Meadowood → Geyserville", "notes": "" },
+                { "name": "Dinner at Cyrus", "length": 120, "location": "Cyrus Restaurant, Geyserville, CA", "notes": "Napa Valley Transportation" },
+                { "name": "Driver to Hotel", "length": 60, "location": "Geyserville → Meadowood Napa Valley", "notes": "Napa Valley Transportation" }
+            ]
+        },
+        {
+            "day": "Day 2 - Friday, March 20th 2026",
+            "wakeUpTime": "08:00",
+            "location": "Napa Valley",
+            "lodging": {
+                "name": "Meadowood Napa Valley",
+                "address": "900 Meadowood Ln, St Helena, CA 94574",
+                "phone": "(707) 963-3646",
+                "roomType": "2x Treeline Suite · Reservation: RMED11F82C.1, RMED11F82C.2"
+            },
+            "activities": [
+                { "name": "Breakfast", "length": 90, "location": "Meadowood Napa Valley", "notes": "" },
+                { "name": "Walk to The Napa Valley Reserve", "length": 30, "location": "Meadowood → The Napa Valley Reserve", "notes": "Bring a jacket; blending session is in the cave." },
+                { "name": "Blending Session with Josh", "length": 105, "location": "The Napa Valley Reserve Cave", "notes": "" },
+                { "name": "House Car to Gott’s Roadside", "length": 15, "location": "Meadowood → St Helena", "notes": "" },
+                { "name": "Lunch at Gott’s Roadside", "length": 60, "location": "Gott’s Roadside, 933 Main St, St Helena, CA 94574", "notes": "Casual Napa Valley favorite known for gourmet burgers, fish tacos, and shakes made with local ingredients. https://www.gotts.com/" },
+                { "name": "House Car to Hotel", "length": 15, "location": "St Helena → Meadowood Napa Valley", "notes": "" },
+                { "name": "Relax at Hotel", "length": 270, "location": "Meadowood Napa Valley", "notes": "" },
+                { "name": "Golf Cart to The Napa Valley Reserve", "length": 15, "location": "Meadowood → The Napa Valley Reserve", "notes": "" },
+                { "name": "Reception", "length": 60, "location": "The Napa Valley Reserve", "notes": "" },
+                { "name": "Champagne and Caviar Dinner", "length": 120, "location": "The Napa Valley Reserve", "notes": "Cocktail attire. Multi-course tasting menu curated by Saison. Champagne lineup includes: 2015 Fleury Pinot Blanc, 2014 Bérêche Ambonnay Grand Cru, 2012 Cédric Bouchard “Roses de Jeanne” Presle, 2008 Taittinger Comtes de Champagne, 2013 Salon, 2002 Krug, 2002 Pol Roger Cuvée Sir Winston Churchill (Magnum), 1996 Dom Ruinart Rosé, 1982 Lanson (Magnum)." },
+                { "name": "Golf Cart Back to Hotel", "length": 15, "location": "The Napa Valley Reserve → Meadowood", "notes": "" }
+            ]
+        },
+        {
+            "day": "Day 3 - Saturday, March 21st 2026",
+            "wakeUpTime": "08:00",
+            "location": "Napa Valley → Home",
+            "lodging": {
+                "name": "Meadowood Napa Valley",
+                "address": "900 Meadowood Ln, St Helena, CA 94574",
+                "phone": "(707) 963-3646",
+                "roomType": "2x Treeline Suite · Reservation: RMED11F82C.1, RMED11F82C.2"
+            },
+            "activities": [
+                { "name": "Breakfast", "length": 160, "location": "Meadowood Napa Valley", "notes": "" },
+                { "name": "Driver to Dominus Estate", "length": 20, "location": "Meadowood → Dominus Estate, Yountville", "notes": "Napa Valley Transportation" },
+                { "name": "Wine, Art & Architecture Experience at Dominus", "length": 240, "location": "Dominus Estate, Napa Valley", "notes": "Minimalist. Enigmatic. Avant-garde. These are just a few of the words used to describe the celebrated work of Swiss architects Jacques Herzog and Pierre de Meuron at Dominus Estate. Nestled in the heart of the Napa Valley, the property is known not only for its striking design but also for its exceptional wines, crafted from organically and sustainably farmed vineyards tended for generations. Honoring the land and Mother Nature, the award-winning architecture is a landmark in its own right\u2014a structure that feels less built than revealed, emerging as a seamless extension of the surrounding vineyard. Join us on March 21 for a private visit that explores this innovative design philosophy. The day will include an intimate vineyard stroll and a curated tasting, offering a rare opportunity to be fully immersed in the essence of Dominus Estate. Afterward, we will host a luncheon to celebrate our shared passion for wine, art, architecture\u2014and one another\u2019s company." },
+                { "name": "Driver to Harlan Estate", "length": 15, "location": "", "notes": "Napa Valley Transportation" },
+                { "name": "Taste and Tour of Harlan Estate", "length": 90, "location": "", "notes": "" },
+                { "name": "Driver to Hotel", "length": 20, "location": "", "notes": "Napa Valley Transportation" },
+                { "name": "Relax", "length": 100, "location": "", "notes": "" },
+                { "name": "Driver to Dinner", "length": 15, "location": "", "notes": "Napa Valley Transportation" },
+                { "name": "Dinner at Auro", "length": 180, "location": "Auro at Four Seasons Resort Napa Valley, 400 Silverado Trail N, Calistoga, CA 94515", "notes": "Michelin-starred fine-dining restaurant by chef Rogelio Garcia located at the Four Seasons Resort Napa Valley. Seasonal tasting menus highlighting Napa Valley ingredients with refined technique. Reservations required. Typical dinner service ~18:00–22:00." },
+            	{ "name": "Driver to Hotel", "length": 15, "location": "", "notes": "Napa Valley Transportation" }
+            ]
+        },
+        {
+            "day": "Day 3 - Saturday, March 21st 2026",
+            "wakeUpTime": "08:00",
+            "location": "Napa Valley → Home",
+            "activities": [
+                { "name": "Breakfast and Pack", "length": 210, "location": "Meadowood Napa Valley", "notes": "" },
+                { "name": "Driver to Lunch", "length": 30, "location": "", "notes": "Napa Valley Transportation" },
+                { "name": "Lunch at Ad Hoc", "length": 90, "location": "Ad Hoc, 6476 Washington St, Yountville, CA 94599", "notes": "Lunch in Yountville before your CHANDON tasting. (Hours/menu can vary; confirm day-of.)" },
+                { "name": "Driver to Chandon", "length": 10, "location": "", "notes": "Napa Valley Transportation" },
+                { "name": "CHANDON Pinnacle Tasting Flight", "length": 60, "location": "CHANDON, 1 California Dr, Yountville, CA 94599", "notes": "Reservation confirmed for Sun, March 22, 2026 at 1:30 PM. Party: 3 guests. Reservation name: Chet Harrison. Confirmation: TOCK-R-IHX6TMAF. Cancellation/reschedule allowed up to 48 hours (2 days) before. Total paid: $282.94 (includes 18% service charge and 7.75% tax). Phone: +1 707-204-7461. Website: https://www.chandon.com/" },
+                { "name": "Driver to Airport", "length": 65, "location": "", "notes": "Napa Valley Transportation" },
+                { "name": "Check In to Flight", "length": 20, "location": "", "notes": "" },
+                { "name": "Flight JSX CCR → SNA XE 144", "length": 80, "location": "", "notes": "" },
+                { "name": "Uber Home", "length": 15, "location": "", "notes": "" }
+            ]
+        }
+    ]
 }

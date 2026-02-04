@@ -4,7 +4,7 @@
     "trip": [
         {
             "day": "Day 1 - Thursday, June 11th 2026",
-            "wakeUpTime": "08:00",
+            "wakeUpTime": "12:00",
             "location": "Los Angeles → Santiago",
             "lodging": { "name": "", "address": "", "phone": "", "roomType": "" },
             "activities": [
@@ -34,49 +34,60 @@
 		},
 
         {
-            "day": "Day 3 - Saturday, June 13th 2026",
-            "wakeUpTime": "08:00",
-            "location": "Santiago",
-            "lodging": { "name": "The Singular Santiago, Lastarria Hotel", "address": "Merced 294, Santiago, Región Metropolitana, Chile", "phone": "+56 2 2666 6900", "roomType": "" },
-            "activities": [
-                { "name": "Breakfast", "length": 90, "location": "The Singular Santiago, Merced 294, Santiago", "notes": "" },
-                { "name": "La Moneda Palace Tour", "length": 75, "location": "Palacio de La Moneda, Moneda S/N, Santiago, Región Metropolitana, Chile", "notes": "Seat of Chilean government. Interior visits are typically by advance reservation and can be affected by official activities; verify and book via the official visits portal. https://visitaspatrimonio.presidencia.cl/" },
-                { "name": "Plaza de Armas & Museums", "length": 120, "location": "Plaza de Armas de Santiago, Santiago Centro, Región Metropolitana, Chile", "notes": "Historic colonial center; outdoor plaza is generally always accessible (individual museums/churches have separate hours)." },
-                { "name": "Lunch at Mercado Central", "length": 75, "location": "Mercado Central de Santiago, San Pablo 967, Santiago, Región Metropolitana, Chile", "notes": "Historic seafood market/food hall; hours vary by stall/restaurant (many operate daytime into early evening). Consider confirming day-of." },
-                { "name": "Museum of Memory & Human Rights", "length": 90, "location": "Museo de la Memoria y los Derechos Humanos, Matucana 501, Santiago, Chile", "notes": "Documents human-rights violations (1973–1990). Hours: Tue–Sun 10:00–18:00 (last entry ~17:30). Closed Mondays and certain holidays. https://mmdh.cl/visitanos/" },
-                { "name": "Dinner", "length": 90, "location": "Santiago, Región Metropolitana, Chile", "notes": "" },
-            	{ "name": "Walk to Pisco Bar", "length": 10, "location": "The Singular Santiago → Barrio Lastarria", "notes": "Short evening walk within the Lastarria neighborhood." },
-		        { "name": "Pisco Sour at Chipe Libre", "length": 75, "location": "Chipe Libre – República Independiente del Pisco, José Victorino Lastarria 282, Santiago, Región Metropolitana, Chile", "notes": "Renowned pisco bar widely regarded as the best place in Santiago to sample Chile’s national spirit. Home to one of the country’s largest pisco collections, organized geographically north-to-south. Outdoor garden seating; notable ceviches including octopus and tuna. https://www.chipelibre.cl/" },
-		        { "name": "Walk to Hotel", "length": 10, "location": "Barrio Lastarria → The Singular Santiago, Merced 294", "notes": "Leisurely walk back to the hotel after drinks." }
+		    "day": "Day 3 - Saturday, June 13th 2026",
+		    "wakeUpTime": "08:00",
+		    "location": "Santiago",
+		    "lodging": { "name": "The Singular Santiago, Lastarria Hotel", "address": "Merced 294, Santiago, Región Metropolitana, Chile", "phone": "+56 2 2666 6900", "roomType": "" },
+		    "activities": [
+		        { "name": "Breakfast", "length": 90, "location": "The Singular Santiago, Merced 294, Santiago", "notes": "" }, 
+		        { "name": "La Moneda Palace Tour", "length": 60, "location": "Palacio de La Moneda, Moneda S/N, Santiago, Región Metropolitana, Chile", "notes": "TOUR GUIDE AND TICKETS. Seat of Chilean government. Interior visits typically require advance reservation. https://visitaspatrimonio.presidencia.cl/" },
+		        { "name": "Plaza de Armas & Museums", "length": 90, "location": "Plaza de Armas de Santiago, Santiago Centro, Región Metropolitana, Chile", "notes": "TOUR GUIDE. Historic colonial center; outdoor plaza is always accessible, individual museums have separate hours." },
+		        { "name": "Driver to Ambrosía Bistro", "length": 25, "location": "Centro Histórico → Las Condes", "notes": "Midday traffic buffer included." },
+		        { "name": "Lunch at Ambrosía Bistro", "length": 60, "location": "Ambrosía Bistro, Enrique Foster Sur 117, Las Condes, Santiago", "notes": "Highly regarded contemporary Chilean bistro by chef Carolina Bazán. Reservations recommended. https://ambrosiabistro.cl/" },
+		        { "name": "Driver to Catrón Huaso Shop", "length": 30, "location": "Las Condes → San Diego / Av. Matta", "notes": "Cross-city drive; allow buffer for traffic." },
+		        { "name": "Shopping at Catrón – El Auténtico Traje de Huaso", "length": 60, "location": "Catrón – El Auténtico Traje de Huaso, San Diego 1020 (con Av. Matta), Santiago", "notes": "Historic outfitter for traditional Chilean huaso attire, leather goods, boots, and espuelas. Typical hours Mon–Fri ~10:00–18:00, Sat ~10:00–14:30. https://www.catronhuaso.cl/" },
+		        { "name": "Driver to Museum of Memory", "length": 20, "location": "San Diego → Matucana", "notes": "TOUR GUIDE" },
+		        { "name": "Museum of Memory & Human Rights", "length": 90, "location": "Museo de la Memoria y los Derechos Humanos, Matucana 501, Santiago", "notes": "Documents human-rights violations (1973–1990). Hours: Tue–Sun 10:00–18:00 (last entry ~17:30). Closed Mondays. https://mmdh.cl/visitanos/" },
+		        { "name": "Driver back to Hotel", "length": 20, "location": "Matucana → Lastarria", "notes": "" },
+		        { "name": "Rest at Hotel", "length": 60, "location": "The Singular Santiago, Merced 294", "notes": "" },
+		        { "name": "Walk to Pisco Bar (Chipe Libre)", "length": 10, "location": "The Singular Santiago → Chipe Libre – República Independiente del Pisco", "notes": "" },
+		        { "name": "Pisco Sour at Chipe Libre", "length": 40, "location": "Chipe Libre – República Independiente del Pisco, José Victorino Lastarria 282, Santiago, Región Metropolitana, Chile", "notes": "Great spot for pisco sours and Chilean spirits in a garden setting. https://bocanariz.cl/index.php/home/?lang=en" },
+		        { "name": "Walk to Dinner at Bocanariz", "length": 5, "location": "Chipe Libre → Bocanariz, José Victorino Lastarria 276, Santiago", "notes": "Short walk through Lastarria." },
+		        { "name": "Dinner at Bocanariz", "length": 60, "location": "Bocanariz, José Victorino Lastarria 276, Santiago, Región Metropolitana, Chile", "notes": "NEED RESERVATIONS AT 7PMRenowned wine bar with curated Chilean wine flights and seasonal Chilean cuisine. Reservations recommended. https://bocanariz.cl/index.php/home/?lang=en" },
+		        { "name": "Walk to Hotel", "length": 10, "location": "Bocanariz → The Singular Santiago", "notes": "" }
 		    ]
-        },
+		},
 
         {
-            "day": "Day 4 - Sunday, June 14th 2026",
-            "wakeUpTime": "08:00",
-            "location": "Santiago",
-            "lodging": { "name": "The Singular Santiago, Lastarria Hotel", "address": "Merced 294, Santiago, Región Metropolitana, Chile", "phone": "+56 2 2666 6900", "roomType": "" },
-            "activities": [
-                { "name": "Breakfast", "length": 90, "location": "The Singular Santiago, Merced 294, Santiago", "notes": "" },
-                { "name": "Casablanca Valley Winery Tour", "length": 240, "location": "Valle de Casablanca, Región de Valparaíso, Chile", "notes": "Cool-climate wine region west of Santiago. Winery hours vary—confirm appointments/tastings with each winery." },
-                { "name": "Dinner", "length": 90, "location": "Santiago, Región Metropolitana, Chile", "notes": "" }
-            ]
-        },
+		    "day": "Day 4 - Sunday, June 14th 2026",
+		    "wakeUpTime": "08:00",
+		    "location": "Santiago",
+		    "lodging": { "name": "The Singular Santiago, Lastarria Hotel", "address": "Merced 294, Santiago, Región Metropolitana, Chile", "phone": "+56 2 2666 6900", "roomType": "" },
+		    "activities": [
+		        { "name": "Breakfast", "length": 90, "location": "The Singular Santiago, Merced 294, Santiago", "notes": "" },
+		        { "name": "Free Morning in Santiago", "length": 240, "location": "Lastarria / Parque Forestal / Hotel", "notes": "Flexible time for rest, light walking, cafés, or packing layers for the evening excursion." },
+		        { "name": "Lunch", "length": 60, "location": "Barrio Lastarria, Santiago", "notes": "Keep lunch light in preparation for altitude and evening travel." },
+		        { "name": "Return to Hotel & Prepare for Excursion", "length": 60, "location": "The Singular Santiago, Merced 294, Santiago", "notes": "Warm layers recommended; temperatures drop significantly in the Andes after sunset." },
+		        { "name": "Andes Stargazing Expedition (Chile Off Track)", "length": 420, "location": "Andes Mountains east of Santiago", "notes": "I HAVE BOOKED THIS. Depart ~15:00. Guided excursion into the Andes for sunset, astronomy interpretation, and stargazing under some of the world’s clearest skies. Includes transport, expert guide, telescopes, and light refreshments. Returns ~22:00. https://www.chileofftrack.com/shop/andes_stargazing/" },
+		        { "name": "Return to Hotel", "length": 30, "location": "Andes Mountains → The Singular Santiago, Merced 294", "notes": "Late-evening return after stargazing; expect arrival around 22:00–22:30." }
+		    ]
+		},
 
         {
 		    "day": "Day 5 - Monday, June 15th 2026",
 		    "wakeUpTime": "08:00",
-		    "location": "Santiago → Valparaiso",
+		    "location": "Santiago → Seña → Valparaíso",
 		    "lodging": { "name": "Casa Higueras", "address": "Higuera 133, Cerro Alegre, Valparaíso, Región de Valparaíso, Chile", "phone": "+56 32 238 1000", "roomType": "" },
 		    "activities": [
 		        { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
-		        { "name": "Driver to Valparaiso", "length": 95, "location": "Santiago → Valparaiso", "notes": "Scenic coastal drive." },
-		        { "name": "Check In and Drop Bags", "length": 30, "location": "Cerro Alegre & Cerro Concepción, Valparaíso, Chile", "notes": "UNESCO-listed port city with colorful hillside neighborhoods, funiculars, and street art." },
-		        { "name": "Explore and Walk to Lunch", "length": 55, "location": "Valparaíso", "notes": "" },
-		        { "name": "Lunch", "length": 60, "location": "Valparaíso", "notes": "" },
-		        { "name": "Explore Valparaiso Historic Quarter", "length": 180, "location": "Cerro Alegre & Cerro Concepción, Valparaíso, Chile", "notes": "UNESCO-listed port city with colorful hillside neighborhoods, funiculars, and street art." },
-		        { "name": "Move In to Rooms and Relax", "length": 180, "location": "Valparaíso", "notes": "" },
-		        { "name": "Dinner at Maralegre", "length": 90, "location": "The Hotel", "notes": "" }
+		        { "name": "Driver to Viña Seña Views of Aconcagua", "length": 90, "location": "Santiago → Viña Seña, Hijuelas", "notes": "NEED TO BOOK DRIVER. Depart Santiago heading northwest toward the Aconcagua Valley. The Aconcagua Valley takes its name from the eponymous river flowing through it, which in turn is named after the 22841ft (6962m) Mt. Aconcagua at its eastern edge. This Andean giant, whose name means ‘stone sentinel’, is the highest mountain in the Americas." },
+		        { "name": "Viña Seña Vineyard Tour & Tasting", "length": 120, "location": "Viña Seña, F-304 29, Hijuelas, Valparaíso, Chile", "notes": "NEED TO BOOK TASTING. Flagship biodynamic winery founded by Eduardo Chadwick and Robert Mondavi. Guided vineyard walk and tasting focused on terroir-driven Chilean fine wine. Reservations required. https://www.vinaseña.com/" },
+		        { "name": "Lunch Near Seña", "length": 90, "location": "Hijuelas / Aconcagua Valley", "notes": "Recommended nearby options include countryside restaurants in Hijuelas or Curimón focusing on seasonal Chilean cuisine paired with local wines." },
+		        { "name": "Driver to Valparaíso", "length": 75, "location": "Hijuelas → Valparaíso", "notes": "Scenic drive descending toward the Pacific coast." },
+		        { "name": "Check In and Drop Bags", "length": 30, "location": "Casa Higueras, Cerro Alegre, Valparaíso", "notes": "" },
+		        { "name": "Explore Cerro Alegre & Concepción", "length": 120, "location": "Valparaíso Historic Quarter", "notes": "Colorful hills, funiculars, street art, and coastal viewpoints (UNESCO World Heritage Site)." },
+		        { "name": "Move In to Rooms and Relax", "length": 60, "location": "Casa Higueras", "notes": "" },
+		        { "name": "Dinner at Maralegre", "length": 90, "location": "Casa Higueras Hotel", "notes": "NEED TO BOOK THIS. Fine dining with Pacific views; reservations recommended." }
 		    ]
 		},
 
@@ -102,10 +113,10 @@
             "location": "Valparaiso → Lima",
             "lodging": { "name": "Miraflores Park, A Belmond Hotel", "address": "Av. Malecón de la Reserva 1035, Miraflores, Lima 15074, Peru", "phone": "+51 1 6104000", "roomType": "" },
             "activities": [
-                { "name": "Breakfast", "length": 60, "location": "Hotel", "notes": "" },
+                { "name": "Breakfast", "length": 135, "location": "Hotel", "notes": "" },
                 { "name": "Driver to Santiago Airport", "length": 80, "location": "Valparaíso → Arturo Merino Benítez International Airport (SCL), Pudahuel, Chile", "notes": "" },
                 { "name": "Check-in to Flight and Grab Lunch", "length": 120, "location": "Arturo Merino Benítez International Airport (SCL)", "notes": "" },
-                { "name": "Flight: Santiago → Lima", "length": 235, "location": "SCL → Jorge Chávez International Airport (LIM), Callao, Peru", "notes": "LATAM Airlines 640 · Airbus A320 · Departs 12:35 PM · Arrives 3:30 PM. Service subject to government approval per itinerary." },
+                { "name": "Flight: Santiago → Lima", "length": 175, "location": "SCL → Jorge Chávez International Airport (LIM), Callao, Peru", "notes": "LATAM Airlines 640 · Airbus A320 · Departs 12:35 PM · Arrives 3:30 PM. Service subject to government approval per itinerary." },
                 { "name": "Arrival & Immigration", "length": 60, "location": "Jorge Chávez International Airport (LIM), Callao, Peru", "notes": "" },
                 { "name": "Driver to Hotel", "length": 60, "location": "", "notes": "" },
                 { "name": "Check In to Hotel and Relax", "length": 60, "location": "Hotel", "notes": "" },
@@ -121,13 +132,13 @@
 		    "activities": [
 		        { "name": "Breakfast", "length": 90, "location": "Miraflores Park, Av. Malecón de la Reserva 1035, Miraflores, Lima", "notes": "" },
 		        { "name": "Driver to Museo", "length": 45, "location": "Miraflores Park → Pueblo Libre", "notes": "" },
-		        { "name": "Museo Larco", "length": 120, "location": "Museo Larco, Av. Simón Bolívar 1515, Pueblo Libre 15084, Lima, Peru", "notes": "Major pre-Columbian collection and renowned erotic pottery gallery. Typical hours often 09:00–22:00; confirm on official site. https://www.museolarco.org/" },
-				{ "name": "Lunch at Ciclos Café", "length": 60, "location": "Ciclos Café, Calle Berlin 671, Miraflores, Lima, Peru", "notes": "Relaxed café popular for breakfast, salads, sandwiches, and people-watching in Miraflores. Walk-in friendly. Typical hours daily ~08:00–16:30." }
-		        { "name": "Huaca Pucllana", "length": 90, "location": "Complejo Arqueológico Huaca Pucllana, General Borgoño cuadra 8, Miraflores, Lima, Peru", "notes": "Ancient adobe ceremonial center in Miraflores. Hours vary by season/programming; confirm via official listing. https://museos.cultura.pe/museos/sitio-arqueologico-huaca-pucllana" },
-		        { "name": "Relax and Get Ready for Dinner", "length": 90, "location": "", "notes": "" },
+		        { "name": "Museo Larco", "length": 120, "location": "Museo Larco, Av. Simón Bolívar 1515, Pueblo Libre 15084, Lima, Peru", "notes": "DO WE NEED TICKETS? Major pre-Columbian collection and renowned erotic pottery gallery. Typical hours often 09:00–22:00; confirm on official site. https://www.museolarco.org/" },
+				{ "name": "Lunch at Ciclos Café", "length": 60, "location": "Ciclos Café, Calle Berlin 671, Miraflores, Lima, Peru", "notes": "Relaxed café popular for breakfast, salads, sandwiches, and people-watching in Miraflores. Walk-in friendly. Typical hours daily ~08:00–16:30." },
+		        { "name": "Huaca Pucllana", "length": 90, "location": "Complejo Arqueológico Huaca Pucllana, General Borgoño cuadra 8, Miraflores, Lima, Peru", "notes": "DO WE NEED TICKETS? Ancient adobe ceremonial center in Miraflores. Hours vary by season/programming; confirm via official listing. https://museos.cultura.pe/museos/sitio-arqueologico-huaca-pucllana" },
+		        { "name": "Relax and Get Ready for Dinner", "length": 235, "location": "", "notes": "" },
 		        { "name": "Driver to Dinner", "length": 20, "location": "Miraflores → Maido", "notes": "" },
-				{ "name": "Dinner at Siete", "length": 120, "location": "Siete Restaurante, Calle Bolívar 164, Miraflores, Lima, Peru", "notes": "Modern Peruvian cuisine highlighting seasonal local ingredients in an intimate setting. Tasting-menu driven. Reservations recommended. Typical dinner hours Wed–Sat ~18:30–22:30. https://www.instagram.com/sieterestaurante/" },
-		    	{ "name": "Driver to Hotel", "length": 20, "location": "", "notes": "" },
+				{ "name": "Dinner at Siete", "length": 120, "location": "NEED RESERVATIONS. Siete Restaurante, Calle Bolívar 164, Miraflores, Lima, Peru", "notes": "Modern Peruvian cuisine highlighting seasonal local ingredients in an intimate setting. Tasting-menu driven. Reservations recommended. Typical dinner hours Wed–Sat ~18:30–22:30. https://www.instagram.com/sieterestaurante/" },
+		    	{ "name": "Driver to Hotel", "length": 20, "location": "", "notes": "" }
 		    ]
 		},
 
@@ -138,21 +149,22 @@
 		    "lodging": { "name": "Miraflores Park, A Belmond Hotel", "address": "Av. Malecón de la Reserva 1035, Miraflores, Lima 15074, Peru", "phone": "+51 1 6104000", "roomType": "" },
 		    "activities": [
 		        { "name": "Breakfast", "length": 90, "location": "Miraflores Park, Av. Malecón de la Reserva 1035, Miraflores, Lima", "notes": "" },
-		        { "name": "Activity", "length": 150, "location": "Miraflores Park, Av. Malecón de la Reserva 1035, Miraflores, Lima", "notes": "" },
-		        { "name": "Lunch at Isolina", "length": 60, "location": "Isolina Taberna Peruana, Av. San Martín 101, Barranco, Lima, Peru", "notes": "Classic Peruvian criollo tavern known for hearty portions and traditional comfort dishes like lomo saltado and seco. Extremely popular; arrive early. Typical lunch hours daily ~12:30–16:30. https://www.instagram.com/isolinataberna/" },
-				{ "name": "Historic Center of Lima", "length": 180, "location": "Centro Histórico de Lima (Plaza Mayor), Jirón de la Unión area, Lima, Peru", "notes": "UNESCO World Heritage colonial core; outdoor areas generally accessible anytime, but cathedrals/museums have separate hours." },
-		        { "name": "Driver to Hotel", "length": 30, "location": "Centro Histórico → Miraflores", "notes": "" },
-		        { "name": "Relax", "length": 90, "location": "Miraflores Park, Av. Malecón de la Reserva 1035, Miraflores, Lima", "notes": "" },
-		        { "name": "Relax and Get Ready for Dinner", "length": 90, "location": "", "notes": "" },
-		        { "name": "Driver to Dinner", "length": 25, "location": "Miraflores → Barranco", "notes": "" },
-		        { "name": "Dinner at Central", "length": 180, "location": "Central Restaurante, Av. Pedro de Osma 301, Barranco, Lima 15063, Peru", "notes": "Flagship restaurant of chefs Virgilio Martínez and Pía León. Degustation menu exploring Peruvian ecosystems by altitude. Reservations required far in advance. Typical dinner hours Tue–Sat ~18:00–23:00. https://centralrestaurante.com.pe/" },
-		    	{ "name": "Driver to Hotel", "length": 25, "location": "", "notes": "" }
+		        { "name": "Driver to Historic Center", "length": 45, "location": "Miraflores → Centro Histórico de Lima", "notes": "Morning traffic buffer included." },
+		        { "name": "Historic Center of Lima", "length": 90, "location": "Centro Histórico de Lima (Plaza Mayor), Jirón de la Unión area, Lima, Peru", "notes": "UNESCO World Heritage colonial core; focus on Plaza Mayor, Cathedral exterior, and key streets." },
+		        { "name": "Driver to Barranco", "length": 45, "location": "Centro Histórico → Barranco", "notes": "Midday cross-city drive; traffic can be heavy." },
+		        { "name": "Lunch at Isolina", "length": 90, "location": "Isolina Taberna Peruana, Av. San Martín 101, Barranco, Lima, Peru", "notes": "Peak lunch service. Expect a lively, slow-paced meal; ordering family-style recommended." },
+		        { "name": "Walk Barranco Neighborhood", "length": 45, "location": "Barranco Historic District", "notes": "Bridge of Sighs area, galleries, and seaside streets." },
+		        { "name": "Driver to Hotel", "length": 30, "location": "Barranco → Miraflores", "notes": "" },
+		        { "name": "Rest and Get Ready for Dinner", "length": 200, "location": "Miraflores Park Hotel", "notes": "Downtime before tasting-menu dinner." },
+		        { "name": "Driver to Central", "length": 25, "location": "Miraflores → Barranco (Pedro de Osma)", "notes": "" },
+		        { "name": "Dinner at Central", "length": 180, "location": "Central Restaurante, Av. Pedro de Osma 301, Barranco, Lima 15063, Peru", "notes": "Degustation menu exploring Peruvian ecosystems by altitude. Expect ~3 hours. Reservations required well in advance." },
+		        { "name": "Driver to Hotel", "length": 25, "location": "Barranco → Miraflores", "notes": "" }
 		    ]
 		},
 
         {
             "day": "Day 10 - Saturday, June 20th 2026",
-            "wakeUpTime": "07:00",
+            "wakeUpTime": "06:25",
             "location": "Lima → Cusco → Machu Picchu",
             "lodging": { "name": "Sanctuary Lodge, A Belmond Hotel, Machu Picchu", "address": "Machu Picchu Sanctuary Lodge, Machupicchu, Cusco Region, Peru", "phone": "+51 84 582030", "roomType": "" },
             "activities": [
@@ -160,11 +172,11 @@
                 { "name": "Transfer to LIM", "length": 45, "location": "Hotel → Jorge Chávez International Airport (LIM), Callao, Peru", "notes": "" },
                 { "name": "Check-in & Security", "length": 120, "location": "Jorge Chávez International Airport (LIM), Callao, Peru", "notes": "" },
                 { "name": "Flight: Lima → Cusco", "length": 85, "location": "LIM → Alejandro Velasco Astete International Airport (CUZ), Cusco, Peru", "notes": "LATAM Airlines 2276 per itinerary · Airbus A320 · Departs 4:30 PM · Arrives 5:55 PM (example—confirm exact flight time in your record)." },
-                { "name": "Transfer to Train Station", "length": 30, "location": "Cusco/CUZ area → (rail transfer to Sacred Valley station as applicable)", "notes": "Depending on service, trains depart from Poroy (Cusco) or Ollantaytambo; confirm station for your ticket." },
-                { "name": "Train to Machu Picchu", "length": 120, "location": "Sacred Valley station → Machu Picchu Pueblo (Aguas Calientes), Peru", "notes": "Rail duration varies by origin (Poroy/Ollantaytambo). Confirm schedule with PeruRail/Inca Rail ticket." },
-                { "name": "Transfer to Hotel", "length": 20, "location": "Machu Picchu Pueblo → Machu Picchu Sanctuary Lodge (shuttle/bus)", "notes": "Typical access is by shuttle buses from Aguas Calientes up to the citadel area." },
-                { "name": "Check In and Relax", "length": 120, "location": "Sanctuary Lodge, Machupicchu, Cusco Region, Peru", "notes": "" },
-                { "name": "Dinner at Hotel", "length": 90, "location": "Sanctuary Lodge, Machupicchu, Cusco Region, Peru", "notes": "" }
+                { "name": "Transfer to Train Station", "length": 65, "location": "Cusco/CUZ area → (rail transfer to Sacred Valley station as applicable)", "notes": "Depending on service, trains depart from Poroy (Cusco) or Ollantaytambo; confirm station for your ticket." },
+                { "name": "Train to Machu Picchu", "length": 120, "location": "Sacred Valley station → Machu Picchu Pueblo (Aguas Calientes), Peru", "notes": "CHECK TIME NEED TICKETS. Rail duration varies by origin (Poroy/Ollantaytambo). Confirm schedule with PeruRail/Inca Rail ticket." },
+                { "name": "Transfer to Hotel", "length": 20, "location": "Machu Picchu Pueblo → Machu Picchu Sanctuary Lodge (shuttle/bus)", "notes": "NEED TO BOOKTypical access is by shuttle buses from Aguas Calientes up to the citadel area." },
+                { "name": "Check In and Relax Pet the Llamas", "length": 240, "location": "Sanctuary Lodge, Machupicchu, Cusco Region, Peru", "notes": "" },
+                { "name": "Dinner at Hotel", "length": 90, "location": "Sanctuary Lodge, Machupicchu, Cusco Region, Peru", "notes": "NEED TO BOOK" }
             ]
         },
 
@@ -175,11 +187,11 @@
             "lodging": { "name": "Rio Sagrado, A Belmond Hotel", "address": "Km 75.8 Carretera Urubamba–Ollantaytambo, Sacred Valley, Cusco, Peru", "phone": "+51 84 201700", "roomType": "" },
             "activities": [
                 { "name": "Breakfast", "length": 90, "location": "Sanctuary Lodge, Machupicchu, Cusco Region, Peru", "notes": "" },
-                { "name": "Machu Picchu Guided Tour", "length": 210, "location": "Santuario Histórico de Machu Picchu, Machupicchu, Cusco Region, Peru", "notes": "Iconic 15th-century Inca citadel. Visiting hours are commonly listed as 06:00–17:00 with timed entry/circuit rules; confirm the current official entry hours and your circuit/timeslot when booking. https://www.machupicchu.gob.pe/" },
+                { "name": "Machu Picchu Guided Tour", "length": 210, "location": "Santuario Histórico de Machu Picchu, Machupicchu, Cusco Region, Peru", "notes": "NEED TO BOOK. Iconic 15th-century Inca citadel. Visiting hours are commonly listed as 06:00–17:00 with timed entry/circuit rules; confirm the current official entry hours and your circuit/timeslot when booking. https://www.machupicchu.gob.pe/" },
                 { "name": "Lunch", "length": 60, "location": "Machu Picchu Pueblo (Aguas Calientes), Peru", "notes": "Restaurant hours vary." },
                 { "name": "Transfer to Train", "length": 30, "location": "Machu Picchu Pueblo (Aguas Calientes) station area", "notes": "" },
-                { "name": "Train to Ollantaytambo", "length": 90, "location": "Machu Picchu Pueblo → Ollantaytambo Station, Ollantaytambo, Cusco, Peru", "notes": "Typical Vistadome/Expedition routing; confirm ticketed service." },
-                { "name": "Transfer to Hotel", "length": 20, "location": "Ollantaytambo Station → Rio Sagrado, Km 75.8 Carretera Urubamba–Ollantaytambo", "notes": "" },
+                { "name": "Train to Ollantaytambo", "length": 90, "location": "Machu Picchu Pueblo → Ollantaytambo Station, Ollantaytambo, Cusco, Peru", "notes": "NEED TO BOOK. Typical Vistadome/Expedition routing; confirm ticketed service." },
+                { "name": "Transfer to Hotel", "length": 20, "location": "Ollantaytambo Station → Rio Sagrado, Km 75.8 Carretera Urubamba–Ollantaytambo", "notes": "NEED TO BOOK IN Urubamba–Ollantaytambo" },
                 { "name": "Check In and Relax", "length": 90, "location": "Rio Sagrado, Sacred Valley, Cusco, Peru", "notes": "" },
                 { "name": "Dinner", "length": 90, "location": "Rio Sagrado, Sacred Valley, Cusco, Peru", "notes": "" }
             ]
@@ -189,15 +201,15 @@
             "day": "Day 12 - Monday, June 22nd 2026",
             "wakeUpTime": "08:00",
             "location": "Sacred Valley → Cusco",
-            "lodging": { "name": "Palacio Nazarenas or Monasterio or Inkaterra La Casona", "address": "Cusco Historic Center (exact hotel TBD)", "phone": "", "roomType": "" },
+            "lodging": { "name": "Monasterio, A Belmond Hotel", "address": "Plazoleta Nazarenas 337, Cusco 08002, Peru", "phone": "+51 84 604000", "roomType": "" },
             "activities": [
                 { "name": "Breakfast", "length": 90, "location": "Rio Sagrado, Sacred Valley, Cusco, Peru", "notes": "" },
-                { "name": "Ollantaytambo Archaeological Park", "length": 150, "location": "Parque Arqueológico de Ollantaytambo, Ollantaytambo, Cusco, Peru", "notes": "Major Inca administrative/ceremonial center with impressive terraces. Common visiting hours are often listed roughly 07:00–17:00 (confirm with ticket/Ministry of Culture postings). https://www.peru.travel/" },
+                { "name": "Ollantaytambo Archaeological Park", "length": 150, "location": "Parque Arqueológico de Ollantaytambo, Ollantaytambo, Cusco, Peru", "notes": "BOOK GUIDE. Major Inca administrative/ceremonial center with impressive terraces. Common visiting hours are often listed roughly 07:00–17:00 (confirm with ticket/Ministry of Culture postings). https://www.peru.travel/" },
                 { "name": "Lunch", "length": 60, "location": "Ollantaytambo, Cusco, Peru", "notes": "" },
-                { "name": "Maras Salt Mines (Salineras de Maras)", "length": 120, "location": "Salineras de Maras, Maras, Urubamba, Cusco, Peru", "notes": "Thousands of salt pans on a hillside; outdoor site—hours can vary; confirm locally/day-of." },
+                { "name": "Maras Salt Mines (Salineras de Maras)", "length": 120, "location": "Salineras de Maras, Maras, Urubamba, Cusco, Peru", "notes": "BOOK GUIDE. Thousands of salt pans on a hillside; outdoor site—hours can vary; confirm locally/day-of." },
                 { "name": "Transfer to Cusco", "length": 60, "location": "Sacred Valley → Cusco, Peru", "notes": "" },
-                { "name": "Check In and Relax", "length": 120, "location": "Cusco Historic Center, Cusco, Peru", "notes": "" },
-                { "name": "Dinner", "length": 90, "location": "Cusco, Peru", "notes": "" }
+                { "name": "Check In and Relax", "length": 120, "location": "Cusco Historic Center, Cusco, Peru", "notes": "NEED TO BOOK" },
+                { "name": "Dinner", "length": 90, "location": "Cusco, Peru", "notes": "NEED TO BOOK" }
             ]
         },
 
@@ -205,13 +217,14 @@
             "day": "Day 13 - Tuesday, June 23rd 2026",
             "wakeUpTime": "08:00",
             "location": "Cusco",
-            "lodging": { "name": "Palacio Nazarenas or Monasterio or Inkaterra La Casona", "address": "Cusco Historic Center (exact hotel TBD)", "phone": "", "roomType": "" },
+            "lodging": { "name": "Monasterio, A Belmond Hotel", "address": "Plazoleta Nazarenas 337, Cusco 08002, Peru", "phone": "+51 84 604000", "roomType": "" },
             "activities": [
                 { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
-                { "name": "Cusco Walking Tour (Plaza de Armas, Qorikancha area)", "length": 180, "location": "Plaza de Armas de Cusco, Cusco, Peru", "notes": "Historic Inca/colonial center; outdoor areas generally accessible anytime, but churches/museums have separate hours." },
+                { "name": "Cusco Walking Tour (Plaza de Armas, Qorikancha area)", "length": 180, "location": "Plaza de Armas de Cusco, Cusco, Peru", "notes": "BOOK GUIDE. Historic Inca/colonial center; outdoor areas generally accessible anytime, but churches/museums have separate hours." },
                 { "name": "Lunch", "length": 60, "location": "Cusco, Peru", "notes": "" },
-                { "name": "Sacsayhuamán (Optional Site Visit)", "length": 150, "location": "Parque Arqueológico de Sacsayhuamán, Cusco, Peru", "notes": "Inca fortress/ceremonial complex above Cusco; hours vary—confirm with Boleto Turístico / official postings." },
-                { "name": "Dinner at Clon", "length": 120, "location": "Clon Restaurante, Calle Santa Teresa 363, Cusco, Peru", "notes": "Creative Andean-inspired cuisine using local Cusco ingredients in a contemporary historic-center setting. Good option for refined dining in Cusco. Typical dinner hours daily ~18:00–22:30." }
+                { "name": "Sacsayhuamán (Optional Site Visit)", "length": 150, "location": "Parque Arqueológico de Sacsayhuamán, Cusco, Peru", "notes": "BOOK GUIDE. Inca fortress/ceremonial complex above Cusco; hours vary—confirm with Boleto Turístico / official postings." },
+                { "name": "Return to Hotel and Relax", "length": 180, "location": "", "notes": "" },
+                { "name": "Dinner at Clon", "length": 120, "location": "Clon Restaurante, Calle Santa Teresa 363, Cusco, Peru", "notes": "NEED TO BOOK. Creative Andean-inspired cuisine using local Cusco ingredients in a contemporary historic-center setting. Good option for refined dining in Cusco. Typical dinner hours daily ~18:00–22:30." }
 			]
         },
 
@@ -219,12 +232,13 @@
             "day": "Day 14 - Wednesday, June 24th 2026",
             "wakeUpTime": "08:00",
             "location": "Cusco",
-            "lodging": { "name": "Palacio Nazarenas or Monasterio or Inkaterra La Casona", "address": "Cusco Historic Center (exact hotel TBD)", "phone": "", "roomType": "" },
+            "lodging": { "name": "Monasterio, A Belmond Hotel", "address": "Plazoleta Nazarenas 337, Cusco 08002, Peru", "phone": "+51 84 604000", "roomType": "" },
             "activities": [
                 { "name": "Breakfast", "length": 90, "location": "Hotel", "notes": "" },
                 { "name": "Cusco Festivities / Free Exploration", "length": 240, "location": "Cusco Historic Center, Cusco, Peru", "notes": "Markets, churches, and local celebrations; confirm any festival tickets/routes day-of." },
                 { "name": "Lunch", "length": 60, "location": "Cusco, Peru", "notes": "" },
-                { "name": "Dinner", "length": 90, "location": "Cusco, Peru", "notes": "" }
+                { "name": "Return to Hotel and Relax", "length": 270, "location": "", "notes": "" },
+                { "name": "Dinner", "length": 90, "location": "Cusco, Peru", "notes": "NEED TO BOOK" }
             ]
         },
 
@@ -273,8 +287,19 @@
 		        { "name": "Stop at KM 93 (Optional Colca Canyon Disembarkation Point)", "length": 60, "location": "KM 93 Rail Stop, Arequipa Region, Peru", "notes": "Optional stop for guests continuing independently to Colca Canyon (not included in the train ticket). Guests remaining onboard rejoin the train afterward." },
 		        { "name": "Lunch on board", "length": 90, "location": "The Andean Explorer – Dining Car", "notes": "Lunch service onboard while continuing toward Arequipa." },
 		        { "name": "Scenic rail journey toward Arequipa (The White City)", "length": 90, "location": "Rail segment across southern Andes into Arequipa", "notes": "Final scenic approach into Arequipa, known as the ‘White City’ for its volcanic sillar stone architecture." },
-		        { "name": "Arrival: Arequipa & Transfer to Airport", "length": 150, "location": "Arequipa City → Arequipa Rodriguez Ballon International Airport (AQP)", "notes": "Train arrives Arequipa ~15:30. Optional guided transfer included, arriving at AQP airport at approximately 18:00. https://www.belmond.com/trains/south-america/peru/andean-explorer" },
-		        { "name": "Arrival at Arequipa Rodriguez Ballon International Airport (AQP)", "length": 0, "location": "Arequipa Rodriguez Ballon International Airport, Av. Aviación Km 6.5, Arequipa, Peru", "notes": "Included transfer arrival point per train schedule." }
+		        { "name": "CHECK IN TO HOTEL NEED TO BOOK", "length": 150, "location": "Arequipa City → Arequipa Rodriguez Ballon International Airport (AQP)", "notes": "Train arrives Arequipa ~15:30. Optional guided transfer included, arriving at AQP airport at approximately 18:00. https://www.belmond.com/trains/south-america/peru/andean-explorer" }
+		    ]
+		},
+
+		{
+		    "day": "Day 17 - Saturday, June 27th 2026",
+		    "wakeUpTime": "08:00",
+		    "location": "Saracocha → Arequipa (The Andean Explorer)",
+		    "lodging": { "name": "The Andean Explorer", "address": "Arrive Arequipa; included transfer to Arequipa Rodriguez Ballon Intl Airport (AQP)", "phone": "", "roomType": "1x" },
+		    "activities": [
+		        { "name": "Breakfast", "length": 90, "location": "", "notes": "" },
+		        { "name": "Driver to Airport", "length": 30, "location": "", "notes": "Extended breakfast service and morning onboard time before disembarking for excursions." },
+		        { "name": "Arrival at Arequipa Rodriguez Ballon International Airport (AQP)", "length": 0, "location": "I AM NOT SURE WHAT TIME THE FLIGHT LEAVES" }
 		    ]
 		}
     ]
